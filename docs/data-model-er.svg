@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="860" viewBox="0 0 1160 860"
+     font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="fk" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#78909c"/>
+    </marker>
+    <marker id="fk-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#e53935"/>
+    </marker>
+    <filter id="sh" x="-6%" y="-6%" width="120%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1160" height="860" rx="12" fill="#f5f6fa"/>
+  <text x="580" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1a237e">Spring AI Alibaba Admin — Core Data Model ER</text>
+  <text x="580" y="54" text-anchor="middle" font-size="11" fill="#90a4ae">实线 = 强外键  虚线 = 业务关联  红色 = 跨库引用</text>
+
+  <!-- ═══════════════════════════════════════════
+       MACRO: entity box helper comments
+       Layout plan (cx, cy, w, h):
+         Admin DB (left area):
+           prompt           90, 120, 160, 100
+           prompt_version   90, 270, 160, 120
+           dataset          90, 450, 160, 110
+           dataset_version  90, 610, 160, 120
+           dataset_item     90, 770, 160,  80  (bottom)
+           evaluator        310, 120, 160, 100
+           evaluator_version310, 270, 160, 130
+           experiment       310, 470, 160, 150
+           experiment_result310, 670, 160, 120
+           model_config     530, 120, 160, 120
+
+         Agentscope DB (right area):
+           account          700, 100, 160, 100
+           workspace        700, 260, 160, 100
+           api_key          700, 420, 160,  80
+           application      880, 100, 160, 100
+           application_version 880,260,160, 100
+           knowledge_base   880, 420, 160, 100
+           document         880, 570, 160, 100
+           plugin           700, 560, 160, 100
+           tool             700, 710, 160, 100
+           provider         880, 720, 160,  80
+           mcp_server      1020, 420, 130,  90
+           agent_schema    1020, 570, 130,  90
+           reference       1020, 260, 130,  80
+  ════════════════════════════════════════ -->
+
+  <!-- ─────── DB labels ─────── -->
+  <rect x="20" y="68" width="620" height="770" rx="10" fill="#e8eaf6" opacity="0.45"/>
+  <text x="32" y="86" font-size="11" font-weight="700" fill="#3949ab" letter-spacing="1">ADMIN DB</text>
+
+  <rect x="658" y="68" width="482" height="770" rx="10" fill="#e0f2f1" opacity="0.45"/>
+  <text x="670" y="86" font-size="11" font-weight="700" fill="#00695c" letter-spacing="1">AGENTSCOPE DB</text>
+
+  <!-- ═══ ENTITY BOXES ═══ -->
+
+  <!-- ── prompt ── -->
+  <g filter="url(#sh)">
+    <rect x="30" y="96" width="168" height="108" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="30" y="96" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="114" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="white">prompt</text>
+  <text x="38" y="128" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="38" y="142" font-size="10" fill="#37474f">🔐 prompt_key</text>
+  <text x="38" y="156" font-size="10" fill="#546e7a">latest_version</text>
+  <text x="38" y="170" font-size="10" fill="#546e7a">tags, prompt_desc</text>
+  <text x="38" y="184" font-size="10" fill="#78909c" font-style="italic">create/update_time</text>
+
+  <!-- ── prompt_version ── -->
+  <g filter="url(#sh)">
+    <rect x="30" y="234" width="168" height="128" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="30" y="234" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="114" y="249" text-anchor="middle" font-size="11" font-weight="700" fill="white">prompt_version</text>
+  <text x="38" y="268" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="38" y="282" font-size="10" fill="#37474f">🔗 prompt_key</text>
+  <text x="38" y="296" font-size="10" fill="#37474f">🔐 version</text>
+  <text x="38" y="310" font-size="10" fill="#546e7a">template, variables</text>
+  <text x="38" y="324" font-size="10" fill="#546e7a">model_config</text>
+  <text x="38" y="338" font-size="10" fill="#e65100" font-weight="600">status: pre|release</text>
+
+  <!-- ── dataset ── -->
+  <g filter="url(#sh)">
+    <rect x="30" y="400" width="168" height="100" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="30" y="400" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="114" y="415" text-anchor="middle" font-size="11" font-weight="700" fill="white">dataset</text>
+  <text x="38" y="434" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="38" y="448" font-size="10" fill="#546e7a">name, description</text>
+  <text x="38" y="462" font-size="10" fill="#546e7a">columns_config (JSON)</text>
+  <text x="38" y="476" font-size="10" fill="#546e7a">deleted</text>
+
+  <!-- ── dataset_version ── -->
+  <g filter="url(#sh)">
+    <rect x="30" y="540" width="168" height="118" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="30" y="540" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="114" y="555" text-anchor="middle" font-size="11" font-weight="700" fill="white">dataset_version</text>
+  <text x="38" y="574" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="38" y="588" font-size="10" fill="#37474f">🔗 dataset_id → dataset</text>
+  <text x="38" y="602" font-size="10" fill="#37474f">🔐 version</text>
+  <text x="38" y="616" font-size="10" fill="#546e7a">data_count</text>
+  <text x="38" y="630" font-size="10" fill="#e65100" font-weight="600">status: DRAFT|PUB|ARCH</text>
+  <text x="38" y="644" font-size="10" fill="#546e7a">dataset_items (JSON)</text>
+
+  <!-- ── dataset_item ── -->
+  <g filter="url(#sh)">
+    <rect x="30" y="700" width="168" height="90" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="30" y="700" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="114" y="715" text-anchor="middle" font-size="11" font-weight="700" fill="white">dataset_item</text>
+  <text x="38" y="734" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="38" y="748" font-size="10" fill="#37474f">🔗 dataset_id → dataset</text>
+  <text x="38" y="762" font-size="10" fill="#546e7a">data_content (JSON)</text>
+  <text x="38" y="776" font-size="10" fill="#546e7a">deleted</text>
+
+  <!-- ── evaluator ── -->
+  <g filter="url(#sh)">
+    <rect x="228" y="96" width="168" height="100" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="228" y="96" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="312" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="white">evaluator</text>
+  <text x="236" y="130" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="236" y="144" font-size="10" fill="#546e7a">name, description</text>
+  <text x="236" y="158" font-size="10" fill="#546e7a">deleted</text>
+  <text x="236" y="172" font-size="10" fill="#78909c" font-style="italic">create/update_time</text>
+
+  <!-- ── evaluator_version ── -->
+  <g filter="url(#sh)">
+    <rect x="228" y="234" width="168" height="138" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="228" y="234" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="312" y="249" text-anchor="middle" font-size="11" font-weight="700" fill="white">evaluator_version</text>
+  <text x="236" y="268" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="236" y="282" font-size="10" fill="#37474f">🔗 evaluator_id</text>
+  <text x="236" y="296" font-size="10" fill="#37474f">🔐 version</text>
+  <text x="236" y="310" font-size="10" fill="#546e7a">prompt, variables</text>
+  <text x="236" y="324" font-size="10" fill="#546e7a">model_config</text>
+  <text x="236" y="338" font-size="10" fill="#e65100" font-weight="600">status: DRAFT|PUB|ARCH</text>
+  <text x="236" y="352" font-size="10" fill="#546e7a">experiments (JSON ref)</text>
+
+  <!-- ── experiment ── -->
+  <g filter="url(#sh)">
+    <rect x="228" y="430" width="168" height="166" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="228" y="430" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="312" y="445" text-anchor="middle" font-size="11" font-weight="700" fill="white">experiment</text>
+  <text x="236" y="464" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="236" y="478" font-size="10" fill="#37474f">🔗 dataset_id</text>
+  <text x="236" y="492" font-size="10" fill="#37474f">🔗 dataset_version_id</text>
+  <text x="236" y="506" font-size="10" fill="#546e7a">evaluator_config (JSON)</text>
+  <text x="236" y="520" font-size="10" fill="#546e7a">evaluation_object_config</text>
+  <text x="236" y="534" font-size="10" fill="#e65100" font-weight="600">status: DRAFT|RUN|OK|FAIL</text>
+  <text x="236" y="548" font-size="10" fill="#546e7a">progress (0-100)</text>
+  <text x="236" y="562" font-size="10" fill="#546e7a">complete_time</text>
+  <text x="236" y="576" font-size="10" fill="#78909c" font-style="italic">create/update_time</text>
+
+  <!-- ── experiment_result ── -->
+  <g filter="url(#sh)">
+    <rect x="228" y="640" width="168" height="138" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="228" y="640" width="168" height="22" rx="8" fill="#7986cb"/>
+  <text x="312" y="655" text-anchor="middle" font-size="11" font-weight="700" fill="white">experiment_result</text>
+  <text x="236" y="674" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="236" y="688" font-size="10" fill="#37474f">🔗 experiment_id</text>
+  <text x="236" y="702" font-size="10" fill="#37474f">🔗 evaluator_version_id</text>
+  <text x="236" y="716" font-size="10" fill="#546e7a">input, actual_output</text>
+  <text x="236" y="730" font-size="10" fill="#546e7a">reference_output</text>
+  <text x="236" y="744" font-size="10" fill="#546e7a">score (0.00-1.00)</text>
+  <text x="236" y="758" font-size="10" fill="#546e7a">reason, evaluation_time</text>
+
+  <!-- ── model_config ── -->
+  <g filter="url(#sh)">
+    <rect x="426" y="96" width="172" height="128" rx="8" fill="white" stroke="#7986cb" stroke-width="1.5"/>
+  </g>
+  <rect x="426" y="96" width="172" height="22" rx="8" fill="#7986cb"/>
+  <text x="512" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="white">model_config</text>
+  <text x="434" y="130" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="434" y="144" font-size="10" fill="#37474f">🔐 name</text>
+  <text x="434" y="158" font-size="10" fill="#546e7a">provider, model_name</text>
+  <text x="434" y="172" font-size="10" fill="#546e7a">base_url, api_key</text>
+  <text x="434" y="186" font-size="10" fill="#546e7a">default_parameters (JSON)</text>
+  <text x="434" y="200" font-size="10" fill="#e65100" font-weight="600">status: 1=on 0=off</text>
+  <text x="434" y="214" font-size="10" fill="#546e7a">deleted</text>
+
+  <!-- ════ AGENTSCOPE ENTITIES ════ -->
+
+  <!-- ── account ── -->
+  <g filter="url(#sh)">
+    <rect x="668" y="96" width="168" height="118" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="668" y="96" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="752" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="white">account</text>
+  <text x="676" y="130" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="676" y="144" font-size="10" fill="#37474f">🔐 account_id</text>
+  <text x="676" y="158" font-size="10" fill="#546e7a">username, email, mobile</text>
+  <text x="676" y="172" font-size="10" fill="#546e7a">password (Argon2)</text>
+  <text x="676" y="186" font-size="10" fill="#e65100" font-weight="600">type: basic|admin</text>
+  <text x="676" y="200" font-size="10" fill="#e65100" font-weight="600">status: 0=del 1=ok</text>
+
+  <!-- ── workspace ── -->
+  <g filter="url(#sh)">
+    <rect x="668" y="252" width="168" height="108" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="668" y="252" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="752" y="267" text-anchor="middle" font-size="11" font-weight="700" fill="white">workspace</text>
+  <text x="676" y="286" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="676" y="300" font-size="10" fill="#37474f">🔐 workspace_id</text>
+  <text x="676" y="314" font-size="10" fill="#37474f">🔗 account_id → account</text>
+  <text x="676" y="328" font-size="10" fill="#546e7a">name, description, config</text>
+  <text x="676" y="342" font-size="10" fill="#e65100" font-weight="600">status: 0=del 1=ok</text>
+
+  <!-- ── api_key ── -->
+  <g filter="url(#sh)">
+    <rect x="668" y="396" width="168" height="90" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="668" y="396" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="752" y="411" text-anchor="middle" font-size="11" font-weight="700" fill="white">api_key</text>
+  <text x="676" y="430" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="676" y="444" font-size="10" fill="#37474f">🔗 account_id → account</text>
+  <text x="676" y="458" font-size="10" fill="#546e7a">api_key (token value)</text>
+  <text x="676" y="472" font-size="10" fill="#e65100" font-weight="600">status: 0=del 1=ok</text>
+
+  <!-- ── plugin ── -->
+  <g filter="url(#sh)">
+    <rect x="668" y="524" width="168" height="100" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="668" y="524" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="752" y="539" text-anchor="middle" font-size="11" font-weight="700" fill="white">plugin</text>
+  <text x="676" y="558" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="676" y="572" font-size="10" fill="#37474f">🔐 plugin_id</text>
+  <text x="676" y="586" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="676" y="600" font-size="10" fill="#e65100" font-weight="600">type: official|custom</text>
+  <text x="676" y="614" font-size="10" fill="#546e7a">name, config, source</text>
+
+  <!-- ── tool ── -->
+  <g filter="url(#sh)">
+    <rect x="668" y="662" width="168" height="118" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="668" y="662" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="752" y="677" text-anchor="middle" font-size="11" font-weight="700" fill="white">tool</text>
+  <text x="676" y="696" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="676" y="710" font-size="10" fill="#37474f">🔐 tool_id</text>
+  <text x="676" y="724" font-size="10" fill="#37474f">🔗 plugin_id → plugin</text>
+  <text x="676" y="738" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="676" y="752" font-size="10" fill="#546e7a">name, api_schema (JSON)</text>
+  <text x="676" y="766" font-size="10" fill="#e65100" font-weight="600">test_status: 1|2|3</text>
+  <text x="676" y="780" font-size="10" fill="#546e7a">enabled</text>
+
+  <!-- ── application ── -->
+  <g filter="url(#sh)">
+    <rect x="860" y="96" width="168" height="108" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="860" y="96" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="944" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="white">application</text>
+  <text x="868" y="130" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="868" y="144" font-size="10" fill="#37474f">🔐 app_id</text>
+  <text x="868" y="158" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="868" y="172" font-size="10" fill="#546e7a">name, icon, description</text>
+  <text x="868" y="186" font-size="10" fill="#e65100" font-weight="600">type: agent|workflow</text>
+  <text x="868" y="200" font-size="10" fill="#e65100" font-weight="600">status: 0|1|2|3</text>
+
+  <!-- ── application_version ── -->
+  <g filter="url(#sh)">
+    <rect x="860" y="242" width="168" height="108" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="860" y="242" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="944" y="257" text-anchor="middle" font-size="11" font-weight="700" fill="white">application_version</text>
+  <text x="868" y="276" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="868" y="290" font-size="10" fill="#37474f">🔗 app_id → application</text>
+  <text x="868" y="304" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="868" y="318" font-size="10" fill="#37474f">🔐 version</text>
+  <text x="868" y="332" font-size="10" fill="#546e7a">config (LONGTEXT JSON)</text>
+
+  <!-- ── knowledge_base ── -->
+  <g filter="url(#sh)">
+    <rect x="860" y="390" width="168" height="118" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="860" y="390" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="944" y="405" text-anchor="middle" font-size="11" font-weight="700" fill="white">knowledge_base</text>
+  <text x="868" y="424" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="868" y="438" font-size="10" fill="#37474f">🔐 kb_id</text>
+  <text x="868" y="452" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="868" y="466" font-size="10" fill="#546e7a">process_config (JSON)</text>
+  <text x="868" y="480" font-size="10" fill="#546e7a">index_config (JSON)</text>
+  <text x="868" y="494" font-size="10" fill="#546e7a">total_docs</text>
+
+  <!-- ── document ── -->
+  <g filter="url(#sh)">
+    <rect x="860" y="550" width="168" height="130" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="860" y="550" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="944" y="565" text-anchor="middle" font-size="11" font-weight="700" fill="white">document</text>
+  <text x="868" y="584" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="868" y="598" font-size="10" fill="#37474f">🔐 doc_id</text>
+  <text x="868" y="612" font-size="10" fill="#37474f">🔗 kb_id → knowledge_base</text>
+  <text x="868" y="626" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="868" y="640" font-size="10" fill="#546e7a">format, size, path</text>
+  <text x="868" y="654" font-size="10" fill="#e65100" font-weight="600">index_status: 1|2|3</text>
+  <text x="868" y="668" font-size="10" fill="#546e7a">enabled, error</text>
+
+  <!-- ── provider ── -->
+  <g filter="url(#sh)">
+    <rect x="860" y="726" width="168" height="100" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="860" y="726" width="168" height="22" rx="8" fill="#00897b"/>
+  <text x="944" y="741" text-anchor="middle" font-size="11" font-weight="700" fill="white">provider</text>
+  <text x="868" y="760" font-size="10" fill="#1a237e">🔑 id</text>
+  <text x="868" y="774" font-size="10" fill="#37474f">🔗 workspace_id</text>
+  <text x="868" y="788" font-size="10" fill="#546e7a">provider (openai/etc)</text>
+  <text x="868" y="802" font-size="10" fill="#e65100" font-weight="600">source: preset|custom</text>
+  <text x="868" y="816" font-size="10" fill="#546e7a">credential, protocol</text>
+
+  <!-- ── mcp_server ── -->
+  <g filter="url(#sh)">
+    <rect x="1042" y="390" width="100" height="118" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="1042" y="390" width="100" height="22" rx="8" fill="#00897b"/>
+  <text x="1092" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="white">mcp_server</text>
+  <text x="1050" y="424" font-size="9" fill="#1a237e">🔑 id</text>
+  <text x="1050" y="438" font-size="9" fill="#37474f">🔐 server_code</text>
+  <text x="1050" y="452" font-size="9" fill="#37474f">🔗 workspace_id</text>
+  <text x="1050" y="466" font-size="9" fill="#e65100" font-weight="600">type: OFF|CUST</text>
+  <text x="1050" y="480" font-size="9" fill="#e65100" font-weight="600">install: npx|uvx|sse</text>
+  <text x="1050" y="494" font-size="9" fill="#546e7a">host, deploy_config</text>
+
+  <!-- ── agent_schema ── -->
+  <g filter="url(#sh)">
+    <rect x="1042" y="550" width="100" height="118" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="1042" y="550" width="100" height="22" rx="8" fill="#00897b"/>
+  <text x="1092" y="565" text-anchor="middle" font-size="10" font-weight="700" fill="white">agent_schema</text>
+  <text x="1050" y="584" font-size="9" fill="#1a237e">🔑 id</text>
+  <text x="1050" y="598" font-size="9" fill="#37474f">🔐 agent_id</text>
+  <text x="1050" y="612" font-size="9" fill="#37474f">🔗 workspace_id</text>
+  <text x="1050" y="626" font-size="9" fill="#e65100" font-weight="600">type: React|Par|Seq</text>
+  <text x="1050" y="640" font-size="9" fill="#e65100" font-weight="600">status: DRAFT|PUB|ARCH</text>
+  <text x="1050" y="654" font-size="9" fill="#546e7a">sub_agents (JSON)</text>
+
+  <!-- ── reference ── -->
+  <g filter="url(#sh)">
+    <rect x="1042" y="242" width="100" height="100" rx="8" fill="white" stroke="#4db6ac" stroke-width="1.5"/>
+  </g>
+  <rect x="1042" y="242" width="100" height="22" rx="8" fill="#546e7a"/>
+  <text x="1092" y="257" text-anchor="middle" font-size="10" font-weight="700" fill="white">reference</text>
+  <text x="1050" y="276" font-size="9" fill="#1a237e">🔑 id</text>
+  <text x="1050" y="290" font-size="9" fill="#546e7a">main_code / type</text>
+  <text x="1050" y="304" font-size="9" fill="#546e7a">refer_code / type</text>
+  <text x="1050" y="318" font-size="9" fill="#37474f">🔗 workspace_id</text>
+  <text x="1050" y="332" font-size="9" fill="#78909c" font-style="italic">generic relation table</text>
+
+  <!-- ═══ RELATIONSHIP LINES ═══ -->
+
+  <!-- prompt → prompt_version (1:N) -->
+  <line x1="114" y1="204" x2="114" y2="234" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="118" y="222" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- dataset → dataset_version (1:N) -->
+  <line x1="114" y1="500" x2="114" y2="540" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="118" y="522" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- dataset → dataset_item (1:N) -->
+  <line x1="80" y1="500" x2="60" y2="700" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="40" y="610" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- evaluator → evaluator_version (1:N) -->
+  <line x1="312" y1="196" x2="312" y2="234" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="316" y="218" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- dataset → experiment (business, dashed) -->
+  <line x1="198" y1="450" x2="228" y2="478" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- experiment → experiment_result (1:N) -->
+  <line x1="312" y1="596" x2="312" y2="640" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="316" y="622" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- evaluator_version → experiment_result -->
+  <line x1="396" y1="372" x2="420" y2="700" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+  <text x="406" y="540" font-size="9" fill="#546e7a">ref</text>
+
+  <!-- account → workspace (1:N) -->
+  <line x1="752" y1="214" x2="752" y2="252" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="756" y="236" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- account → api_key (1:N) -->
+  <line x1="720" y1="214" x2="700" y2="396" stroke="#78909c" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+  <text x="700" y="310" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- workspace → application -->
+  <line x1="836" y1="300" x2="860" y2="160" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- workspace → knowledge_base -->
+  <line x1="836" y1="316" x2="860" y2="440" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- workspace → plugin -->
+  <line x1="668" y1="316" x2="700" y2="524" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- application → application_version (1:N) -->
+  <line x1="944" y1="204" x2="944" y2="242" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="948" y="226" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- knowledge_base → document (1:N) -->
+  <line x1="944" y1="508" x2="944" y2="550" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="948" y="532" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- plugin → tool (1:N) -->
+  <line x1="752" y1="624" x2="752" y2="662" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="756" y="646" font-size="9" fill="#546e7a">1:N</text>
+
+  <!-- workspace → mcp_server -->
+  <line x1="836" y1="292" x2="1042" y2="430" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- workspace → agent_schema -->
+  <line x1="836" y1="310" x2="1042" y2="590" stroke="#78909c" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+
+  <!-- application → reference (cross) -->
+  <line x1="1028" y1="150" x2="1042" y2="280" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk-red)"/>
+  <text x="1032" y="220" font-size="9" fill="#e53935">refer</text>
+
+  <!-- ═══ LEGEND ═══ -->
+  <rect x="20" y="800" width="500" height="44" rx="7" fill="white" stroke="#cfd8dc" stroke-width="1"/>
+  <line x1="38" y1="818" x2="72" y2="818" stroke="#78909c" stroke-width="1.8" marker-end="url(#fk)"/>
+  <text x="80" y="822" font-size="10" fill="#333">强外键（SQL FOREIGN KEY）</text>
+  <line x1="200" y1="818" x2="234" y2="818" stroke="#78909c" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#fk)"/>
+  <text x="242" y="822" font-size="10" fill="#333">业务关联（代码维护）</text>
+  <line x1="380" y1="818" x2="414" y2="818" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#fk-red)"/>
+  <text x="422" y="822" font-size="10" fill="#e53935">跨库引用</text>
+  <text x="38" y="836" font-size="10" fill="#546e7a">🔑 主键   🔐 业务唯一键   🔗 外键/关联键   🟠 橙色字体 = 枚举字段</text>
+</svg>

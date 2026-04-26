@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="820" viewBox="0 0 1080 820"
+     font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arr-dark" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#37474f"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#1565c0"/>
+    </marker>
+    <marker id="arr-teal" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#00695c"/>
+    </marker>
+    <marker id="arr-cross" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#ff8f00"/>
+    </marker>
+    <filter id="sh" x="-8%" y="-8%" width="124%" height="134%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1080" height="820" rx="14" fill="#f7f8fa"/>
+
+  <!-- ── title ── -->
+  <text x="540" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#1a237e">接手陌生项目：人与 Claude Code 的协作工作流</text>
+  <text x="540" y="62" text-anchor="middle" font-size="12" fill="#90a4ae">AI 没有推翻这条链路，只是改变了每一步的分工</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SWIM LANE HEADERS  (y 76)
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Lane 1: 人的工作流 -->
+  <rect x="20" y="76" width="320" height="36" rx="8" fill="#3949ab" filter="url(#sh)"/>
+  <text x="180" y="99" text-anchor="middle" font-size="13" font-weight="700" fill="white">人的工作流</text>
+
+  <!-- Lane 2: 每步分工 (center) -->
+  <rect x="360" y="76" width="360" height="36" rx="8" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="white">步骤</text>
+  <text x="540" y="108" text-anchor="middle" font-size="10" fill="#b0bec5">你交给 AI 的 / AI 留给你的</text>
+
+  <!-- Lane 3: Claude Code 工作流 -->
+  <rect x="740" y="76" width="320" height="36" rx="8" fill="#00695c" filter="url(#sh)"/>
+  <text x="900" y="99" text-anchor="middle" font-size="13" font-weight="700" fill="white">Claude Code 工作流</text>
+
+  <!-- lane background strips -->
+  <rect x="20"  y="120" width="320" height="654" rx="8" fill="#e8eaf6" opacity="0.55"/>
+  <rect x="740" y="120" width="320" height="654" rx="8" fill="#e0f2f1" opacity="0.55"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STEP ROWS  — pitch 93px,  first row y=128
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- helper y values: 128, 221, 314, 407, 500, 593, 686 -->
+
+  <!-- ── ROW 1: 看 README ── -->
+  <!-- step pill -->
+  <rect x="376" y="130" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="151" text-anchor="middle" font-size="13" font-weight="700" fill="white">① 看 README</text>
+  <text x="540" y="168" text-anchor="middle" font-size="10" fill="#90a4ae">建立第一印象，决定深入方向</text>
+
+  <!-- human cell -->
+  <rect x="30" y="128" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">判断项目性质与目标</text>
+  <text x="180" y="167" text-anchor="middle" font-size="10" fill="#546e7a">读完提出 3 个核心问题</text>
+
+  <!-- claude cell -->
+  <rect x="750" y="128" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">读 README + 目录结构</text>
+  <text x="900" y="167" text-anchor="middle" font-size="10" fill="#546e7a">输出架构图 + 模块职责表</text>
+
+  <!-- cross arrows -->
+  <line x1="330" y1="156" x2="376" y2="156" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="156" x2="750" y2="156" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 2: 读代码 ── -->
+  <rect x="376" y="223" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="white">② 读代码</text>
+  <text x="540" y="261" text-anchor="middle" font-size="10" fill="#90a4ae">带着问题读，不求全</text>
+
+  <rect x="30" y="221" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="243" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">认核心路径 + 数据模型</text>
+  <text x="180" y="260" text-anchor="middle" font-size="10" fill="#546e7a">盯核心业务，不要全量扫</text>
+
+  <rect x="750" y="221" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="243" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">画模块依赖图 + 梳理外部依赖</text>
+  <text x="900" y="260" text-anchor="middle" font-size="10" fill="#546e7a">定位关键文件，解释陌生代码</text>
+
+  <line x1="330" y1="249" x2="376" y2="249" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="249" x2="750" y2="249" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 3: 搭环境 ── -->
+  <rect x="376" y="316" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="white">③ 搭环境</text>
+  <text x="540" y="354" text-anchor="middle" font-size="10" fill="#90a4ae">处理权限、密钥、平台差异</text>
+
+  <rect x="30" y="314" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="336" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">决策：Docker 还是本地？</text>
+  <text x="180" y="353" text-anchor="middle" font-size="10" fill="#546e7a">处理密钥、账号、平台差异</text>
+
+  <rect x="750" y="314" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="336" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">读启动脚本 + docker-compose</text>
+  <text x="900" y="353" text-anchor="middle" font-size="10" fill="#546e7a">解释报错，生成缺失配置文件</text>
+
+  <line x1="330" y1="342" x2="376" y2="342" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="342" x2="750" y2="342" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 4: 跑起来 ── -->
+  <rect x="376" y="409" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="white">④ 跑起来</text>
+  <text x="540" y="447" text-anchor="middle" font-size="10" fill="#90a4ae">感受启动节奏，判断是否正常</text>
+
+  <rect x="30" y="407" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="429" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">眼睛盯日志</text>
+  <text x="180" y="446" text-anchor="middle" font-size="10" fill="#546e7a">判断「正常慢」还是「卡死了」</text>
+
+  <rect x="750" y="407" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="429" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">分析启动日志 + 定位异常堆栈</text>
+  <text x="900" y="446" text-anchor="middle" font-size="10" fill="#546e7a">给修复建议，执行由你决定</text>
+
+  <line x1="330" y1="435" x2="376" y2="435" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="435" x2="750" y2="435" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 5: 摸接口 ── -->
+  <rect x="376" y="502" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="523" text-anchor="middle" font-size="13" font-weight="700" fill="white">⑤ 摸接口</text>
+  <text x="540" y="540" text-anchor="middle" font-size="10" fill="#90a4ae">发真实请求，感受系统行为</text>
+
+  <rect x="30" y="500" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="522" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">发请求 + 判断结果对不对</text>
+  <text x="180" y="539" text-anchor="middle" font-size="10" fill="#546e7a">你来感知，AI 无法替代</text>
+
+  <rect x="750" y="500" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="522" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">扫 Controller，生成 curl 样例</text>
+  <text x="900" y="539" text-anchor="middle" font-size="10" fill="#546e7a">梳理接口清单，标注必填字段</text>
+
+  <line x1="330" y1="528" x2="376" y2="528" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="528" x2="750" y2="528" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 6: 改造 ── -->
+  <rect x="376" y="595" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="616" text-anchor="middle" font-size="13" font-weight="700" fill="white">⑥ 带着需求改造</text>
+  <text x="540" y="633" text-anchor="middle" font-size="10" fill="#90a4ae">描述需求 → 拆任务 → Code Review</text>
+
+  <rect x="30" y="593" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="615" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">拆任务 + 把关改动范围和风险</text>
+  <text x="180" y="632" text-anchor="middle" font-size="10" fill="#546e7a">做 Code Review，验证意图</text>
+
+  <rect x="750" y="593" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="615" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">定位影响点 + 写代码 + 跑测试</text>
+  <text x="900" y="632" text-anchor="middle" font-size="10" fill="#546e7a">产出可 diff 的具体改动</text>
+
+  <line x1="330" y1="621" x2="376" y2="621" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="621" x2="750" y2="621" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ── ROW 7: 验收 ── -->
+  <rect x="376" y="688" width="328" height="52" rx="10" fill="#263238" filter="url(#sh)"/>
+  <text x="540" y="709" text-anchor="middle" font-size="13" font-weight="700" fill="white">⑦ 验收</text>
+  <text x="540" y="726" text-anchor="middle" font-size="10" fill="#90a4ae">最终拍板永远是你</text>
+
+  <rect x="30" y="686" width="300" height="56" rx="8" fill="white" stroke="#9fa8da" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="180" y="708" text-anchor="middle" font-size="11" font-weight="700" fill="#283593">端到端走一遍，对齐预期</text>
+  <text x="180" y="725" text-anchor="middle" font-size="10" fill="#546e7a">你来 sign-off</text>
+
+  <rect x="750" y="686" width="300" height="56" rx="8" fill="white" stroke="#80cbc4" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="900" y="708" text-anchor="middle" font-size="11" font-weight="700" fill="#004d40">生成测试用例 + checklist</text>
+  <text x="900" y="725" text-anchor="middle" font-size="10" fill="#546e7a">标注边界 case 和回归点</text>
+
+  <line x1="330" y1="714" x2="376" y2="714" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <line x1="704" y1="714" x2="750" y2="714" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+
+  <!-- ═══ DOWN ARROWS: human lane ═══ -->
+  <line x1="180" y1="184" x2="180" y2="221" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="180" y1="277" x2="180" y2="314" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="180" y1="370" x2="180" y2="407" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="180" y1="463" x2="180" y2="500" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="180" y1="556" x2="180" y2="593" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="180" y1="649" x2="180" y2="686" stroke="#3949ab" stroke-width="2" marker-end="url(#arr-blue)"/>
+
+  <!-- ═══ DOWN ARROWS: claude lane ═══ -->
+  <line x1="900" y1="184" x2="900" y2="221" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+  <line x1="900" y1="277" x2="900" y2="314" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+  <line x1="900" y1="370" x2="900" y2="407" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+  <line x1="900" y1="463" x2="900" y2="500" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+  <line x1="900" y1="556" x2="900" y2="593" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+  <line x1="900" y1="649" x2="900" y2="686" stroke="#00695c" stroke-width="2" marker-end="url(#arr-teal)"/>
+
+  <!-- ═══ DOWN ARROWS: step center ═══ -->
+  <line x1="540" y1="182" x2="540" y2="223" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+  <line x1="540" y1="275" x2="540" y2="316" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+  <line x1="540" y1="368" x2="540" y2="409" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+  <line x1="540" y1="461" x2="540" y2="502" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+  <line x1="540" y1="554" x2="540" y2="595" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+  <line x1="540" y1="647" x2="540" y2="688" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr-dark)"/>
+
+  <!-- ═══ LEGEND ═══ -->
+  <rect x="20" y="756" width="1040" height="48" rx="8" fill="white" stroke="#eceff1" stroke-width="1"/>
+  <rect x="40" y="770" width="12" height="12" rx="2" fill="#3949ab"/>
+  <text x="60" y="781" font-size="11" fill="#283593">人的工作流</text>
+  <rect x="170" y="770" width="12" height="12" rx="2" fill="#00695c"/>
+  <text x="190" y="781" font-size="11" fill="#004d40">Claude Code 工作流</text>
+  <line x1="330" y1="776" x2="360" y2="776" stroke="#ff8f00" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr-cross)"/>
+  <text x="370" y="781" font-size="11" fill="#e65100">协作交接点（你告诉 AI 做什么 / AI 把产出交回给你确认）</text>
+  <text x="700" y="781" font-size="11" fill="#90a4ae">|</text>
+  <text x="720" y="781" font-size="11" font-weight="700" fill="#37474f">核心原则：AI 的产出是输入，不是结论。每步你亲眼确认再往下走。</text>
+</svg>

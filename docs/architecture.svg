@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="860" viewBox="0 0 1060 860"
+     font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#607d8b"/>
+    </marker>
+    <marker id="arr-ext" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#9e9e9e"/>
+    </marker>
+    <filter id="sh" x="-8%" y="-8%" width="122%" height="122%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+    <!-- stripe pattern for external AI band -->
+    <pattern id="stripe" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#e0e0e0" stroke-width="4"/>
+    </pattern>
+  </defs>
+
+  <!-- ═══════════ PAGE BACKGROUND ═══════════ -->
+  <rect width="1060" height="860" rx="14" fill="#f0f2f5"/>
+
+  <!-- ═══════════ TITLE ═══════════ -->
+  <text x="530" y="44" text-anchor="middle" font-size="21" font-weight="700" fill="#1a237e">Spring AI Alibaba Admin — System Architecture</text>
+  <text x="530" y="64" text-anchor="middle" font-size="12" fill="#78909c">Agent Studio · AI Agent lifecycle management platform</text>
+
+  <!-- ════════════════════════════════════════════════════
+       LAYER 1 — FRONTEND  (y 84 – 190)
+  ════════════════════════════════════════════════════ -->
+  <rect x="30" y="80" width="700" height="118" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="50" y="100" font-size="11" font-weight="700" fill="#1565c0" letter-spacing="1">FRONTEND  (React 18 + Ant Design 5 · agentscope-frontend)</text>
+
+  <!-- front boxes -->
+  <rect x="50" y="108" width="148" height="74" rx="8" fill="white" stroke="#90caf9" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="124" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#0d47a1">Prompt Studio</text>
+  <text x="124" y="145" text-anchor="middle" font-size="10" fill="#546e7a">Template · version ·</text>
+  <text x="124" y="158" text-anchor="middle" font-size="10" fill="#546e7a">debug · session chat</text>
+  <text x="124" y="173" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">@spark-ai/chat</text>
+
+  <rect x="214" y="108" width="148" height="74" rx="8" fill="white" stroke="#90caf9" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="288" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#0d47a1">Dataset &amp; Evaluator</text>
+  <text x="288" y="145" text-anchor="middle" font-size="10" fill="#546e7a">Import / version /</text>
+  <text x="288" y="158" text-anchor="middle" font-size="10" fill="#546e7a">evaluator templates</text>
+  <text x="288" y="173" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">@spark-ai/design</text>
+
+  <rect x="378" y="108" width="148" height="74" rx="8" fill="white" stroke="#90caf9" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="452" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#0d47a1">Experiment</text>
+  <text x="452" y="145" text-anchor="middle" font-size="10" fill="#546e7a">Run · compare ·</text>
+  <text x="452" y="158" text-anchor="middle" font-size="10" fill="#546e7a">result analysis</text>
+  <text x="452" y="173" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">axios / dnd-kit</text>
+
+  <rect x="542" y="108" width="148" height="74" rx="8" fill="white" stroke="#90caf9" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="616" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#0d47a1">Observability UI</text>
+  <text x="616" y="145" text-anchor="middle" font-size="10" fill="#546e7a">Trace / Span view ·</text>
+  <text x="616" y="158" text-anchor="middle" font-size="10" fill="#546e7a">service overview</text>
+  <text x="616" y="173" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">spark-flow / i18n</text>
+
+  <!-- ════════════════════════════════════════════════════
+       LAYER 2 — BACKEND  (y 226 – 500)
+  ════════════════════════════════════════════════════ -->
+  <rect x="30" y="222" width="700" height="288" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="50" y="242" font-size="11" font-weight="700" fill="#2e7d32" letter-spacing="1">BACKEND  (Java 17 · Spring Boot 3.3 · port 8080)</text>
+
+  <!-- server-openapi -->
+  <rect x="50" y="252" width="310" height="82" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="205" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">server-openapi</text>
+  <text x="205" y="289" text-anchor="middle" font-size="10" fill="#546e7a">REST controllers: Prompt · Dataset · Evaluator ·</text>
+  <text x="205" y="303" text-anchor="middle" font-size="10" fill="#546e7a">Experiment · ModelConfig · Observability</text>
+  <text x="205" y="318" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">Auth interceptor · request/response DTOs</text>
+
+  <!-- server-start -->
+  <rect x="376" y="252" width="310" height="82" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="531" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">server-start</text>
+  <text x="531" y="289" text-anchor="middle" font-size="10" fill="#546e7a">Spring Boot entry · OTel auto-config ·</text>
+  <text x="531" y="303" text-anchor="middle" font-size="10" fill="#546e7a">Nacos config · model switching (OpenAI /</text>
+  <text x="531" y="318" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">DashScope / DeepSeek / Ollama)</text>
+
+  <!-- server-core -->
+  <rect x="50" y="350" width="636" height="82" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="368" y="370" text-anchor="middle" font-size="12" font-weight="700" fill="#1b5e20">server-core</text>
+  <text x="368" y="387" text-anchor="middle" font-size="10" fill="#546e7a">Business logic: PromptService · DatasetService · EvaluatorService · ExperimentService · TracingService</text>
+  <text x="368" y="402" text-anchor="middle" font-size="10" fill="#546e7a">RAG pipeline (PDF / Tika / Markdown readers · Elasticsearch vector store) · JWT auth · Argon2 password</text>
+  <text x="368" y="417" text-anchor="middle" font-size="10" fill="#78909c" font-style="italic">MyBatis-Plus · Druid · jgrapht · GraalVM (JS/Python) · MCP SDK · RocketMQ producer</text>
+
+  <!-- server-runtime -->
+  <rect x="50" y="448" width="636" height="52" rx="8" fill="#f9fbe7" stroke="#c5e1a5" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="368" y="468" text-anchor="middle" font-size="12" font-weight="700" fill="#33691e">server-runtime</text>
+  <text x="368" y="484" text-anchor="middle" font-size="10" fill="#546e7a">Domain model · shared DTOs · runtime base classes  (no Spring dependency)</text>
+
+  <!-- ════════════════════════════════════════════════════
+       LAYER 3 — MIDDLEWARE  (y 534 – 680)
+  ════════════════════════════════════════════════════ -->
+  <rect x="30" y="530" width="700" height="150" rx="10" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="50" y="550" font-size="11" font-weight="700" fill="#e65100" letter-spacing="1">MIDDLEWARE  (Docker Compose · all containerised)</text>
+
+  <!-- Nacos -->
+  <rect x="50" y="558" width="120" height="108" rx="8" fill="white" stroke="#ffcc80" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="110" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">Nacos</text>
+  <text x="110" y="595" text-anchor="middle" font-size="10" fill="#546e7a">Config center</text>
+  <text x="110" y="610" text-anchor="middle" font-size="10" fill="#546e7a">Service registry</text>
+  <text x="110" y="625" text-anchor="middle" font-size="10" fill="#546e7a">Prompt sync</text>
+  <text x="110" y="641" text-anchor="middle" font-size="10" fill="#78909c">:8848</text>
+  <text x="110" y="657" text-anchor="middle" font-size="9" fill="#bdbdbd">external agents</text>
+
+  <!-- Redis -->
+  <rect x="186" y="558" width="120" height="108" rx="8" fill="white" stroke="#ffcc80" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="246" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">Redis</text>
+  <text x="246" y="595" text-anchor="middle" font-size="10" fill="#546e7a">Session cache</text>
+  <text x="246" y="610" text-anchor="middle" font-size="10" fill="#546e7a">Distributed lock</text>
+  <text x="246" y="625" text-anchor="middle" font-size="10" fill="#546e7a">(Redisson)</text>
+  <text x="246" y="641" text-anchor="middle" font-size="10" fill="#78909c">:6379</text>
+
+  <!-- RocketMQ -->
+  <rect x="322" y="558" width="120" height="108" rx="8" fill="white" stroke="#ffcc80" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="382" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">RocketMQ</text>
+  <text x="382" y="595" text-anchor="middle" font-size="10" fill="#546e7a">Async doc index</text>
+  <text x="382" y="610" text-anchor="middle" font-size="10" fill="#546e7a">RAG pipeline</text>
+  <text x="382" y="625" text-anchor="middle" font-size="10" fill="#546e7a">event bus</text>
+  <text x="382" y="641" text-anchor="middle" font-size="10" fill="#78909c">:18080</text>
+
+  <!-- Elasticsearch -->
+  <rect x="458" y="558" width="120" height="108" rx="8" fill="white" stroke="#ffcc80" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="518" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">Elasticsearch</text>
+  <text x="518" y="595" text-anchor="middle" font-size="10" fill="#546e7a">Vector store</text>
+  <text x="518" y="610" text-anchor="middle" font-size="10" fill="#546e7a">Full-text search</text>
+  <text x="518" y="625" text-anchor="middle" font-size="10" fill="#546e7a">Trace index</text>
+  <text x="518" y="641" text-anchor="middle" font-size="10" fill="#78909c">:9200</text>
+
+  <!-- Loong Collector -->
+  <rect x="594" y="558" width="120" height="108" rx="8" fill="white" stroke="#ffcc80" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="654" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#e65100">LoongCollector</text>
+  <text x="654" y="595" text-anchor="middle" font-size="10" fill="#546e7a">OTel collector</text>
+  <text x="654" y="610" text-anchor="middle" font-size="10" fill="#546e7a">OTLP endpoint</text>
+  <text x="654" y="625" text-anchor="middle" font-size="10" fill="#546e7a">→ ES pipeline</text>
+  <text x="654" y="641" text-anchor="middle" font-size="10" fill="#78909c">:4318</text>
+
+  <!-- ════════════════════════════════════════════════════
+       LAYER 4 — DATABASE  (y 706 – 800)
+  ════════════════════════════════════════════════════ -->
+  <rect x="30" y="700" width="700" height="108" rx="10" fill="#fce4ec" stroke="#c62828" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="50" y="720" font-size="11" font-weight="700" fill="#b71c1c" letter-spacing="1">DATABASE</text>
+
+  <rect x="50" y="728" width="670" height="68" rx="8" fill="white" stroke="#ef9a9a" stroke-width="1.2" filter="url(#sh)"/>
+  <text x="385" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#b71c1c">MySQL 8  (:3306)</text>
+  <text x="385" y="768" text-anchor="middle" font-size="10" fill="#546e7a">prompt · prompt_version · dataset · dataset_version · dataset_item · evaluator · evaluator_version ·</text>
+  <text x="385" y="783" text-anchor="middle" font-size="10" fill="#546e7a">experiment · experiment_result · model_config · user  (Druid pool · MyBatis-Plus ORM)</text>
+
+  <!-- ════════════════════════════════════════════════════
+       RIGHT PANEL — External AI Providers + Infra
+  ════════════════════════════════════════════════════ -->
+
+  <!-- External AI Providers -->
+  <rect x="756" y="80" width="274" height="210" rx="10" fill="url(#stripe)" stroke="#7e57c2" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="756" y="80" width="274" height="210" rx="10" fill="#ede7f680"/>
+  <text x="893" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#4527a0" letter-spacing="1">EXTERNAL AI PROVIDERS</text>
+
+  <rect x="776" y="108" width="234" height="46" rx="7" fill="white" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="893" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#6a1b9a">OpenAI / DashScope</text>
+  <text x="893" y="145" text-anchor="middle" font-size="10" fill="#546e7a">Chat · embedding · image models</text>
+
+  <rect x="776" y="162" width="234" height="46" rx="7" fill="white" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="893" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#6a1b9a">DeepSeek / Ollama</text>
+  <text x="893" y="199" text-anchor="middle" font-size="10" fill="#546e7a">Local / cloud reasoning models</text>
+
+  <rect x="776" y="216" width="234" height="46" rx="7" fill="white" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="893" y="236" text-anchor="middle" font-size="12" font-weight="700" fill="#6a1b9a">MCP Tools</text>
+  <text x="893" y="253" text-anchor="middle" font-size="10" fill="#546e7a">Model Context Protocol SDK</text>
+
+  <!-- Infra / Ops box -->
+  <rect x="756" y="310" width="274" height="190" rx="10" fill="#eceff1" stroke="#607d8b" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="893" y="330" text-anchor="middle" font-size="11" font-weight="700" fill="#37474f" letter-spacing="1">INFRA &amp; OPS</text>
+
+  <rect x="776" y="338" width="234" height="40" rx="7" fill="white" stroke="#b0bec5" stroke-width="1"/>
+  <text x="893" y="353" text-anchor="middle" font-size="11" font-weight="700" fill="#37474f">Observability</text>
+  <text x="893" y="368" text-anchor="middle" font-size="10" fill="#546e7a">OTel + Micrometer + ARMS · Kibana</text>
+
+  <rect x="776" y="386" width="234" height="40" rx="7" fill="white" stroke="#b0bec5" stroke-width="1"/>
+  <text x="893" y="401" text-anchor="middle" font-size="11" font-weight="700" fill="#37474f">Config Management</text>
+  <text x="893" y="416" text-anchor="middle" font-size="10" fill="#546e7a">Nacos · Spring Config · YAML</text>
+
+  <rect x="776" y="434" width="234" height="40" rx="7" fill="white" stroke="#b0bec5" stroke-width="1"/>
+  <text x="893" y="449" text-anchor="middle" font-size="11" font-weight="700" fill="#37474f">Deployment</text>
+  <text x="893" y="464" text-anchor="middle" font-size="10" fill="#546e7a">Docker Compose · Kubernetes (k8s)</text>
+
+  <rect x="776" y="482" width="234" height="12" rx="4" fill="none"/>
+
+  <!-- External Agents panel -->
+  <rect x="756" y="520" width="274" height="80" rx="10" fill="#e0f7fa" stroke="#00838f" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="893" y="540" text-anchor="middle" font-size="11" font-weight="700" fill="#006064" letter-spacing="1">EXTERNAL AGENTS</text>
+  <rect x="776" y="548" width="234" height="40" rx="7" fill="white" stroke="#80deea" stroke-width="1"/>
+  <text x="893" y="563" text-anchor="middle" font-size="11" font-weight="700" fill="#00695c">Spring AI Alibaba Agents</text>
+  <text x="893" y="578" text-anchor="middle" font-size="10" fill="#546e7a">push traces via OTLP · pull prompts via Nacos</text>
+
+  <!-- ════════════════════════════════════════════════════
+       ARROWS
+  ════════════════════════════════════════════════════ -->
+
+  <!-- Frontend → Backend (HTTP REST / SSE) -->
+  <line x1="380" y1="198" x2="380" y2="222" stroke="#607d8b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="388" y="214" font-size="10" fill="#607d8b">HTTP / SSE</text>
+
+  <!-- openapi → core -->
+  <line x1="205" y1="334" x2="205" y2="350" stroke="#607d8b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- start → core -->
+  <line x1="531" y1="334" x2="531" y2="350" stroke="#607d8b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- core → runtime -->
+  <line x1="368" y1="432" x2="368" y2="448" stroke="#607d8b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Backend → Middleware -->
+  <line x1="368" y1="510" x2="368" y2="530" stroke="#607d8b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Middleware → Database -->
+  <line x1="368" y1="680" x2="368" y2="700" stroke="#607d8b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Backend → External AI (right) -->
+  <line x1="730" y1="310" x2="756" y2="230" stroke="#9e9e9e" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-ext)"/>
+  <text x="738" y="300" font-size="10" fill="#9e9e9e">Spring AI</text>
+
+  <!-- Backend → Infra box -->
+  <line x1="730" y1="400" x2="756" y2="400" stroke="#9e9e9e" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr-ext)"/>
+
+  <!-- External agents → Nacos (left arrow into middleware) -->
+  <line x1="756" y1="560" x2="730" y2="580" stroke="#00838f" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+  <!-- External agents → LoongCollector -->
+  <line x1="756" y1="550" x2="714" y2="590" stroke="#00838f" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+  <!-- ════════════════════════════════════════════════════
+       LAYER LABELS (left side)
+  ════════════════════════════════════════════════════ -->
+  <text x="18" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#1565c0" transform="rotate(-90,18,150)">FRONTEND</text>
+  <text x="18" y="370" text-anchor="middle" font-size="10" font-weight="700" fill="#2e7d32" transform="rotate(-90,18,370)">BACKEND</text>
+  <text x="18" y="610" text-anchor="middle" font-size="10" font-weight="700" fill="#ef6c00" transform="rotate(-90,18,610)">MIDDLEWARE</text>
+  <text x="18" y="754" text-anchor="middle" font-size="10" font-weight="700" fill="#c62828" transform="rotate(-90,18,754)">DATABASE</text>
+</svg>

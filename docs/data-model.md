@@ -540,6 +540,57 @@ Agent 定义配置，支持多种 Agent 类型组合。
 
 ---
 
+## 非 MySQL 实体（运行时 / 外部存储）
+
+以下实体在接口响应中出现，但不对应任何 MySQL 表。
+
+---
+
+### ChatSession（Redis）
+
+Prompt 调试时的对话会话，由 `ChatSessionService` 管理，存储在 **Redis**（Redisson）。
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| sessionId | String | 会话唯一 ID（UUID） |
+| messages | List | 历史消息列表（Spring AI `Message` 对象） |
+| createTime | Long | 创建时间戳 |
+
+> 生命周期由 Redis TTL 控制，进程重启后不保留。
+
+---
+
+### DocumentChunk（Elasticsearch）
+
+文档分块向量，由 `DocumentService` 通过 RocketMQ 异步管道写入 **Elasticsearch**（Spring AI `elasticsearch-store`）。
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| chunkId | String | 分块唯一 ID |
+| docId 🔗 | String | 归属文档 `document.doc_id` |
+| kbId 🔗 | String | 归属知识库 `knowledge_base.kb_id` |
+| content | String | 分块文本内容 |
+| embedding | float[] | 向量表示（由 embedding 模型生成） |
+| metadata | Map | 附加元数据（来源、页码等） |
+
+> `DocumentChunkConverter` 负责 Spring AI `Document` ↔ `DocumentChunk` 的双向转换。MySQL 中只存储 `document` 元数据，分块内容全量在 ES。
+
+---
+
+### GlobalConfig（运行时 DTO）
+
+`SystemController` 的静态内部类，每次 `GET /console/v1/system/global-config` 请求时动态构造，**不持久化**。
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| appName | String | 应用名称 |
+| version | String | 系统版本号 |
+| features | Map | 功能开关配置项 |
+
+> 数据来源：`application.yml` 中的静态配置，无数据库写入。
+
+---
+
 ## 枚举值汇总
 
 | 模型 | 字段 | 枚举值 |

@@ -71,7 +71,7 @@
 | GET | `/console/v1/accounts/profile` | 获取当前登录用户信息 |
 
 **POST `/console/v1/accounts`**
-- 入参：`Account { username, email, role, ... }`
+- 入参：`Account { username, email, type, ... }` — `type` 枚举：`basic`（普通用户）、`admin`（管理员）；注意无 `role` 字段
 - 返回：`Result<String>` — 新建账号 ID
 
 **GET `/console/v1/accounts`**
@@ -130,7 +130,7 @@
 
 **GET `/api/prompt/session`**
 - 入参：`?sessionId=xxx`
-- 返回：`Result<ChatSession>`
+- 返回：`Result<ChatSession>` — `ChatSession` 是运行时 DTO，存储在 Redis（Redisson），无对应 MySQL 表
 
 ---
 
@@ -231,7 +231,7 @@
 
 **GET `/api/experiment/results`**
 - 入参：`?experimentId=123`
-- 返回：`Result<List<ExperimentEvaluatorResult>>` — 每个评估器的汇总分
+- 返回：`Result<List<ExperimentEvaluatorResult>>` — 每个评估器的汇总分；`ExperimentEvaluatorResult` 是聚合计算结果，非独立表，数据来源于 `experiment_result` 按 evaluator 分组统计
 
 **GET `/api/experiment/result`**
 - 入参：`ExperimentEvaluatorResultDetailListRequest { experimentId, evaluatorId, page, size }`
@@ -370,7 +370,7 @@
 
 **POST `/console/v1/knowledge-bases/retrieve`**
 - 入参：`DocumentRetrieverQuery { kbCode, query, topK, minScore }`
-- 返回：`Result<List<DocumentChunk>>`
+- 返回：`Result<List<DocumentChunk>>` — `DocumentChunk` 存储在 Elasticsearch（Spring AI vector store），无对应 MySQL 表
 
 ### 文档
 
@@ -559,7 +559,7 @@
 | DELETE | `/console/v1/api-keys/{id}` | 删除 |
 
 **POST `/console/v1/api-keys`**
-- 入参：`ApiKey { name, expireAt, ... }`
+- 入参：`ApiKey { name, description, ... }` — 数据库表及实体均无 `expireAt` 字段，Key 不设过期时间
 - 返回：`Result<String>` — 生成的 key 值（仅此次可见）
 
 ---
@@ -653,7 +653,7 @@
 
 **GET `/console/v1/system/global-config`**
 - 入参：无
-- 返回：`Result<GlobalConfig>` — 前端所需全局配置项
+- 返回：`Result<GlobalConfig>` — `GlobalConfig` 是运行时静态内部类，每次请求动态构造，不持久化到数据库
 
 **GET `/console/v1/system/health`**
 - 入参：无

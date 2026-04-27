@@ -1,0 +1,341 @@
+# docker-compose.dev.yml
+#
+# 本地开发用一站式中间件环境。替代 scripts/install-deps.sh（Step 2A/2B）。
+# 版本与端口与生产 docker/middleware/docker-compose.yaml 保持一致。
+#
+# 启动：docker compose -f docker-compose.dev.yml up -d
+# 停止：docker compose -f docker-compose.dev.yml down
+# 清数据：docker compose -f docker-compose.dev.yml down -v
+#
+# 宿主机连接信息（应用 application.yml 默认值对应此处）：
+#   MySQL        localhost:3306   user=admin  password=admin
+#   Redis        localhost:6379   no auth
+#   Elasticsearch localhost:9200  no auth
+#   RocketMQ     localhost:18080  (Proxy gRPC)
+#   Nacos        localhost:8848   user=nacos  password=nacos
+#   LoongCollector localhost:4318 (OTLP HTTP, optional)
+#   Kibana       localhost:5601   (optional)
+
+name: saa-dev
+
+# ── 可复用片段 ─────────────────────────────────────────────────────────────────
+x-restart: &restart
+  restart: unless-stopped
+
+x-rocketmq-common: &rocketmq-common
+  image: apache/rocketmq:5.3.2
+  restart: unless-stopped
+  environment:
+    NAMESRV_ADDR: rmq_namesrv:9876
+  networks:
+    - rocketmq
+
+# ──────────────────────────────────────────────────────────────────────────────
+services:
+
+  # ── MySQL 8.0.35 ─────────────────────────────────────────────────────────────
+  # 创建两个数据库（admin / agentscope）并导入建表 SQL。
+  # docker-entrypoint-initdb.d 仅在数据卷首次初始化时执行。
+  mysql:
+    <<: *restart
+    image: sca-registry.cn-hangzhou.cr.aliyuncs.com/dubbo/mysql:8.0.35
+    container_name: saa-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: admin          # 由 entrypoint 自动创建
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      TZ: Asia/Shanghai
+      LANG: C.UTF-8
+    ports:
+      - "3306:3306"
+    volumes:
+      # 持久化数据
+      - mysql_data:/var/lib/mysql
+      # MySQL 配置（字符集、慢查询日志等）
+      - ./docker/middleware/conf/mysql/my.cnf:/etc/mysql/conf.d/custom.cnf:ro
+      # 初始化脚本目录（首次启动时顺序执行）
+      - ./docker/middleware/init/mysql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "admin", "-padmin"]
+      interval: 5s
+      timeout: 10s
+      retries: 12
+      start_period: 30s
+    networks:
+      - backend
+
+  # agentscope 数据库不由 MYSQL_DATABASE 自动创建，用 init 容器补建
+  mysql-init-agentscope:
+    image: sca-registry.cn-hangzhou.cr.aliyuncs.com/dubbo/mysql:8.0.35
+    container_name: saa-mysql-init-agentscope
+    restart: "no"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      MYSQL_PWD: root
+    command: >
+      mysql -h mysql -u root -e
+      "CREATE DATABASE IF NOT EXISTS agentscope DEFAULT CHARACTER SET utf8mb4;
+       GRANT ALL PRIVILEGES ON agentscope.* TO 'admin'@'%';
+       FLUSH PRIVILEGES;"
+    networks:
+      - backend
+
+  # ── Redis 7.2.5 ──────────────────────────────────────────────────────────────
+  redis:
+    <<: *restart
+    image: redis:7.2.5
+    container_name: saa-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - backend
+
+  # ── Elasticsearch 9.1.2 ───────────────────────────────────────────────────────
+  elasticsearch:
+    <<: *restart
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.2
+    container_name: saa-elasticsearch
+    environment:
+      discovery.type: single-node
+      cluster.name: saa-es-cluster
+      node.name: saa-es-node-1
+      xpack.security.enabled: "false"
+      xpack.security.enrollment.enabled: "false"
+      xpack.ml.enabled: "false"          # macOS arm64 兼容
+      bootstrap.memory_lock: "true"
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"  # 开发环境降低堆大小
+      http.cors.enabled: "true"
+      http.cors.allow-origin: "*"
+      action.destructive_requires_name: "false"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:9200/_cluster/health | grep -E '\"status\":\"(green|yellow)\"'"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    networks:
+      - backend
+      - o11y
+
+  # 创建 ES Pipeline 和 Index（一次性，依赖 ES 健康后执行）
+  # 直接复用已有的 init-indices.sh，ES host 为容器内网名 elasticsearch
+  elasticsearch-init:
+    image: curlimages/curl:8.7.1
+    container_name: saa-elasticsearch-init
+    restart: "no"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    volumes:
+      - ./docker/middleware/init/elasticsearch:/scripts:ro
+    working_dir: /scripts
+    command: ["sh", "init-indices.sh"]
+    networks:
+      - o11y
+
+  # ── RocketMQ 5.3.2 ───────────────────────────────────────────────────────────
+  rmq_namesrv:
+    <<: *rocketmq-common
+    container_name: saa-rmq-namesrv
+    ports:
+      - "9876:9876"
+    command: sh mqnamesrv
+    environment:
+      NAMESRV_ADDR: rmq_namesrv:9876
+      HEAP_OPTS: "-Xms128m -Xmx256m -Xmn128m"
+    healthcheck:
+      test: ["CMD-SHELL", "ps aux | grep mqnamesrv | grep -v grep || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  rmq_broker:
+    <<: *rocketmq-common
+    container_name: saa-rmq-broker
+    depends_on:
+      rmq_namesrv:
+        condition: service_healthy
+    ports:
+      - "10909:10909"
+      - "10911:10911"
+      - "10912:10912"
+    volumes:
+      - rocketmq_store:/home/rocketmq/store
+    command: sh mqbroker
+    environment:
+      NAMESRV_ADDR: rmq_namesrv:9876
+      HEAP_OPTS: "-Xms256m -Xmx512m -Xmn256m -XX:MaxDirectMemorySize=128m"
+    healthcheck:
+      test: ["CMD-SHELL", "ps aux | grep mqbroker | grep -v grep || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  rmq_proxy:
+    <<: *rocketmq-common
+    container_name: saa-rmq-proxy
+    depends_on:
+      rmq_broker:
+        condition: service_healthy
+      rmq_namesrv:
+        condition: service_healthy
+    ports:
+      - "18080:18080"
+      - "18081:18081"
+    volumes:
+      - ./docker/middleware/conf/rocketmq:/home/rocketmq/conf:ro
+    command: sh mqproxy -pc /home/rocketmq/conf/rmq-proxy.json
+    environment:
+      NAMESRV_ADDR: rmq_namesrv:9876
+      HEAP_OPTS: "-Xms128m -Xmx256m -Xmn128m"
+
+  # 创建 Topic + ConsumerGroup（一次性，等 Broker 完全就绪）
+  rmq-init-topic:
+    <<: *rocketmq-common
+    container_name: saa-rmq-init-topic
+    restart: "no"
+    depends_on:
+      rmq_namesrv:
+        condition: service_healthy
+      rmq_broker:
+        condition: service_healthy
+    entrypoint:
+      - sh
+      - -c
+      - |
+        echo "Waiting for RocketMQ Broker to fully start..."
+        sleep 30
+        until sh mqadmin clusterList -n rmq_namesrv:9876 2>/dev/null | grep -q DefaultCluster; do
+          echo "Broker not ready, retrying in 10s..."
+          sleep 10
+        done
+        echo "Creating topic..."
+        sh mqadmin updateTopic \
+          -n rmq_namesrv:9876 \
+          -t topic_saa_studio_document_index \
+          -c DefaultCluster \
+          -a +message.type=NORMAL
+        echo "Creating consumer group..."
+        sh mqadmin updateSubGroup \
+          -n rmq_namesrv:9876 \
+          -g group_saa_studio_document_index \
+          -c DefaultCluster
+        echo "Done. Verifying..."
+        sh mqadmin topicList -n rmq_namesrv:9876 | grep topic_saa_studio_document_index
+        echo "RocketMQ init completed."
+
+  # ── Nacos 2.x (latest → pinned to 2.4.3 tag) ──────────────────────────────
+  # 宿主机端口偏移设计（与原 docker-compose.yaml 一致）：
+  #   宿主 7848 → 容器 8848 (HTTP API / Console)
+  #   宿主 8848 → 容器 9848 (gRPC，客户端连接)
+  # 应用侧 spring.cloud.nacos.server-addr=localhost:8848 对应容器内 8848（HTTP），
+  # 此处宿主机映射到 7848；如需直连 HTTP，改 NACOS_SERVER_ADDR=localhost:7848。
+  nacos:
+    <<: *restart
+    image: nacos/nacos-server:v2.4.3
+    container_name: saa-nacos
+    environment:
+      MODE: standalone
+      NACOS_AUTH_ENABLE: "true"
+      NACOS_AUTH_TOKEN: dG9rZW5hbHNka2ZqbGFza2RqZmxhc2tkamZsYXNrZGpmb3dpZWpmbztzZGxm
+      NACOS_AUTH_IDENTITY_KEY: admin
+      NACOS_AUTH_IDENTITY_VALUE: admin
+      JVM_XMS: 128m
+      JVM_XMX: 256m
+      JVM_XMN: 64m
+    ports:
+      - "7848:8848"    # HTTP Console / API  →  应用配置用此端口（localhost:7848）
+      - "8848:9848"    # gRPC
+    volumes:
+      - nacos_logs:/home/nacos/logs
+      - nacos_data:/home/nacos/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8848/nacos/v1/console/health/liveness || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    networks:
+      - backend
+
+  # ── LoongCollector 3.1.4（可选，可观测性）────────────────────────────────────
+  # 依赖 ES init 完成后才启动，确保 Pipeline 已就绪。
+  # 不需要可观测性时可注释掉此服务，同时将应用配置：
+  #   management.otlp.tracing.export.enabled=false
+  loongcollector:
+    <<: *restart
+    image: sls-opensource-registry.cn-shanghai.cr.aliyuncs.com/loongcollector-community-edition/loongcollector:3.1.4
+    container_name: saa-loongcollector
+    depends_on:
+      elasticsearch-init:
+        condition: service_completed_successfully
+    ports:
+      - "4318:4318"    # OTLP HTTP（应用 Trace 数据打入此端口）
+    volumes:
+      # pipeline 配置中 ES 地址为容器内网名 elasticsearch，无需修改
+      - ./docker/middleware/conf/loongcollector:/usr/local/loongcollector/conf/continuous_pipeline_config/local:ro
+    networks:
+      - o11y
+
+  # ── Kibana 9.1.2（可选，ES 可视化）──────────────────────────────────────────
+  kibana:
+    <<: *restart
+    image: docker.elastic.co/kibana/kibana:9.1.2
+    container_name: saa-kibana
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+      xpack.security.enabled: "false"
+    ports:
+      - "5601:5601"
+    networks:
+      - o11y
+
+# ── 数据卷 ─────────────────────────────────────────────────────────────────────
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  rocketmq_store:
+    driver: local
+  nacos_logs:
+    driver: local
+  nacos_data:
+    driver: local
+
+# ── 网络 ───────────────────────────────────────────────────────────────────────
+networks:
+  backend:
+    driver: bridge
+  rocketmq:
+    driver: bridge
+  o11y:
+    driver: bridge

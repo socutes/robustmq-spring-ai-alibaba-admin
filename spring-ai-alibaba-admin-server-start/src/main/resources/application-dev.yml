@@ -1,0 +1,7 @@
+# 本地开发覆盖配置（application-dev.yml）
+# LoongCollector 未安装，禁用 OTLP tracing 导出，避免连接 4318 报错
+management:
+  otlp:
+    tracing:
+      export:
+        enabled: false

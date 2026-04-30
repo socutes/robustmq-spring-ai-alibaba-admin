@@ -103,6 +103,14 @@ export async function deletePromptSession(sessionId: string) {
 }
 
 
+// 版本 diff
+export async function getDiffVersion(params: PromptAPI.GetPromptVersionDiffParams) {
+  return request<PromptAPI.GetPromptVersionDiffResult>(`${API_PATH}/prompt/version/diff`, {
+    method: 'GET',
+    params,
+  });
+}
+
 // prompt 模板列表
 export async function getPromptTemplates(params: PromptAPI.GetPromptTemplatesParams) {
   return request<PromptAPI.GetPromptTemplatesResult>(`${API_PATH}/prompt/templates`, {

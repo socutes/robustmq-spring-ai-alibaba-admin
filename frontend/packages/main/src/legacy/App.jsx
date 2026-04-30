@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider, theme } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import ErrorBoundary from './components/ErrorBoundary';
 import Layout from './components/Layout';
@@ -37,7 +37,7 @@ function App() {
   }, [])
 
   return (
-    <ConfigProvider locale={zhCN}>
+    <ConfigProvider locale={zhCN} theme={{ algorithm: theme.darkAlgorithm }}>
       <ErrorBoundary>
         <ModelsContext.Provider value={{
           models,

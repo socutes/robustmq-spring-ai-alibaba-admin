@@ -236,4 +236,35 @@ declare namespace PromptAPI {
       updateTime: string;
     }[]
   }
+
+  interface DiffItem {
+    changed: boolean;
+    valueA: string;
+    valueB: string;
+  }
+
+  interface DiffFields {
+    template: DiffItem;
+    variables: DiffItem;
+    modelConfig: DiffItem;
+  }
+
+  interface VersionMeta {
+    version: string;
+    status: string;
+    createTime: number;
+  }
+
+  interface GetPromptVersionDiffParams {
+    promptKey: string;
+    versionA: string;
+    versionB: string;
+  }
+
+  interface GetPromptVersionDiffResult {
+    promptKey: string;
+    versionA: VersionMeta;
+    versionB: VersionMeta;
+    diffs: DiffFields;
+  }
 }

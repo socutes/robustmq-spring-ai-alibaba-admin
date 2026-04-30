@@ -1,8 +1,11 @@
 package com.alibaba.cloud.ai.studio.admin.service.impl;
 
 import com.alibaba.cloud.ai.studio.admin.common.PageResult;
+import com.alibaba.cloud.ai.studio.admin.dto.DiffItem;
 import com.alibaba.cloud.ai.studio.admin.dto.PromptVersion;
 import com.alibaba.cloud.ai.studio.admin.dto.PromptVersionDetail;
+import com.alibaba.cloud.ai.studio.admin.dto.PromptVersionDiffResult;
+import com.alibaba.cloud.ai.studio.admin.dto.VersionMeta;
 import com.alibaba.cloud.ai.studio.admin.dto.request.PromptVersionCreateRequest;
 import com.alibaba.cloud.ai.studio.admin.dto.request.PromptVersionListRequest;
 import com.alibaba.cloud.ai.studio.admin.entity.PromptVersionDO;
@@ -25,6 +28,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -172,6 +176,59 @@ public class PromptVersionServiceImpl implements PromptVersionService {
     }
     
     
+    @Override
+    public PromptVersionDiffResult diffVersions(String promptKey, String versionA, String versionB)
+            throws StudioException {
+        if (Objects.equals(versionA, versionB)) {
+            throw new StudioException(StudioException.INVALID_PARAM, "versionA 和 versionB 不能相同");
+        }
+
+        if (promptMapper.selectByPromptKey(promptKey) == null) {
+            throw new StudioException(StudioException.NOT_FOUND, "Prompt 不存在: " + promptKey);
+        }
+
+        PromptVersionDO doA = promptVersionMapper.selectByPromptKeyAndVersion(promptKey, versionA);
+        if (doA == null) {
+            throw new StudioException(StudioException.NOT_FOUND, "版本 " + versionA + " 不存在");
+        }
+
+        PromptVersionDO doB = promptVersionMapper.selectByPromptKeyAndVersion(promptKey, versionB);
+        if (doB == null) {
+            throw new StudioException(StudioException.NOT_FOUND, "版本 " + versionB + " 不存在");
+        }
+
+        return PromptVersionDiffResult.builder()
+                .promptKey(promptKey)
+                .versionA(toVersionMeta(doA))
+                .versionB(toVersionMeta(doB))
+                .diffs(PromptVersionDiffResult.DiffFields.builder()
+                        .template(diffItem(doA.getTemplate(), doB.getTemplate()))
+                        .variables(diffItem(doA.getVariables(), doB.getVariables()))
+                        .modelConfig(diffItem(doA.getModelConfig(), doB.getModelConfig()))
+                        .build())
+                .build();
+    }
+
+    private VersionMeta toVersionMeta(PromptVersionDO d) {
+        return VersionMeta.builder()
+                .version(d.getVersion())
+                .status(d.getStatus())
+                .createTime(d.getCreateTime() != null
+                        ? d.getCreateTime().atZone(java.time.ZoneId.systemDefault()).toInstant().toEpochMilli()
+                        : null)
+                .build();
+    }
+
+    private DiffItem diffItem(String a, String b) {
+        String sa = a != null ? a : "";
+        String sb = b != null ? b : "";
+        return DiffItem.builder()
+                .changed(!Objects.equals(sa, sb))
+                .valueA(sa)
+                .valueB(sb)
+                .build();
+    }
+
     @Data
     @Builder
     @NoArgsConstructor

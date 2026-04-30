@@ -56,6 +56,7 @@ const VersionHistoryPage = () => {
   // State for UI interactions
   const [selectedVersions, setSelectedVersions] = useState([]);
   const [showCompare, setShowCompare] = useState(false);
+  const [diffResult, setDiffResult] = useState(null);
   const [selectedVersion, setSelectedVersion] = useState(null);
   const [showVersionDetail, setShowVersionDetail] = useState(false);
   const [loadingVersionDetail, setLoadingVersionDetail] = useState(false);
@@ -256,79 +257,22 @@ const VersionHistoryPage = () => {
   };
 
 
-  // 加载两个版本的详细信息并开始对比
+  // 加载版本 diff 并开始对比
   const loadVersionsAndCompare = async (version1, version2) => {
     setLoadingVersionDetail(true);
     try {
-      // 并行加载两个版本的详细信息
-      const [detail1Response, detail2Response] = await Promise.all([
-        API.getPromptVersion({ promptKey, version: version1.version }),
-        API.getPromptVersion({ promptKey, version: version2.version })
-      ]);
+      const response = await API.getDiffVersion({
+        promptKey,
+        versionA: version1.version,
+        versionB: version2.version,
+      });
 
-      if (detail1Response.code !== 200 || detail2Response.code !== 200) {
-        throw new Error('获取版本详情失败');
+      if (response.code !== 200) {
+        throw new Error(response.message || '获取版本对比失败');
       }
 
-      // 处理版本1数据
-      const detail1 = detail1Response.data;
-      const variables1 = detail1.variables ? JSON.parse(detail1.variables) : {};
-      const modelConfig1 = detail1.modelConfig ? JSON.parse(detail1.modelConfig) : null;
-
-      const enhancedVersion1 = {
-        ...version1,
-        template: detail1.template,
-        variables: variables1,
-        modelConfig: modelConfig1,
-        parameters: Object.keys(variables1),
-        content: detail1.template,
-        description: detail1.versionDescription,
-        versionType: version1.status
-      };
-
-      // 处理版本2数据
-      const detail2 = detail2Response.data;
-      const variables2 = detail2.variables ? JSON.parse(detail2.variables) : {};
-      const modelConfig2 = detail2.modelConfig ? JSON.parse(detail2.modelConfig) : null;
-
-      const enhancedVersion2 = {
-        ...version2,
-        template: detail2.template,
-        variables: variables2,
-        modelConfig: modelConfig2,
-        parameters: Object.keys(variables2),
-        content: detail2.template,
-        description: detail2.versionDescription,
-        versionType: version2.status
-      };
-
-      // 更新缓存
-      const cache1Key = `${promptKey}-${version1.version}`;
-      const cache2Key = `${promptKey}-${version2.version}`;
-      setVersionDetailsCache(prev => ({
-        ...prev,
-        [cache1Key]: {
-          template: detail1.template,
-          variables: variables1,
-          modelConfig: modelConfig1,
-          parameters: Object.keys(variables1),
-          content: detail1.template,
-          description: detail1.versionDescription,
-          versionType: version1.status
-        },
-        [cache2Key]: {
-          template: detail2.template,
-          variables: variables2,
-          modelConfig: modelConfig2,
-          parameters: Object.keys(variables2),
-          content: detail2.template,
-          description: detail2.versionDescription,
-          versionType: version2.status
-        }
-      }));
-
-      // 设置增强版本并开始对比
-      setSelectedVersions([enhancedVersion1, enhancedVersion2]);
+      setDiffResult(response.data);
+      setSelectedVersions([version1, version2]);
       setShowCompare(true);
     } catch (err) {
       console.error('加载版本对比数据失败:', err);
@@ -366,54 +310,31 @@ const VersionHistoryPage = () => {
   const handleVersionDetailCompare = async () => {
     if (!selectedVersion) return;
 
-    // 找到前一个版本 (按创建时间排序)
     const sortedVersions = [...versions].sort((a, b) => a.createTime - b.createTime);
-
     const currentIndex = sortedVersions.findIndex(v => v.version === selectedVersion.version);
-    if (currentIndex > 0) {
-      const previousVersion = sortedVersions[currentIndex - 1];
-
-      // 加载两个版本的详细信息用于对比
-      try {
-        setLoadingVersionDetail(true);
-
-        const [prevDetailResponse, currDetailResponse] = await Promise.all([
-          API.getPromptVersion({ promptKey, version: previousVersion.version }),
-          selectedVersion.template ? Promise.resolve({ code: 200, data: selectedVersion }) :
-            API.getPromptVersion({ promptKey, version: selectedVersion.version })
-        ]);
-
-        if (prevDetailResponse.code !== 200) {
-          throw new Error('获取前版本详情失败');
-        }
-
-        // 处理前版本数据
-        const prevDetail = prevDetailResponse.data;
-        const prevVariables = prevDetail.variables ? JSON.parse(prevDetail.variables) : {};
-        const prevModelConfig = prevDetail.modelConfig ? JSON.parse(prevDetail.modelConfig) : null;
-
-        const enhancedPrevVersion = {
-          ...previousVersion,
-          template: prevDetail.template,
-          variables: prevVariables,
-          modelConfig: prevModelConfig,
-          parameters: Object.keys(prevVariables),
-          content: prevDetail.template,
-          description: prevDetail.versionDescription,
-          versionType: previousVersion.status
-        };
-
-        setSelectedVersions([enhancedPrevVersion, selectedVersion]);
-        setShowVersionDetail(false);
-        setShowCompare(true);
-      } catch (err) {
-        console.error('加载版本对比数据失败:', err);
-        handleApiError(err, '加载版本对比数据');
-      } finally {
-        setLoadingVersionDetail(false);
-      }
-    } else {
+    if (currentIndex <= 0) {
       notifyError({ message: '没有可对比的前版本' });
+      return;
+    }
+
+    const previousVersion = sortedVersions[currentIndex - 1];
+    setLoadingVersionDetail(true);
+    try {
+      const response = await API.getDiffVersion({
+        promptKey,
+        versionA: previousVersion.version,
+        versionB: selectedVersion.version,
+      });
+      if (response.code !== 200) throw new Error(response.message || '获取版本对比失败');
+      setDiffResult(response.data);
+      setSelectedVersions([previousVersion, selectedVersion]);
+      setShowVersionDetail(false);
+      setShowCompare(true);
+    } catch (err) {
+      console.error('加载版本对比数据失败:', err);
+      handleApiError(err, '加载版本对比数据');
+    } finally {
+      setLoadingVersionDetail(false);
     }
   };
 
@@ -879,14 +800,14 @@ const VersionHistoryPage = () => {
       </Modal>
 
       {/* 版本对比模态框 */}
-      {showCompare && selectedVersions.length === 2 && (
+      {showCompare && diffResult && (
         <VersionCompareModal
           prompt={currentPrompt}
-          version1={selectedVersions[0]}
-          version2={selectedVersions[1]}
+          diffResult={diffResult}
           onClose={() => {
             setShowCompare(false);
             setSelectedVersions([]);
+            setDiffResult(null);
           }}
         />
       )}

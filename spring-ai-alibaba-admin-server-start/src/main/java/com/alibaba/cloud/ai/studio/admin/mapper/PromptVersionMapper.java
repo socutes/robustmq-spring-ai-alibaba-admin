@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface PromptVersionMapper {
@@ -94,4 +95,10 @@ public interface PromptVersionMapper {
      * @return 影响的行数
      */
     int deleteByPromptKey(@Param("promptKey") String promptKey);
+
+    int countByStatus(@Param("status") String status);
+
+    int countTotal();
+
+    List<Map<String, Object>> selectRecentVersions(@Param("limit") int limit);
 }

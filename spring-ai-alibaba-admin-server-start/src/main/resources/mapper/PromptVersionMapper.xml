@@ -96,4 +96,19 @@
         DELETE FROM prompt_version WHERE prompt_key = #{promptKey}
     </delete>
 
+    <select id="countTotal" resultType="int">
+        SELECT COUNT(*) FROM prompt_version
+    </select>
+
+    <select id="countByStatus" resultType="int">
+        SELECT COUNT(*) FROM prompt_version WHERE status = #{status}
+    </select>
+
+    <select id="selectRecentVersions" resultType="java.util.Map">
+        SELECT prompt_key as promptKey, version, status, create_time as createTime
+        FROM prompt_version
+        ORDER BY create_time DESC
+        LIMIT #{limit}
+    </select>
+
 </mapper>

@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, Layout as AntLayout } from 'antd';
-import { 
-  BulbOutlined, 
-  ExperimentOutlined, 
-  LineChartOutlined, 
-  UnorderedListOutlined, 
-  PlayCircleOutlined, 
-  BarChartOutlined, 
+import {
+  BulbOutlined,
+  ExperimentOutlined,
+  LineChartOutlined,
+  UnorderedListOutlined,
+  PlayCircleOutlined,
+  BarChartOutlined,
   NodeIndexOutlined,
   SettingOutlined,
   MenuFoldOutlined,
-  MenuUnfoldOutlined
+  MenuUnfoldOutlined,
+  DashboardOutlined,
 } from '@ant-design/icons';
 
 const { Sider, Content } = AntLayout;
@@ -52,7 +53,12 @@ const getSelectedMenuKey = (pathname) => {
   if (path.startsWith('/tracing')) {
     return '/admin/tracing';
   }
-  
+
+  // Overview 页面
+  if (path === '/overview' || path === '/') {
+    return '/overview';
+  }
+
   // 默认情况，直接返回当前路径
   return pathname;
 };
@@ -66,6 +72,11 @@ const Layout = ({ children }) => {
   const selectedKey = getSelectedMenuKey(location.pathname);
 
   const menuItems = [
+    {
+      key: '/overview',
+      label: '总览',
+      icon: <DashboardOutlined />,
+    },
     {
       key: 'prompt',
       label: 'Prompt工程',

@@ -9,6 +9,7 @@ import PlaygroundPage from './pages/playground/playground';
 import PromptDetailPage from './pages/prompts/prompt-detail/prompt-detail';
 import TracingPage from './pages/tracing/tracing';
 import VersionHistoryPage from './pages/prompts/version-history/version-history';
+import OverviewPage from './pages/overview/overview';
 import Experiment from './pages/evaluation/experiment';
 import ExperimentCreate from './pages/evaluation/experiment/experimentCreate';
 import ExperimentDetail from './pages/evaluation/experiment/experimentDetail';
@@ -47,7 +48,8 @@ function App() {
           <div className="min-h-screen bg-gray-50">
             <Layout>
               <Routes>
-                <Route path="/" element={<PromptsPage />} />
+                <Route path="/" element={<OverviewPage />} />
+                <Route path="/overview" element={<OverviewPage />} />
                 <Route path="/prompts" element={<PromptsPage />} />
                 <Route path="/prompt-detail" element={<PromptDetailPage />} />
                 <Route path="/version-history" element={<VersionHistoryPage />} />

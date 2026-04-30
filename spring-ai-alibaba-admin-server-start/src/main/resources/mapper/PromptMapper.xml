@@ -143,4 +143,13 @@
         LIMIT #{offset}, #{limit}
     </select>
 
+    <select id="countTotal" resultType="int">
+        SELECT COUNT(*) FROM prompt
+    </select>
+
+    <select id="countThisMonth" resultType="int">
+        SELECT COUNT(*) FROM prompt
+        WHERE DATE_FORMAT(create_time, '%Y-%m') = DATE_FORMAT(NOW(), '%Y-%m')
+    </select>
+
 </mapper>

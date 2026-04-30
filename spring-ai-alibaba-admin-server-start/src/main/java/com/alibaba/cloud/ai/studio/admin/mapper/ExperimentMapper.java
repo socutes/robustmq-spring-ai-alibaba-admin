@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 @Repository
@@ -129,5 +130,9 @@ public interface ExperimentMapper {
      * @return 实验数量
      */
     int selectCountByEvaluatorVersionId(@Param("evaluatorVersionId") Long evaluatorVersionId);
+
+    List<Map<String, Object>> countGroupByStatus();
+
+    List<Map<String, Object>> selectRecentExperiments(@Param("limit") int limit);
 
 }

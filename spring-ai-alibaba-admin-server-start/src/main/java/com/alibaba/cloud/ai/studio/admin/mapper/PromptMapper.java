@@ -103,4 +103,8 @@ public interface PromptMapper {
                                                                                      @Param("promptKey") String promptKey,
                                                                                      @Param("offset") int offset,
                                                                                      @Param("limit") int limit);
+
+    int countTotal();
+
+    int countThisMonth();
 }

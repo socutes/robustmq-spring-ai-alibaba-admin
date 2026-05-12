@@ -12,109 +12,266 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
-    name: mvn test (Java 17)
+  # ════════════════════════════════════════════════════════════════════
+  # Job 1: 单元测试（无中间件依赖，快速反馈，所有分支都跑）
+  # ════════════════════════════════════════════════════════════════════
+  unit-test:
+    name: Unit Tests (Java 17)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
-    # ── 中间件服务 ───────────────────────────────────────────────────────────────
-    # 与 docker-compose.dev.yml 保持版本一致；
-    # 当前 7 个测试均为纯单元测试，无需真实中间件，services 区先声明但不启动，
-    # 等 Batch 4+ 集成测试落地后取消注释对应服务即可。
-    #
-    # services:
-    #   mysql:
-    #     image: mysql:8.0.35
-    #     env:
-    #       MYSQL_ROOT_PASSWORD: root
-    #       MYSQL_DATABASE: admin
-    #       MYSQL_USER: admin
-    #       MYSQL_PASSWORD: admin
-    #     ports:
-    #       - 3306:3306
-    #     options: >-
-    #       --health-cmd "mysqladmin ping -h localhost -u admin -padmin"
-    #       --health-interval 5s
-    #       --health-timeout 10s
-    #       --health-retries 12
-    #
-    #   redis:
-    #     image: redis:7.2.5
-    #     ports:
-    #       - 6379:6379
-    #     options: >-
-    #       --health-cmd "redis-cli ping"
-    #       --health-interval 5s
-    #       --health-timeout 5s
-    #       --health-retries 10
-    #
-    #   elasticsearch:
-    #     image: docker.elastic.co/elasticsearch/elasticsearch:9.1.2
-    #     env:
-    #       discovery.type: single-node
-    #       xpack.security.enabled: "false"
-    #       xpack.ml.enabled: "false"
-    #       ES_JAVA_OPTS: "-Xms512m -Xmx512m"
-    #     ports:
-    #       - 9200:9200
-    #     options: >-
-    #       --health-cmd "curl -sf http://localhost:9200/_cluster/health"
-    #       --health-interval 15s
-    #       --health-timeout 10s
-    #       --health-retries 10
-    #       --health-start-period 60s
+    timeout-minutes: 15
 
     steps:
-      # ── 检出代码 ───────────────────────────────────────────────────────────────
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ── JDK 17（与 pom.xml java.version 一致）────────────────────────────────
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: "17"
           distribution: temurin
-          # setup-java 内置 Maven 依赖缓存，key 基于 **/pom.xml hash
-          cache: maven
+          cache: maven          # 基于 **/pom.xml hash 缓存 ~/.m2/repository
 
-      # ── 构建（跳过测试，仅编译，确保 SNAPSHOT jar 进本地仓库）────────────────
-      # server-core 依赖 server-runtime 的 SNAPSHOT jar，
-      # 需要先 install runtime 才能独立跑 core 的测试。
+      # server-start 依赖 server-core SNAPSHOT jar，必须先从根 install
       - name: Build (install, skip tests)
         run: mvn install -DskipTests -q
 
-      # ── 跑测试 ────────────────────────────────────────────────────────────────
-      # 只对有测试的模块执行，避免其余模块产生 "No tests to run" 噪音。
-      # -fae: fail at end，所有模块跑完再汇总失败，而不是第一个失败就停。
-      - name: Run tests
+      - name: Run unit tests
         run: |
           mvn test \
-            -pl spring-ai-alibaba-admin-server-runtime,spring-ai-alibaba-admin-server-core \
+            -pl spring-ai-alibaba-admin-server-runtime,\
+spring-ai-alibaba-admin-server-core,\
+spring-ai-alibaba-admin-server-start \
             --offline \
             -fae \
             -Dsurefire.failIfNoSpecifiedTests=false
 
-      # ── 上传测试报告（无论成功/失败都执行）────────────────────────────────────
       - name: Upload Surefire reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: surefire-reports
-          # Surefire 默认输出目录；多模块路径用 glob
+          name: surefire-reports-unit
           path: "**/target/surefire-reports/"
           retention-days: 14
-          # 没有报告时不报错（模块无测试时目录不存在）
           if-no-files-found: ignore
 
-      # ── 发布测试摘要（PR / commit 页面直接显示）─────────────────────────────
       - name: Publish test summary
         if: always()
         uses: mikepenz/action-junit-report@v4
         with:
           report_paths: "**/target/surefire-reports/TEST-*.xml"
-          check_name: "Test Results"
-          # 失败时标记 check 为 failure，block merge
+          check_name: "Unit Test Results"
           fail_on_failure: true
-          # 没有报告文件时不报错
+          require_tests: false
+
+  # ════════════════════════════════════════════════════════════════════
+  # Job 2: 集成测试（需要中间件，仅在 main 分支 push 或 PR→main 时跑）
+  # 当前无集成测试代码，job 定义已就绪；Batch 3+ 落地后自动生效。
+  # ════════════════════════════════════════════════════════════════════
+  integration-test:
+    name: Integration Tests (Java 17 + Middleware)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # 只在 main 分支 push 或以 main 为目标的 PR 时触发
+    if: github.ref == 'refs/heads/main' || github.base_ref == 'main'
+
+    services:
+      # ── MySQL 8.0.35 ──────────────────────────────────────────────
+      # 与 docker-compose.dev.yml 版本一致；
+      # agentscope 库由下方 step 补建（services 不支持多命令初始化）
+      mysql:
+        image: mysql:8.0.35
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: admin
+          MYSQL_USER: admin
+          MYSQL_PASSWORD: admin
+          LANG: C.UTF-8
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd "mysqladmin ping -h localhost -u admin -padmin"
+          --health-interval 5s
+          --health-timeout 10s
+          --health-retries 12
+          --health-start-period 30s
+
+      # ── Redis 7.2.5 ───────────────────────────────────────────────
+      redis:
+        image: redis:7.2.5
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+      # ── Elasticsearch 9.1.2 ───────────────────────────────────────
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:9.1.2
+        env:
+          discovery.type: single-node
+          cluster.name: saa-es-cluster
+          xpack.security.enabled: "false"
+          xpack.security.enrollment.enabled: "false"
+          xpack.ml.enabled: "false"
+          ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+        ports:
+          - 9200:9200
+        options: >-
+          --health-cmd "curl -sf http://localhost:9200/_cluster/health"
+          --health-interval 15s
+          --health-timeout 10s
+          --health-retries 10
+          --health-start-period 60s
+
+      # ── Nacos 2.4.3 ───────────────────────────────────────────────
+      # 宿主机直接用 8848（native 端口），与 application.yml 默认值一致
+      nacos:
+        image: nacos/nacos-server:v2.4.3
+        env:
+          MODE: standalone
+          NACOS_AUTH_ENABLE: "true"
+          NACOS_AUTH_TOKEN: dG9rZW5hbHNka2ZqbGFza2RqZmxhc2tkamZsYXNrZGpmb3dpZWpmbztzZGxm
+          NACOS_AUTH_IDENTITY_KEY: admin
+          NACOS_AUTH_IDENTITY_VALUE: admin
+          JVM_XMS: 128m
+          JVM_XMX: 256m
+          JVM_XMN: 64m
+        ports:
+          - 8848:8848
+        options: >-
+          --health-cmd "curl -sf http://localhost:8848/nacos/v1/console/health/liveness"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
+          --health-start-period 30s
+
+      # ── RocketMQ 5.3.2 ─────────────────────────────────────────────
+      # GitHub Actions services 不支持 depends_on，用 step 等待就绪
+      rmq-namesrv:
+        image: apache/rocketmq:5.3.2
+        env:
+          HEAP_OPTS: "-Xms128m -Xmx256m -Xmn128m"
+        ports:
+          - 9876:9876
+        options: >-
+          --health-cmd "sh /home/rocketmq/rocketmq-5.3.2/bin/mqadmin clusterList -n localhost:9876 || true"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+          --health-start-period 15s
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: "17"
+          distribution: temurin
+          cache: maven
+
+      # ── 初始化 MySQL agentscope 库 ────────────────────────────────
+      - name: Init MySQL agentscope schema
+        run: |
+          mysql -h 127.0.0.1 -u root -proot \
+            -e "CREATE DATABASE IF NOT EXISTS agentscope DEFAULT CHARACTER SET utf8mb4;
+                GRANT ALL PRIVILEGES ON agentscope.* TO 'admin'@'%';
+                FLUSH PRIVILEGES;"
+
+      # ── 导入业务 DDL ─────────────────────────────────────────────
+      # 注意：文件名与 schema 名相反（历史设计），脚本已正确处理
+      - name: Import DDL
+        run: |
+          # admin-schema.sql → agentscope 库（评估平台表）
+          mysql -h 127.0.0.1 -u admin -padmin agentscope \
+            < docker/middleware/init/mysql/02_admin-schema.sql || true
+          # agentscope-schema.sql → admin 库（Builder 平台表）
+          mysql -h 127.0.0.1 -u admin -padmin admin \
+            < docker/middleware/init/mysql/03_agentscope-schema.sql || true
+
+      # ── 初始化 ES Pipeline + Index ────────────────────────────────
+      - name: Init Elasticsearch index
+        run: bash docker/middleware/init/elasticsearch/init-indices.sh
+        env:
+          ES_HOST: http://localhost:9200
+
+      # ── 等待 RocketMQ Broker 就绪并创建 Topic ─────────────────────
+      # services 中只起了 namesrv；broker 需要 namesrv 先就绪，用 step 启动
+      - name: Start RocketMQ Broker
+        run: |
+          docker run -d \
+            --name saa-rmq-broker \
+            --network host \
+            -e NAMESRV_ADDR=localhost:9876 \
+            -e HEAP_OPTS="-Xms256m -Xmx512m -Xmn256m -XX:MaxDirectMemorySize=128m" \
+            apache/rocketmq:5.3.2 \
+            sh mqbroker -n localhost:9876 --enable-proxy \
+              --proxyConfig '{"remotingListenPort":18080,"grpcServerPort":18081}'
+          # 等待 Broker 端口就绪（最多 90s）
+          for i in $(seq 1 18); do
+            nc -z localhost 10911 && echo "Broker ready" && break
+            echo "Waiting for broker... ($i)"
+            sleep 5
+          done
+
+      - name: Init RocketMQ Topic & ConsumerGroup
+        run: |
+          docker run --rm --network host apache/rocketmq:5.3.2 sh -c "
+            sleep 5
+            sh mqadmin updateTopic \
+              -n localhost:9876 \
+              -t topic_saa_studio_document_index \
+              -c DefaultCluster \
+              -a +message.type=NORMAL
+            sh mqadmin updateSubGroup \
+              -n localhost:9876 \
+              -g group_saa_studio_document_index \
+              -c DefaultCluster
+          " || true
+
+      # ── 构建 ─────────────────────────────────────────────────────
+      - name: Build (install, skip tests)
+        run: mvn install -DskipTests -q
+
+      # ── 运行集成测试 ─────────────────────────────────────────────
+      # 通过 -Dgroups=integration 选择带 @Tag("integration") 的测试；
+      # 环境变量覆盖 application.yml 中的中间件连接配置
+      - name: Run integration tests
+        run: |
+          mvn test \
+            -pl spring-ai-alibaba-admin-server-start \
+            --offline \
+            -fae \
+            -Dsurefire.failIfNoSpecifiedTests=false \
+            -Dgroups=integration
+        env:
+          SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/admin?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+          SPRING_DATASOURCE_USERNAME: admin
+          SPRING_DATASOURCE_PASSWORD: admin
+          SPRING_REDIS_HOST: localhost
+          SPRING_REDIS_PORT: 6379
+          SPRING_ELASTICSEARCH_URIS: http://localhost:9200
+          ROCKETMQ_ENDPOINTS: localhost:18080
+          NACOS_SERVER_ADDR: localhost:8848
+          MANAGEMENT_OTLP_TRACING_EXPORT_ENDPOINT: http://localhost:4318/v1/traces
+
+      - name: Upload Surefire reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports-integration
+          path: "**/target/surefire-reports/"
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Publish test summary
+        if: always()
+        uses: mikepenz/action-junit-report@v4
+        with:
+          report_paths: "**/target/surefire-reports/TEST-*.xml"
+          check_name: "Integration Test Results"
+          fail_on_failure: true
           require_tests: false

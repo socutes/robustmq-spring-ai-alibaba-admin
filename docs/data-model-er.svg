@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" width="1100" height="820" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1565c0"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e65100"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0002"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1100" height="820" fill="#f7f8fc" rx="14"/>
+
+  <!-- title -->
+  <text x="550" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">Spring AI Alibaba Admin — 核心数据模型 ER 图</text>
+  <text x="550" y="56" text-anchor="middle" font-size="11" fill="#888">实线 = 外键关联；1:N 标注基数；虚线 = 逻辑关联（无 FK 约束）</text>
+
+  <!-- ════════════════════════════════════════════
+       SCHEMA LABEL: admin (Builder Platform)
+       ════════════════════════════════════════════ -->
+  <rect x="18" y="68" width="660" height="620" rx="12" fill="none" stroke="#42a5f5" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="34" y="88" font-size="12" font-weight="700" fill="#1565c0">schema: admin（Builder / Agent 平台）</text>
+
+  <!-- ════════════════════════════════════════════
+       SCHEMA LABEL: agentscope (Eval Platform)
+       ════════════════════════════════════════════ -->
+  <rect x="700" y="68" width="384" height="620" rx="12" fill="none" stroke="#ffa726" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="716" y="88" font-size="12" font-weight="700" fill="#e65100">schema: agentscope（Evaluation / Prompt 平台）</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: account
+       ───────────────────────────────────────────── -->
+  <rect x="34" y="100" width="160" height="100" rx="7" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="34" y="100" width="160" height="26" rx="7" fill="#42a5f5"/>
+  <rect x="34" y="116" width="160" height="10" fill="#42a5f5"/>
+  <text x="114" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">account</text>
+  <text x="44" y="141" font-size="10" fill="#0d47a1">🔑 id : bigint</text>
+  <text x="44" y="156" font-size="10" fill="#0d47a1">  username : varchar</text>
+  <text x="44" y="171" font-size="10" fill="#0d47a1">  password_hash : varchar</text>
+  <text x="44" y="186" font-size="10" fill="#0d47a1">  email / avatar / status</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: workspace
+       ───────────────────────────────────────────── -->
+  <rect x="34" y="230" width="160" height="100" rx="7" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="34" y="230" width="160" height="26" rx="7" fill="#42a5f5"/>
+  <rect x="34" y="246" width="160" height="10" fill="#42a5f5"/>
+  <text x="114" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">workspace</text>
+  <text x="44" y="271" font-size="10" fill="#0d47a1">🔑 id : bigint</text>
+  <text x="44" y="286" font-size="10" fill="#0d47a1">🔗 account_id : bigint</text>
+  <text x="44" y="301" font-size="10" fill="#0d47a1">  name / description</text>
+  <text x="44" y="316" font-size="10" fill="#0d47a1">  gmt_create / gmt_modified</text>
+
+  <!-- account → workspace -->
+  <line x1="114" y1="200" x2="114" y2="230" stroke="#1565c0" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+  <text x="120" y="218" font-size="9" fill="#1565c0">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: api_key
+       ───────────────────────────────────────────── -->
+  <rect x="230" y="100" width="160" height="100" rx="7" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="230" y="100" width="160" height="26" rx="7" fill="#42a5f5"/>
+  <rect x="230" y="116" width="160" height="10" fill="#42a5f5"/>
+  <text x="310" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">api_key</text>
+  <text x="240" y="141" font-size="10" fill="#0d47a1">🔑 id : bigint</text>
+  <text x="240" y="156" font-size="10" fill="#0d47a1">🔗 account_id : bigint</text>
+  <text x="240" y="171" font-size="10" fill="#0d47a1">  api_key : varchar</text>
+  <text x="240" y="186" font-size="10" fill="#0d47a1">  description / status</text>
+
+  <!-- account → api_key -->
+  <line x1="194" y1="145" x2="230" y2="145" stroke="#1565c0" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+  <text x="202" y="139" font-size="9" fill="#1565c0">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: application
+       ───────────────────────────────────────────── -->
+  <rect x="230" y="230" width="160" height="115" rx="7" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="230" y="230" width="160" height="26" rx="7" fill="#42a5f5"/>
+  <rect x="230" y="246" width="160" height="10" fill="#42a5f5"/>
+  <text x="310" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">application</text>
+  <text x="240" y="271" font-size="10" fill="#0d47a1">🔑 id : bigint</text>
+  <text x="240" y="286" font-size="10" fill="#0d47a1">🔗 workspace_id : bigint</text>
+  <text x="240" y="301" font-size="10" fill="#0d47a1">  name / description</text>
+  <text x="240" y="316" font-size="10" fill="#0d47a1">  type / status</text>
+  <text x="240" y="331" font-size="10" fill="#0d47a1">  icon / config</text>
+
+  <!-- workspace → application -->
+  <line x1="194" y1="280" x2="230" y2="280" stroke="#1565c0" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+  <text x="200" y="274" font-size="9" fill="#1565c0">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: application_version
+       ───────────────────────────────────────────── -->
+  <rect x="230" y="380" width="160" height="115" rx="7" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="230" y="380" width="160" height="26" rx="7" fill="#42a5f5"/>
+  <rect x="230" y="396" width="160" height="10" fill="#42a5f5"/>
+  <text x="310" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">application_version</text>
+  <text x="240" y="421" font-size="10" fill="#0d47a1">🔑 id : bigint</text>
+  <text x="240" y="436" font-size="10" fill="#0d47a1">🔗 app_id : bigint</text>
+  <text x="240" y="451" font-size="10" fill="#0d47a1">  version : varchar</text>
+  <text x="240" y="466" font-size="10" fill="#0d47a1">  config_snapshot : json</text>
+  <text x="240" y="481" font-size="10" fill="#0d47a1">  publish_status</text>
+
+  <!-- application → application_version -->
+  <line x1="310" y1="345" x2="310" y2="380" stroke="#1565c0" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+  <text x="316" y="366" font-size="9" fill="#1565c0">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: application_component (app_component)
+       ───────────────────────────────────────────── -->
+  <rect x="34" y="380" width="165" height="100" rx="7" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="34" y="380" width="165" height="26" rx="7" fill="#5c6bc0"/>
+  <rect x="34" y="396" width="165" height="10" fill="#5c6bc0"/>
+  <text x="116" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">app_component</text>
+  <text x="44" y="421" font-size="10" fill="#283593">🔑 id : bigint</text>
+  <text x="44" y="436" font-size="10" fill="#283593">🔗 app_id : bigint</text>
+  <text x="44" y="451" font-size="10" fill="#283593">  type / config : json</text>
+  <text x="44" y="466" font-size="10" fill="#283593">  order_num</text>
+
+  <!-- application → app_component -->
+  <line x1="230" y1="300" x2="199" y2="300" stroke="#555" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="199" y1="300" x2="199" y2="406" stroke="#555" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="199" y1="406" x2="199" y2="406" stroke="#555" stroke-width="1.5"/>
+  <line x1="116" y1="380" x2="116" y2="345" stroke="#555" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="88" y="363" font-size="9" fill="#555">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: reference (N:M bridge)
+       ───────────────────────────────────────────── -->
+  <rect x="34" y="510" width="165" height="90" rx="7" fill="#fce4ec" stroke="#e91e63" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="34" y="510" width="165" height="26" rx="7" fill="#e91e63"/>
+  <rect x="34" y="526" width="165" height="10" fill="#e91e63"/>
+  <text x="116" y="528" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">reference（N:M 桥接）</text>
+  <text x="44" y="551" font-size="10" fill="#880e4f">🔑 id : bigint</text>
+  <text x="44" y="566" font-size="10" fill="#880e4f">🔗 source_id / source_type</text>
+  <text x="44" y="581" font-size="10" fill="#880e4f">🔗 target_id / target_type</text>
+  <text x="44" y="596" font-size="10" fill="#880e4f">  relation_type</text>
+
+  <!-- app_component → reference -->
+  <line x1="116" y1="480" x2="116" y2="510" stroke="#e91e63" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="122" y="498" font-size="9" fill="#e91e63">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: knowledge_base
+       ───────────────────────────────────────────── -->
+  <rect x="430" y="100" width="165" height="100" rx="7" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="100" width="165" height="26" rx="7" fill="#66bb6a"/>
+  <rect x="430" y="116" width="165" height="10" fill="#66bb6a"/>
+  <text x="512" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">knowledge_base</text>
+  <text x="440" y="141" font-size="10" fill="#1b5e20">🔑 id : bigint</text>
+  <text x="440" y="156" font-size="10" fill="#1b5e20">🔗 workspace_id : bigint</text>
+  <text x="440" y="171" font-size="10" fill="#1b5e20">  name / description</text>
+  <text x="440" y="186" font-size="10" fill="#1b5e20">  embed_model / type</text>
+
+  <!-- workspace → knowledge_base (dashed logical) -->
+  <line x1="194" y1="260" x2="430" y2="140" stroke="#555" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="290" y="194" font-size="9" fill="#555">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: document
+       ───────────────────────────────────────────── -->
+  <rect x="430" y="230" width="165" height="115" rx="7" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="230" width="165" height="26" rx="7" fill="#66bb6a"/>
+  <rect x="430" y="246" width="165" height="10" fill="#66bb6a"/>
+  <text x="512" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">document</text>
+  <text x="440" y="271" font-size="10" fill="#1b5e20">🔑 id : bigint</text>
+  <text x="440" y="286" font-size="10" fill="#1b5e20">🔗 kb_id : bigint</text>
+  <text x="440" y="301" font-size="10" fill="#1b5e20">  name / file_type</text>
+  <text x="440" y="316" font-size="10" fill="#1b5e20">  index_status / chunks</text>
+  <text x="440" y="331" font-size="10" fill="#1b5e20">  (chunks → Elasticsearch)</text>
+
+  <!-- knowledge_base → document -->
+  <line x1="512" y1="200" x2="512" y2="230" stroke="#2e7d32" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="518" y="218" font-size="9" fill="#2e7d32">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: plugin
+       ───────────────────────────────────────────── -->
+  <rect x="430" y="380" width="165" height="100" rx="7" fill="#fff9c4" stroke="#f9a825" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="380" width="165" height="26" rx="7" fill="#f9a825"/>
+  <rect x="430" y="396" width="165" height="10" fill="#f9a825"/>
+  <text x="512" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">plugin</text>
+  <text x="440" y="421" font-size="10" fill="#e65100">🔑 id : bigint</text>
+  <text x="440" y="436" font-size="10" fill="#e65100">  name / type</text>
+  <text x="440" y="451" font-size="10" fill="#e65100">  description / icon</text>
+  <text x="440" y="466" font-size="10" fill="#e65100">  creator_id / status</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: tool
+       ───────────────────────────────────────────── -->
+  <rect x="430" y="510" width="165" height="100" rx="7" fill="#fff9c4" stroke="#f9a825" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="510" width="165" height="26" rx="7" fill="#f9a825"/>
+  <rect x="430" y="526" width="165" height="10" fill="#f9a825"/>
+  <text x="512" y="528" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">tool</text>
+  <text x="440" y="551" font-size="10" fill="#e65100">🔑 id : bigint</text>
+  <text x="440" y="566" font-size="10" fill="#e65100">🔗 plugin_id : bigint</text>
+  <text x="440" y="581" font-size="10" fill="#e65100">  name / type</text>
+  <text x="440" y="596" font-size="10" fill="#e65100">  input_schema : json</text>
+
+  <!-- plugin → tool -->
+  <line x1="512" y1="480" x2="512" y2="510" stroke="#e65100" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="518" y="498" font-size="9" fill="#e65100">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: provider
+       ───────────────────────────────────────────── -->
+  <rect x="34" y="630" width="160" height="90" rx="7" fill="#f3e5f5" stroke="#ab47bc" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="34" y="630" width="160" height="26" rx="7" fill="#ab47bc"/>
+  <rect x="34" y="646" width="160" height="10" fill="#ab47bc"/>
+  <text x="114" y="648" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">provider</text>
+  <text x="44" y="671" font-size="10" fill="#4a148c">🔑 id : bigint</text>
+  <text x="44" y="686" font-size="10" fill="#4a148c">  name / type / icon</text>
+  <text x="44" y="701" font-size="10" fill="#4a148c">  config : json</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: model
+       ───────────────────────────────────────────── -->
+  <rect x="230" y="630" width="160" height="90" rx="7" fill="#f3e5f5" stroke="#ab47bc" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="230" y="630" width="160" height="26" rx="7" fill="#ab47bc"/>
+  <rect x="230" y="646" width="160" height="10" fill="#ab47bc"/>
+  <text x="310" y="648" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">model</text>
+  <text x="240" y="671" font-size="10" fill="#4a148c">🔑 id : bigint</text>
+  <text x="240" y="686" font-size="10" fill="#4a148c">🔗 provider : varchar</text>
+  <text x="240" y="701" font-size="10" fill="#4a148c">  model_name / type</text>
+
+  <!-- provider → model -->
+  <line x1="194" y1="675" x2="230" y2="675" stroke="#7b1fa2" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="200" y="669" font-size="9" fill="#7b1fa2">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: mcp_server
+       ───────────────────────────────────────────── -->
+  <rect x="430" y="630" width="165" height="90" rx="7" fill="#e0f7fa" stroke="#26c6da" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="630" width="165" height="26" rx="7" fill="#26c6da"/>
+  <rect x="430" y="646" width="165" height="10" fill="#26c6da"/>
+  <text x="512" y="648" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">mcp_server</text>
+  <text x="440" y="671" font-size="10" fill="#006064">🔑 id : bigint</text>
+  <text x="440" y="686" font-size="10" fill="#006064">  name / type / url</text>
+  <text x="440" y="701" font-size="10" fill="#006064">  config : json / status</text>
+
+  <!-- ════════════════════════════════════════════
+       agentscope schema entities
+       ════════════════════════════════════════════ -->
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: prompt
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="100" width="160" height="100" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="100" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="716" y="116" width="160" height="10" fill="#ffa726"/>
+  <text x="796" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">prompt</text>
+  <text x="726" y="141" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="726" y="156" font-size="10" fill="#bf360c">  prompt_key : varchar (UK)</text>
+  <text x="726" y="171" font-size="10" fill="#bf360c">  name / description</text>
+  <text x="726" y="186" font-size="10" fill="#bf360c">  type / status</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: prompt_version
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="230" width="160" height="100" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="230" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="716" y="246" width="160" height="10" fill="#ffa726"/>
+  <text x="796" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">prompt_version</text>
+  <text x="726" y="271" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="726" y="286" font-size="10" fill="#bf360c">🔗 prompt_key : varchar</text>
+  <text x="726" y="301" font-size="10" fill="#bf360c">  content / variables</text>
+  <text x="726" y="316" font-size="10" fill="#bf360c">  version / publish_status</text>
+
+  <!-- prompt → prompt_version -->
+  <line x1="796" y1="200" x2="796" y2="230" stroke="#e65100" stroke-width="1.8" marker-end="url(#arr-orange)"/>
+  <text x="802" y="218" font-size="9" fill="#e65100">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: dataset
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="360" width="160" height="100" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="360" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="716" y="376" width="160" height="10" fill="#ffa726"/>
+  <text x="796" y="378" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">dataset</text>
+  <text x="726" y="401" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="726" y="416" font-size="10" fill="#bf360c">  name / description</text>
+  <text x="726" y="431" font-size="10" fill="#bf360c">  type / status</text>
+  <text x="726" y="446" font-size="10" fill="#bf360c">  item_count</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: dataset_version
+       ───────────────────────────────────────────── -->
+  <rect x="900" y="360" width="160" height="90" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="900" y="360" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="900" y="376" width="160" height="10" fill="#ffa726"/>
+  <text x="980" y="378" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">dataset_version</text>
+  <text x="910" y="401" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="910" y="416" font-size="10" fill="#bf360c">🔗 dataset_id : bigint</text>
+  <text x="910" y="431" font-size="10" fill="#bf360c">  version / item_count</text>
+  <text x="910" y="446" font-size="10" fill="#bf360c">  snapshot_path</text>
+
+  <!-- dataset → dataset_version -->
+  <line x1="876" y1="400" x2="900" y2="400" stroke="#e65100" stroke-width="1.8" marker-end="url(#arr-orange)"/>
+  <text x="880" y="394" font-size="9" fill="#e65100">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: dataset_item
+       ───────────────────────────────────────────── -->
+  <rect x="900" y="480" width="160" height="90" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="900" y="480" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="900" y="496" width="160" height="10" fill="#ffa726"/>
+  <text x="980" y="498" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">dataset_item</text>
+  <text x="910" y="521" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="910" y="536" font-size="10" fill="#bf360c">🔗 dataset_id : bigint</text>
+  <text x="910" y="551" font-size="10" fill="#bf360c">  input / expected_output</text>
+  <text x="910" y="566" font-size="10" fill="#bf360c">  metadata : json</text>
+
+  <!-- dataset → dataset_item -->
+  <line x1="980" y1="450" x2="980" y2="480" stroke="#e65100" stroke-width="1.8" marker-end="url(#arr-orange)"/>
+  <text x="986" y="468" font-size="9" fill="#e65100">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: evaluator
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="490" width="160" height="100" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="490" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="716" y="506" width="160" height="10" fill="#ffa726"/>
+  <text x="796" y="508" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">evaluator</text>
+  <text x="726" y="531" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="726" y="546" font-size="10" fill="#bf360c">  name / type</text>
+  <text x="726" y="561" font-size="10" fill="#bf360c">  description / status</text>
+  <text x="726" y="576" font-size="10" fill="#bf360c">  config : json</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: evaluator_version
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="620" width="160" height="90" rx="7" fill="#fff3e0" stroke="#ffa726" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="620" width="160" height="26" rx="7" fill="#ffa726"/>
+  <rect x="716" y="636" width="160" height="10" fill="#ffa726"/>
+  <text x="796" y="638" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">evaluator_version</text>
+  <text x="726" y="661" font-size="10" fill="#bf360c">🔑 id : bigint</text>
+  <text x="726" y="676" font-size="10" fill="#bf360c">🔗 evaluator_id : bigint</text>
+  <text x="726" y="691" font-size="10" fill="#bf360c">  version / publish_status</text>
+
+  <!-- evaluator → evaluator_version -->
+  <line x1="796" y1="590" x2="796" y2="620" stroke="#e65100" stroke-width="1.8" marker-end="url(#arr-orange)"/>
+  <text x="802" y="608" font-size="9" fill="#e65100">1:N</text>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: experiment
+       ───────────────────────────────────────────── -->
+  <rect x="900" y="600" width="160" height="100" rx="7" fill="#fce4ec" stroke="#ec407a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="900" y="600" width="160" height="26" rx="7" fill="#ec407a"/>
+  <rect x="900" y="616" width="160" height="10" fill="#ec407a"/>
+  <text x="980" y="618" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">experiment</text>
+  <text x="910" y="641" font-size="10" fill="#880e4f">🔑 id : bigint</text>
+  <text x="910" y="656" font-size="10" fill="#880e4f">🔗 dataset_id : bigint</text>
+  <text x="910" y="671" font-size="10" fill="#880e4f">🔗 evaluator_version_id</text>
+  <text x="910" y="686" font-size="10" fill="#880e4f">  status / run_at</text>
+
+  <!-- dataset → experiment (dashed logical) -->
+  <line x1="876" y1="410" x2="892" y2="410" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3"/>
+  <line x1="892" y1="410" x2="892" y2="640" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3"/>
+  <line x1="892" y1="640" x2="900" y2="640" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- evaluator_version → experiment (dashed logical) -->
+  <line x1="876" y1="660" x2="900" y2="660" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- ─────────────────────────────────────────────
+       ENTITY: experiment_result
+       ───────────────────────────────────────────── -->
+  <rect x="716" y="730" width="160" height="70" rx="7" fill="#fce4ec" stroke="#ec407a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="716" y="730" width="160" height="26" rx="7" fill="#ec407a"/>
+  <rect x="716" y="746" width="160" height="10" fill="#ec407a"/>
+  <text x="796" y="748" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">experiment_result</text>
+  <text x="726" y="771" font-size="10" fill="#880e4f">🔑 id : bigint</text>
+  <text x="726" y="786" font-size="10" fill="#880e4f">🔗 experiment_id : bigint</text>
+
+  <!-- experiment → experiment_result (dashed, cross-area) -->
+  <line x1="900" y1="680" x2="886" y2="680" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3"/>
+  <line x1="886" y1="680" x2="886" y2="760" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3"/>
+  <line x1="886" y1="760" x2="876" y2="760" stroke="#555" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="864" y="720" font-size="9" fill="#555">1:N</text>
+
+  <!-- ════════════════════════════════════════════
+       Legend
+       ════════════════════════════════════════════ -->
+  <rect x="18" y="750" width="660" height="54" rx="8" fill="#eceff1" stroke="#cfd8dc" stroke-width="1"/>
+  <text x="30" y="767" font-size="10" font-weight="700" fill="#37474f">图例：</text>
+  <line x1="70" y1="763" x2="100" y2="763" stroke="#1565c0" stroke-width="1.8" marker-end="url(#arr-blue)"/>
+  <text x="106" y="767" font-size="9" fill="#1565c0">FK 外键（强关联）</text>
+  <line x1="200" y1="763" x2="230" y2="763" stroke="#555" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="236" y="767" font-size="9" fill="#555">逻辑关联（无 FK 约束）</text>
+  <text x="355" y="767" font-size="9" fill="#37474f">🔑 主键   🔗 外键   1:N 基数</text>
+  <rect x="480" y="754" width="186" height="14" rx="3" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1"/>
+  <text x="573" y="765" text-anchor="middle" font-size="9" fill="#2e7d32">doc chunks → Elasticsearch（非 MySQL）</text>
+  <text x="30" y="790" font-size="9" fill="#888">admin schema（蓝色边框）：账号 / 工作区 / 应用 / 知识库 / 插件 / 模型体系</text>
+  <text x="30" y="800" font-size="9" fill="#888">agentscope schema（橙色边框）：Prompt 管理 / 数据集 / 评估器 / 实验体系</text>
+</svg>

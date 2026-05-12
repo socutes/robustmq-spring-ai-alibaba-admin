@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" width="900" height="780" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <style>
+      .layer-label { font-size: 11px; font-weight: 700; fill: #555; letter-spacing: 1px; text-transform: uppercase; }
+      .box-title   { font-size: 13px; font-weight: 700; fill: #1a1a2e; }
+      .box-desc    { font-size: 10px; fill: #444; }
+      .arrow       { stroke: #888; stroke-width: 1.5; fill: none; marker-end: url(#ah); }
+      .arrow-dashed{ stroke: #aaa; stroke-width: 1.2; fill: none; stroke-dasharray:5,3; marker-end: url(#ah-gray); }
+      .section-bg  { rx: 8; ry: 8; }
+    </style>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#888"/>
+    </marker>
+    <marker id="ah-gray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#aaa"/>
+    </marker>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                         -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect width="900" height="780" fill="#f5f6fa" rx="12"/>
+
+  <!-- TITLE -->
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">Spring AI Alibaba Admin — 系统架构图</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LAYER 1: FRONTEND (React)                          -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect x="30" y="60" width="840" height="150" rx="10" fill="#e8f4fd" stroke="#90caf9" stroke-width="1.5"/>
+  <text x="50" y="82" class="layer-label" fill="#1565c0">前端层 · React + UmiJS (Monorepo)</text>
+
+  <!-- main app -->
+  <rect x="50" y="92" width="190" height="105" rx="7" fill="#fff" stroke="#90caf9" stroke-width="1.2"/>
+  <text x="145" y="114" text-anchor="middle" class="box-title">packages/main</text>
+  <text x="145" y="130" text-anchor="middle" class="box-desc">管理控制台主应用：</text>
+  <text x="145" y="144" text-anchor="middle" class="box-desc">App / Knowledge / Agent</text>
+  <text x="145" y="158" text-anchor="middle" class="box-desc">MCP / Setting / Login</text>
+  <text x="145" y="172" text-anchor="middle" class="box-desc">等核心管理页面</text>
+
+  <!-- spark-flow -->
+  <rect x="260" y="92" width="190" height="105" rx="7" fill="#fff" stroke="#90caf9" stroke-width="1.2"/>
+  <text x="355" y="114" text-anchor="middle" class="box-title">packages/spark-flow</text>
+  <text x="355" y="130" text-anchor="middle" class="box-desc">可视化 Agent/Workflow</text>
+  <text x="355" y="144" text-anchor="middle" class="box-desc">编排画布组件库，</text>
+  <text x="355" y="158" text-anchor="middle" class="box-desc">提供节点拖拽与</text>
+  <text x="355" y="172" text-anchor="middle" class="box-desc">流程连线编辑能力</text>
+
+  <!-- spark-i18n -->
+  <rect x="470" y="92" width="160" height="105" rx="7" fill="#fff" stroke="#90caf9" stroke-width="1.2"/>
+  <text x="550" y="114" text-anchor="middle" class="box-title">packages/spark-i18n</text>
+  <text x="550" y="130" text-anchor="middle" class="box-desc">国际化资源包，</text>
+  <text x="550" y="144" text-anchor="middle" class="box-desc">为主应用和组件库</text>
+  <text x="550" y="158" text-anchor="middle" class="box-desc">提供多语言支持</text>
+
+  <!-- Dify compat -->
+  <rect x="650" y="92" width="190" height="105" rx="7" fill="#fff" stroke="#90caf9" stroke-width="1.2"/>
+  <text x="745" y="114" text-anchor="middle" class="box-title">Dify 兼容页</text>
+  <text x="745" y="130" text-anchor="middle" class="box-desc">兼容 Dify API 协议的</text>
+  <text x="745" y="144" text-anchor="middle" class="box-desc">调试入口，用于对接</text>
+  <text x="745" y="158" text-anchor="middle" class="box-desc">外部 Agent 应用的</text>
+  <text x="745" y="172" text-anchor="middle" class="box-desc">快速测试联调</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- ARROW: Frontend → Backend                          -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <line x1="450" y1="210" x2="450" y2="240" class="arrow"/>
+  <text x="460" y="230" font-size="10" fill="#888">HTTP / SSE</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LAYER 2: BACKEND (Spring Boot)                     -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect x="30" y="240" width="840" height="200" rx="10" fill="#e8f5e9" stroke="#81c784" stroke-width="1.5"/>
+  <text x="50" y="262" class="layer-label" fill="#2e7d32">后端层 · Spring Boot 3.3 · Java 17</text>
+
+  <!-- start -->
+  <rect x="50" y="272" width="170" height="150" rx="7" fill="#fff" stroke="#81c784" stroke-width="1.2"/>
+  <text x="135" y="294" text-anchor="middle" class="box-title">server-start</text>
+  <text x="135" y="310" text-anchor="middle" class="box-desc">应用启动入口，装配</text>
+  <text x="135" y="324" text-anchor="middle" class="box-desc">Spring Boot 自动配置、</text>
+  <text x="135" y="338" text-anchor="middle" class="box-desc">全局异常处理、JWT</text>
+  <text x="135" y="352" text-anchor="middle" class="box-desc">鉴权拦截器和</text>
+  <text x="135" y="366" text-anchor="middle" class="box-desc">Controller 层路由</text>
+  <text x="135" y="382" text-anchor="middle" class="box-desc" font-style="italic">端口 :8080</text>
+  <text x="135" y="396" text-anchor="middle" class="box-desc" font-style="italic">/admin 静态资源</text>
+
+  <!-- core -->
+  <rect x="240" y="272" width="190" height="150" rx="7" fill="#fff" stroke="#81c784" stroke-width="1.2"/>
+  <text x="335" y="294" text-anchor="middle" class="box-title">server-core</text>
+  <text x="335" y="310" text-anchor="middle" class="box-desc">业务核心：App/Agent</text>
+  <text x="335" y="324" text-anchor="middle" class="box-desc">执行引擎、工具回调、</text>
+  <text x="335" y="338" text-anchor="middle" class="box-desc">MCP 工具调用、知识库</text>
+  <text x="335" y="352" text-anchor="middle" class="box-desc">检索、沙箱脚本、</text>
+  <text x="335" y="366" text-anchor="middle" class="box-desc">模型/OSS/Redis 管理器</text>
+  <text x="335" y="380" text-anchor="middle" class="box-desc">及所有 MyBatis-Plus ORM</text>
+
+  <!-- openapi -->
+  <rect x="450" y="272" width="190" height="150" rx="7" fill="#fff" stroke="#81c784" stroke-width="1.2"/>
+  <text x="545" y="294" text-anchor="middle" class="box-title">server-openapi</text>
+  <text x="545" y="310" text-anchor="middle" class="box-desc">对外暴露 OpenAI 兼容</text>
+  <text x="545" y="324" text-anchor="middle" class="box-desc">Chat Completion 接口，</text>
+  <text x="545" y="338" text-anchor="middle" class="box-desc">ApiKey 鉴权拦截，</text>
+  <text x="545" y="352" text-anchor="middle" class="box-desc">供第三方客户端直接</text>
+  <text x="545" y="366" text-anchor="middle" class="box-desc">调用已部署的 Agent</text>
+
+  <!-- runtime -->
+  <rect x="660" y="272" width="185" height="150" rx="7" fill="#fff" stroke="#81c784" stroke-width="1.2"/>
+  <text x="752" y="294" text-anchor="middle" class="box-title">server-runtime</text>
+  <text x="752" y="310" text-anchor="middle" class="box-desc">共享领域模型：</text>
+  <text x="752" y="324" text-anchor="middle" class="box-desc">DTO / VO / 枚举常量、</text>
+  <text x="752" y="338" text-anchor="middle" class="box-desc">分页结果封装、</text>
+  <text x="752" y="352" text-anchor="middle" class="box-desc">账号/Chat/App/MCP</text>
+  <text x="752" y="366" text-anchor="middle" class="box-desc">等领域对象定义，</text>
+  <text x="752" y="380" text-anchor="middle" class="box-desc">被其余模块依赖引用</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- ARROW: Backend → Middleware                        -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <line x1="450" y1="440" x2="450" y2="472" class="arrow"/>
+  <text x="460" y="461" font-size="10" fill="#888">JDBC / REST / SDK</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LAYER 3: MIDDLEWARE                                -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect x="30" y="472" width="840" height="130" rx="10" fill="#fff3e0" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="50" y="494" class="layer-label" fill="#e65100">中间件层</text>
+
+  <!-- MySQL -->
+  <rect x="50" y="504" width="130" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="115" y="526" text-anchor="middle" class="box-title">MySQL 8.0</text>
+  <text x="115" y="542" text-anchor="middle" class="box-desc">主业务数据库：</text>
+  <text x="115" y="556" text-anchor="middle" class="box-desc">admin / agentscope</text>
+  <text x="115" y="570" text-anchor="middle" class="box-desc">schema，存储 App、</text>
+  <text x="115" y="584" text-anchor="middle" class="box-desc">Agent、知识库元数据</text>
+
+  <!-- Redis -->
+  <rect x="195" y="504" width="120" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="255" y="526" text-anchor="middle" class="box-title">Redis</text>
+  <text x="255" y="542" text-anchor="middle" class="box-desc">Token 缓存、</text>
+  <text x="255" y="556" text-anchor="middle" class="box-desc">分布式锁（Redisson），</text>
+  <text x="255" y="570" text-anchor="middle" class="box-desc">会话状态与</text>
+  <text x="255" y="584" text-anchor="middle" class="box-desc">接口限流计数</text>
+
+  <!-- Elasticsearch -->
+  <rect x="330" y="504" width="145" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="402" y="526" text-anchor="middle" class="box-title">Elasticsearch</text>
+  <text x="402" y="542" text-anchor="middle" class="box-desc">知识库向量与全文</text>
+  <text x="402" y="556" text-anchor="middle" class="box-desc">检索，存储 Trace/Span</text>
+  <text x="402" y="570" text-anchor="middle" class="box-desc">可观测数据，供</text>
+  <text x="402" y="584" text-anchor="middle" class="box-desc">链路分析查询</text>
+
+  <!-- RocketMQ -->
+  <rect x="490" y="504" width="130" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="555" y="526" text-anchor="middle" class="box-title">RocketMQ</text>
+  <text x="555" y="542" text-anchor="middle" class="box-desc">异步任务消息队列：</text>
+  <text x="555" y="556" text-anchor="middle" class="box-desc">文档解析、评估实验</text>
+  <text x="555" y="570" text-anchor="middle" class="box-desc">批量执行等耗时任务</text>
+  <text x="555" y="584" text-anchor="middle" class="box-desc">解耦与削峰</text>
+
+  <!-- Nacos -->
+  <rect x="635" y="504" width="120" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="695" y="526" text-anchor="middle" class="box-title">Nacos</text>
+  <text x="695" y="542" text-anchor="middle" class="box-desc">Prompt 配置中心，</text>
+  <text x="695" y="556" text-anchor="middle" class="box-desc">运行时推送更新至</text>
+  <text x="695" y="570" text-anchor="middle" class="box-desc">外部 Agent 应用，</text>
+  <text x="695" y="584" text-anchor="middle" class="box-desc">实现热更新</text>
+
+  <!-- LoongCollector -->
+  <rect x="770" y="504" width="85" height="85" rx="7" fill="#fff" stroke="#ffb74d" stroke-width="1.2"/>
+  <text x="812" y="526" text-anchor="middle" class="box-title" font-size="11">LoongCollector</text>
+  <text x="812" y="542" text-anchor="middle" class="box-desc">OTel Collector：</text>
+  <text x="812" y="556" text-anchor="middle" class="box-desc">接收 OTLP Trace</text>
+  <text x="812" y="570" text-anchor="middle" class="box-desc">并转存至</text>
+  <text x="812" y="584" text-anchor="middle" class="box-desc">Elasticsearch</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LAYER 4: EXTERNAL AI / INFRA                       -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect x="30" y="625" width="840" height="110" rx="10" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="50" y="647" class="layer-label" fill="#6a1b9a">外部服务 &amp; 基础设施</text>
+
+  <!-- AI Models -->
+  <rect x="50" y="657" width="220" height="65" rx="7" fill="#fff" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="160" y="677" text-anchor="middle" class="box-title">AI 模型提供商</text>
+  <text x="160" y="693" text-anchor="middle" class="box-desc">DashScope (阿里云百炼) · OpenAI · DeepSeek</text>
+  <text x="160" y="707" text-anchor="middle" class="box-desc">通过 Spring AI Alibaba 统一 ChatModel 适配调用</text>
+
+  <!-- OSS -->
+  <rect x="290" y="657" width="175" height="65" rx="7" fill="#fff" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="377" y="677" text-anchor="middle" class="box-title">Aliyun OSS</text>
+  <text x="377" y="693" text-anchor="middle" class="box-desc">文件与文档存储，</text>
+  <text x="377" y="707" text-anchor="middle" class="box-desc">知识库原始文件上传</text>
+
+  <!-- Docker / Infra -->
+  <rect x="485" y="657" width="175" height="65" rx="7" fill="#fff" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="572" y="677" text-anchor="middle" class="box-title">Docker Compose</text>
+  <text x="572" y="693" text-anchor="middle" class="box-desc">本地一键拉起所有中间件</text>
+  <text x="572" y="707" text-anchor="middle" class="box-desc">（dev / 生产 同配置）</text>
+
+  <!-- External Agent Apps -->
+  <rect x="680" y="657" width="185" height="65" rx="7" fill="#fff" stroke="#ce93d8" stroke-width="1.2"/>
+  <text x="772" y="677" text-anchor="middle" class="box-title">外部 Agent 应用</text>
+  <text x="772" y="693" text-anchor="middle" class="box-desc">引入 spring-ai-alibaba-agent-nacos</text>
+  <text x="772" y="707" text-anchor="middle" class="box-desc">上报 OTel Trace，拉取 Prompt</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- CROSS ARROWS                                       -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- Backend → AI Models -->
+  <line x1="335" y1="440" x2="160" y2="657" class="arrow-dashed"/>
+  <!-- Backend → OSS -->
+  <line x1="420" y1="440" x2="377" y2="657" class="arrow-dashed"/>
+  <!-- Backend → External Agent (Nacos push) -->
+  <line x1="695" y1="504" x2="772" y2="657" class="arrow-dashed"/>
+  <!-- LoongCollector → ES -->
+  <line x1="812" y1="589" x2="402" y2="589" class="arrow-dashed"/>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- LEGEND                                             -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <rect x="30" y="745" width="840" height="26" rx="6" fill="#eceff1" stroke="#cfd8dc" stroke-width="1"/>
+  <line x1="50" y1="758" x2="80" y2="758" stroke="#888" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="86" y="762" font-size="10" fill="#555">同步调用</text>
+  <line x1="150" y1="758" x2="180" y2="758" stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#ah-gray)"/>
+  <text x="186" y="762" font-size="10" fill="#555">异步/外部调用</text>
+  <text x="450" y="762" text-anchor="middle" font-size="10" fill="#888">Spring Boot 3.3 · Spring AI Alibaba 1.0.0.3 · MyBatis-Plus · Redisson · GraalVM Polyglot</text>
+</svg>

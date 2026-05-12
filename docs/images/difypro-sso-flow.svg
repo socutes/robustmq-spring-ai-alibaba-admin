@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="white" />
+  <text x="450" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">SSO 登录流程（OIDC Authorization Code Flow）</text>
+  <rect x="20" y="60" width="140" height="36" rx="6" ry="6" fill="#F5F5F5" stroke="#999" stroke-width="1.5" />
+  <text x="90" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">用户浏览器</text>
+  <rect x="240" y="60" width="140" height="36" rx="6" ry="6" fill="#F5F5F5" stroke="#999" stroke-width="1.5" />
+  <text x="310" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">DifyPro</text>
+  <rect x="490" y="60" width="140" height="36" rx="6" ry="6" fill="#F5F5F5" stroke="#999" stroke-width="1.5" />
+  <text x="560" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">IdP（企业认证中心）</text>
+  <rect x="730" y="60" width="140" height="36" rx="6" ry="6" fill="#F5F5F5" stroke="#999" stroke-width="1.5" />
+  <text x="800" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Dify 账号系统</text>
+  <line x1="90" y1="96" x2="90" y2="480" stroke="#AAAAAA" stroke-width="1.5" stroke-dasharray="6,4" />
+  <line x1="310" y1="96" x2="310" y2="480" stroke="#AAAAAA" stroke-width="1.5" stroke-dasharray="6,4" />
+  <line x1="560" y1="96" x2="560" y2="480" stroke="#AAAAAA" stroke-width="1.5" stroke-dasharray="6,4" />
+  <line x1="800" y1="96" x2="800" y2="480" stroke="#AAAAAA" stroke-width="1.5" stroke-dasharray="6,4" />
+  <defs>
+    <marker id="arrowSolid" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+    <marker id="arrowOpen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polyline points="0 0, 10 3.5, 0 7" fill="none" stroke="#555" stroke-width="1.5" />
+    </marker>
+  </defs>
+  <line x1="98" y1="130" x2="302" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#arrowSolid)" />
+  <text x="200.0" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">① 访问 Dify，点击"企业登录"</text>
+  <line x1="302" y1="168" x2="98" y2="168" stroke="#555" stroke-width="1.5" marker-end="url(#arrowOpen)" stroke-dasharray="5,3" />
+  <text x="200.0" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">② 302 redirect 到 IdP 授权页</text>
+  <text x="200.0" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">（附 client_id、redirect_uri、state）</text>
+  <rect x="10" y="192" width="880" height="38" fill="#FAFAFA" opacity="0.7" />
+  <line x1="98" y1="206" x2="552" y2="206" stroke="#555" stroke-width="1.5" marker-end="url(#arrowSolid)" />
+  <text x="325.0" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">③ 输入企业账号密码，完成认证</text>
+  <rect x="10" y="230" width="880" height="38" fill="#FAFAFA" opacity="0.7" />
+  <line x1="552" y1="244" x2="318" y2="244" stroke="#555" stroke-width="1.5" marker-end="url(#arrowOpen)" stroke-dasharray="5,3" />
+  <text x="435.0" y="239" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">④ 回调 callback，携带 authorization code</text>
+  <line x1="318" y1="282" x2="552" y2="282" stroke="#555" stroke-width="1.5" marker-end="url(#arrowSolid)" />
+  <text x="435.0" y="277" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">⑤ 用 code 换 access_token + id_token（后端请求）</text>
+  <line x1="552" y1="320" x2="318" y2="320" stroke="#555" stroke-width="1.5" marker-end="url(#arrowOpen)" stroke-dasharray="5,3" />
+  <text x="435.0" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">⑥ 返回 token（含用户 sub、email、name、department）</text>
+  <rect x="10" y="344" width="880" height="38" fill="#FAFAFA" opacity="0.7" />
+  <line x1="318" y1="358" x2="792" y2="358" stroke="#555" stroke-width="1.5" marker-end="url(#arrowSolid)" />
+  <text x="555.0" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">⑦ 查找或创建 Dify 账号，同步部门/角色</text>
+  <rect x="10" y="382" width="880" height="38" fill="#FAFAFA" opacity="0.7" />
+  <line x1="792" y1="396" x2="318" y2="396" stroke="#555" stroke-width="1.5" marker-end="url(#arrowOpen)" stroke-dasharray="5,3" />
+  <text x="555.0" y="391" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">⑧ 返回 Dify JWT</text>
+  <line x1="302" y1="434" x2="98" y2="434" stroke="#555" stroke-width="1.5" marker-end="url(#arrowOpen)" stroke-dasharray="5,3" />
+  <text x="200.0" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#222">⑨ Set-Cookie / JWT，跳转到 Dify 主页</text>
+</svg>

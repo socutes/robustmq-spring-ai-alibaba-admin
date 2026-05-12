@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#ffffff" />
+  <text x="480" y="45" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e">DifyPro 核心功能模块</text>
+  <line x1="320" y1="55" x2="640" y2="55" stroke="#4A90D9" stroke-width="2" />
+  <rect x="40" y="75" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="240" y="87" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="274" y="102" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="60" y="113" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">SSO 单点登录</text>
+  <line x1="60" y1="123" x2="300" y2="123" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="60" y="145" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">OIDC 协议 / 自动建账号</text>
+  <text x="60" y="165" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">强制登录</text>
+  <circle cx="52" cy="109" r="4" fill="#4A90D9" />
+  <rect x="340" y="75" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="540" y="87" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="574" y="102" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="360" y="113" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">用户额度管理</text>
+  <line x1="360" y1="123" x2="600" y2="123" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="360" y="145" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">Token 配额 / 超限拦截</text>
+  <text x="360" y="165" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">异步统计</text>
+  <circle cx="352" cy="109" r="4" fill="#4A90D9" />
+  <rect x="640" y="75" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="840" y="87" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="874" y="102" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="660" y="113" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">审计日志</text>
+  <line x1="660" y1="123" x2="900" y2="123" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="660" y="145" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">操作留痕 / 独立存储</text>
+  <text x="660" y="165" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">CSV 导出</text>
+  <circle cx="652" cy="109" r="4" fill="#4A90D9" />
+  <rect x="40" y="245" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="240" y="257" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="274" y="272" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="60" y="283" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">LLM Gateway</text>
+  <line x1="60" y1="293" x2="300" y2="293" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="60" y="315" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">路由 / 熔断 / 限流 / 追踪</text>
+  <circle cx="52" cy="279" r="4" fill="#4A90D9" />
+  <rect x="340" y="245" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="540" y="257" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="574" y="272" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="360" y="283" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">多部门权限隔离</text>
+  <line x1="360" y1="293" x2="600" y2="293" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="360" y="315" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">部门管理 / 资源归属</text>
+  <text x="360" y="335" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">WebApp 访问控制</text>
+  <circle cx="352" cy="279" r="4" fill="#4A90D9" />
+  <rect x="640" y="245" width="280" height="150" rx="8" ry="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="840" y="257" width="68" height="22" rx="11" ry="11" fill="#4A90D9" />
+  <text x="874" y="272" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">★ 核心</text>
+  <text x="660" y="283" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1a1a2e">统一管理中心</text>
+  <line x1="660" y1="293" x2="900" y2="293" stroke="#4A90D9" stroke-width="1" opacity="0.4" />
+  <text x="660" y="315" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">5 个管理页面</text>
+  <text x="660" y="335" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555">独立部署</text>
+  <circle cx="652" cy="279" r="4" fill="#4A90D9" />
+  <rect x="40" y="409" width="880" height="28" rx="6" fill="#F5F8FF" stroke="#D0E4F7" stroke-width="1" />
+  <text x="480" y="429" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#444444" />
+  <text x="280" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#4A90D9" font-weight="bold">★</text>
+  <text x="298" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555"> 3周内完成（核心）</text>
+  <text x="500" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#F5A623" font-weight="bold">☆</text>
+  <text x="518" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555"> 训练营课后作业</text>
+  <text x="710" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#7ED321" font-weight="bold">○</text>
+  <text x="728" y="429" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#555555"> 社区共建</text>
+</svg>

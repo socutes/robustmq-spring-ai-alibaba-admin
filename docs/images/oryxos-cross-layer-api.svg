@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-left" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#D94F4F"/>
+    </marker>
+    <marker id="arrow-right" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A7FD4"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="500" fill="#FAFBFF"/>
+
+  <!-- Title -->
+  <text x="480" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A2B5E" text-anchor="middle">Runtime ↔ Control Plane 通信接口</text>
+
+  <!-- Left: Agent Runtime box -->
+  <rect x="30" y="60" width="260" height="400" rx="8" ry="8" fill="#EDF9EE" stroke="#52B366" stroke-width="2"/>
+  <text x="160" y="90" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2E7D32" text-anchor="middle">Agent Runtime（Rust）</text>
+  <line x1="50" y1="100" x2="270" y2="100" stroke="#52B366" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="70" y="130" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">■ oryx-config</text>
+  <text x="85" y="148" font-family="Arial, sans-serif" font-size="11" fill="#555">热配置拉取</text>
+  <text x="70" y="175" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">■ oryx-quota</text>
+  <text x="85" y="193" font-family="Arial, sans-serif" font-size="11" fill="#555">配额刷新</text>
+  <text x="70" y="220" font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">■ oryx-audit</text>
+  <text x="85" y="238" font-family="Arial, sans-serif" font-size="11" fill="#555">审计上报</text>
+
+  <!-- Right: Control Plane box -->
+  <rect x="670" y="60" width="260" height="400" rx="8" ry="8" fill="#FEF9E8" stroke="#D4A843" stroke-width="2"/>
+  <text x="800" y="90" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#A0701A" text-anchor="middle">Control Plane（Java）</text>
+  <line x1="690" y1="100" x2="910" y2="100" stroke="#D4A843" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="710" y="130" font-family="Arial, sans-serif" font-size="12" fill="#A0701A">■ HotConfigController</text>
+  <text x="710" y="158" font-family="Arial, sans-serif" font-size="12" fill="#A0701A">■ QuotaController</text>
+  <text x="710" y="186" font-family="Arial, sans-serif" font-size="12" fill="#A0701A">■ AuditController</text>
+  <text x="710" y="214" font-family="Arial, sans-serif" font-size="12" fill="#A0701A">■ AgentController</text>
+  <text x="710" y="242" font-family="Arial, sans-serif" font-size="12" fill="#A0701A">■ ProfileController</text>
+
+  <!-- Center divider -->
+  <line x1="480" y1="70" x2="480" y2="450" stroke="#CCCCCC" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Group 1 title: Push (right to left, red) -->
+  <text x="480" y="88" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C0392B" text-anchor="middle">推送接口（低频，&lt; 1s 生效）</text>
+
+  <!-- Arrow 1: POST /internal/profile/{id}/suspend -->
+  <line x1="660" y1="118" x2="300" y2="118" stroke="#D94F4F" stroke-width="1.8" marker-end="url(#arrow-left)"/>
+  <text x="480" y="113" font-family="Arial, sans-serif" font-size="10.5" fill="#C0392B" text-anchor="middle">POST /internal/profile/{id}/suspend</text>
+  <text x="480" y="130" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Profile 挂起　　　　　　低频</text>
+
+  <!-- Arrow 2: POST /internal/agents/{id}/kill -->
+  <line x1="660" y1="160" x2="300" y2="160" stroke="#D94F4F" stroke-width="1.8" marker-end="url(#arrow-left)"/>
+  <text x="480" y="155" font-family="Arial, sans-serif" font-size="10.5" fill="#C0392B" text-anchor="middle">POST /internal/agents/{id}/kill</text>
+  <text x="480" y="172" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Kill Switch　　　　　　　低频</text>
+
+  <!-- Arrow 3: POST /internal/config/push -->
+  <line x1="660" y1="202" x2="300" y2="202" stroke="#D94F4F" stroke-width="1.8" marker-end="url(#arrow-left)"/>
+  <text x="480" y="197" font-family="Arial, sans-serif" font-size="10.5" fill="#C0392B" text-anchor="middle">POST /internal/config/push</text>
+  <text x="480" y="214" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">热配置变更提示　　　　　低频</text>
+
+  <!-- Arrow 4: POST /internal/sub-agents/{id}/status -->
+  <line x1="660" y1="244" x2="300" y2="244" stroke="#D94F4F" stroke-width="1.8" marker-end="url(#arrow-left)"/>
+  <text x="480" y="239" font-family="Arial, sans-serif" font-size="10.5" fill="#C0392B" text-anchor="middle">POST /internal/sub-agents/{id}/status</text>
+  <text x="480" y="256" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Sub Agent 状态变化　　　低频</text>
+
+  <!-- Group 2 title: Pull/Report (left to right, blue) -->
+  <text x="480" y="286" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1A5CB0" text-anchor="middle">拉取/上报接口（周期性）</text>
+
+  <!-- Arrow 5: GET /internal/profiles/bulk -->
+  <line x1="300" y1="308" x2="660" y2="308" stroke="#4A7FD4" stroke-width="1.8" marker-end="url(#arrow-right)"/>
+  <text x="480" y="303" font-family="Arial, sans-serif" font-size="10.5" fill="#1A5CB0" text-anchor="middle">GET /internal/profiles/bulk</text>
+  <text x="480" y="320" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">启动时拉取全量 Profile　启动1次</text>
+
+  <!-- Arrow 6: GET /internal/config/delta -->
+  <line x1="300" y1="348" x2="660" y2="348" stroke="#4A7FD4" stroke-width="1.8" marker-end="url(#arrow-right)"/>
+  <text x="480" y="343" font-family="Arial, sans-serif" font-size="10.5" fill="#1A5CB0" text-anchor="middle">GET /internal/config/delta?since_version=N</text>
+  <text x="480" y="360" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">每 10s 增量拉取　　　　 每10s</text>
+
+  <!-- Arrow 7: GET /internal/profiles/quota-states -->
+  <line x1="300" y1="388" x2="660" y2="388" stroke="#4A7FD4" stroke-width="1.8" marker-end="url(#arrow-right)"/>
+  <text x="480" y="383" font-family="Arial, sans-serif" font-size="10.5" fill="#1A5CB0" text-anchor="middle">GET /internal/profiles/quota-states</text>
+  <text x="480" y="400" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">每 60s 配额刷新　　　　 每60s</text>
+
+  <!-- Arrow 8: POST /internal/audit/events -->
+  <line x1="300" y1="428" x2="660" y2="428" stroke="#4A7FD4" stroke-width="1.8" marker-end="url(#arrow-right)"/>
+  <text x="480" y="423" font-family="Arial, sans-serif" font-size="10.5" fill="#1A5CB0" text-anchor="middle">POST /internal/audit/events</text>
+  <text x="480" y="440" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">每100条或200ms批量上报　周期性</text>
+
+  <!-- Bottom note -->
+  <text x="480" y="475" font-family="Arial, sans-serif" font-size="10" fill="#999" text-anchor="middle">推送鉴权：Authorization: Bearer &lt;internal-token&gt;　/　拉取鉴权：同上</text>
+</svg>

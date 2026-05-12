@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460">
+  <rect width="960" height="460" fill="#F8FAFF"/>
+  <text x="480" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#2C5F9E">三层记忆体系（oryx-memory crate）</text>
+  <rect x="20" y="50" width="580" height="110" rx="8" fill="#E8F4FD" stroke="#4A90D9" stroke-width="2"/>
+  <text x="34" y="74" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#2C5F9E">Episodic Memory（情节记忆）</text>
+  <text x="34" y="94" font-family="Arial,sans-serif" font-size="11" fill="#333">技术：redb KV（主键 profile_id + session_id + turn_index）+ tantivy BM25 索引</text>
+  <text x="34" y="112" font-family="Arial,sans-serif" font-size="11" fill="#333">检索：bm25_score×0.6 + recency_score×0.4，top_k 重排</text>
+  <ellipse cx="455" cy="85" rx="28" ry="8" fill="#9DC8EF" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="427" y="85" width="56" height="36" fill="#9DC8EF" stroke="#4A90D9" stroke-width="1.5"/>
+  <ellipse cx="455" cy="121" rx="28" ry="8" fill="#7BB8E8" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="455" y="107" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A3A5C">redb</text>
+  <ellipse cx="535" cy="85" rx="28" ry="8" fill="#9DC8EF" stroke="#4A90D9" stroke-width="1.5"/>
+  <rect x="507" y="85" width="56" height="36" fill="#9DC8EF" stroke="#4A90D9" stroke-width="1.5"/>
+  <ellipse cx="535" cy="121" rx="28" ry="8" fill="#7BB8E8" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="535" y="107" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A3A5C">tantivy</text>
+  <line x1="483" y1="103" x2="507" y2="103" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <rect x="450" y="130" width="110" height="22" rx="4" fill="#4A90D9"/>
+  <text x="505" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white">检索结果（top_k）</text>
+  <line x1="495" y1="129" x2="505" y2="130" stroke="#4A90D9" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <rect x="20" y="170" width="580" height="110" rx="8" fill="#EDF9EE" stroke="#52B366" stroke-width="2"/>
+  <text x="34" y="194" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#2A7A3A">Long-term Memory（长期记忆）</text>
+  <text x="34" y="214" font-family="Arial,sans-serif" font-size="11" fill="#333">技术：MEMORY.md 文件，路径 data/memory/{profile_id}/{agent_id}/MEMORY.md</text>
+  <text x="34" y="232" font-family="Arial,sans-serif" font-size="11" fill="#333">触发：Session 结束 / 用户说「记住这个」时写入</text>
+  <text x="34" y="250" font-family="Arial,sans-serif" font-size="11" fill="#333">读取：每次 Session 开始注入 System Prompt 前缀</text>
+  <rect x="440" y="198" width="52" height="64" rx="3" fill="#C8EAC8" stroke="#52B366" stroke-width="1.5"/>
+  <polygon points="478,198 492,212 478,212" fill="#52B366"/>
+  <line x1="448" y1="220" x2="484" y2="220" stroke="#52B366" stroke-width="1"/>
+  <line x1="448" y1="230" x2="484" y2="230" stroke="#52B366" stroke-width="1"/>
+  <line x1="448" y1="240" x2="476" y2="240" stroke="#52B366" stroke-width="1"/>
+  <text x="466" y="276" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#2A7A3A">MEMORY.md</text>
+  <line x1="492" y1="230" x2="530" y2="230" stroke="#52B366" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <rect x="530" y="216" width="50" height="28" rx="4" fill="#52B366"/>
+  <text x="555" y="227" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="white">System</text>
+  <text x="555" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="white">Prompt</text>
+  <rect x="20" y="290" width="580" height="110" rx="8" fill="#F3EEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="34" y="314" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#5B33A8">Entity Bank（实体库）</text>
+  <text x="34" y="334" font-family="Arial,sans-serif" font-size="11" fill="#333">技术：redb 表，key = (profile_id, entity_name)，value = 属性 JSON</text>
+  <text x="34" y="352" font-family="Arial,sans-serif" font-size="11" fill="#333">触发：识别到新实体时写入；Episodic 检索后自动拉取相关实体属性</text>
+  <rect x="430" y="320" width="150" height="80" rx="4" fill="white" stroke="#8B5CF6" stroke-width="1.5"/>
+  <rect x="430" y="320" width="150" height="20" rx="4" fill="#8B5CF6"/>
+  <text x="505" y="334" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white">Entity Bank (profile_id, entity_name) → JSON</text>
+  <line x1="430" y1="360" x2="580" y2="360" stroke="#D4C4F8" stroke-width="1"/>
+  <text x="438" y="354" font-family="Arial,sans-serif" font-size="9" fill="#333">(P1, "Alice")</text>
+  <text x="520" y="354" font-family="Arial,sans-serif" font-size="9" fill="#333">{role:"dev",...}</text>
+  <line x1="430" y1="380" x2="580" y2="380" stroke="#D4C4F8" stroke-width="1"/>
+  <text x="438" y="374" font-family="Arial,sans-serif" font-size="9" fill="#333">(P1, "RobustMQ")</text>
+  <text x="520" y="374" font-family="Arial,sans-serif" font-size="9" fill="#333">{type:"MQ",...}</text>
+  <text x="438" y="394" font-family="Arial,sans-serif" font-size="9" fill="#999">...</text>
+  <rect x="620" y="50" width="320" height="380" rx="8" fill="white" stroke="#CCCCCC" stroke-width="1.5"/>
+  <text x="780" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#CC2222">Profile 级物理隔离</text>
+  <rect x="632" y="88" width="296" height="155" rx="6" fill="#EEF5FF" stroke="#4A90D9" stroke-width="2"/>
+  <text x="780" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4A90D9">Profile A</text>
+  <rect x="642" y="122" width="276" height="22" rx="4" fill="white" stroke="#4A90D9" stroke-width="1.2"/>
+  <text x="780" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4A90D9">Episodic 存储（tantivy Segment）</text>
+  <rect x="642" y="150" width="276" height="22" rx="4" fill="white" stroke="#52B366" stroke-width="1.2"/>
+  <text x="780" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#52B366">Memory 文件目录</text>
+  <rect x="642" y="178" width="276" height="22" rx="4" fill="white" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="780" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8B5CF6">Entity Bank 分区</text>
+  <rect x="632" y="260" width="296" height="155" rx="6" fill="#F5EEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="780" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">Profile B</text>
+  <rect x="642" y="294" width="276" height="22" rx="4" fill="white" stroke="#4A90D9" stroke-width="1.2"/>
+  <text x="780" y="308" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4A90D9">Episodic 存储（tantivy Segment）</text>
+  <rect x="642" y="322" width="276" height="22" rx="4" fill="white" stroke="#52B366" stroke-width="1.2"/>
+  <text x="780" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#52B366">Memory 文件目录</text>
+  <rect x="642" y="350" width="276" height="22" rx="4" fill="white" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="780" y="364" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8B5CF6">Entity Bank 分区</text>
+  <line x1="642" y1="251" x2="918" y2="251" stroke="#CC2222" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="780" y="247" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#CC2222">× 不可跨界访问</text>
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4A90D9"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#52B366"/>
+    </marker>
+    <marker id="arrowBlack" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#333333"/>
+    </marker>
+  </defs>
+</svg>

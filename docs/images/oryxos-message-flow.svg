@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="580" viewBox="0 0 960 580">
+<defs>
+  <marker id="arrowR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M1,1 L7,4 L1,7 Z" fill="#333"/>
+  </marker>
+  <marker id="arrowRDash" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M1,1 L7,4 L1,7 Z" fill="#888"/>
+  </marker>
+  <marker id="arrowSelf" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M1,1 L7,4 L1,7 Z" fill="#555"/>
+  </marker>
+</defs>
+<rect width="960" height="580" fill="white"/>
+<text x="480" y="30" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#1A2B5E" text-anchor="middle">消息处理全链路（以 Feishu 为例）</text>
+<rect x="-35" y="48" width="130" height="36" rx="5" fill="#4A90D9" stroke="#4A90D9"/>
+<text x="30" y="71" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Feishu用户</text>
+<rect x="165" y="48" width="130" height="36" rx="5" fill="#52B366" stroke="#52B366"/>
+<text x="230" y="71" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">FeishuAdapter</text>
+<rect x="365" y="48" width="130" height="36" rx="5" fill="#2D7A4A" stroke="#2D7A4A"/>
+<text x="430" y="71" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Gateway处理Task</text>
+<rect x="565" y="48" width="130" height="36" rx="5" fill="#E09A52" stroke="#E09A52"/>
+<text x="630" y="71" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">LLM Router</text>
+<rect x="765" y="48" width="130" height="36" rx="5" fill="#8B5CF6" stroke="#8B5CF6"/>
+<text x="830" y="71" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Sub Agent</text>
+<line x1="30" y1="84" x2="30" y2="560" stroke="#CCC" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="230" y1="84" x2="230" y2="560" stroke="#CCC" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="430" y1="84" x2="430" y2="560" stroke="#CCC" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="630" y1="84" x2="630" y2="560" stroke="#CCC" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="830" y1="84" x2="830" y2="560" stroke="#CCC" stroke-width="1" stroke-dasharray="4,4"/>
+<rect x="0" y="84" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<line x1="38" y1="98" x2="222" y2="98" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="130" y="94" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">1. POST /feishu/event（验证签名）</text>
+<rect x="0" y="128" width="960" height="44" fill="white" opacity="0.6"/>
+<line x1="238" y1="142" x2="422" y2="142" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="330" y="138" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">2. InboundMessage（含 open_id）</text>
+<rect x="844" y="132" width="110" height="22" rx="3" fill="#F0F0F0" stroke="#CCC" stroke-width="0.8"/>
+<text x="899" y="148" font-family="Arial,sans-serif" font-size="8.5" fill="#555" text-anchor="middle">channel_user_id + profile_id</text>
+<rect x="0" y="172" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<path d="M430,182 L452,182 L452,200 L430,200" fill="none" stroke="#333" stroke-width="1.4"  marker-end="url(#arrowR)"/>
+<text x="456" y="192" font-family="Arial,sans-serif" font-size="10" fill="#444">3. 查 Profile 成员映射 → 生成 Identity JWT</text>
+<rect x="0" y="216" width="960" height="44" fill="white" opacity="0.6"/>
+<path d="M430,226 L452,226 L452,244 L430,244" fill="none" stroke="#333" stroke-width="1.4"  marker-end="url(#arrowR)"/>
+<text x="456" y="236" font-family="Arial,sans-serif" font-size="10" fill="#444">4. Episodic Memory BM25 检索 + 配额检查</text>
+<rect x="0" y="260" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<line x1="438" y1="274" x2="622" y2="274" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="530" y="270" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">5. 路由 LLM 请求</text>
+<rect x="844" y="264" width="110" height="22" rx="3" fill="#F0F0F0" stroke="#CCC" stroke-width="0.8"/>
+<text x="899" y="280" font-family="Arial,sans-serif" font-size="8.5" fill="#555" text-anchor="middle">before_llm_call Hook（如配置）</text>
+<rect x="0" y="304" width="960" height="44" fill="white" opacity="0.6"/>
+<path d="M630,314 L652,314 L652,332 L630,332" fill="none" stroke="#333" stroke-width="1.4"  marker-end="url(#arrowR)"/>
+<text x="656" y="324" font-family="Arial,sans-serif" font-size="10" fill="#444">6. 熔断器检查 → 选健康 Provider</text>
+<rect x="0" y="348" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<line x1="622" y1="362" x2="438" y2="362" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="530" y="358" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">7. LLM 响应</text>
+<rect x="0" y="392" width="960" height="44" fill="white" opacity="0.6"/>
+<line x1="438" y1="406" x2="822" y2="406" stroke="#888" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrowRDash)"/>
+<text x="630" y="402" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">8. POST /api/v1/chat（注入 X-OryxOS-Identity）</text>
+<rect x="844" y="396" width="110" height="22" rx="3" fill="#F0F0F0" stroke="#CCC" stroke-width="0.8"/>
+<text x="899" y="412" font-family="Arial,sans-serif" font-size="8.5" fill="#555" text-anchor="middle">X-OryxOS-Identity JWT</text>
+<rect x="0" y="436" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<line x1="822" y1="450" x2="438" y2="450" stroke="#888" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrowRDash)"/>
+<text x="630" y="446" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">9. 工具执行结果</text>
+<rect x="0" y="480" width="960" height="44" fill="white" opacity="0.6"/>
+<line x1="422" y1="494" x2="238" y2="494" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="330" y="490" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">10. OutboundMessage（最终响应）</text>
+<rect x="0" y="524" width="960" height="44" fill="#F9F9F9" opacity="0.6"/>
+<line x1="222" y1="538" x2="38" y2="538" stroke="#333" stroke-width="1.5"  marker-end="url(#arrowR)"/>
+<text x="130" y="534" font-family="Arial,sans-serif" font-size="10" fill="#333" text-anchor="middle">11. 回复消息</text>
+</svg>

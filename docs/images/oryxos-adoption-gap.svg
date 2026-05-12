@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480">
+  <defs>
+    <style>
+      @font-face {}
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="480" fill="#F8FAFF"/>
+
+  <!-- Top title bar -->
+  <rect x="0" y="0" width="960" height="52" fill="#2563EB" rx="0"/>
+  <text x="480" y="33" text-anchor="middle" fill="white" font-size="20" font-weight="bold">企业 AI Agent 落地现状</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEFT CARD: 落地阻力柱状图  x=20, w=293      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="20" y="68" width="293" height="388" fill="white" rx="10" stroke="#D1D9F0" stroke-width="1"/>
+  <text x="166" y="100" text-anchor="middle" fill="#374151" font-size="14" font-weight="bold">企业落地阻力</text>
+
+  <!-- Bar 1: 非确定性输出 70% -->
+  <text x="40" y="138" fill="#4B5563" font-size="12">非确定性输出</text>
+  <rect x="40" y="145" width="220" height="16" fill="#E5E7EB" rx="8"/>
+  <rect x="40" y="145" width="154" height="16" fill="#E05252" rx="8"/>
+  <text x="268" y="158" fill="#E05252" font-size="12" font-weight="bold">70%</text>
+
+  <!-- Bar 2: 工具/数据访问受限 33% -->
+  <text x="40" y="196" fill="#4B5563" font-size="12">工具/数据访问受限</text>
+  <rect x="40" y="203" width="220" height="16" fill="#E5E7EB" rx="8"/>
+  <rect x="40" y="203" width="72.6" height="16" fill="#E09A52" rx="8"/>
+  <text x="268" y="216" fill="#E09A52" font-size="12" font-weight="bold">33%</text>
+
+  <!-- Bar 3: 治理能力缺失 28% -->
+  <text x="40" y="254" fill="#4B5563" font-size="12">治理能力缺失</text>
+  <rect x="40" y="261" width="220" height="16" fill="#E5E7EB" rx="8"/>
+  <rect x="40" y="261" width="61.6" height="16" fill="#D4C44A" rx="8"/>
+  <text x="268" y="274" fill="#D4C44A" font-size="12" font-weight="bold">28%</text>
+
+  <!-- Legend note -->
+  <text x="40" y="330" fill="#9CA3AF" font-size="11">* 来源：Gartner 2025 AI 落地调研</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MIDDLE CARD: 两个大数字  x=333, w=293       -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="333" y="68" width="294" height="388" fill="white" rx="10" stroke="#D1D9F0" stroke-width="1"/>
+  <text x="480" y="100" text-anchor="middle" fill="#374151" font-size="14" font-weight="bold">AI Agent 生产部署现状</text>
+
+  <!-- Divider line -->
+  <line x1="353" y1="280" x2="607" y2="280" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Big number 1: 88% -->
+  <text x="480" y="185" text-anchor="middle" fill="#E05252" font-size="72" font-weight="bold">88%</text>
+  <text x="480" y="215" text-anchor="middle" fill="#6B7280" font-size="13">试点项目未到达生产</text>
+  <text x="480" y="234" text-anchor="middle" fill="#9CA3AF" font-size="11">（Gartner 2024 调研）</text>
+
+  <!-- Big number 2: 49pt -->
+  <text x="480" y="350" text-anchor="middle" fill="#E09A52" font-size="64" font-weight="bold">49pt</text>
+  <text x="480" y="378" text-anchor="middle" fill="#6B7280" font-size="12">企业认知 vs IT 交付能力差距</text>
+  <text x="480" y="396" text-anchor="middle" fill="#9CA3AF" font-size="11">（McKinsey AI Index 2025）</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RIGHT CARD: 折线图  x=647, w=293            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="647" y="68" width="293" height="388" fill="white" rx="10" stroke="#D1D9F0" stroke-width="1"/>
+  <text x="793" y="100" text-anchor="middle" fill="#374151" font-size="14" font-weight="bold">多 Agent 生产部署占比</text>
+
+  <!-- Chart area: x=680..910, y=120..370 -->
+  <!-- Y-axis labels -->
+  <text x="673" y="130" text-anchor="end" fill="#9CA3AF" font-size="11">20%</text>
+  <text x="673" y="205" text-anchor="end" fill="#9CA3AF" font-size="11">10%</text>
+  <text x="673" y="280" text-anchor="end" fill="#9CA3AF" font-size="11"> 0%</text>
+
+  <!-- Grid lines -->
+  <line x1="680" y1="127" x2="910" y2="127" stroke="#F3F4F6" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="680" y1="202" x2="910" y2="202" stroke="#F3F4F6" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="680" y1="277" x2="910" y2="277" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- X-axis -->
+  <text x="706" y="295" text-anchor="middle" fill="#6B7280" font-size="12">2024</text>
+  <text x="795" y="295" text-anchor="middle" fill="#6B7280" font-size="12">2025</text>
+  <text x="884" y="295" text-anchor="middle" fill="#6B7280" font-size="12">2026</text>
+
+  <!-- Data points:
+       x-positions: 706, 795, 884
+       y=277 is 0%, y=127 is 20%  → 150px per 20%  → 1%=7.5px
+       1%  → y = 277 - 7.5 = 269.5
+       6%  → y = 277 - 45  = 232
+       22% → y = 277 - 165 = 112
+  -->
+  <!-- Filled area under line -->
+  <polygon points="706,269.5 795,232 884,112 884,277 706,277" fill="#4A90D9" fill-opacity="0.08"/>
+
+  <!-- Line -->
+  <polyline points="706,269.5 795,232 884,112"
+            fill="none" stroke="#4A90D9" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Data point circles -->
+  <circle cx="706" cy="269.5" r="5" fill="white" stroke="#4A90D9" stroke-width="2"/>
+  <circle cx="795" cy="232"   r="5" fill="white" stroke="#4A90D9" stroke-width="2"/>
+  <circle cx="884" cy="112"   r="5" fill="white" stroke="#4A90D9" stroke-width="2"/>
+
+  <!-- Data labels -->
+  <text x="706" y="262" text-anchor="middle" fill="#4A90D9" font-size="11" font-weight="bold">1%</text>
+  <text x="795" y="224" text-anchor="middle" fill="#4A90D9" font-size="11" font-weight="bold">6%</text>
+  <text x="884" y="104" text-anchor="middle" fill="#4A90D9" font-size="11" font-weight="bold">22%</text>
+
+  <!-- Bottom note -->
+  <text x="793" y="420" text-anchor="middle" fill="#9CA3AF" font-size="11">使用 3+ Agent 的生产部署比例</text>
+
+</svg>

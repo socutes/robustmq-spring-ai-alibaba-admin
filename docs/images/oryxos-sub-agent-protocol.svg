@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <marker id="arrowB" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4A90D9"/>
+    </marker>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52B366"/>
+    </marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#E05252"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+  <rect width="960" height="520" fill="#F8FAFF"/>
+  <rect x="0" y="50" width="960" height="230" fill="#EEF6FF" rx="0"/>
+  <rect x="0" y="290" width="960" height="220" fill="#F0FFF4" rx="0"/>
+  <line x1="0" y1="270" x2="960" y2="270" stroke="#C8D8EE" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="20" y="56" width="160" height="28" rx="6" fill="#4A90D9" opacity="0.15"/>
+  <text x="30" y="75" font-size="13" font-weight="bold" fill="#1A5BA8">Sub Agent 注册流程</text>
+  <rect x="20" y="294" width="160" height="28" rx="6" fill="#52B366" opacity="0.15"/>
+  <text x="30" y="313" font-size="13" font-weight="bold" fill="#1A7A40">Sub Agent 调用流程</text>
+  <rect x="55" y="100" width="140" height="36" rx="7" fill="#52B366" filter="url(#cardShadow)"/>
+  <text x="125" y="123" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Sub Agent</text>
+  <rect x="245" y="100" width="140" height="36" rx="7" fill="#4A90D9" filter="url(#cardShadow)"/>
+  <text x="315" y="123" text-anchor="middle" font-size="12" font-weight="bold" fill="white">OryxOS 注册中心</text>
+  <rect x="435" y="100" width="140" height="36" rx="7" fill="#7BB8E8" filter="url(#cardShadow)"/>
+  <text x="505" y="123" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A3A6B">健康检查器</text>
+  <rect x="625" y="100" width="140" height="36" rx="7" fill="#8899AA" filter="url(#cardShadow)"/>
+  <text x="695" y="123" text-anchor="middle" font-size="12" font-weight="bold" fill="white">管控平面</text>
+  <line x1="125" y1="136" x2="125" y2="311" stroke="#52B366" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="315" y1="136" x2="315" y2="311" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="193" y1="176" x2="383" y2="176" stroke="#4A90D9" stroke-width="1.8" marker-end="url(#arrowB)"/>
+  <rect x="168" y="159" width="240" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="288" y="171" text-anchor="middle" font-size="11" fill="#2A3C6B">POST /register（携带 Agent Card）</text>
+  <circle cx="201" cy="167" r="9" fill="#4A90D9" opacity="0.85"/>
+  <text x="201" y="171" text-anchor="middle" font-size="9" font-weight="bold" fill="white">1</text>
+  <line x1="315" y1="136" x2="315" y2="311" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="695" y1="136" x2="695" y2="311" stroke="#8899AA" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="383" y1="216" x2="763" y2="216" stroke="#8899AA" stroke-width="1.8" marker-end="url(#arrowGray)"/>
+  <rect x="453" y="199" width="240" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="573" y="211" text-anchor="middle" font-size="11" fill="#2A3C6B">存储 Agent Card</text>
+  <circle cx="391" cy="207" r="9" fill="#8899AA" opacity="0.85"/>
+  <text x="391" y="211" text-anchor="middle" font-size="9" font-weight="bold" fill="white">2</text>
+  <line x1="505" y1="136" x2="505" y2="311" stroke="#7BB8E8" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="125" y1="136" x2="125" y2="311" stroke="#52B366" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="437" y1="256" x2="193" y2="256" stroke="#7BB8E8" stroke-width="1.8" marker-end="url(#arrowB)"/>
+  <rect x="195" y="239" width="240" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="315" y="251" text-anchor="middle" font-size="11" fill="#2A3C6B">GET /health（每 30s）</text>
+  <circle cx="201" cy="247" r="9" fill="#7BB8E8" opacity="0.85"/>
+  <text x="201" y="251" text-anchor="middle" font-size="9" font-weight="bold" fill="white">3</text>
+  <line x1="505" y1="136" x2="505" y2="311" stroke="#7BB8E8" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="315" y1="136" x2="315" y2="311" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,4" opacity="0.35"/>
+  <line x1="437" y1="296" x2="383" y2="296" stroke="#4A90D9" stroke-width="1.8" marker-end="url(#arrowB)"/>
+  <rect x="290" y="279" width="240" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="410" y="291" text-anchor="middle" font-size="11" fill="#2A3C6B">更新状态（HEALTHY / UNHEALTHY）</text>
+  <circle cx="391" cy="287" r="9" fill="#4A90D9" opacity="0.85"/>
+  <text x="391" y="291" text-anchor="middle" font-size="9" font-weight="bold" fill="white">4</text>
+  <line x1="125" y1="136" x2="125" y2="314" stroke="#52B366" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="315" y1="136" x2="315" y2="314" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="505" y1="136" x2="505" y2="314" stroke="#7BB8E8" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="695" y1="136" x2="695" y2="314" stroke="#8899AA" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <rect x="55" y="308" width="140" height="36" rx="7" fill="#8B5CF6" filter="url(#cardShadow)"/>
+  <text x="125" y="331" text-anchor="middle" font-size="11.5" font-weight="bold" fill="white">用户 (Feishu/WeCom)</text>
+  <rect x="245" y="308" width="140" height="36" rx="7" fill="#4A90D9" filter="url(#cardShadow)"/>
+  <text x="315" y="331" text-anchor="middle" font-size="11.5" font-weight="bold" fill="white">OryxOS Gateway</text>
+  <rect x="435" y="308" width="140" height="36" rx="7" fill="#D4A843" filter="url(#cardShadow)"/>
+  <text x="505" y="331" text-anchor="middle" font-size="11.5" font-weight="bold" fill="white">Planner</text>
+  <rect x="625" y="308" width="140" height="36" rx="7" fill="#52B366" filter="url(#cardShadow)"/>
+  <text x="695" y="331" text-anchor="middle" font-size="11.5" font-weight="bold" fill="white">Sub Agent</text>
+  <line x1="125" y1="344" x2="125" y2="509" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="315" y1="344" x2="315" y2="509" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="505" y1="344" x2="505" y2="509" stroke="#D4A843" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="695" y1="344" x2="695" y2="509" stroke="#52B366" stroke-width="1" stroke-dasharray="3,4" opacity="0.3"/>
+  <line x1="193" y1="380" x2="383" y2="380" stroke="#8B5CF6" stroke-width="1.8"  marker-end="url(#arrowB)"/>
+  <rect x="138" y="363" width="300" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="288" y="375" text-anchor="middle" font-size="10.5" fill="#2A3C6B">发送消息</text>
+  <circle cx="201" cy="371" r="9" fill="#8B5CF6" opacity="0.85"/>
+  <text x="201" y="375" text-anchor="middle" font-size="9" font-weight="bold" fill="white">1</text>
+  <line x1="383" y1="416" x2="573" y2="416" stroke="#4A90D9" stroke-width="1.8"  marker-end="url(#arrowB)"/>
+  <rect x="328" y="399" width="300" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="478" y="411" text-anchor="middle" font-size="10.5" fill="#2A3C6B">意图识别</text>
+  <circle cx="391" cy="407" r="9" fill="#4A90D9" opacity="0.85"/>
+  <text x="391" y="411" text-anchor="middle" font-size="9" font-weight="bold" fill="white">2</text>
+  <path d="M507,436 C560,430 560,462 507,456" fill="none" stroke="#D4A843" stroke-width="1.8" marker-end="url(#arrowGray)"/>
+  <rect x="515" y="432" width="200" height="15" rx="3" fill="white" opacity="0.8"/>
+  <text x="525" y="444" font-size="10.5" fill="#6B4A00">关键词匹配 skill_name</text>
+  <line x1="573" y1="480" x2="763" y2="480" stroke="#52B366" stroke-width="1.8"  marker-end="url(#arrowG)"/>
+  <rect x="518" y="463" width="300" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="668" y="475" text-anchor="middle" font-size="10.5" fill="#2A3C6B">POST /api/v1/chat（注入 X-OryxOS-Identity）</text>
+  <circle cx="581" cy="471" r="9" fill="#52B366" opacity="0.85"/>
+  <text x="581" y="475" text-anchor="middle" font-size="9" font-weight="bold" fill="white">4</text>
+  <line x1="627" y1="506" x2="573" y2="506" stroke="#52B366" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arrowR)"/>
+  <rect x="450" y="489" width="300" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="600" y="501" text-anchor="middle" font-size="10.5" fill="#2A3C6B">响应结果</text>
+  <circle cx="581" cy="497" r="9" fill="#52B366" opacity="0.85"/>
+  <text x="581" y="501" text-anchor="middle" font-size="9" font-weight="bold" fill="white">5</text>
+  <line x1="437" y1="532" x2="193" y2="532" stroke="#8B5CF6" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arrowB)"/>
+  <rect x="165" y="515" width="300" height="15" rx="3" fill="white" opacity="0.75"/>
+  <text x="315" y="527" text-anchor="middle" font-size="10.5" fill="#2A3C6B">回复消息</text>
+  <circle cx="201" cy="523" r="9" fill="#8B5CF6" opacity="0.85"/>
+  <text x="201" y="527" text-anchor="middle" font-size="9" font-weight="bold" fill="white">6</text>
+  <rect x="790" y="94" width="155" height="100" rx="8" fill="#EEF2FA" stroke="#C0CCE0" stroke-width="1.2"/>
+  <text x="800" y="112" font-size="11" font-weight="bold" fill="#1A3A6B">Agent Card 字段</text>
+  <text x="800" y="130" font-size="10" fill="#445577" font-family="monospace">agent_id: &lt;uuid&gt;</text>
+  <text x="800" y="146" font-size="10" fill="#445577" font-family="monospace">skill_name: &lt;str&gt;</text>
+  <text x="800" y="162" font-size="10" fill="#445577" font-family="monospace">endpoint: &lt;url&gt;</text>
+  <text x="800" y="178" font-size="10" fill="#445577" font-family="monospace">version: semver</text>
+  <rect x="790" y="302" width="155" height="112" rx="8" fill="#EEF9F1" stroke="#AADDC0" stroke-width="1.2"/>
+  <text x="800" y="320" font-size="11" font-weight="bold" fill="#1A7A40">关键 Headers</text>
+  <text x="800" y="338" font-size="10" fill="#2A6644" font-family="monospace">X-OryxOS-Identity:</text>
+  <text x="800" y="355" font-size="10" fill="#2A6644" font-family="monospace">  &lt;JWT&gt;</text>
+  <text x="800" y="372" font-size="10" fill="#2A6644" font-family="monospace">X-Devops-Transmitted</text>
+  <text x="800" y="389" font-size="10" fill="#2A6644" font-family="monospace">-Auth: &lt;JWT&gt;</text>
+  <rect x="0" y="0" width="960" height="46" fill="#1A3A6B"/>
+  <text x="480" y="29" text-anchor="middle" font-size="16" font-weight="bold" fill="white">OryxOS — Sub Agent 注册 &amp; 调用协议</text>
+  <text x="480" y="514" text-anchor="middle" font-size="10" fill="#A0AABB">OryxOS Sub Agent Protocol  |  上: 注册流程  |  下: 调用流程</text>
+</svg>

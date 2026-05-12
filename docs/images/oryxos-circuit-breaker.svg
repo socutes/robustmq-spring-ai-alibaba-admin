@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <defs>
+    <marker id="arrRed" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#E05252"/>
+    </marker>
+    <marker id="arrOrange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#E09A52"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#52B366"/>
+    </marker>
+    <filter id="nodeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#00000020"/>
+    </filter>
+  </defs>
+  <rect width="720" height="400" fill="#FAFBFF"/>
+  <text x="360" y="34" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">熔断器状态机（每个 LLM Provider 独立维护）</text>
+  <circle cx="145" cy="190" r="62" fill="#00000018" filter="url(#nodeShadow)"/>
+  <circle cx="145" cy="190" r="60" fill="#52B366" opacity="0.15"/>
+  <circle cx="145" cy="190" r="60" fill="none" stroke="#52B366" stroke-width="3"/>
+  <text x="145" y="196" text-anchor="middle" font-size="15" font-weight="bold" fill="#52B366">Closed</text>
+  <circle cx="360" cy="190" r="62" fill="#00000018" filter="url(#nodeShadow)"/>
+  <circle cx="360" cy="190" r="60" fill="#E05252" opacity="0.15"/>
+  <circle cx="360" cy="190" r="60" fill="none" stroke="#E05252" stroke-width="3"/>
+  <text x="360" y="196" text-anchor="middle" font-size="15" font-weight="bold" fill="#E05252">Open</text>
+  <circle cx="575" cy="190" r="62" fill="#00000018" filter="url(#nodeShadow)"/>
+  <circle cx="575" cy="190" r="60" fill="#E09A52" opacity="0.15"/>
+  <circle cx="575" cy="190" r="60" fill="none" stroke="#E09A52" stroke-width="3"/>
+  <text x="575" y="196" text-anchor="middle" font-size="15" font-weight="bold" fill="#E09A52">HalfOpen</text>
+  <rect x="61" y="266" width="168" height="44" rx="6" fill="#E8F9EE" stroke="#52B366" stroke-width="1.2" opacity="0.9"/>
+  <text x="145" y="282" text-anchor="middle" font-size="10" fill="#444">health_bitmap 对应位 = 1</text>
+  <text x="145" y="298" text-anchor="middle" font-size="10" fill="#444">请求正常通过</text>
+  <rect x="276" y="266" width="168" height="44" rx="6" fill="#FDEAEA" stroke="#E05252" stroke-width="1.2" opacity="0.9"/>
+  <text x="360" y="282" text-anchor="middle" font-size="10" fill="#444">health_bitmap 对应位 = 0</text>
+  <text x="360" y="298" text-anchor="middle" font-size="10" fill="#444">新请求直接跳过此 Provider</text>
+  <rect x="491" y="266" width="168" height="44" rx="6" fill="#FEF4E6" stroke="#E09A52" stroke-width="1.2" opacity="0.9"/>
+  <text x="575" y="282" text-anchor="middle" font-size="10" fill="#444">发送 GET /v1/models 探测</text>
+  <text x="575" y="298" text-anchor="middle" font-size="10" fill="#444">结果决定下一步</text>
+  <path d="M202.0,172.0 Q252.5,117.0 303.0,172.0" fill="none" stroke="#E05252" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="252.5" y="99.0" text-anchor="middle" font-size="11" fill="#E05252">连续 3 次调用失败</text>
+  <path d="M417.0,172.0 Q467.5,117.0 518.0,172.0" fill="none" stroke="#E09A52" stroke-width="2" marker-end="url(#arrOrange)"/>
+  <text x="467.5" y="99.0" text-anchor="middle" font-size="11" fill="#E09A52">等待 30s 后</text>
+  <path d="M518.0,208.0 Q360.0,263.0 202.0,208.0" fill="none" stroke="#52B366" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <text x="360.0" y="287.0" text-anchor="middle" font-size="11" fill="#52B366">探测成功 ✓</text>
+  <path d="M518.0,168.0 Q467.5,138.0 417.0,168.0" fill="none" stroke="#E05252" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrRed)"/>
+  <text x="467.5" y="132.0" text-anchor="middle" font-size="11" fill="#E05252">探测失败 ✗</text>
+  <text x="16" y="388" font-size="11" fill="#999">Arc&lt;Mutex&lt;CircuitBreakerState&gt;&gt;，多并发请求共享</text>
+</svg>

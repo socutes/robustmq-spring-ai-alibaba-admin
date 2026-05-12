@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <defs>
+    <style>
+      text { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="520" fill="#F5F7FF"/>
+
+  <!-- Top title -->
+  <text x="480" y="44" text-anchor="middle" fill="#2563EB" font-size="18" font-weight="bold">现有 Agent 框架的共同缺口</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- ROW 1 (y=64): Card 1 x=20, Card 2 x=340, Card 3 x=660 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- ── Card 1: 多租户隔离 ── -->
+  <rect x="20" y="64" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <!-- Color accent top bar -->
+  <rect x="20" y="64" width="280" height="6" fill="#4A90D9" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="28" y="80" width="56" height="42" fill="#E8F4FD" rx="8"/>
+  <!-- Icon: two rectangles separated by dashed line -->
+  <rect x="34" y="86" width="18" height="28" fill="#4A90D9" rx="3" fill-opacity="0.7"/>
+  <rect x="60" y="86" width="18" height="28" fill="#4A90D9" rx="3" fill-opacity="0.4"/>
+  <line x1="53" y1="87" x2="53" y2="113" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Title -->
+  <text x="96" y="101" fill="#1E3A5F" font-size="15" font-weight="bold">多租户隔离</text>
+  <!-- Sub line -->
+  <text x="30" y="142" fill="#6B7280" font-size="11">50 个 Agent，10 个团队，</text>
+  <text x="30" y="158" fill="#6B7280" font-size="11">数据天然互通</text>
+  <!-- Gap tag -->
+  <rect x="28" y="216" width="52" height="18" fill="#E8F4FD" rx="9"/>
+  <text x="54" y="228" text-anchor="middle" fill="#4A90D9" font-size="10" font-weight="bold">缺口 #1</text>
+
+  <!-- ── Card 2: API Key 集中管控 ── -->
+  <rect x="340" y="64" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <rect x="340" y="64" width="280" height="6" fill="#52B366" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="348" y="80" width="56" height="42" fill="#EDF9EE" rx="8"/>
+  <!-- Icon: key shape -->
+  <circle cx="368" cy="101" r="8" fill="none" stroke="#52B366" stroke-width="2.5"/>
+  <rect x="374" y="99" width="14" height="4" fill="#52B366" rx="2"/>
+  <rect x="384" y="103" width="4" height="5" fill="#52B366" rx="1"/>
+  <!-- Title -->
+  <text x="416" y="101" fill="#1E3A5F" font-size="15" font-weight="bold">API Key 集中管控</text>
+  <!-- Sub -->
+  <text x="350" y="142" fill="#6B7280" font-size="11">各实例自管凭证，</text>
+  <text x="350" y="158" fill="#6B7280" font-size="11">泄漏无法快速撤销</text>
+  <!-- Gap tag -->
+  <rect x="348" y="216" width="52" height="18" fill="#EDF9EE" rx="9"/>
+  <text x="374" y="228" text-anchor="middle" fill="#52B366" font-size="10" font-weight="bold">缺口 #2</text>
+
+  <!-- ── Card 3: 工具调用审计日志 ── -->
+  <rect x="660" y="64" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <rect x="660" y="64" width="280" height="6" fill="#D4A843" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="668" y="80" width="56" height="42" fill="#FEF9E8" rx="8"/>
+  <!-- Icon: document + magnifier -->
+  <rect x="674" y="84" width="20" height="26" fill="#D4A843" rx="3" fill-opacity="0.5"/>
+  <line x1="678" y1="91" x2="690" y2="91" stroke="#D4A843" stroke-width="1.5"/>
+  <line x1="678" y1="96" x2="690" y2="96" stroke="#D4A843" stroke-width="1.5"/>
+  <line x1="678" y1="101" x2="686" y2="101" stroke="#D4A843" stroke-width="1.5"/>
+  <circle cx="703" cy="103" r="6" fill="none" stroke="#D4A843" stroke-width="2"/>
+  <line x1="707" y1="107" x2="712" y2="112" stroke="#D4A843" stroke-width="2" stroke-linecap="round"/>
+  <!-- Title -->
+  <text x="736" y="101" fill="#1E3A5F" font-size="15" font-weight="bold">工具调用审计日志</text>
+  <!-- Sub -->
+  <text x="670" y="142" fill="#6B7280" font-size="11">EU AI Act 合规要求，</text>
+  <text x="670" y="158" fill="#6B7280" font-size="11">debug 日志无法满足</text>
+  <!-- Gap tag -->
+  <rect x="668" y="216" width="52" height="18" fill="#FEF9E8" rx="9"/>
+  <text x="694" y="228" text-anchor="middle" fill="#D4A843" font-size="10" font-weight="bold">缺口 #3</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- ROW 2 (y=264): Card 4 x=20, Card 5 x=340, Card 6 x=660 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- ── Card 4: Agent 身份与信任链 ── -->
+  <rect x="20" y="264" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <rect x="20" y="264" width="280" height="6" fill="#E05252" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="28" y="280" width="56" height="42" fill="#FEF0F0" rx="8"/>
+  <!-- Icon: shield + chain links -->
+  <path d="M53,285 L63,289 L63,299 Q63,308 53,312 Q43,308 43,299 L43,289 Z" fill="#E05252" fill-opacity="0.6"/>
+  <text x="53" y="303" text-anchor="middle" fill="white" font-size="10" font-weight="bold">✓</text>
+  <circle cx="71" cy="299" r="4" fill="none" stroke="#E05252" stroke-width="1.5"/>
+  <circle cx="79" cy="299" r="4" fill="none" stroke="#E05252" stroke-width="1.5"/>
+  <!-- Title -->
+  <text x="96" y="301" fill="#1E3A5F" font-size="15" font-weight="bold">Agent 身份与信任链</text>
+  <!-- Sub -->
+  <text x="30" y="342" fill="#6B7280" font-size="11">Agent A 调用 Agent B，</text>
+  <text x="30" y="358" fill="#6B7280" font-size="11">无法验证调用方身份</text>
+  <!-- Gap tag -->
+  <rect x="28" y="416" width="52" height="18" fill="#FEF0F0" rx="9"/>
+  <text x="54" y="428" text-anchor="middle" fill="#E05252" font-size="10" font-weight="bold">缺口 #4</text>
+
+  <!-- ── Card 5: 声明式治理策略 ── -->
+  <rect x="340" y="264" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <rect x="340" y="264" width="280" height="6" fill="#8B5CF6" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="348" y="280" width="56" height="42" fill="#F3EEFF" rx="8"/>
+  <!-- Icon: list with check/cross -->
+  <rect x="354" y="285" width="26" height="28" fill="#8B5CF6" rx="3" fill-opacity="0.3"/>
+  <line x1="358" y1="292" x2="376" y2="292" stroke="#8B5CF6" stroke-width="1.5"/>
+  <line x1="358" y1="298" x2="376" y2="298" stroke="#8B5CF6" stroke-width="1.5"/>
+  <line x1="358" y1="304" x2="376" y2="304" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="390" y="296" fill="#52B366" font-size="13" font-weight="bold">✓</text>
+  <text x="390" y="310" fill="#E05252" font-size="13" font-weight="bold">✗</text>
+  <!-- Title -->
+  <text x="416" y="301" fill="#1E3A5F" font-size="15" font-weight="bold">声明式治理策略</text>
+  <!-- Sub -->
+  <text x="350" y="342" fill="#6B7280" font-size="11">动态更新 allow/deny，</text>
+  <text x="350" y="358" fill="#6B7280" font-size="11">不重新部署生效</text>
+  <!-- Gap tag -->
+  <rect x="348" y="416" width="52" height="18" fill="#F3EEFF" rx="9"/>
+  <text x="374" y="428" text-anchor="middle" fill="#8B5CF6" font-size="10" font-weight="bold">缺口 #5</text>
+
+  <!-- ── Card 6: 可观测性集成 ── -->
+  <rect x="660" y="264" width="280" height="180" fill="white" rx="12" stroke="#D1D9F0" stroke-width="1"/>
+  <rect x="660" y="264" width="280" height="6" fill="#E0734A" rx="6"/>
+  <!-- Icon area bg -->
+  <rect x="668" y="280" width="56" height="42" fill="#FFF4F0" rx="8"/>
+  <!-- Icon: dashboard gauge -->
+  <path d="M696,318 A14,14 0 1,1 696.1,318" fill="none" stroke="#E0734A" stroke-width="2.5" stroke-dasharray="40,4"/>
+  <line x1="696" y1="304" x2="696" y2="298" stroke="#E0734A" stroke-width="2"/>
+  <line x1="696" y1="318" x2="688" y2="310" stroke="#E0734A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="696" cy="318" r="3" fill="#E0734A"/>
+  <!-- Title -->
+  <text x="736" y="301" fill="#1E3A5F" font-size="15" font-weight="bold">可观测性集成</text>
+  <!-- Sub -->
+  <text x="670" y="342" fill="#6B7280" font-size="11">OTel trace + 结构化日志</text>
+  <text x="670" y="358" fill="#6B7280" font-size="11">接入企业 APM</text>
+  <!-- Gap tag -->
+  <rect x="668" y="416" width="52" height="18" fill="#FFF4F0" rx="9"/>
+  <text x="694" y="428" text-anchor="middle" fill="#E0734A" font-size="10" font-weight="bold">缺口 #6</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Bottom banner -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="20" y="462" width="920" height="44" fill="#2563EB" rx="10"/>
+  <text x="480" y="488" text-anchor="middle" fill="white" font-size="15" font-weight="bold">OryxOS 填补以上所有缺口</text>
+
+</svg>

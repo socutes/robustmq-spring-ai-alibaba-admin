@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500">
+  <rect width="960" height="500" fill="#F8FAFF"/>
+  <defs>
+    <marker id="arrowBlack" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#333333"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#888888"/>
+    </marker>
+  </defs>
+  <text x="480" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#1A2F5E">Control Plane — 模块结构与数据模型</text>
+  <rect x="10" y="44" width="940" height="200" rx="6" fill="white" stroke="#CCCCCC" stroke-width="1"/>
+  <text x="20" y="62" font-family="Arial,sans-serif" font-size="11" fill="#666">Maven 模块层次（依赖方向 →）</text>
+  <rect x="30" y="82" width="180" height="120" rx="8" fill="#EEF5FF" stroke="#4A90D9" stroke-width="2"/>
+  <rect x="30" y="82" width="180" height="26" rx="8" fill="#4A90D9"/>
+  <rect x="30" y="100" width="180" height="8" fill="#4A90D9"/>
+  <text x="120" y="99" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">oryx-control-start</text>
+  <text x="120" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">SpringBootApplication</text>
+  <text x="120" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">全局异常处理</text>
+  <text x="120" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">安全配置</text>
+  <line x1="210" y1="142" x2="270" y2="142" stroke="#333" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <rect x="270" y="82" width="180" height="120" rx="8" fill="#EDF9EE" stroke="#52B366" stroke-width="2"/>
+  <rect x="270" y="82" width="180" height="26" rx="8" fill="#52B366"/>
+  <rect x="270" y="100" width="180" height="8" fill="#52B366"/>
+  <text x="360" y="99" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">oryx-control-api</text>
+  <text x="360" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">REST Controller（~30个）</text>
+  <text x="360" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">JWT 过滤器</text>
+  <text x="360" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">@PreAuthorize</text>
+  <line x1="450" y1="142" x2="510" y2="142" stroke="#333" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <rect x="510" y="82" width="180" height="120" rx="8" fill="#FDF5EC" stroke="#E09A52" stroke-width="2"/>
+  <rect x="510" y="82" width="180" height="26" rx="8" fill="#E09A52"/>
+  <rect x="510" y="100" width="180" height="8" fill="#E09A52"/>
+  <text x="600" y="99" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">oryx-control-core</text>
+  <text x="600" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">Service 层</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">MyBatis-Plus Mapper</text>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">Redisson 分布式锁</text>
+  <line x1="690" y1="142" x2="750" y2="142" stroke="#333" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <rect x="750" y="82" width="180" height="120" rx="8" fill="#F4F4F4" stroke="#888888" stroke-width="2"/>
+  <rect x="750" y="82" width="180" height="26" rx="8" fill="#888888"/>
+  <rect x="750" y="100" width="180" height="8" fill="#888888"/>
+  <text x="840" y="99" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">oryx-control-runtime</text>
+  <text x="840" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">DTO / VO / 枚举</text>
+  <text x="840" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">分页封装</text>
+  <text x="840" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#333">无业务逻辑</text>
+  <line x1="10" y1="248" x2="950" y2="248" stroke="#BBBBBB" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <rect x="10" y="252" width="940" height="238" rx="6" fill="white" stroke="#CCCCCC" stroke-width="1"/>
+  <text x="20" y="270" font-family="Arial,sans-serif" font-size="11" fill="#666">核心数据表（外键关系）</text>
+  <rect x="321" y="337" width="158" height="90" rx="5" fill="#EEF5FF" stroke="#4A90D9" stroke-width="1.8"/>
+  <rect x="321" y="337" width="158" height="22" rx="5" fill="#4A90D9"/>
+  <rect x="321" y="355" width="158" height="4" fill="#4A90D9"/>
+  <text x="400" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">profile</text>
+  <text x="329" y="371" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="322" y="376" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="329" y="388" font-family="Arial,sans-serif" font-size="9" fill="#333">name</text>
+  <text x="329" y="405" font-family="Arial,sans-serif" font-size="9" fill="#333">status</text>
+  <rect x="322" y="410" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="329" y="422" font-family="Arial,sans-serif" font-size="9" fill="#333">quota_config_id</text>
+  <rect x="571" y="277" width="158" height="90" rx="5" fill="#EDF9EE" stroke="#52B366" stroke-width="1.8"/>
+  <rect x="571" y="277" width="158" height="22" rx="5" fill="#52B366"/>
+  <rect x="571" y="295" width="158" height="4" fill="#52B366"/>
+  <text x="650" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">profile_member</text>
+  <text x="579" y="311" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="572" y="316" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="328" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="579" y="345" font-family="Arial,sans-serif" font-size="9" fill="#333">enterprise_user_id</text>
+  <rect x="572" y="350" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="362" font-family="Arial,sans-serif" font-size="9" fill="#333">role</text>
+  <rect x="571" y="407" width="158" height="90" rx="5" fill="#FDF5EC" stroke="#E09A52" stroke-width="1.8"/>
+  <rect x="571" y="407" width="158" height="22" rx="5" fill="#E09A52"/>
+  <rect x="571" y="425" width="158" height="4" fill="#E09A52"/>
+  <text x="650" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">agent_config</text>
+  <text x="579" y="441" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="572" y="446" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="458" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="579" y="475" font-family="Arial,sans-serif" font-size="9" fill="#333">name</text>
+  <rect x="572" y="480" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="492" font-family="Arial,sans-serif" font-size="9" fill="#333">system_prompt</text>
+  <rect x="61" y="337" width="158" height="90" rx="5" fill="#F3EEFF" stroke="#8B5CF6" stroke-width="1.8"/>
+  <rect x="61" y="337" width="158" height="22" rx="5" fill="#8B5CF6"/>
+  <rect x="61" y="355" width="158" height="4" fill="#8B5CF6"/>
+  <text x="140" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">sub_agent_registry</text>
+  <text x="69" y="371" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="62" y="376" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="69" y="388" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="69" y="405" font-family="Arial,sans-serif" font-size="9" fill="#333">name</text>
+  <rect x="62" y="410" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="69" y="422" font-family="Arial,sans-serif" font-size="9" fill="#333">base_url</text>
+  <rect x="321" y="259" width="158" height="90" rx="5" fill="#FFF0F0" stroke="#D9534F" stroke-width="1.8"/>
+  <rect x="321" y="259" width="158" height="22" rx="5" fill="#D9534F"/>
+  <rect x="321" y="277" width="158" height="4" fill="#D9534F"/>
+  <text x="400" y="274" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">quota_config</text>
+  <text x="329" y="293" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="322" y="298" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="329" y="310" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="329" y="327" font-family="Arial,sans-serif" font-size="9" fill="#333">max_llm_calls</text>
+  <rect x="322" y="332" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="329" y="344" font-family="Arial,sans-serif" font-size="9" fill="#333">max_tokens</text>
+  <rect x="741" y="339" width="158" height="107" rx="5" fill="#F4F4F4" stroke="#555555" stroke-width="1.8"/>
+  <rect x="741" y="339" width="158" height="22" rx="5" fill="#555555"/>
+  <rect x="741" y="357" width="158" height="4" fill="#555555"/>
+  <text x="820" y="354" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">audit_event</text>
+  <text x="749" y="373" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="742" y="378" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="749" y="390" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="749" y="407" font-family="Arial,sans-serif" font-size="9" fill="#333">agent_id (FK)</text>
+  <rect x="742" y="412" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="749" y="424" font-family="Arial,sans-serif" font-size="9" fill="#333">event_type</text>
+  <text x="749" y="441" font-family="Arial,sans-serif" font-size="9" fill="#333">content_hash</text>
+  <rect x="571" y="529" width="158" height="107" rx="5" fill="#E0F7FA" stroke="#0097A7" stroke-width="1.8"/>
+  <rect x="571" y="529" width="158" height="22" rx="5" fill="#0097A7"/>
+  <rect x="571" y="547" width="158" height="4" fill="#0097A7"/>
+  <text x="650" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="white">hot_config</text>
+  <text x="579" y="563" font-family="Arial,sans-serif" font-size="9" fill="#333">id (PK)</text>
+  <rect x="572" y="568" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="580" font-family="Arial,sans-serif" font-size="9" fill="#333">profile_id (FK)</text>
+  <text x="579" y="597" font-family="Arial,sans-serif" font-size="9" fill="#333">agent_id (FK)</text>
+  <rect x="572" y="602" width="156" height="17" fill="rgba(0,0,0,0.04)"/>
+  <text x="579" y="614" font-family="Arial,sans-serif" font-size="9" fill="#333">config_key</text>
+  <text x="579" y="631" font-family="Arial,sans-serif" font-size="9" fill="#333">version</text>
+  <line x1="479" y1="382" x2="571" y2="322" stroke="#4A90D9" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="525" y="348" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#4A90D9">1:N</text>
+  <line x1="479" y1="382" x2="571" y2="452" stroke="#E09A52" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="525" y="413" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#E09A52">1:N</text>
+  <line x1="321" y1="382" x2="219" y2="382" stroke="#8B5CF6" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="270" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#8B5CF6">1:N</text>
+  <line x1="400" y1="337" x2="400" y2="349" stroke="#D9534F" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="400" y="339" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#D9534F">1:1</text>
+  <line x1="729" y1="452" x2="741" y2="392" stroke="#555555" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="735" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555555">1:N</text>
+  <line x1="650" y1="497" x2="650" y2="529" stroke="#0097A7" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="650" y="509" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#0097A7">1:N</text>
+</svg>

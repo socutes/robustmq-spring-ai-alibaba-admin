@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="840" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#333"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="840" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="480" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">When 延时消息完整生命周期时序图</text>
+
+  <!-- Participant boxes -->
+  <!-- 业务方: x=60 -->
+  <rect x="20" y="40" width="80" height="36" rx="4" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="60" y="62" text-anchor="middle" font-size="12" fill="#222">业务方</text>
+
+  <!-- 接入节点: x=175 -->
+  <rect x="120" y="40" width="110" height="36" rx="4" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="175" y="55" text-anchor="middle" font-size="11" fill="#222">接入节点</text>
+  <text x="175" y="70" text-anchor="middle" font-size="10" fill="#555">（任意节点）</text>
+
+  <!-- Master节点: x=330 -->
+  <rect x="270" y="40" width="120" height="36" rx="4" fill="#fff3e0" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="330" y="55" text-anchor="middle" font-size="11" fill="#222">Master 节点</text>
+  <text x="330" y="70" text-anchor="middle" font-size="10" fill="#555">（TW-N）</text>
+
+  <!-- Redis: x=490 -->
+  <rect x="450" y="40" width="80" height="36" rx="4" fill="#fce4ec" stroke="#e91e63" stroke-width="1.5"/>
+  <text x="490" y="62" text-anchor="middle" font-size="12" fill="#222">Redis</text>
+
+  <!-- Slave节点: x=615 -->
+  <rect x="560" y="40" width="110" height="36" rx="4" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="615" y="55" text-anchor="middle" font-size="11" fill="#222">Slave 节点</text>
+  <text x="615" y="70" text-anchor="middle" font-size="10" fill="#555"> </text>
+
+  <!-- 时间轮: x=745 -->
+  <rect x="695" y="40" width="100" height="36" rx="4" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="745" y="62" text-anchor="middle" font-size="12" fill="#222">时间轮</text>
+
+  <!-- Sink: x=875 -->
+  <rect x="840" y="40" width="80" height="36" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="880" y="62" text-anchor="middle" font-size="12" fill="#222">Sink</text>
+
+  <!-- Lifelines -->
+  <line x1="60"  y1="76" x2="60"  y2="820" stroke="#4a90d9" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="175" y1="76" x2="175" y2="820" stroke="#4a90d9" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="330" y1="76" x2="330" y2="820" stroke="#f5a623" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="490" y1="76" x2="490" y2="820" stroke="#e91e63" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="615" y1="76" x2="615" y2="820" stroke="#4caf50" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="745" y1="76" x2="745" y2="820" stroke="#9c27b0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="880" y1="76" x2="880" y2="820" stroke="#f9a825" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Step 1: 业务方 -> 接入节点 -->
+  <!-- y=110 -->
+  <line x1="65" y1="110" x2="168" y2="110" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="112" y="104" text-anchor="middle" font-size="10" fill="#333">POST /messages</text>
+  <text x="112" y="118" text-anchor="middle" font-size="10" fill="#555">（delay_seconds, sink_type, payload）</text>
+
+  <!-- Step 2: 接入节点 self-loop -->
+  <!-- y=148 -->
+  <path d="M 175 148 Q 220 135 220 148 Q 220 161 175 161" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="230" y="150" font-size="10" fill="#333">参数校验，生成 message_id（Snowflake）</text>
+
+  <!-- Step 3: 接入节点 -> Master -->
+  <!-- y=192 -->
+  <line x1="180" y1="192" x2="323" y2="192" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="252" y="186" text-anchor="middle" font-size="10" fill="#333">路由并转发写入请求</text>
+  <text x="252" y="200" text-anchor="middle" font-size="10" fill="#555">（gRPC ForwardWrite）</text>
+
+  <!-- Step 4: Master -> Redis HSET -->
+  <!-- y=230 -->
+  <line x1="335" y1="230" x2="483" y2="230" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="409" y="224" text-anchor="middle" font-size="10" fill="#333">HSET /when/messages/{msg_id}</text>
+  <text x="409" y="238" text-anchor="middle" font-size="10" fill="#555">（持久化消息体）</text>
+
+  <!-- Step 5: Master -> Redis SET -->
+  <!-- y=268 -->
+  <line x1="335" y1="268" x2="483" y2="268" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="409" y="262" text-anchor="middle" font-size="10" fill="#333">SET /when/tw/{tw_id}/index/{msg_id}</text>
+  <text x="409" y="276" text-anchor="middle" font-size="10" fill="#555">（持久化时间索引）</text>
+
+  <!-- Step 6: Master -> 时间轮 -->
+  <!-- y=308 -->
+  <line x1="335" y1="308" x2="738" y2="308" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="537" y="302" text-anchor="middle" font-size="10" fill="#333">插入 MessageRef（内存，轻量引用）</text>
+
+  <!-- Step 7: Master -> Slave (async, dashed) -->
+  <!-- y=344 -->
+  <line x1="335" y1="344" x2="608" y2="344" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-gray)"/>
+  <text x="471" y="338" text-anchor="middle" font-size="10" fill="#555">异步 SyncWrite（gRPC，不阻塞）</text>
+
+  <!-- Step 8: Master -> 接入节点 (return, dashed) -->
+  <!-- y=376 -->
+  <line x1="325" y1="376" x2="182" y2="376" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+  <text x="252" y="370" text-anchor="middle" font-size="10" fill="#333">ACK（message_id）</text>
+
+  <!-- Step 9: 接入节点 -> 业务方 (return, dashed) -->
+  <!-- y=406 -->
+  <line x1="168" y1="406" x2="67" y2="406" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+  <text x="113" y="400" text-anchor="middle" font-size="10" fill="#333">返回 message_id, status=pending</text>
+
+  <!-- Divider: time passes -->
+  <!-- y=430 -->
+  <line x1="20" y1="430" x2="940" y2="430" stroke="#bbb" stroke-width="1" stroke-dasharray="8,4"/>
+  <rect x="370" y="420" width="220" height="20" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1"/>
+  <text x="480" y="434" text-anchor="middle" font-size="11" fill="#b8860b" font-style="italic">... 延时时间流逝 ...</text>
+
+  <!-- Step 10: 时间轮 self-loop -->
+  <!-- y=470 -->
+  <path d="M 745 470 Q 800 455 800 470 Q 800 485 745 485" fill="none" stroke="#9c27b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="814" y="474" font-size="10" fill="#333">指针推进，Slot 到期</text>
+
+  <!-- Step 11: 时间轮 -> Sink (async, dashed) -->
+  <!-- y=512 -->
+  <line x1="750" y1="512" x2="873" y2="512" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-gray)"/>
+  <text x="811" y="504" text-anchor="middle" font-size="10" fill="#555">提交投递（异步）</text>
+
+  <!-- Step 12: Sink -> 业务方下游 -->
+  <!-- y=552 -->
+  <line x1="875" y1="552" x2="67" y2="552" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="470" y="545" text-anchor="middle" font-size="10" fill="#333">HTTP POST / Kafka Produce / gRPC Call → 业务方下游</text>
+
+  <!-- Step 13: Sink -> Redis DEL msg -->
+  <!-- y=590 -->
+  <line x1="875" y1="590" x2="497" y2="590" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="685" y="583" text-anchor="middle" font-size="10" fill="#333">DEL /when/messages/{msg_id}</text>
+  <text x="685" y="598" text-anchor="middle" font-size="10" fill="#555">（删除消息体）</text>
+
+  <!-- Step 14: Sink -> Redis DEL index -->
+  <!-- y=630 -->
+  <line x1="875" y1="630" x2="497" y2="630" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="685" y="623" text-anchor="middle" font-size="10" fill="#333">DEL /when/tw/{tw_id}/index/{msg_id}</text>
+  <text x="685" y="638" text-anchor="middle" font-size="10" fill="#555">（删除索引）</text>
+
+  <!-- Step 15: Sink -> Slave async -->
+  <!-- y=670 -->
+  <line x1="875" y1="670" x2="622" y2="670" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-gray)"/>
+  <text x="748" y="663" text-anchor="middle" font-size="10" fill="#555">异步 SyncDelete（通知 Slave 同步删除）</text>
+
+  <!-- Legend -->
+  <rect x="20" y="700" width="400" height="80" rx="4" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <text x="30" y="718" font-size="11" font-weight="bold" fill="#333">图例</text>
+  <line x1="30" y1="735" x2="80" y2="735" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="88" y="739" font-size="10" fill="#333">请求 / 同步调用</text>
+  <line x1="30" y1="758" x2="80" y2="758" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-gray)"/>
+  <text x="88" y="762" font-size="10" fill="#555">返回 / 异步调用</text>
+  <line x1="200" y1="735" x2="250" y2="735" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+  <text x="258" y="739" font-size="10" fill="#333">响应返回</text>
+
+  <!-- Step number labels -->
+  <text x="8" y="113" font-size="9" fill="#aaa">①</text>
+  <text x="8" y="151" font-size="9" fill="#aaa">②</text>
+  <text x="8" y="195" font-size="9" fill="#aaa">③</text>
+  <text x="8" y="233" font-size="9" fill="#aaa">④</text>
+  <text x="8" y="271" font-size="9" fill="#aaa">⑤</text>
+  <text x="8" y="311" font-size="9" fill="#aaa">⑥</text>
+  <text x="8" y="347" font-size="9" fill="#aaa">⑦</text>
+  <text x="8" y="379" font-size="9" fill="#aaa">⑧</text>
+  <text x="8" y="409" font-size="9" fill="#aaa">⑨</text>
+  <text x="8" y="473" font-size="9" fill="#aaa">⑩</text>
+  <text x="8" y="515" font-size="9" fill="#aaa">⑪</text>
+  <text x="8" y="555" font-size="9" fill="#aaa">⑫</text>
+  <text x="8" y="593" font-size="9" fill="#aaa">⑬</text>
+  <text x="8" y="633" font-size="9" fill="#aaa">⑭</text>
+  <text x="8" y="673" font-size="9" fill="#aaa">⑮</text>
+
+</svg>

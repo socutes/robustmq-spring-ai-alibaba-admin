@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+  <defs>
+    <marker id="arrowEnd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrowStart" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrowEndDash" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#b05cb0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="680" fill="#f8f9fa"/>
+
+  <!-- ===== Layer 1: 业务方 ===== -->
+  <rect x="280" y="20" width="280" height="70" rx="8" ry="8"
+        fill="#e8f4ff" stroke="#1a73e8" stroke-width="2"/>
+  <text x="420" y="48" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle" fill="#1a55b5">业务方</text>
+  <text x="420" y="68" font-family="Arial, sans-serif" font-size="12"
+        text-anchor="middle" fill="#444">任意语言 / 框架，HTTP API 接入</text>
+
+  <!-- Arrow Layer1 -> Layer2 with label -->
+  <line x1="420" y1="90" x2="420" y2="148"
+        stroke="#555" stroke-width="2"
+        marker-end="url(#arrowEnd)"/>
+  <rect x="430" y="104" width="72" height="20" rx="3" fill="#f8f9fa" stroke="none"/>
+  <text x="466" y="118" font-family="Arial, sans-serif" font-size="12"
+        text-anchor="middle" fill="#333">HTTP REST</text>
+
+  <!-- ===== Layer 2: When 集群 ===== -->
+  <rect x="100" y="150" width="620" height="185" rx="10" ry="10"
+        fill="#fff8ee" stroke="#e6820a" stroke-width="2.5"/>
+  <text x="128" y="173" font-family="Arial, sans-serif" font-size="15" font-weight="bold"
+        fill="#c45c00">When 集群</text>
+
+  <!-- Node 1 -->
+  <rect x="118" y="183" width="170" height="130" rx="6" ry="6"
+        fill="#fff" stroke="#e6820a" stroke-width="1.5"/>
+  <text x="203" y="202" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#333">Node 1</text>
+  <line x1="130" y1="208" x2="276" y2="208" stroke="#e6820a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="203" y="224" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">[Controller]</text>
+  <text x="203" y="241" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-1 Master</text>
+  <text x="203" y="258" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-2 Slave</text>
+  <text x="203" y="275" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-3 Master</text>
+  <text x="203" y="300" font-family="Arial, sans-serif" font-size="10"
+        text-anchor="middle" fill="#aaa">replica-set</text>
+
+  <!-- Node 2 -->
+  <rect x="315" y="183" width="170" height="130" rx="6" ry="6"
+        fill="#fff" stroke="#e6820a" stroke-width="1.5"/>
+  <text x="400" y="202" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#333">Node 2</text>
+  <line x1="327" y1="208" x2="473" y2="208" stroke="#e6820a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="400" y="233" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-1 Slave</text>
+  <text x="400" y="253" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-2 Master</text>
+
+  <!-- Node 3 -->
+  <rect x="512" y="183" width="170" height="130" rx="6" ry="6"
+        fill="#fff" stroke="#e6820a" stroke-width="1.5"/>
+  <text x="597" y="202" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#333">Node 3</text>
+  <line x1="524" y1="208" x2="670" y2="208" stroke="#e6820a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="597" y="233" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">TW-3 Slave</text>
+
+  <!-- gRPC arrows between nodes -->
+  <!-- Node1 <-> Node2 -->
+  <line x1="288" y1="248" x2="315" y2="248"
+        stroke="#555" stroke-width="1.8"
+        marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+  <!-- Node2 <-> Node3 -->
+  <line x1="485" y1="248" x2="512" y2="248"
+        stroke="#555" stroke-width="1.8"
+        marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+  <!-- gRPC label between N1-N2 -->
+  <rect x="289" y="234" width="35" height="16" rx="2" fill="#fff8ee"/>
+  <text x="306" y="246" font-family="Arial, sans-serif" font-size="10"
+        text-anchor="middle" fill="#888">gRPC</text>
+  <!-- gRPC label between N2-N3 -->
+  <rect x="486" y="234" width="35" height="16" rx="2" fill="#fff8ee"/>
+  <text x="503" y="246" font-family="Arial, sans-serif" font-size="10"
+        text-anchor="middle" fill="#888">gRPC</text>
+
+  <!-- ===== Layer 3: ETCD + Redis ===== -->
+  <!-- ETCD 集群 -->
+  <rect x="100" y="380" width="270" height="90" rx="8" ry="8"
+        fill="#f5eeff" stroke="#7e3faf" stroke-width="2"/>
+  <text x="235" y="404" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle" fill="#5a1e8a">ETCD 集群</text>
+  <text x="235" y="424" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#6a3aa0">节点注册 / 选举 / 配置下发</text>
+  <text x="235" y="442" font-family="Arial, sans-serif" font-size="10"
+        text-anchor="middle" fill="#999">高可用 3 节点</text>
+
+  <!-- Redis 集群 -->
+  <rect x="430" y="380" width="290" height="90" rx="8" ry="8"
+        fill="#f5eeff" stroke="#7e3faf" stroke-width="2"/>
+  <text x="575" y="404" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle" fill="#5a1e8a">Redis 集群</text>
+  <text x="575" y="424" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#6a3aa0">消息持久化 / 时间索引</text>
+  <text x="575" y="442" font-family="Arial, sans-serif" font-size="10"
+        text-anchor="middle" fill="#999">Cluster / Sentinel 模式</text>
+
+  <!-- Arrow When cluster <-> ETCD: vertical bidirectional -->
+  <!-- When底部中偏左 -> ETCD顶部 -->
+  <line x1="235" y1="335" x2="235" y2="380"
+        stroke="#555" stroke-width="2"
+        marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+  <rect x="240" y="349" width="110" height="18" rx="3" fill="#f8f9fa"/>
+  <text x="295" y="362" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">Lease / Watch / KV</text>
+
+  <!-- Arrow When cluster <-> Redis: vertical bidirectional -->
+  <line x1="575" y1="335" x2="575" y2="380"
+        stroke="#555" stroke-width="2"
+        marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+  <rect x="582" y="350" width="48" height="18" rx="3" fill="#f8f9fa"/>
+  <text x="606" y="363" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#555">读 / 写</text>
+
+  <!-- ===== Layer 4: 下游 Sink ===== -->
+  <rect x="200" y="520" width="400" height="100" rx="8" ry="8"
+        fill="#edfff1" stroke="#1e8a3f" stroke-width="2"/>
+  <text x="400" y="544" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle" fill="#1a6b32">下游 Sink</text>
+  <line x1="212" y1="550" x2="588" y2="550" stroke="#1e8a3f" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="310" y="570" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#2a7a40">HTTP Webhook</text>
+  <text x="490" y="570" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#2a7a40">Kafka</text>
+  <text x="310" y="594" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#2a7a40">gRPC 服务</text>
+  <text x="490" y="594" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#2a7a40">SPI 扩展</text>
+  <!-- dividers inside Sink -->
+  <line x1="400" y1="555" x2="400" y2="610" stroke="#aaddb4" stroke-width="1"/>
+  <line x1="212" y1="580" x2="588" y2="580" stroke="#aaddb4" stroke-width="1"/>
+
+  <!-- Arrow When cluster -> Sink -->
+  <line x1="400" y1="335" x2="400" y2="520"
+        stroke="#555" stroke-width="2"
+        marker-end="url(#arrowEnd)"/>
+  <rect x="406" y="418" width="66" height="18" rx="3" fill="#f8f9fa"/>
+  <text x="439" y="431" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#333">到期投递</text>
+
+  <!-- ===== Right side: Web 管理台 ===== -->
+  <rect x="798" y="220" width="148" height="90" rx="8" ry="8"
+        fill="#fff0f8" stroke="#c040a0" stroke-width="2"/>
+  <text x="872" y="246" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#9a1a7a">Web 管理台</text>
+  <text x="872" y="264" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#b04090">（独立部署）</text>
+
+  <!-- Dashed arrow Web管理台 -> When集群 -->
+  <line x1="798" y1="265" x2="720" y2="265"
+        stroke="#b05cb0" stroke-width="2" stroke-dasharray="6,4"
+        marker-end="url(#arrowEndDash)"/>
+  <rect x="726" y="250" width="64" height="18" rx="3" fill="#fff0f8"/>
+  <text x="758" y="263" font-family="Arial, sans-serif" font-size="11"
+        text-anchor="middle" fill="#b05cb0">HTTP API</text>
+
+  <!-- Title -->
+  <text x="480" y="660" font-family="Arial, sans-serif" font-size="13"
+        text-anchor="middle" fill="#aaa">When — 分布式延时投递组件 整体架构图</text>
+</svg>

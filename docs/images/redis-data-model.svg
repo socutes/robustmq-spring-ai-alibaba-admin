@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="860" height="520" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="430" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">When — Redis 数据模型</text>
+
+  <!-- ===== LEFT COLUMN: Hash ===== -->
+  <!-- Column header background -->
+  <rect x="30" y="55" width="370" height="36" fill="#2980b9" rx="6"/>
+  <text x="215" y="79" text-anchor="middle" font-size="14" font-weight="bold" fill="white">消息体（Hash）</text>
+
+  <!-- Key format box -->
+  <rect x="30" y="100" width="370" height="30" fill="#d6eaf8" rx="4" stroke="#85c1e9" stroke-width="1"/>
+  <text x="215" y="120" text-anchor="middle" font-size="12" fill="#1a5276">Key：/when/messages/{msg_id}</text>
+
+  <!-- Hash table box -->
+  <rect x="30" y="138" width="370" height="220" fill="white" rx="6" stroke="#85c1e9" stroke-width="1.5"/>
+
+  <!-- Table header row -->
+  <rect x="30" y="138" width="370" height="28" fill="#aed6f1" rx="6"/>
+  <rect x="30" y="152" width="370" height="14" fill="#aed6f1"/>
+  <line x1="190" y1="138" x2="190" y2="158" stroke="#85c1e9" stroke-width="1"/>
+  <text x="110" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a5276">Field</text>
+  <text x="310" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a5276">Value / 说明</text>
+
+  <!-- Row 1 -->
+  <line x1="30" y1="166" x2="400" y2="166" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="166" x2="190" y2="186" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="181" text-anchor="middle" font-size="11.5" fill="#1a5276">payload</text>
+  <text x="310" y="181" text-anchor="middle" font-size="11" fill="#5d6d7e">Base64 编码消息体（最大 64KB）</text>
+
+  <!-- Row 2 -->
+  <line x1="30" y1="186" x2="400" y2="186" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="186" x2="190" y2="206" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="201" text-anchor="middle" font-size="11.5" fill="#1a5276">sink_type</text>
+  <text x="310" y="201" text-anchor="middle" font-size="11" fill="#5d6d7e">http / kafka / grpc</text>
+
+  <!-- Row 3 -->
+  <line x1="30" y1="206" x2="400" y2="206" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="206" x2="190" y2="226" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="221" text-anchor="middle" font-size="11.5" fill="#1a5276">sink_config</text>
+  <text x="310" y="221" text-anchor="middle" font-size="11" fill="#5d6d7e">JSON 字符串</text>
+
+  <!-- Row 4 -->
+  <line x1="30" y1="226" x2="400" y2="226" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="226" x2="190" y2="246" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="241" text-anchor="middle" font-size="11.5" fill="#1a5276">status</text>
+  <text x="310" y="241" text-anchor="middle" font-size="11" fill="#5d6d7e">pending / delivered / cancelled / failed</text>
+
+  <!-- Row 5 -->
+  <line x1="30" y1="246" x2="400" y2="246" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="246" x2="190" y2="266" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="261" text-anchor="middle" font-size="11.5" fill="#1a5276">created_at</text>
+  <text x="310" y="261" text-anchor="middle" font-size="11" fill="#5d6d7e">Unix ms 时间戳</text>
+
+  <!-- Row 6 -->
+  <line x1="30" y1="266" x2="400" y2="266" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="266" x2="190" y2="286" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="281" text-anchor="middle" font-size="11.5" fill="#1a5276">expire_at</text>
+  <text x="310" y="281" text-anchor="middle" font-size="11" fill="#5d6d7e">Unix ms 时间戳</text>
+
+  <!-- Row 7 -->
+  <line x1="30" y1="286" x2="400" y2="286" stroke="#d5e8f5" stroke-width="1"/>
+  <line x1="190" y1="286" x2="190" y2="358" stroke="#d5e8f5" stroke-width="1"/>
+  <text x="110" y="301" text-anchor="middle" font-size="11.5" fill="#1a5276">retry_count</text>
+  <text x="310" y="301" text-anchor="middle" font-size="11" fill="#5d6d7e">重试次数</text>
+
+  <!-- TTL label -->
+  <rect x="30" y="368" width="370" height="30" fill="#fef9e7" rx="4" stroke="#f9ca24" stroke-width="1.2"/>
+  <text x="215" y="388" text-anchor="middle" font-size="12" fill="#7d6608">⏱ TTL：expire_at + 7 天后过期</text>
+
+
+  <!-- ===== RIGHT COLUMN: String ===== -->
+  <!-- Column header background -->
+  <rect x="460" y="55" width="370" height="36" fill="#27ae60" rx="6"/>
+  <text x="645" y="79" text-anchor="middle" font-size="14" font-weight="bold" fill="white">时间索引（String）</text>
+
+  <!-- Key format box -->
+  <rect x="460" y="100" width="370" height="30" fill="#d5f5e3" rx="4" stroke="#82e0aa" stroke-width="1"/>
+  <text x="645" y="120" text-anchor="middle" font-size="12" fill="#1e8449">Key：/when/tw/{tw_id}/index/{msg_id}</text>
+
+  <!-- String box -->
+  <rect x="460" y="138" width="370" height="100" fill="white" rx="6" stroke="#82e0aa" stroke-width="1.5"/>
+
+  <!-- Table header row -->
+  <rect x="460" y="138" width="370" height="28" fill="#a9dfbf" rx="6"/>
+  <rect x="460" y="152" width="370" height="14" fill="#a9dfbf"/>
+  <line x1="590" y1="138" x2="590" y2="158" stroke="#82e0aa" stroke-width="1"/>
+  <text x="525" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e8449">Field</text>
+  <text x="695" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e8449">Value / 说明</text>
+
+  <!-- Row 1 -->
+  <line x1="460" y1="166" x2="830" y2="166" stroke="#d1f2eb" stroke-width="1"/>
+  <line x1="590" y1="166" x2="590" y2="238" stroke="#d1f2eb" stroke-width="1"/>
+  <text x="525" y="202" text-anchor="middle" font-size="11.5" fill="#1e8449">Value</text>
+  <text x="695" y="196" text-anchor="middle" font-size="11" fill="#5d6d7e">expire_ts</text>
+  <text x="695" y="214" text-anchor="middle" font-size="11" fill="#5d6d7e">（Unix ms，到期时间戳）</text>
+
+  <!-- TTL label -->
+  <rect x="460" y="250" width="370" height="30" fill="#fef9e7" rx="4" stroke="#f9ca24" stroke-width="1.2"/>
+  <text x="645" y="270" text-anchor="middle" font-size="12" fill="#7d6608">⏱ TTL：expire_at + 1 小时后过期</text>
+
+
+  <!-- ===== BOTTOM NOTE BOX ===== -->
+  <rect x="30" y="418" width="800" height="88" fill="#fdfefe" rx="8" stroke="#aab7b8" stroke-width="1.5"/>
+  <rect x="30" y="418" width="800" height="28" fill="#d5dbdb" rx="8"/>
+  <rect x="30" y="432" width="800" height="14" fill="#d5dbdb"/>
+  <text x="430" y="437" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">大 Key 规避策略</text>
+  <text x="60" y="460" font-size="11.5" fill="#2c3e50">• 每条消息独立 Key，单 Key &lt; 1KB；不使用 ZSet 大集合，彻底规避大 Key 问题</text>
+  <text x="60" y="478" font-size="11.5" fill="#2c3e50">• 100 万条消息总内存估算：~550MB</text>
+  <text x="60" y="496" font-size="11.5" fill="#2c3e50">• TTL 自动清理，无需主动批量删除</text>
+
+</svg>

@@ -1,173 +1,177 @@
 # CLAUDE.md
 
-> 给 Claude Code 看的项目速查手册。详细文档见 [docs/](docs/) 目录。
+> 给 Claude Code 的项目上下文。阅读完本文即可开始工作，细节见 `docs/` 链接。
 
 ---
 
 ## 项目定位
 
-**Spring AI Alibaba Admin**（内部代号 Agent Studio）是基于 Spring AI Alibaba 的 AI Agent 全生命周期管理平台。
+**Spring AI Alibaba Admin** 是一个 AI Agent 全生命周期管理平台，分两个子平台：
 
-核心能力：Prompt 工程与版本管理、数据集管理、评估器配置、实验执行与分析、可观测性（OTel 链路追踪）、AI Agent / Workflow 应用托管、知识库（RAG）、MCP Server 管理。
+- **Builder 平台**（`/console/v1/*`）：Agent / Workflow 应用编排、知识库 RAG、插件工具、模型提供商管理。
+- **Evaluation 平台**（`/api/*`）：Prompt 工程、数据集版本管理、评估器配置、批量实验执行、可观测性（OTel Trace）。
 
-上游仓库已迁移至 [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba/tree/main/spring-ai-alibaba-admin)，本仓库为独立维护分支。
+对外通过 `/api/v1/apps/*` 暴露 OpenAI 兼容 API，供外部应用直接调用已发布的 Agent/Workflow。
 
 ---
 
 ## 核心架构
 
-→ 架构分层图：[docs/architecture.svg](docs/architecture.svg)
-→ 模块依赖图：[docs/module-deps.svg](docs/module-deps.svg)
-→ 外部依赖图：[docs/external-deps.svg](docs/external-deps.svg)
+详见 [docs/architecture.svg](docs/architecture.svg) | [docs/module-deps.svg](docs/module-deps.svg) | [docs/external-deps.svg](docs/external-deps.svg)
 
-### 四个 Maven 模块（无循环依赖）
+### 四层结构
 
-| 模块 | 职责 |
-|------|------|
-| `server-runtime` | 基础设施层：MyBatis-Plus、Redis、ES、RocketMQ 客户端封装，无业务逻辑 |
-| `server-core` | 业务核心：所有 Service、Domain 对象、AI 集成（Spring AI Alibaba）、GraalVM 脚本执行 |
-| `server-openapi` | 对外 OpenAPI：供外部 Agent 调用的标准对话接口，依赖 server-core |
-| `server-start` | 启动模块：Spring Boot 入口、配置文件、静态资源，依赖全部三个模块 |
+```
+前端（React + UmiJS monorepo）
+  └─ packages/main          Builder 管理台 SPA
+  └─ packages/spark-flow    Workflow 画布（可视化编排）
+  └─ packages/spark-i18n    国际化包
 
-依赖链：`server-runtime` ← `server-core` ← `server-openapi` / `server-start`
+后端（Spring Boot 3.3 / Java 17，4 个 Maven 模块）
+  server-runtime   共享 DTO / VO / 枚举，无内部依赖（叶节点）
+  server-core      业务核心：Agent 引擎、ORM Mapper、Redis/OSS/模型管理
+  server-openapi   OpenAI 兼容端点 + ApiKey 鉴权拦截器
+  server-start     启动类、全局异常、JWT 鉴权、Controller 层
+  （依赖方向：start → openapi → core → runtime）
 
-### 两个数据库
+中间件
+  MySQL 8.0      两个 schema：admin（Builder）/ agentscope（Evaluation）
+  Redis 7        Redisson 分布式锁 + 会话缓存
+  Elasticsearch  向量检索（RAG chunks）+ OTel Trace 存储（index: loongsuite_traces）
+  RocketMQ 5     异步任务：文档索引、实验批量执行
+  Nacos 2        Prompt 配置中心热加载
 
-| 数据库 | 存储内容 |
-|--------|---------|
-| `admin` | Prompt、Dataset、Evaluator、Experiment、ModelConfig |
-| `agentscope` | Account、App、KB、Plugin、Tool、Provider、Model、MCP Server、AgentSchema、Workspace、ApiKey |
-
-### 非 MySQL 存储
-
-| 实体 | 存储 | 说明 |
-|------|------|------|
-| `DocumentChunk` | Elasticsearch | Spring AI vector store，通过 RocketMQ 异步写入 |
-| `ChatSession` | Redis（Redisson） | Prompt 调试会话，TTL 控制生命周期 |
-| `GlobalConfig` | 无（运行时 DTO） | `SystemController` 静态内部类，每次请求动态构造 |
+外部服务
+  AI 模型：DashScope / OpenAI / DeepSeek（Spring AI Alibaba v1.0.0.3 统一适配）
+  OSS：本地文件系统 or 阿里云 OSS（文件上传/预览）
+  LoongCollector：OTel Collector（OTLP HTTP :4318 → ES）
+```
 
 ---
 
 ## 关键模块
 
-### 认证
-- Argon2 密码哈希 + jjwt JWT 令牌，无 Spring Security session
-- Token 存 Redis，`logout` 接口主动失效
-- GitHub OAuth2 回调写 Cookie 后重定向前端
+| 模块 | 主要职责 |
+|------|---------|
+| `server-start` | Spring Boot 入口，Controller 层，JWT 过滤器，全局异常处理 |
+| `server-core` | Agent 执行引擎（JGraphT DAG），MyBatis-Plus Mapper，Redisson，OSS 管理 |
+| `server-openapi` | OpenAI 兼容 Chat/Workflow API，ApiKey 鉴权拦截器 |
+| `server-runtime` | 跨模块共享的 DTO/VO/枚举/分页封装，**不可引入业务逻辑** |
 
-### 知识库 / RAG 管道
-1. 上传文件 → OSS 存储，`document` 记录写 MySQL
-2. 发 RocketMQ 消息触发异步索引
-3. `DocumentService` 拉取文件 → 分块 → embedding → 写 Elasticsearch
-4. 检索接口直接查 ES，返回 `DocumentChunk`
+Controller 分布：全部在 `server-start`，约 30 个，~150 个端点。  
+完整接口清单：[docs/api-list.md](docs/api-list.md)
 
-### 可观测性
-- 业务应用通过 OTel OTLP → LoongCollector → Elasticsearch（`loongsuite_traces` 索引）
-- Admin 侧从 ES 读取 Trace / Span 数据展示，不经过 Jaeger / Zipkin
+---
 
-### Agent / Workflow 执行
-- Spring AI Alibaba `ChatClient` 驱动 Agent 对话
-- Workflow 节点图序列化为 JSON 存 `application_version.config`
-- 调试态走 `WorkflowDebugController`，生产态走 OpenAPI `/api/v1/apps/workflow/`
+## 数据模型
 
-### Prompt 同步
-- Nacos 作配置中心，`prompt_key` 为业务唯一键
-- Prompt 发布后同步推送到 Nacos，外部 Agent 应用通过 `spring-ai-alibaba-agent-nacos` 订阅
+详见 [docs/data-model.md](docs/data-model.md) | [docs/data-model-er.svg](docs/data-model-er.svg)
 
-### 代码生成器（Graph Studio）
-- 继承 Spring Initializr，接收 `GraphProjectRequest`，生成 Spring AI Alibaba 工程骨架
-- 路由前缀 `/graph-studio/api/`，下载入口 `/starter.zip`
+- **admin schema**（15 张表）：account、workspace、application、application_version、application_component、reference、knowledge_base、document、plugin、tool、provider、model、mcp_server、agent_schema、api_key
+- **agentscope schema**（12 张表）：prompt、prompt_version、prompt_build_template、model_config、dataset、dataset_version、dataset_item、evaluator、evaluator_version、evaluator_template、experiment、experiment_result
+- Document chunks **不在 MySQL**，存 Elasticsearch（index: `loongsuite_traces`）
+- 所有实体用业务主键（`VARCHAR(64)` UUID）对外，物理主键（`BIGINT AUTO_INCREMENT`）仅内部使用
 
 ---
 
 ## 关键约定
 
-### ORM 混用
-- `admin` 库实体用 **JPA** `@Table`，存放在 `server-core` 的 `domain` 包
-- `agentscope` 库实体用 **MyBatis-Plus** `@TableName`，存放在 `server-runtime` 的 entity 包
-- 同一个 Service 可能同时操作两个库，注意 DataSource 路由
+### API 规范
+- 统一返回结构：`Result<T>` — `{ requestId, code, message, data }`
+- 分页结构：`PagingList<T>` — `{ total, pageNum, pageSize, list }`
+- 流式接口返回 `text/event-stream`（SSE），末帧 `status=COMPLETED`
+- Evaluation 平台接口（`/api/*`）用 `PageResult<T>` 替代 `PagingList<T>`
 
-### 业务 ID vs 自增主键
-所有表均有自增 `id` 作物理主键，同时用 `xxx_id`（UUID/nanoid）或 `xxx_key` 作业务唯一标识。接口传参和关联外键一律用业务 ID，不暴露自增主键。
+### 鉴权
+- Builder 平台：JWT（JJWT v0.12.6），Header `Authorization: Bearer <token>`
+- OpenAPI 外部调用：ApiKey，Header `Authorization: Bearer <apiKey>`（`ApiKeyAuthInterceptor`）
 
-### 逻辑删除
-大多数表用 `status = 0` 表示软删除，MyBatis-Plus 全局过滤。直接写 `DELETE` SQL 会破坏数据完整性。
-
-### 统一返回结构
-```
-Result<T>       { code, message, data: T }
-PageResult<T>   { total, list: T[] }
-PagingList<T>   { total, list: T[] }   // agentscope 侧部分接口
-```
-流式接口返回 `Flux<T>` 或 `SseEmitter`，不包装 Result。
+### ORM
+- Builder 平台（admin schema）：MyBatis-Plus，XML Mapper 在 `classpath:mapper/*.xml`，驼峰映射开启
+- Evaluation 平台（agentscope schema）：Spring Data JPA + Hibernate，`ddl-auto=none`
+- 两套 ORM 并存，**不要混用**
 
 ### 配置覆盖
-生产 / 本地差异通过环境变量覆盖，参考 `application-dev.yml.example`。不要在代码里硬编码地址或密钥。
+所有中间件连接配置均支持环境变量覆盖，本地开发默认值见 `application.yml`：
 
-### GraalVM Polyglot
-评估器自定义脚本（JS / Python）通过 GraalVM Polyglot 执行，沙箱隔离。修改脚本执行逻辑时需注意 context 线程安全。
+| 中间件 | 环境变量前缀 | 默认值 |
+|--------|------------|--------|
+| MySQL | `SPRING_DATASOURCE_*` | `localhost:3306/admin` user=admin |
+| Redis | `SPRING_REDIS_*` | `localhost:6379` db=0 |
+| Elasticsearch | `SPRING_ELASTICSEARCH_URIS` | `http://localhost:9200` |
+| RocketMQ | `ROCKETMQ_ENDPOINTS` | `localhost:18080` |
+| Nacos | `NACOS_SERVER_ADDR` | `localhost:8848` |
+| OTLP | `MANAGEMENT_OTLP_TRACING_EXPORT_ENDPOINT` | `http://localhost:4318/v1/traces` |
+
+### 模型配置
+- AI 模型凭证在 `server-start/model-config.yaml`（gitignore，不提交），模板见 `model-config-dashscope.yaml` 等
+- 运行时可通过 Provider API 动态添加模型；凭证经 RSA 加密存库
 
 ---
 
 ## 怎么跑
 
-### 前置条件
-- Java 17+，Maven 3.8+
-- Docker + Docker Compose（启动中间件）
-- 至少一个 AI 模型 API Key（DashScope / OpenAI / DeepSeek）
-
-### 本地启动
+### 快速启动（推荐）
 
 ```bash
-# 1. 启动中间件（MySQL × 2、Redis、Elasticsearch、RocketMQ、Nacos）
-sh start.sh
+# 1. 启动所有中间件（MySQL / Redis / ES / RocketMQ / Nacos / LoongCollector）
+docker compose -f docker-compose.dev.yml up -d
 
-# 2. 配置模型 API Key
-# 编辑 spring-ai-alibaba-admin-server-start/model-config.yaml
-# 模板见同目录 model-config-dashscope.yaml / model-config-openai.yaml
+# 等待健康检查通过（约 60–90s），可用以下命令确认：
+docker compose -f docker-compose.dev.yml ps
 
-# 3. 启动应用
+# 2. 配置模型 API Key（首次）
+cp spring-ai-alibaba-admin-server-start/model-config-dashscope.yaml \
+   spring-ai-alibaba-admin-server-start/model-config.yaml
+# 编辑 model-config.yaml，填入 API Key
+
+# 3. 启动后端
 cd spring-ai-alibaba-admin-server-start
 mvn spring-boot:run
 
 # 4. 访问
-# 控制台：http://localhost:8080
+# 管理台：http://localhost:8080/admin
+# Nacos：http://localhost:7848/nacos  (user=nacos pass=nacos)
+# Kibana：http://localhost:5601
 ```
 
-### 中间件默认地址（本地 Docker）
+### 中间件端口速查
 
-| 服务 | 地址 | 环境变量覆盖 |
-|------|------|-------------|
-| MySQL (admin) | localhost:3306/admin | `SPRING_DATASOURCE_URL` |
-| MySQL (agentscope) | localhost:3306/agentscope | — |
-| Redis | localhost:6379 | `SPRING_REDIS_PORT` |
-| Elasticsearch | http://localhost:9200 | — |
-| Nacos | localhost:8848 | `NACOS_SERVER_ADDR` |
-| RocketMQ | localhost:18080 | — |
-| OTel Collector | http://localhost:4318 | `MANAGEMENT_OTLP_TRACING_EXPORT_ENDPOINT` |
+| 服务 | 宿主机端口 |
+|------|-----------|
+| MySQL | 3306 |
+| Redis | 6379 |
+| Elasticsearch | 9200 |
+| RocketMQ Proxy (gRPC) | 18080 |
+| Nacos HTTP | 7848 |
+| LoongCollector OTLP | 4318 |
+| Kibana | 5601 |
 
-### 详细参考文档
+> Nacos 宿主机 7848 映射容器 8848；应用配置 `NACOS_SERVER_ADDR=localhost:7848`。
 
-| 文档 | 内容 |
-|------|------|
-| [docs/api-list.md](docs/api-list.md) | 全量 REST 接口清单（22 模块，含入参/返回） |
-| [docs/data-model.md](docs/data-model.md) | 核心数据模型（25 张表 + 3 个非 MySQL 实体） |
-| [docs/data-model-er.svg](docs/data-model-er.svg) | ER 关系图 |
-| [docs/login-flow.svg](docs/login-flow.svg) | 用户登录流程图 |
-| [docs/methodology.svg](docs/methodology.svg) | 人机协作工作流（接手项目方法论） |
+### 前端开发
+
+```bash
+cd packages/main
+npm install
+npm run dev   # 默认代理到 localhost:8080
+```
+
+### 停止 / 清数据
+
+```bash
+docker compose -f docker-compose.dev.yml down        # 停止，保留数据卷
+docker compose -f docker-compose.dev.yml down -v     # 停止并清除所有数据
+```
 
 ---
 
 ## 禁区
 
-> 记录不能随意修改的代码区域、高风险操作、历史上曾出过问题的地方。
-
-<!-- TODO：随项目演进在此补充 -->
+> _待补充：记录不能改动的区域、不能删除的配置、线上有依赖的接口等。_
 
 ---
 
 ## 历史包袱
 
-> 记录设计债、临时方案、已知但暂不处理的问题。
-
-<!-- TODO：随项目演进在此补充 -->
+> _待补充：遗留的设计决策、已知 workaround、技术债务说明等。_

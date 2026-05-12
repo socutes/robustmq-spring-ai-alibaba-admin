@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a3a6b"/>
+    </marker>
+    <marker id="arrowdown" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc4400"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="640" fill="#f8f9fc" rx="8"/>
+
+  <!-- Title -->
+  <text x="480" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#1a1a2e">四层时间轮结构示意图（降级机制）</text>
+
+  <!-- ==================== L4 天轮 ==================== -->
+  <!-- Layer box -->
+  <rect x="20" y="48" width="690" height="86" rx="6" fill="#eef2ff" stroke="#7986cb" stroke-width="1.2"/>
+  <text x="30" y="65" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#3949ab">L4 天轮（30 槽，每槽 = 1 天）</text>
+
+  <!-- Slots L4: show [0][1][2*][3][4]...[29] -->
+  <!-- slot width=58, gap=4, start x=30, y=70 -->
+  <!-- 8 boxes: indices 0,1,2,3,4, ellipsis, 29 -->
+
+  <!-- slot 0 -->
+  <rect x="30" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="58" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[0]</text>
+
+  <!-- slot 1 -->
+  <rect x="90" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="118" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[1]</text>
+
+  <!-- slot 2 highlighted -->
+  <rect x="150" y="70" width="56" height="38" rx="4" fill="#ff8c00" stroke="#cc5500" stroke-width="1.5"/>
+  <text x="178" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">[2]</text>
+  <text x="178" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#fff">▼ msg</text>
+
+  <!-- slot 3 -->
+  <rect x="210" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="238" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[3]</text>
+
+  <!-- slot 4 -->
+  <rect x="270" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="298" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[4]</text>
+
+  <!-- ellipsis -->
+  <text x="348" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <!-- slot 28 -->
+  <rect x="370" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="398" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[28]</text>
+
+  <!-- slot 29 -->
+  <rect x="430" y="70" width="56" height="38" rx="4" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="458" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[29]</text>
+
+  <!-- ==================== Demotion arrow L4→L3 ==================== -->
+  <!-- from slot[2] bottom-right area down to L3 slot[3] top -->
+  <line x1="178" y1="108" x2="220" y2="162" stroke="#1a3a6b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="170" y="143" font-family="Arial,sans-serif" font-size="11" fill="#1a3a6b" font-style="italic">降级</text>
+
+  <!-- ==================== L3 小时轮 ==================== -->
+  <rect x="20" y="164" width="690" height="86" rx="6" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1.2"/>
+  <text x="30" y="181" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#2e7d32">L3 小时轮（24 槽，每槽 = 1 小时）</text>
+
+  <!-- slots: 0,1,2,3*,4,...,23 -->
+  <rect x="30" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="58" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[0]</text>
+
+  <rect x="90" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="118" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[1]</text>
+
+  <rect x="150" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="178" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[2]</text>
+
+  <!-- slot 3 highlighted -->
+  <rect x="210" y="186" width="56" height="38" rx="4" fill="#ff8c00" stroke="#cc5500" stroke-width="1.5"/>
+  <text x="238" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">[3]</text>
+  <text x="238" y="217" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#fff">▼ msg</text>
+
+  <rect x="270" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="298" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[4]</text>
+
+  <text x="348" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <rect x="370" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="398" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[22]</text>
+
+  <rect x="430" y="186" width="56" height="38" rx="4" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="458" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[23]</text>
+
+  <!-- ==================== Demotion arrow L3→L2 ==================== -->
+  <line x1="238" y1="224" x2="280" y2="278" stroke="#1a3a6b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="228" y="259" font-family="Arial,sans-serif" font-size="11" fill="#1a3a6b" font-style="italic">降级</text>
+
+  <!-- ==================== L2 分钟轮 ==================== -->
+  <rect x="20" y="280" width="690" height="86" rx="6" fill="#fff3e0" stroke="#ffa726" stroke-width="1.2"/>
+  <text x="30" y="297" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#e65100">L2 分钟轮（60 槽，每槽 = 1 分钟）</text>
+
+  <!-- slots: 0,1,2,...15*,...59 -->
+  <rect x="30" y="302" width="56" height="38" rx="4" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1"/>
+  <text x="58" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[0]</text>
+
+  <rect x="90" y="302" width="56" height="38" rx="4" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1"/>
+  <text x="118" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[1]</text>
+
+  <text x="168" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <!-- slot 15 highlighted -->
+  <rect x="190" y="302" width="56" height="38" rx="4" fill="#ff8c00" stroke="#cc5500" stroke-width="1.5"/>
+  <text x="218" y="321" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">[15]</text>
+  <text x="218" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#fff">▼ msg</text>
+
+  <text x="268" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <rect x="290" y="302" width="56" height="38" rx="4" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1"/>
+  <text x="318" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[30]</text>
+
+  <rect x="350" y="302" width="56" height="38" rx="4" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1"/>
+  <text x="378" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[45]</text>
+
+  <text x="428" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <rect x="450" y="302" width="56" height="38" rx="4" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1"/>
+  <text x="478" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[59]</text>
+
+  <!-- ==================== Demotion arrow L2→L1 ==================== -->
+  <line x1="218" y1="340" x2="260" y2="394" stroke="#1a3a6b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="208" y="375" font-family="Arial,sans-serif" font-size="11" fill="#1a3a6b" font-style="italic">降级</text>
+
+  <!-- ==================== L1 秒轮 ==================== -->
+  <rect x="20" y="396" width="690" height="102" rx="6" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1.2"/>
+  <text x="30" y="413" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#b71c1c">L1 秒轮（60 槽，每槽 = 1 秒）</text>
+
+  <!-- slots: 0,1,...20*,...59 -->
+  <rect x="30" y="418" width="56" height="38" rx="4" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="58" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[0]</text>
+
+  <rect x="90" y="418" width="56" height="38" rx="4" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="118" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[1]</text>
+
+  <text x="168" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <!-- slot 20 highlighted -->
+  <rect x="190" y="418" width="56" height="38" rx="4" fill="#ff8c00" stroke="#cc5500" stroke-width="1.5"/>
+  <text x="218" y="437" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">[20]</text>
+  <text x="218" y="449" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#fff">触发！</text>
+
+  <text x="268" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <rect x="290" y="418" width="56" height="38" rx="4" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="318" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[30]</text>
+
+  <rect x="350" y="418" width="56" height="38" rx="4" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="378" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[45]</text>
+
+  <text x="428" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#888">···</text>
+
+  <rect x="450" y="418" width="56" height="38" rx="4" fill="#ffcdd2" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="478" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#333">[59]</text>
+
+  <!-- Trigger arrow downward from slot[20] -->
+  <line x1="218" y1="456" x2="218" y2="495" stroke="#cc4400" stroke-width="2.5" marker-end="url(#arrowdown)"/>
+  <rect x="160" y="498" width="120" height="26" rx="4" fill="#ff6600" stroke="#cc4400" stroke-width="1.2"/>
+  <text x="220" y="515" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">触发投递</text>
+
+  <!-- ==================== Total slots note ==================== -->
+  <text x="360" y="538" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#555">总计 174 槽（30 + 24 + 60 + 60），覆盖范围：1 秒 ~ 30 天</text>
+
+  <!-- ==================== Right side info box ==================== -->
+  <rect x="718" y="48" width="228" height="326" rx="8" fill="#fff" stroke="#7986cb" stroke-width="1.5"/>
+  <rect x="718" y="48" width="228" height="32" rx="8" fill="#3949ab"/>
+  <rect x="718" y="64" width="228" height="16" rx="0" fill="#3949ab"/>
+  <text x="832" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">示例说明</text>
+
+  <text x="730" y="100" font-family="Arial,sans-serif" font-size="11.5" fill="#1a1a2e" font-weight="bold">延时 2d 3h 15m 20s 的消息</text>
+
+  <line x1="728" y1="108" x2="938" y2="108" stroke="#c5cae9" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <circle cx="744" cy="128" r="10" fill="#3949ab"/>
+  <text x="744" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff">1</text>
+  <text x="760" y="124" font-family="Arial,sans-serif" font-size="11" fill="#333">放入天轮</text>
+  <text x="760" y="137" font-family="Arial,sans-serif" font-size="11" fill="#555">Slot[2]</text>
+
+  <!-- Step 2 -->
+  <circle cx="744" cy="164" r="10" fill="#2e7d32"/>
+  <text x="744" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff">2</text>
+  <text x="760" y="160" font-family="Arial,sans-serif" font-size="11" fill="#333">降级 → 小时轮</text>
+  <text x="760" y="173" font-family="Arial,sans-serif" font-size="11" fill="#555">Slot[3]</text>
+
+  <!-- Step 3 -->
+  <circle cx="744" cy="200" r="10" fill="#e65100"/>
+  <text x="744" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff">3</text>
+  <text x="760" y="196" font-family="Arial,sans-serif" font-size="11" fill="#333">降级 → 分钟轮</text>
+  <text x="760" y="209" font-family="Arial,sans-serif" font-size="11" fill="#555">Slot[15]</text>
+
+  <!-- Step 4 -->
+  <circle cx="744" cy="236" r="10" fill="#b71c1c"/>
+  <text x="744" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff">4</text>
+  <text x="760" y="232" font-family="Arial,sans-serif" font-size="11" fill="#333">降级 → 秒轮</text>
+  <text x="760" y="245" font-family="Arial,sans-serif" font-size="11" fill="#555">Slot[20]</text>
+
+  <!-- Step 5 -->
+  <circle cx="744" cy="272" r="10" fill="#ff6600"/>
+  <text x="744" y="276" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff">5</text>
+  <text x="760" y="272" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#cc4400">触发投递</text>
+
+  <!-- connecting line between steps -->
+  <line x1="744" y1="138" x2="744" y2="154" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="744" y1="174" x2="744" y2="190" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="744" y1="210" x2="744" y2="226" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="744" y1="246" x2="744" y2="262" stroke="#aaa" stroke-width="1.2"/>
+
+  <line x1="728" y1="294" x2="938" y2="294" stroke="#c5cae9" stroke-width="1"/>
+
+  <!-- Summary -->
+  <text x="832" y="316" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">总计 174 槽</text>
+  <text x="832" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">覆盖 1s ~ 30 天</text>
+  <text x="832" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">30+24+60+60 = 174</text>
+
+  <!-- ==================== Legend ==================== -->
+  <rect x="718" y="390" width="228" height="80" rx="8" fill="#fff" stroke="#bdbdbd" stroke-width="1.2"/>
+  <text x="832" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#555">图例</text>
+  <rect x="730" y="418" width="22" height="14" rx="3" fill="#ff8c00" stroke="#cc5500" stroke-width="1"/>
+  <text x="758" y="430" font-family="Arial,sans-serif" font-size="11" fill="#333">当前持有消息的槽</text>
+  <rect x="730" y="438" width="22" height="14" rx="3" fill="#e8eaf6" stroke="#9fa8da" stroke-width="1"/>
+  <text x="758" y="450" font-family="Arial,sans-serif" font-size="11" fill="#333">空闲槽（无消息）</text>
+  <line x1="730" y1="460" x2="752" y2="460" stroke="#1a3a6b" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="752,456.5 762,460 752,463.5" fill="#1a3a6b"/>
+  <text x="768" y="464" font-family="Arial,sans-serif" font-size="11" fill="#333">降级路径</text>
+
+</svg>

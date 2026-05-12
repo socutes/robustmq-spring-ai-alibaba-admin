@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" font-family="Arial,sans-serif" font-size="12">
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 Z" fill="#374151"/>
+  </marker>
+  <marker id="arrow-dashed" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 Z" fill="#6b7280"/>
+  </marker>
+</defs>
+<rect width="960" height="760" fill="#f8fafc" rx="8"/>
+<text x="480" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Master 节点故障切换时序图</text>
+<line x1="140" y1="74" x2="140" y2="690" stroke="#ef4444" stroke-width="1" stroke-dasharray="5,5" opacity="0.6"/>
+<line x1="290" y1="74" x2="290" y2="690" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+<line x1="460" y1="74" x2="460" y2="690" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+<line x1="650" y1="74" x2="650" y2="690" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+<line x1="820" y1="74" x2="820" y2="690" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+<rect x="87" y="32" width="110" height="44" rx="6" fill="#00000020"/>
+<rect x="85" y="30" width="110" height="44" rx="6" fill="#ef4444"/>
+<text x="140" y="47" text-anchor="middle" font-weight="bold" font-size="13" fill="#ffffff">Node-X</text>
+<text x="140" y="62" text-anchor="middle" font-size="10" fill="#ffffff" opacity="0.85">(故障节点)</text>
+<rect x="237" y="32" width="110" height="44" rx="6" fill="#00000020"/>
+<rect x="235" y="30" width="110" height="44" rx="6" fill="#3b82f6"/>
+<text x="290" y="47" text-anchor="middle" font-weight="bold" font-size="13" fill="#ffffff">ETCD</text>
+<rect x="407" y="32" width="110" height="44" rx="6" fill="#00000020"/>
+<rect x="405" y="30" width="110" height="44" rx="6" fill="#8b5cf6"/>
+<text x="460" y="47" text-anchor="middle" font-weight="bold" font-size="13" fill="#ffffff">Controller</text>
+<text x="460" y="62" text-anchor="middle" font-size="10" fill="#ffffff" opacity="0.85">(其他节点)</text>
+<rect x="597" y="32" width="110" height="44" rx="6" fill="#00000020"/>
+<rect x="595" y="30" width="110" height="44" rx="6" fill="#10b981"/>
+<text x="650" y="47" text-anchor="middle" font-weight="bold" font-size="13" fill="#ffffff">Node-2</text>
+<text x="650" y="62" text-anchor="middle" font-size="10" fill="#ffffff" opacity="0.85">(原 Slave)</text>
+<rect x="767" y="32" width="110" height="44" rx="6" fill="#00000020"/>
+<rect x="765" y="30" width="110" height="44" rx="6" fill="#f59e0b"/>
+<text x="820" y="47" text-anchor="middle" font-weight="bold" font-size="13" fill="#ffffff">Redis</text>
+<text x="10" y="144" font-size="10" fill="#94a3b8">T+0s</text>
+<rect x="85" y="126" width="110" height="26" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+<text x="140" y="144" text-anchor="middle" font-size="12" font-weight="bold" fill="#ef4444">宕机 ✕</text>
+<text x="10" y="189" font-size="10" fill="#94a3b8">T+0s</text>
+<rect x="203" y="175" width="121" height="28" rx="4" fill="#fef9c3" stroke="#fbbf24" stroke-width="1"/>
+<polygon points="316,175 324,183 316,183" fill="#fbbf24" opacity="0.5"/>
+<line x1="140" y1="185" x2="203" y2="185" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="211" y="190" font-size="10" fill="#92400e">心跳停止，Lease 续约中断</text>
+<text x="10" y="254" font-size="10" fill="#94a3b8">T+10s</text>
+<rect x="353" y="240" width="177" height="44" rx="4" fill="#fef9c3" stroke="#fbbf24" stroke-width="1"/>
+<polygon points="522,240 530,248 522,248" fill="#fbbf24" opacity="0.5"/>
+<line x1="290" y1="250" x2="353" y2="250" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="361" y="255" font-size="10" fill="#92400e">Lease TTL 过期</text>
+<text x="361" y="271" font-size="10" fill="#92400e">自动删除 /when/nodes/node-x</text>
+<text x="10" y="314" font-size="10" fill="#94a3b8">T+10s</text>
+<line x1="347" y1="310" x2="403" y2="310" stroke="#374151" stroke-width="1.5"  marker-end="url(#arrow)"/>
+<text x="375" y="304" text-anchor="middle" font-size="10" fill="#374151">Watch 通知 DELETE /when/nodes/node-x</text>
+<text x="10" y="359" font-size="10" fill="#94a3b8">T+10s</text>
+<line x1="403" y1="355" x2="347" y2="355" stroke="#374151" stroke-width="1.5"  marker-end="url(#arrow)"/>
+<text x="375" y="349" text-anchor="middle" font-size="10" fill="#374151">GET /when/timewheels/* (受影响时间轮)</text>
+<text x="10" y="404" font-size="10" fill="#94a3b8">T+10s</text>
+<line x1="347" y1="400" x2="403" y2="400" stroke="#374151" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+<text x="375" y="394" text-anchor="middle" font-size="10" fill="#374151">返回 TW-3 (master=node-x, slave=node-2)</text>
+<text x="10" y="449" font-size="10" fill="#94a3b8">T+11s</text>
+<line x1="517" y1="445" x2="593" y2="445" stroke="#374151" stroke-width="1.5"  marker-end="url(#arrow)"/>
+<text x="555" y="439" text-anchor="middle" font-size="10" fill="#374151">gRPC PromoteToMaster(tw_id="tw-3")</text>
+<text x="10" y="494" font-size="10" fill="#94a3b8">T+11s</text>
+<line x1="707" y1="490" x2="763" y2="490" stroke="#374151" stroke-width="1.5"  marker-end="url(#arrow)"/>
+<text x="735" y="484" text-anchor="middle" font-size="10" fill="#374151">SCAN /when/tw/tw-3/index/*</text>
+<text x="10" y="529" font-size="10" fill="#94a3b8">T+11s</text>
+<line x1="763" y1="525" x2="707" y2="525" stroke="#374151" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+<text x="735" y="519" text-anchor="middle" font-size="10" fill="#374151">返回索引数据</text>
+<text x="10" y="569" font-size="10" fill="#94a3b8">T+11s</text>
+<rect x="713" y="555" width="65" height="44" rx="4" fill="#fef9c3" stroke="#fbbf24" stroke-width="1"/>
+<polygon points="770,555 778,563 770,563" fill="#fbbf24" opacity="0.5"/>
+<line x1="650" y1="565" x2="713" y2="565" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="721" y="570" font-size="10" fill="#92400e">重建内存时间轮</text>
+<text x="721" y="586" font-size="10" fill="#92400e">启动调度循环</text>
+<text x="10" y="614" font-size="10" fill="#94a3b8">T+12s</text>
+<line x1="593" y1="610" x2="517" y2="610" stroke="#374151" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+<text x="555" y="604" text-anchor="middle" font-size="10" fill="#374151">gRPC 接管完成</text>
+<text x="10" y="654" font-size="10" fill="#94a3b8">T+12s</text>
+<line x1="403" y1="650" x2="347" y2="650" stroke="#374151" stroke-width="1.5"  marker-end="url(#arrow)"/>
+<text x="375" y="644" text-anchor="middle" font-size="10" fill="#374151">PUT /when/timewheels/tw-3 (master=node-2)</text>
+<rect x="60" y="708" width="840" height="28" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2"/>
+<text x="480" y="728" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">全程 ≤ 10s，期间 TW-3 相关已写入消息全部安全</text>
+</svg>

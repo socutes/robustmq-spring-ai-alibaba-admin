@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000018" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1200" height="900" fill="#F0F2F5" stroke="none" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <rect x="0" y="0" width="200" height="900" fill="#F5F5F5" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <rect x="0" y="0" width="200" height="40" fill="white" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="100" y="26" fill="#1890FF" font-size="18" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">When</text>
+  <rect x="0" y="40" width="200" height="44" fill="#E8F4FD" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <rect x="0" y="40" width="3" height="44" fill="#1890FF" stroke="none" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="28" y="67" fill="#1890FF" font-size="14" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">集群状态</text>
+  <rect x="0" y="84" width="200" height="44" fill="#F5F5F5" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="28" y="111" fill="#333" font-size="14" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">任务列表</text>
+  <rect x="0" y="128" width="200" height="44" fill="#F5F5F5" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="28" y="155" fill="#333" font-size="14" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">投递日志</text>
+  <rect x="0" y="172" width="200" height="44" fill="#F5F5F5" stroke="#D0D0D0" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="28" y="199" fill="#999" font-size="14" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">配置</text>
+  <rect x="200" y="0" width="1000" height="40" fill="white" stroke="#E8E8E8" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="220" y="26" fill="#333" font-size="14" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">集群状态</text>
+  <g filter="url(#card-shadow)">
+    <rect x="224" y="64" width="226" height="90" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  </g>
+  <text x="240" y="90" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">在线节点</text>
+  <text x="240" y="124" fill="#262626" font-size="26" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">3</text>
+  <text x="259" y="124" fill="#AAA" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">/ 3 总节点</text>
+  <g filter="url(#card-shadow)">
+    <rect x="466" y="64" width="226" height="90" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  </g>
+  <text x="482" y="90" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">待投递消息</text>
+  <text x="482" y="124" fill="#262626" font-size="26" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">128,432</text>
+  <g filter="url(#card-shadow)">
+    <rect x="708" y="64" width="226" height="90" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  </g>
+  <text x="724" y="90" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">写入 QPS</text>
+  <text x="724" y="124" fill="#262626" font-size="26" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">4,521</text>
+  <g filter="url(#card-shadow)">
+    <rect x="950" y="64" width="226" height="90" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  </g>
+  <text x="966" y="90" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">投递 QPS</text>
+  <text x="966" y="124" fill="#262626" font-size="26" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">4,389</text>
+  <rect x="224" y="178" width="600" height="320" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  <text x="240" y="204" fill="#262626" font-size="15" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">节点列表</text>
+  <rect x="224" y="222" width="600" height="36" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="240" y="245" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">节点 ID</text>
+  <text x="334" y="245" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">IP 地址</text>
+  <text x="454" y="245" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">状态</text>
+  <text x="544" y="245" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">时间轮数</text>
+  <text x="654" y="245" fill="#888" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">负载</text>
+  <rect x="224" y="258" width="600" height="44" fill="#F0F7FF" stroke="#E8E8E8" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="240" y="285" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-1</text>
+  <text x="334" y="285" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">10.0.1.1</text>
+  <circle cx="460" cy="280" r="5" fill="#52C41A" />
+  <text x="470" y="285" fill="#52C41A" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">在线</text>
+  <text x="544" y="285" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">4</text>
+  <text x="654" y="285" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">45%</text>
+  <rect x="292" y="268" width="68" height="22" fill="#E6F7FF" stroke="#91D5FF" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="326" y="284" fill="#1890FF" font-size="10" font-family="Arial, sans-serif" font-weight="normal" text-anchor="middle">Controller</text>
+  <rect x="224" y="302" width="600" height="44" fill="white" stroke="#E8E8E8" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="240" y="329" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-2</text>
+  <text x="334" y="329" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">10.0.1.2</text>
+  <circle cx="460" cy="324" r="5" fill="#52C41A" />
+  <text x="470" y="329" fill="#52C41A" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">在线</text>
+  <text x="544" y="329" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">4</text>
+  <text x="654" y="329" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">42%</text>
+  <rect x="224" y="346" width="600" height="44" fill="white" stroke="#E8E8E8" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <text x="240" y="373" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-3</text>
+  <text x="334" y="373" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">10.0.1.3</text>
+  <circle cx="460" cy="368" r="5" fill="#52C41A" />
+  <text x="470" y="373" fill="#52C41A" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">在线</text>
+  <text x="544" y="373" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">4</text>
+  <text x="654" y="373" fill="#333" font-size="13" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">41%</text>
+  <rect x="224" y="390" width="600" height="1" fill="#E8E8E8" stroke="none" stroke-width="1" rx="0" ry="0" opacity="1" />
+  <rect x="848" y="178" width="328" height="320" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" ry="4" opacity="1" />
+  <text x="864" y="204" fill="#262626" font-size="15" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">时间轮分配</text>
+  <rect x="864" y="234" width="296" height="44" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="1" rx="3" ry="3" opacity="1" />
+  <text x="880" y="252" fill="#262626" font-size="13" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">TW-1</text>
+  <rect x="928" y="242" width="28" height="18" fill="#FFF1E6" stroke="#FFBB96" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="942" y="255" fill="#FA541C" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">M</text>
+  <text x="960" y="256" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-1</text>
+  <rect x="1018" y="242" width="28" height="18" fill="#F0F5FF" stroke="#ADC6FF" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="1032" y="255" fill="#2F54EB" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">S</text>
+  <text x="1050" y="256" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-2</text>
+  <rect x="864" y="286" width="296" height="44" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="1" rx="3" ry="3" opacity="1" />
+  <text x="880" y="304" fill="#262626" font-size="13" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">TW-2</text>
+  <rect x="928" y="294" width="28" height="18" fill="#FFF1E6" stroke="#FFBB96" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="942" y="307" fill="#FA541C" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">M</text>
+  <text x="960" y="308" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-2</text>
+  <rect x="1018" y="294" width="28" height="18" fill="#F0F5FF" stroke="#ADC6FF" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="1032" y="307" fill="#2F54EB" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">S</text>
+  <text x="1050" y="308" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-3</text>
+  <rect x="864" y="338" width="296" height="44" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="1" rx="3" ry="3" opacity="1" />
+  <text x="880" y="356" fill="#262626" font-size="13" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">TW-3</text>
+  <rect x="928" y="346" width="28" height="18" fill="#FFF1E6" stroke="#FFBB96" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="942" y="359" fill="#FA541C" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">M</text>
+  <text x="960" y="360" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-3</text>
+  <rect x="1018" y="346" width="28" height="18" fill="#F0F5FF" stroke="#ADC6FF" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="1032" y="359" fill="#2F54EB" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">S</text>
+  <text x="1050" y="360" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-1</text>
+  <rect x="864" y="390" width="296" height="44" fill="#FAFAFA" stroke="#E8E8E8" stroke-width="1" rx="3" ry="3" opacity="1" />
+  <text x="880" y="408" fill="#262626" font-size="13" font-family="Arial, sans-serif" font-weight="bold" text-anchor="start">TW-4</text>
+  <rect x="928" y="398" width="28" height="18" fill="#FFF1E6" stroke="#FFBB96" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="942" y="411" fill="#FA541C" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">M</text>
+  <text x="960" y="412" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-1</text>
+  <rect x="1018" y="398" width="28" height="18" fill="#F0F5FF" stroke="#ADC6FF" stroke-width="1" rx="2" ry="2" opacity="1" />
+  <text x="1032" y="411" fill="#2F54EB" font-size="11" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">S</text>
+  <text x="1050" y="412" fill="#555" font-size="12" font-family="Arial, sans-serif" font-weight="normal" text-anchor="start">node-3</text>
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="#BFBFBF" stroke-width="1.5" />
+</svg>

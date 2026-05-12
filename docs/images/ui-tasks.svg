@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" style="font-family: &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;">
+  <rect x="0" y="0" width="1200" height="900" fill="#F0F2F5" stroke="none" stroke-width="1" rx="0" />
+  <rect x="0" y="0" width="200" height="900" fill="#F5F5F5" stroke="#d9d9d9" stroke-width="1" rx="0" />
+  <rect x="0" y="0" width="200" height="56" fill="#fff" stroke="#e8e8e8" stroke-width="1" rx="0" />
+  <text x="100" y="28" fill="#1890FF" font-size="20" text-anchor="middle" dominant-baseline="middle" font-weight="bold">When</text>
+  <text x="20" y="78" fill="#595959" font-size="13" text-anchor="start" dominant-baseline="middle" font-weight="normal">集群状态</text>
+  <line x1="0" y1="100" x2="200" y2="100" stroke="#e8e8e8" stroke-width="1" />
+  <rect x="0" y="100" width="200" height="44" fill="#E8F4FD" stroke="none" stroke-width="1" rx="0" />
+  <rect x="0" y="100" width="3" height="44" fill="#1890FF" stroke="none" stroke-width="1" rx="0" />
+  <text x="20" y="122" fill="#1890FF" font-size="13" text-anchor="start" dominant-baseline="middle" font-weight="normal">任务列表</text>
+  <line x1="0" y1="144" x2="200" y2="144" stroke="#e8e8e8" stroke-width="1" />
+  <text x="20" y="166" fill="#595959" font-size="13" text-anchor="start" dominant-baseline="middle" font-weight="normal">投递日志</text>
+  <line x1="0" y1="188" x2="200" y2="188" stroke="#e8e8e8" stroke-width="1" />
+  <text x="20" y="210" fill="#8c8c8c" font-size="13" text-anchor="start" dominant-baseline="middle" font-weight="normal">配置</text>
+  <line x1="0" y1="232" x2="200" y2="232" stroke="#e8e8e8" stroke-width="1" />
+  <rect x="200" y="0" width="1000" height="40" fill="#fff" stroke="#e8e8e8" stroke-width="1" rx="0" />
+  <text x="220" y="20" fill="#262626" font-size="14" text-anchor="start" dominant-baseline="middle" font-weight="bold">任务列表</text>
+  <rect x="224" y="64" width="952" height="56" fill="#fff" stroke="#e8e8e8" stroke-width="1" rx="4" />
+  <rect x="240" y="77" width="220" height="30" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="4" />
+  <text x="250" y="92" fill="#bfbfbf" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">搜索消息 ID / Topic</text>
+  <rect x="472" y="77" width="110" height="30" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="4" />
+  <text x="482" y="92" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">全部状态 ▼</text>
+  <rect x="594" y="77" width="110" height="30" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="4" />
+  <text x="604" y="92" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">全部 Sink ▼</text>
+  <rect x="716" y="77" width="150" height="30" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="4" />
+  <text x="726" y="92" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">到期时间范围 ▼</text>
+  <rect x="878" y="77" width="64" height="30" fill="#1890FF" stroke="#1890FF" stroke-width="1" rx="4" />
+  <text x="910" y="92" fill="#fff" font-size="13" text-anchor="middle" dominant-baseline="middle" font-weight="normal">查询</text>
+  <rect x="224" y="132" width="536" height="326" fill="#fff" stroke="#e8e8e8" stroke-width="1" rx="4" />
+  <rect x="224" y="132" width="536" height="44" fill="#fafafa" stroke="#e8e8e8" stroke-width="1" rx="0" />
+  <text x="236" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">消息 ID</text>
+  <text x="376" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">Topic</text>
+  <text x="496" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">Sink 类型</text>
+  <text x="576" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">到期时间</text>
+  <text x="726" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">状态</text>
+  <text x="816" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">重试次数</text>
+  <text x="886" y="154" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="bold">操作</text>
+  <line x1="224" y1="176" x2="760" y2="176" stroke="#e8e8e8" stroke-width="1" />
+  <rect x="224" y="176" width="536" height="46" fill="#fff" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="222" x2="760" y2="222" stroke="#f0f0f0" stroke-width="1" />
+  <text x="236" y="199" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-abc123</text>
+  <text x="376" y="199" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">order.timeout</text>
+  <text x="496" y="199" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">HTTP</text>
+  <text x="576" y="199" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 10:30:00</text>
+  <text x="816" y="199" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">0</text>
+  <text x="726" y="199" fill="#52c41a" font-size="12" dominant-baseline="middle">● </text>
+  <text x="740" y="199" fill="#52c41a" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">待投递</text>
+  <text x="886" y="199" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[详情]</text>
+  <text x="938" y="199" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[取消]</text>
+  <rect x="224" y="222" width="536" height="46" fill="#fafafa" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="268" x2="760" y2="268" stroke="#f0f0f0" stroke-width="1" />
+  <text x="236" y="245" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-def456</text>
+  <text x="376" y="245" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">coupon.expire</text>
+  <text x="496" y="245" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Kafka</text>
+  <text x="576" y="245" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 11:00:00</text>
+  <text x="816" y="245" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">0</text>
+  <text x="726" y="245" fill="#52c41a" font-size="12" dominant-baseline="middle">● </text>
+  <text x="740" y="245" fill="#52c41a" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">待投递</text>
+  <text x="886" y="245" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[详情]</text>
+  <text x="938" y="245" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[取消]</text>
+  <rect x="224" y="268" width="536" height="46" fill="#fff" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="314" x2="760" y2="314" stroke="#f0f0f0" stroke-width="1" />
+  <text x="236" y="291" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-ghi789</text>
+  <text x="376" y="291" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">user.remind</text>
+  <text x="496" y="291" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">HTTP</text>
+  <text x="576" y="291" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 09:15:00</text>
+  <text x="816" y="291" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">0</text>
+  <text x="726" y="291" fill="#8c8c8c" font-size="12" dominant-baseline="middle">✓ </text>
+  <text x="740" y="291" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">已投递</text>
+  <text x="886" y="291" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[详情]</text>
+  <rect x="224" y="314" width="536" height="46" fill="#fafafa" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="360" x2="760" y2="360" stroke="#f0f0f0" stroke-width="1" />
+  <text x="236" y="337" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-jkl012</text>
+  <text x="376" y="337" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">pay.retry</text>
+  <text x="496" y="337" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">gRPC</text>
+  <text x="576" y="337" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 08:42:00</text>
+  <text x="816" y="337" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">3</text>
+  <text x="726" y="337" fill="#ff4d4f" font-size="12" dominant-baseline="middle">✗ </text>
+  <text x="740" y="337" fill="#ff4d4f" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">失败</text>
+  <text x="886" y="337" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[详情]</text>
+  <text x="938" y="337" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[重投]</text>
+  <rect x="224" y="360" width="536" height="46" fill="#fff" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="406" x2="760" y2="406" stroke="#f0f0f0" stroke-width="1" />
+  <text x="236" y="383" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-mno345</text>
+  <text x="376" y="383" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">audit.log</text>
+  <text x="496" y="383" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Kafka</text>
+  <text x="576" y="383" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 12:00:00</text>
+  <text x="816" y="383" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">0</text>
+  <text x="726" y="383" fill="#8c8c8c" font-size="12" dominant-baseline="middle">⊘ </text>
+  <text x="740" y="383" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">已取消</text>
+  <text x="886" y="383" fill="#1890FF" font-size="12" dominant-baseline="middle" style="cursor:pointer">[详情]</text>
+  <rect x="224" y="406" width="536" height="52" fill="#fff" stroke="none" stroke-width="1" rx="0" />
+  <line x1="224" y1="406" x2="760" y2="406" stroke="#f0f0f0" stroke-width="1" />
+  <text x="240" y="432" fill="#595959" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">共 12,847 条</text>
+  <text x="548" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">&lt;</text>
+  <rect x="566" y="419" width="24" height="26" fill="#1890FF" stroke="#1890FF" stroke-width="1" rx="2" />
+  <text x="578" y="432" fill="#fff" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1</text>
+  <text x="608" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">2</text>
+  <text x="638" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3</text>
+  <text x="668" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">...</text>
+  <text x="698" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">1285</text>
+  <text x="728" y="432" fill="#595959" font-size="12" text-anchor="middle" dominant-baseline="middle" font-weight="normal">&gt;</text>
+  <rect x="776" y="132" width="400" height="326" fill="#fff" stroke="none" stroke-width="1" rx="4" />
+  <rect x="776" y="132" width="3" height="326" fill="#d9d9d9" stroke="none" stroke-width="1" rx="0" />
+  <rect x="776" y="132" width="400" height="326" fill="none" stroke="#e8e8e8" stroke-width="1" rx="4" />
+  <rect x="776" y="132" width="400" height="48" fill="#fafafa" stroke="none" stroke-width="1" rx="4" />
+  <line x1="776" y1="180" x2="1176" y2="180" stroke="#e8e8e8" stroke-width="1" />
+  <text x="796" y="156" fill="#262626" font-size="15" text-anchor="start" dominant-baseline="middle" font-weight="bold">消息详情</text>
+  <text x="796" y="204" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">消息 ID：</text>
+  <text x="886" y="204" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">msg-jkl012</text>
+  <line x1="796" y1="220" x2="1156" y2="220" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="236" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Topic：</text>
+  <text x="886" y="236" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">pay.retry</text>
+  <line x1="796" y1="252" x2="1156" y2="252" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="268" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Sink 类型：</text>
+  <text x="886" y="268" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">gRPC</text>
+  <line x1="796" y1="284" x2="1156" y2="284" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="300" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Sink 地址：</text>
+  <text x="886" y="300" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">10.0.1.42:9090</text>
+  <line x1="796" y1="316" x2="1156" y2="316" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="328" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">Payload：</text>
+  <rect x="796" y="338" width="360" height="52" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1" rx="3" />
+  <text x="806" y="352" fill="#595959" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal">{"orderId":"ORD-2026051200042",</text>
+  <text x="806" y="368" fill="#595959" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal"> "amount":299.00}</text>
+  <text x="796" y="412" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">到期时间：</text>
+  <text x="886" y="412" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 08:42:00</text>
+  <line x1="796" y1="428" x2="1156" y2="428" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="444" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">状态：</text>
+  <text x="886" y="444" fill="#ff4d4f" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">✗ 失败</text>
+  <line x1="796" y1="460" x2="1156" y2="460" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="476" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">创建时间：</text>
+  <text x="886" y="476" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-12 20:00:00</text>
+  <line x1="796" y1="492" x2="1156" y2="492" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="508" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">最后投递时间：</text>
+  <text x="886" y="508" fill="#262626" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 08:42:11</text>
+  <line x1="796" y1="524" x2="1156" y2="524" stroke="#f0f0f0" stroke-width="1" />
+  <text x="796" y="536" fill="#8c8c8c" font-size="12" text-anchor="start" dominant-baseline="middle" font-weight="normal">重试记录：</text>
+  <rect x="796" y="546" width="360" height="38" fill="#fff7f7" stroke="#ffccc7" stroke-width="1" rx="3" />
+  <text x="804" y="558" fill="#8c8c8c" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 08:10:05</text>
+  <text x="804" y="573" fill="#ff4d4f" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal">连接超时 (DEADLINE_EXCEEDED)</text>
+  <rect x="796" y="590" width="360" height="38" fill="#fff7f7" stroke="#ffccc7" stroke-width="1" rx="3" />
+  <text x="804" y="602" fill="#8c8c8c" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal">2026-05-13 08:26:08</text>
+  <text x="804" y="617" fill="#ff4d4f" font-size="11" text-anchor="start" dominant-baseline="middle" font-weight="normal">连接超时 (DEADLINE_EXCEEDED)</text>
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="#bfbfbf" stroke-width="1" />
+</svg>

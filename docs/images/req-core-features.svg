@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="white" />
+  <rect x="20" y="20" width="860" height="48" rx="6" ry="6" fill="#E8F4FD" stroke="#1890FF" stroke-width="1.5" />
+  <text x="450" y="51" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1890FF">When 核心功能</text>
+  <rect x="20" y="100" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="130" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.1 延时消息投递</text>
+  <text x="130" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">提交 / 取消 / 查询</text>
+  <rect x="250" y="100" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="360" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.2 Sink 插件化</text>
+  <text x="360" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">HTTP · Kafka · gRPC</text>
+  <rect x="480" y="100" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="590" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.3 集群化部署</text>
+  <text x="590" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">ETCD 协调 · 动态扩缩容</text>
+  <rect x="710" y="100" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="820" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.4 时间轮调度</text>
+  <text x="820" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">Master/Slave 多副本</text>
+  <rect x="135" y="210" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="245" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.5 持久化存储</text>
+  <text x="245" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">Redis · 无大 Key</text>
+  <rect x="365" y="210" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="475" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.6 Web 管理台</text>
+  <text x="475" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">集群状态 · 任务 · 日志</text>
+  <rect x="595" y="210" width="220" height="70" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="705" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">3.7 可观测能力</text>
+  <text x="705" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">Prometheus · 结构化日志</text>
+  <rect x="20" y="310" width="860" height="60" rx="4" ry="4" fill="#F5F5F5" stroke="#CCCCCC" stroke-width="1.5" />
+  <text x="160" y="347" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1890FF">核心（训练营 3 周）</text>
+  <text x="447" y="347" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FA8C16">扩展（训练营后）</text>
+  <text x="745" y="347" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#52C41A">社区共建（长期）</text>
+  <rect x="20" y="380" width="280" height="60" rx="6" ry="6" fill="white" stroke="#1890FF" stroke-width="1.5" />
+  <text x="160" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">HTTP / Kafka / gRPC Sink</text>
+  <text x="160" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">集群 · 时间轮 · 管理台</text>
+  <rect x="315" y="380" width="270" height="60" rx="6" ry="6" fill="white" stroke="#FA8C16" stroke-width="1.5" />
+  <text x="450" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">更多 Sink · 鉴权限流</text>
+  <text x="450" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">死信队列 · 优先级</text>
+  <rect x="610" y="380" width="270" height="60" rx="6" ry="6" fill="white" stroke="#52C41A" stroke-width="1.5" />
+  <text x="745" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">多语言 SDK · 多租户</text>
+  <text x="745" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#888888">K8s Operator · MCP Server</text>
+</svg>

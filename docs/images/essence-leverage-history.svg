@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="340" viewBox="0 0 920 340">
+  <rect width="920" height="340" fill="#FAFBFF" />
+  <text x="460" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">程序员的杠杆，一直在变</text>
+  <text x="460" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">每一次变化都有人说"程序员要被淘汰"——事实是淘汰的只是没跟上的人</text>
+  <line x1="30" y1="296" x2="890" y2="296" stroke="#DDD" stroke-width="2" />
+  <polygon points="894,296 882,290 882,302" fill="#DDD" />
+  <text x="906" y="300" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">未来</text>
+  <rect x="20" y="76" width="196" height="192" fill="#F0F3F6" stroke="#8B9BAB" rx="10" stroke-width="2" />
+  <rect x="20" y="76" width="196" height="6" fill="#8B9BAB" stroke="none" rx="5" stroke-width="0" />
+  <rect x="20" y="79" width="196" height="3" fill="#8B9BAB" stroke="none" rx="0" stroke-width="0" />
+  <text x="118" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">二十年前</text>
+  <text x="118" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B9BAB" text-anchor="middle">底层技术</text>
+  <circle cx="118" cy="158" r="22" fill="#8B9BAB" opacity="0.12" />
+  <text x="118" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="normal" fill="#8B9BAB" text-anchor="middle">⚙</text>
+  <text x="118" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">C / C++</text>
+  <text x="118" y="218" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">手写极致性能</text>
+  <circle cx="118" cy="296" r="6" fill="#8B9BAB" />
+  <line x1="118" y1="268" x2="118" y2="290" stroke="#8B9BAB" stroke-width="1.5" stroke-dasharray="4,3" />
+  <rect x="248" y="76" width="196" height="192" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="248" y="76" width="196" height="6" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="248" y="79" width="196" height="3" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="346" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">十年前</text>
+  <text x="346" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="middle">框架与平台</text>
+  <circle cx="346" cy="158" r="22" fill="#4A90D9" opacity="0.12" />
+  <text x="346" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="normal" fill="#4A90D9" text-anchor="middle">🏗</text>
+  <text x="346" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">Java / Python / Rails</text>
+  <text x="346" y="218" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">快速搭复杂系统</text>
+  <circle cx="346" cy="296" r="6" fill="#4A90D9" />
+  <line x1="346" y1="268" x2="346" y2="290" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="4,3" />
+  <rect x="476" y="76" width="196" height="192" fill="#F3EEFF" stroke="#8B5CF6" rx="10" stroke-width="2" />
+  <rect x="476" y="76" width="196" height="6" fill="#8B5CF6" stroke="none" rx="5" stroke-width="0" />
+  <rect x="476" y="79" width="196" height="3" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="574" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">五年前</text>
+  <text x="574" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6" text-anchor="middle">云原生架构</text>
+  <circle cx="574" cy="158" r="22" fill="#8B5CF6" opacity="0.12" />
+  <text x="574" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="normal" fill="#8B5CF6" text-anchor="middle">☁</text>
+  <text x="574" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">Kubernetes / 微服务</text>
+  <text x="574" y="218" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">规模化分布式</text>
+  <circle cx="574" cy="296" r="6" fill="#8B5CF6" />
+  <line x1="574" y1="268" x2="574" y2="290" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="4,3" />
+  <rect x="704" y="76" width="196" height="192" fill="#FFF0F0" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="704" y="76" width="196" height="6" fill="#E05252" stroke="none" rx="5" stroke-width="0" />
+  <rect x="704" y="79" width="196" height="3" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="802" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">今天</text>
+  <text x="802" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E05252" text-anchor="middle">驾驭 AI</text>
+  <circle cx="802" cy="158" r="22" fill="#E05252" opacity="0.12" />
+  <text x="802" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="normal" fill="#E05252" text-anchor="middle">✦</text>
+  <text x="802" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">Claude Code / Cursor</text>
+  <text x="802" y="218" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">一人做出团队产出</text>
+  <circle cx="802" cy="296" r="6" fill="#E05252" />
+  <line x1="802" y1="268" x2="802" y2="290" stroke="#E05252" stroke-width="1.5" stroke-dasharray="4,3" />
+  <circle cx="802" cy="296" r="12" fill="none" stroke="#E05252" stroke-width="2" />
+  <text x="460" y="326" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">AI 编程是又一次杠杆变化，不是第一次，也不会是最后一次</text>
+</svg>

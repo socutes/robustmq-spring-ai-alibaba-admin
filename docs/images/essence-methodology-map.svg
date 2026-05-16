@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500">
+  <rect width="920" height="500" fill="#FAFBFF" />
+  <text x="460" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 编程方法论全景</text>
+  <text x="460" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">主轴 = 成熟 + 可教 + 覆盖完整工程链路；其他方法论各有位置</text>
+  <rect x="40" y="76" width="340" height="28" fill="#1A3A6B" stroke="none" rx="6" stroke-width="0" />
+  <text x="210" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">训练营主轴</text>
+  <rect x="40" y="112" width="340" height="148" fill="#fff" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="40" y="112" width="6" height="148" fill="#E05252" stroke="none" rx="3" stroke-width="0" />
+  <rect x="298" y="124" width="70" height="22" fill="#E05252" stroke="none" rx="11" stroke-width="0" />
+  <text x="333" y="139" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">解决「想」</text>
+  <text x="62" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E05252" text-anchor="start">SDD</text>
+  <text x="62" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">Spec-Driven Development</text>
+  <circle cx="60" cy="172" r="3" fill="#E05252" opacity="0.6" />
+  <text x="70" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">规格先行，代码服务于规格</text>
+  <circle cx="60" cy="196" r="3" fill="#E05252" opacity="0.6" />
+  <text x="70" y="200" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">工具：Spec-Kit / OpenSpec</text>
+  <circle cx="60" cy="220" r="3" fill="#E05252" opacity="0.6" />
+  <text x="70" y="224" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">四阶段工作流完整覆盖</text>
+  <rect x="40" y="276" width="340" height="148" fill="#fff" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="40" y="276" width="6" height="148" fill="#4A90D9" stroke="none" rx="3" stroke-width="0" />
+  <rect x="298" y="288" width="70" height="22" fill="#4A90D9" stroke="none" rx="11" stroke-width="0" />
+  <text x="333" y="303" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">解决「做」</text>
+  <text x="62" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="start">Harness Engineering</text>
+  <text x="62" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">挽具工程</text>
+  <circle cx="60" cy="336" r="3" fill="#4A90D9" opacity="0.6" />
+  <text x="70" y="340" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">CLAUDE.md / Skills / Subagents</text>
+  <circle cx="60" cy="360" r="3" fill="#4A90D9" opacity="0.6" />
+  <text x="70" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">Hooks / Permissions / Plan Mode</text>
+  <circle cx="60" cy="384" r="3" fill="#4A90D9" opacity="0.6" />
+  <text x="70" y="388" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">让 AI 从失控变成可控</text>
+  <rect x="440" y="76" width="440" height="28" fill="#DDD" stroke="none" rx="6" stroke-width="0" />
+  <text x="660" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#666" text-anchor="middle">其他方法论（各有位置，不是主轴）</text>
+  <rect x="440" y="112" width="210" height="90" fill="#fff" stroke="#52B366" rx="8" stroke-width="1.2" />
+  <rect x="584" y="120" width="58" height="19" fill="#52B366" stroke="none" rx="9" stroke-width="0" />
+  <text x="613" y="133" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">底色</text>
+  <text x="450" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="start">Vibe Coding</text>
+  <text x="450" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">用熟比会用更重要</text>
+  <text x="450" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">不单独教，项目里默会</text>
+  <rect x="670" y="112" width="210" height="90" fill="#fff" stroke="#8B5CF6" rx="8" stroke-width="1.2" />
+  <rect x="814" y="120" width="58" height="19" fill="#8B5CF6" stroke="none" rx="9" stroke-width="0" />
+  <text x="843" y="133" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">远景</text>
+  <text x="680" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="start">Context Engineering</text>
+  <text x="680" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">方向对，尚在演化</text>
+  <text x="680" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">适合长期关注</text>
+  <rect x="440" y="216" width="210" height="90" fill="#fff" stroke="#E09A52" rx="8" stroke-width="1.2" />
+  <rect x="584" y="224" width="58" height="19" fill="#E09A52" stroke="none" rx="9" stroke-width="0" />
+  <text x="613" y="237" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">SDD配套</text>
+  <text x="450" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="start">Test-Driven AI</text>
+  <text x="450" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">先写测试约束 AI</text>
+  <text x="450" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">SDD 落地的具体动作</text>
+  <rect x="670" y="216" width="210" height="90" fill="#F8F8F8" stroke="#DDD" rx="8" stroke-width="1.2" />
+  <rect x="814" y="224" width="58" height="19" fill="#DDD" stroke="none" rx="9" stroke-width="0" />
+  <text x="843" y="237" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="middle">延伸</text>
+  <text x="680" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#888" text-anchor="start">ReAct / TAO</text>
+  <text x="680" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">适用 Agent 专用场景</text>
+  <text x="680" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">通用工程不适合作主轴</text>
+  <rect x="440" y="320" width="210" height="90" fill="#F8F8F8" stroke="#DDD" rx="8" stroke-width="1.2" />
+  <rect x="584" y="328" width="58" height="19" fill="#DDD" stroke="none" rx="9" stroke-width="0" />
+  <text x="613" y="341" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="middle">延伸</text>
+  <text x="450" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#888" text-anchor="start">Plan-then-Execute</text>
+  <text x="450" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">概念阶段</text>
+  <text x="450" y="384" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">Harness Plan Mode 已覆盖</text>
+  <rect x="670" y="320" width="210" height="90" fill="#F8F8F8" stroke="#DDD" rx="8" stroke-width="1.2" />
+  <rect x="814" y="328" width="58" height="19" fill="#DDD" stroke="none" rx="9" stroke-width="0" />
+  <text x="843" y="341" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="middle">延伸</text>
+  <text x="680" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#888" text-anchor="start">AI-First Arch</text>
+  <text x="680" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">概念阶段</text>
+  <text x="680" y="384" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#AAA" text-anchor="start">值得长期关注</text>
+  <line x1="420" y1="76" x2="420" y2="480" stroke="#DDD" stroke-width="1.5" stroke-dasharray="6,4" />
+  <text x="460" y="486" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">主轴标准：成熟 · 可教 · 覆盖完整工程链路——同时满足三条的，当下只有 SDD 和 Harness</text>
+</svg>

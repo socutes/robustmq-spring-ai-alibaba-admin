@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500">
+  <rect width="920" height="500" fill="#F8FAFF" />
+  <text x="460" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 时代，三种能力的真实价值</text>
+  <text x="460" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">工具会迭代，prompt会被模型吞掉——只有工作流设计能力随AI变强而升值</text>
+  <rect x="20" y="72" width="277" height="306" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="20" y="72" width="277" height="8" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="20" y="76" width="277" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="158" y="100" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="middle">工具熟练度</text>
+  <text x="158" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">会用 Claude Code / Cursor / Copilot</text>
+  <rect x="118" y="128" width="80" height="22" fill="#4A90D9" stroke="none" rx="11" stroke-width="0" />
+  <text x="158" y="143" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">入门级</text>
+  <text x="34" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">优势</text>
+  <text x="34" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ 短期有明显加速</text>
+  <text x="34" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ 容易学习，门槛低</text>
+  <text x="34" y="230" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#999" text-anchor="start">局限</text>
+  <text x="34" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 工具迭代时归零</text>
+  <text x="34" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 半年后可能换一代工具</text>
+  <text x="34" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 所有人都能学会，无壁垒</text>
+  <rect x="28" y="338" width="261" height="32" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="158" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">入场券，不是壁垒</text>
+  <rect x="321" y="72" width="277" height="306" fill="#FEF3E8" stroke="#E09A52" rx="10" stroke-width="2" />
+  <rect x="321" y="72" width="277" height="8" fill="#E09A52" stroke="none" rx="5" stroke-width="0" />
+  <rect x="321" y="76" width="277" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="459" y="100" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E09A52" text-anchor="middle">Prompt 技巧</text>
+  <text x="459" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">少样本 / 思维链 / 角色扮演 / Context</text>
+  <rect x="419" y="128" width="80" height="22" fill="#E09A52" stroke="none" rx="11" stroke-width="0" />
+  <text x="459" y="143" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">中间级</text>
+  <text x="335" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="start">优势</text>
+  <text x="335" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ 比纯工具更深一层</text>
+  <text x="335" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ 有一定迁移性</text>
+  <text x="335" y="230" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#999" text-anchor="start">局限</text>
+  <text x="335" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 模型变强后优势消失</text>
+  <text x="335" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 在和模型进化竞争</text>
+  <text x="335" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 永远跑不过模型本身</text>
+  <rect x="329" y="338" width="261" height="32" fill="#E09A52" stroke="none" rx="8" stroke-width="0" />
+  <text x="459" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">会被模型进化吞掉</text>
+  <rect x="622" y="72" width="277" height="306" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="622" y="72" width="277" height="8" fill="#52B366" stroke="none" rx="5" stroke-width="0" />
+  <rect x="622" y="76" width="277" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="760" y="100" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#52B366" text-anchor="middle">工作流设计能力</text>
+  <text x="760" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">设计人+AI协作工作流的完整能力</text>
+  <rect x="720" y="128" width="80" height="22" fill="#52B366" stroke="none" rx="11" stroke-width="0" />
+  <text x="760" y="143" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">核心壁垒</text>
+  <text x="636" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">优势</text>
+  <text x="636" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ 跨工具跨模型跨场景</text>
+  <text x="636" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ AI越强，工作流越值钱</text>
+  <text x="636" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">+ Sumner的6天就是这个能力</text>
+  <text x="636" y="248" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#999" text-anchor="start">局限</text>
+  <text x="636" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 学习成本最高</text>
+  <text x="636" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">- 需要真实项目反复训练</text>
+  <rect x="630" y="338" width="261" height="32" fill="#52B366" stroke="none" rx="8" stroke-width="0" />
+  <text x="760" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">随AI进化而升值</text>
+  <rect x="20" y="396" width="880" height="56" fill="#F0F4FF" stroke="#C0CCE0" rx="8" stroke-width="1" />
+  <text x="460" y="414" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A3A6B" text-anchor="middle">训练目标：不是工具熟练，不是 prompt 技巧，是工作流设计能力</text>
+  <text x="460" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">会用AI的工程师很多，会设计人+AI协作工作流的工程师很少——前者是入场券，后者是真正的壁垒</text>
+</svg>

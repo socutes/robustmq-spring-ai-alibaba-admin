@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="480" viewBox="0 0 920 480">
+  <rect width="920" height="480" fill="#FAFBFF" />
+  <text x="460" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 自动化的真实边界</text>
+  <text x="460" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">能做什么、做不到什么——看清边界才能用好 AI</text>
+  <rect x="30" y="76" width="400" height="296" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="30" y="76" width="400" height="36" fill="#52B366" stroke="none" rx="10" stroke-width="0" />
+  <rect x="30" y="102" width="400" height="10" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="230" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">当前真实做得到</text>
+  <circle cx="52" cy="134" r="8" fill="#52B366" />
+  <text x="52" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="68" y="136" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="start">边界清晰的结构化迁移</text>
+  <text x="68" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">语言间翻译 / 有参考实现 / Bun类案例</text>
+  <circle cx="52" cy="184" r="8" fill="#52B366" />
+  <text x="52" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="68" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="start">重复性issue批量处理</text>
+  <text x="68" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">模式固定 / 成功标准清晰</text>
+  <circle cx="52" cy="234" r="8" fill="#52B366" />
+  <text x="52" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="68" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="start">单元测试用例生成</text>
+  <text x="68" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">基于已有代码 / 可自动验证</text>
+  <circle cx="52" cy="284" r="8" fill="#52B366" />
+  <text x="52" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="68" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="start">老代码库专项重构</text>
+  <text x="68" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">Nubank拆monolith / 边界清晰</text>
+  <circle cx="52" cy="334" r="8" fill="#52B366" />
+  <text x="52" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="68" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="start">科学计算类任务</text>
+  <text x="68" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">数值求解器 / Fortran转现代语言</text>
+  <rect x="490" y="76" width="400" height="296" fill="#FFF0F0" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="490" y="76" width="400" height="36" fill="#E05252" stroke="none" rx="10" stroke-width="0" />
+  <rect x="490" y="102" width="400" height="10" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="690" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">目前做不到</text>
+  <circle cx="512" cy="134" r="8" fill="#E05252" />
+  <text x="512" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">✗</text>
+  <text x="528" y="136" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A0000" text-anchor="start">从零设计建造大型新软件</text>
+  <text x="528" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">系统架构判断 / 业务方向决策 不属于AI</text>
+  <circle cx="512" cy="184" r="8" fill="#E05252" />
+  <text x="512" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">✗</text>
+  <text x="528" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A0000" text-anchor="start">生产级长期稳定运行</text>
+  <text x="528" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">demo成功一次 ≠ 持续100次成功</text>
+  <circle cx="512" cy="234" r="8" fill="#E05252" />
+  <text x="512" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">✗</text>
+  <text x="528" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A0000" text-anchor="start">模糊需求的消歧</text>
+  <text x="528" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">商业判断 / 用户价值 / 产品方向</text>
+  <circle cx="512" cy="284" r="8" fill="#E05252" />
+  <text x="512" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">✗</text>
+  <text x="528" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A0000" text-anchor="start">跨团队协作与利益权衡</text>
+  <text x="528" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">组织问题不是技术问题</text>
+  <circle cx="512" cy="334" r="8" fill="#E05252" />
+  <text x="512" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">✗</text>
+  <text x="528" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A0000" text-anchor="start">关键节点的责任承担</text>
+  <text x="528" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">AI不是法律主体 结果仍由人负责</text>
+  <text x="460" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">真实</text>
+  <text x="460" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">边界</text>
+  <line x1="460" y1="86" x2="460" y2="362" stroke="#CCC" stroke-width="1.5" stroke-dasharray="6,4" />
+  <rect x="30" y="390" width="860" height="60" fill="#FFF8E8" stroke="#E0C060" rx="8" stroke-width="1" />
+  <text x="460" y="408" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A6000" text-anchor="middle">成功的纯AI自动案例共同特征：</text>
+  <text x="460" y="428" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#6A4A00" text-anchor="middle">工作范围明确  ·  成功标准清晰（有测试套件）  ·  有参考实现可比对</text>
+</svg>

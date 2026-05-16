@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+  <rect width="960" height="680" fill="#F8FAFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Bun 案例解剖：不是 AI 自主，是协作做到极致</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">6天 · 96万行 · 99.8%测试通过——每个数字背后都有容易被忽视的前提</text>
+  <rect x="40" y="70" width="280" height="252" fill="#fff" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="40" y="70" width="280" height="8" fill="#E05252" stroke="none" rx="5" stroke-width="0" />
+  <rect x="40" y="74" width="280" height="4" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="180" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E05252" text-anchor="middle">01</text>
+  <text x="180" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">误读：AI 自动写了 96 万行</text>
+  <line x1="56" y1="108" x2="304" y2="108" stroke="#CCC" stroke-width="1.2" />
+  <rect x="50" y="122" width="260" height="50" fill="#E05252" stroke="none" rx="6" stroke-width="0" />
+  <text x="180" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">真相：结构化迁移</text>
+  <text x="180" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">不是从零创造</text>
+  <rect x="50" y="180" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="62" cy="194" r="4" fill="#E05252" opacity="0.45" />
+  <text x="72" y="201" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">Zig→Rust 翻译，有完整原代码参考</text>
+  <rect x="50" y="224" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="62" cy="238" r="4" fill="#E05252" opacity="0.45" />
+  <text x="72" y="245" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">300 条翻译规则事先由团队设计</text>
+  <rect x="50" y="268" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="62" cy="282" r="4" fill="#E05252" opacity="0.45" />
+  <text x="72" y="289" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">智能指针抽象提前铺垫，1:1 映射</text>
+  <rect x="340" y="70" width="280" height="252" fill="#fff" stroke="#E09A52" rx="10" stroke-width="2" />
+  <rect x="340" y="70" width="280" height="8" fill="#E09A52" stroke="none" rx="5" stroke-width="0" />
+  <rect x="340" y="74" width="280" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="480" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E09A52" text-anchor="middle">02</text>
+  <text x="480" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">误读：6 天是 AI 的速度</text>
+  <line x1="356" y1="108" x2="604" y2="108" stroke="#CCC" stroke-width="1.2" />
+  <rect x="350" y="122" width="260" height="50" fill="#E09A52" stroke="none" rx="6" stroke-width="0" />
+  <text x="480" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">真相：几个月工程铺垫</text>
+  <text x="480" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">+ 6 天执行</text>
+  <rect x="350" y="180" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="362" cy="194" r="4" fill="#E09A52" opacity="0.45" />
+  <text x="372" y="201" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">PORTING.md 是 AI 的运行时约束</text>
+  <rect x="350" y="224" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="362" cy="238" r="4" fill="#E09A52" opacity="0.45" />
+  <text x="372" y="245" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">测试套件是事先搭好的验证门禁</text>
+  <rect x="350" y="268" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="362" cy="282" r="4" fill="#E09A52" opacity="0.45" />
+  <text x="372" y="289" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">代码库改造成"易翻译到 Rust"状态</text>
+  <rect x="640" y="70" width="280" height="252" fill="#fff" stroke="#8B5CF6" rx="10" stroke-width="2" />
+  <rect x="640" y="70" width="280" height="8" fill="#8B5CF6" stroke="none" rx="5" stroke-width="0" />
+  <rect x="640" y="74" width="280" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="780" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6" text-anchor="middle">03</text>
+  <text x="780" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">误读：AI 全程自动，人不干预</text>
+  <line x1="656" y1="108" x2="904" y2="108" stroke="#CCC" stroke-width="1.2" />
+  <rect x="650" y="122" width="260" height="50" fill="#8B5CF6" stroke="none" rx="6" stroke-width="0" />
+  <text x="780" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">真相：Sumner</text>
+  <text x="780" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">全程在决策层</text>
+  <rect x="650" y="180" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="662" cy="194" r="4" fill="#8B5CF6" opacity="0.45" />
+  <text x="672" y="201" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">启动/停止/合并哪些 PR 都由人决定</text>
+  <rect x="650" y="224" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="662" cy="238" r="4" fill="#8B5CF6" opacity="0.45" />
+  <text x="672" y="245" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">Phase A 抓逻辑 / Phase B 抓编译</text>
+  <rect x="650" y="268" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="662" cy="282" r="4" fill="#8B5CF6" opacity="0.45" />
+  <text x="672" y="289" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">表面 AI 跑，实质人设计了工作流</text>
+  <rect x="190" y="342" width="280" height="252" fill="#fff" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="190" y="342" width="280" height="8" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="190" y="346" width="280" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="330" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="middle">04</text>
+  <text x="330" y="384" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">误读：99.8% 测试 = 生产可用</text>
+  <line x1="206" y1="380" x2="454" y2="380" stroke="#CCC" stroke-width="1.2" />
+  <rect x="200" y="394" width="260" height="50" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <text x="330" y="412" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">真相：测试通过</text>
+  <text x="330" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">≠ 生产稳定</text>
+  <rect x="200" y="452" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="212" cy="466" r="4" fill="#4A90D9" opacity="0.45" />
+  <text x="222" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">部分测试被修改以让 Rust 版本通过</text>
+  <rect x="200" y="496" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="212" cy="510" r="4" fill="#4A90D9" opacity="0.45" />
+  <text x="222" y="517" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">生产稳定性需 6~12 个月验证</text>
+  <rect x="200" y="540" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="212" cy="554" r="4" fill="#4A90D9" opacity="0.45" />
+  <text x="222" y="561" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">60万行删除 PR 被标记为 AI slop</text>
+  <rect x="490" y="342" width="280" height="252" fill="#fff" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="490" y="342" width="280" height="8" fill="#52B366" stroke="none" rx="5" stroke-width="0" />
+  <rect x="490" y="346" width="280" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="630" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#52B366" text-anchor="middle">05</text>
+  <text x="630" y="384" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">误读：普通团队可以复现</text>
+  <line x1="506" y1="380" x2="754" y2="380" stroke="#CCC" stroke-width="1.2" />
+  <rect x="500" y="394" width="260" height="50" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <text x="630" y="412" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">真相：这是 dogfooding</text>
+  <text x="630" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">上限，不是基线</text>
+  <rect x="500" y="452" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="512" cy="466" r="4" fill="#52B366" opacity="0.45" />
+  <text x="522" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">自家工具+项目+团队，三合一优势</text>
+  <rect x="500" y="496" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="512" cy="510" r="4" fill="#52B366" opacity="0.45" />
+  <text x="522" y="517" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">Sumner 有普通团队没有的深度认知</text>
+  <rect x="500" y="540" width="260" height="36" fill="#F8F8F8" stroke="#EEE" rx="5" stroke-width="1" />
+  <circle cx="512" cy="554" r="4" fill="#52B366" opacity="0.45" />
+  <text x="522" y="561" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">Bun 数字是上限，不是可套用基线</text>
+  <rect x="30" y="618" width="900" height="52" fill="#FFF8E8" stroke="#E0C060" rx="8" stroke-width="1" />
+  <text x="480" y="636" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8A6000" text-anchor="middle">Bun 不是 AI 自主的故事，是协作做到极致的故事</text>
+  <text x="480" y="656" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#6A4A00" text-anchor="middle">看到"Claude Code 写了 96 万行"→ 焦虑；看到"Sumner 设计了协作工作流"→ 方向</text>
+</svg>

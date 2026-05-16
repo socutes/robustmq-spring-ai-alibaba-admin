@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="510" viewBox="0 0 920 510">
+  <rect width="920" height="510" fill="#FAFBFF" />
+  <text x="460" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">"AI 自动写大软件"：声音 vs 真相</text>
+  <text x="460" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">两派声音都很响——工程师需要自己找到中间那条清醒路</text>
+  <rect x="20" y="72" width="260" height="320" fill="#FFF0F0" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="20" y="72" width="260" height="36" fill="#E05252" stroke="none" rx="10" stroke-width="0" />
+  <rect x="20" y="98" width="260" height="10" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="150" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">乐观派声音</text>
+  <rect x="30" y="118" width="240" height="44" fill="#fff" stroke="#E05252" rx="6" stroke-width="1" />
+  <text x="150" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B00" text-anchor="middle">Claude Code 写了全球 4% commits</text>
+  <text x="150" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：Anthropic 官方</text>
+  <rect x="30" y="170" width="240" height="44" fill="#fff" stroke="#E05252" rx="6" stroke-width="1" />
+  <text x="150" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B00" text-anchor="middle">工程师每天产出 10~30 个 AI PR</text>
+  <text x="150" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：Anthropic 内部</text>
+  <rect x="30" y="222" width="240" height="44" fill="#fff" stroke="#E05252" rx="6" stroke-width="1" />
+  <text x="150" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B00" text-anchor="middle">Spotify 工程师不再手写代码</text>
+  <text x="150" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：个人分享</text>
+  <rect x="30" y="274" width="240" height="44" fill="#fff" stroke="#E05252" rx="6" stroke-width="1" />
+  <text x="150" y="290" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B00" text-anchor="middle">6天96万行 Bun 重写</text>
+  <text x="150" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：Sumner on X</text>
+  <rect x="30" y="326" width="240" height="44" fill="#fff" stroke="#E05252" rx="6" stroke-width="1" />
+  <text x="150" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B00" text-anchor="middle">Level 4 全自动愿景</text>
+  <text x="150" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：麦肯锡报告</text>
+  <rect x="300" y="72" width="160" height="320" fill="#E8F0FF" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="300" y="72" width="160" height="36" fill="#4A90D9" stroke="none" rx="10" stroke-width="0" />
+  <rect x="300" y="98" width="160" height="10" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="380" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">清醒判断</text>
+  <rect x="308" y="118" width="144" height="44" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="380" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">30% 提速</text>
+  <text x="380" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">是顶级水平</text>
+  <rect x="308" y="170" width="144" height="44" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="380" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">人始终</text>
+  <text x="380" y="204" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">在循环里</text>
+  <rect x="308" y="222" width="144" height="44" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="380" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">可靠性</text>
+  <text x="380" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">是真瓶颈</text>
+  <rect x="308" y="274" width="144" height="44" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="380" y="290" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">demo ≠</text>
+  <text x="380" y="308" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">生产稳定</text>
+  <rect x="308" y="326" width="144" height="44" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="380" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">协作天花板</text>
+  <text x="380" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">不是自主突破</text>
+  <rect x="480" y="72" width="260" height="320" fill="#F0F0F0" stroke="#888" rx="10" stroke-width="2" />
+  <rect x="480" y="72" width="260" height="36" fill="#888" stroke="none" rx="10" stroke-width="0" />
+  <rect x="480" y="98" width="260" height="10" fill="#888" stroke="none" rx="0" stroke-width="0" />
+  <text x="610" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">怀疑派声音</text>
+  <rect x="490" y="118" width="240" height="44" fill="#fff" stroke="#AAA" rx="6" stroke-width="1" />
+  <text x="610" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#444" text-anchor="middle">Anthropic 内部也出过大事故</text>
+  <text x="610" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">删远程分支 / 生产DB migration</text>
+  <rect x="490" y="170" width="240" height="44" fill="#fff" stroke="#AAA" rx="6" stroke-width="1" />
+  <text x="610" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#444" text-anchor="middle">AI 进入无限纠错循环</text>
+  <text x="610" y="202" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">每次修复引入新回归</text>
+  <rect x="490" y="222" width="240" height="44" fill="#fff" stroke="#AAA" rx="6" stroke-width="1" />
+  <text x="610" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#444" text-anchor="middle">幻觉文件路径 / 破坏共享模块</text>
+  <text x="610" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：SitePoint 报告</text>
+  <rect x="490" y="274" width="240" height="44" fill="#fff" stroke="#AAA" rx="6" stroke-width="1" />
+  <text x="610" y="290" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#444" text-anchor="middle">3800+ 真实世界 bug 被记录</text>
+  <text x="610" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：arXiv 学术分析</text>
+  <rect x="490" y="326" width="240" height="44" fill="#fff" stroke="#AAA" rx="6" stroke-width="1" />
+  <text x="610" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#444" text-anchor="middle">大多数公司停在 pilot 阶段</text>
+  <text x="610" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="middle">来源：Bain Capital 报告</text>
+  <rect x="20" y="410" width="880" height="52" fill="#F0F8F0" stroke="#80C080" rx="8" stroke-width="1" />
+  <text x="460" y="428" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="middle">两派合起来看：工作流确实变了，但变的方式是协作而非自主</text>
+  <text x="460" y="446" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">marketing 说"AI全自动"，真实数据说"人在循环 + 30%提速"——工程师需要自己做判断</text>
+</svg>

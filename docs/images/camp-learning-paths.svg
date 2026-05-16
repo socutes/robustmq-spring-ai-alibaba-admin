@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="380" viewBox="0 0 880 380">
+  <rect width="880" height="380" fill="#FAFBFF" />
+  <text x="440" y="36" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">三种学习强度，选你能投入的</text>
+  <text x="440" y="56" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#888" text-anchor="middle">投入少不丢人，投入多不必有压力——训练营的价值是真的给你东西，不是逼你学到崩溃</text>
+  <rect x="20" y="74" width="264" height="264" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="20" y="74" width="264" height="54" fill="#4A90D9" stroke="none" rx="10" stroke-width="0" />
+  <rect x="20" y="118" width="264" height="10" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="152" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">基础路径</text>
+  <text x="152" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">认知 + 驾驭</text>
+  <text x="34" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">需要做</text>
+  <circle cx="42" cy="160" r="9" fill="#4A90D9" opacity="0.15" />
+  <text x="42" y="163" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">1</text>
+  <text x="56" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">看完 14 份预习 PDF</text>
+  <circle cx="42" cy="188" r="9" fill="#4A90D9" opacity="0.15" />
+  <text x="42" y="191" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">2</text>
+  <text x="56" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">跟着三个核心项目完成主线任务</text>
+  <circle cx="42" cy="216" r="9" fill="#4A90D9" opacity="0.15" />
+  <text x="42" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">3</text>
+  <text x="56" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">能说清楚"我做了什么、为什么这么做"</text>
+  <rect x="28" y="286" width="248" height="44" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <text x="152" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="middle">拿到什么</text>
+  <text x="152" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">企业级项目里把 AI 编程跑顺</text>
+  <rect x="308" y="74" width="264" height="264" fill="#F3EEFF" stroke="#8B5CF6" rx="10" stroke-width="2" />
+  <rect x="308" y="74" width="264" height="54" fill="#8B5CF6" stroke="none" rx="10" stroke-width="0" />
+  <rect x="308" y="118" width="264" height="10" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="440" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">进阶路径</text>
+  <text x="440" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">认知 + 驾驭 + 部分进阶</text>
+  <text x="322" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">需要做</text>
+  <circle cx="330" cy="160" r="9" fill="#8B5CF6" opacity="0.15" />
+  <text x="330" y="163" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">1</text>
+  <text x="344" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">基础路径全部完成</text>
+  <circle cx="330" cy="188" r="9" fill="#8B5CF6" opacity="0.15" />
+  <text x="330" y="191" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">2</text>
+  <text x="344" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">选一个最感兴趣的项目深入改造</text>
+  <circle cx="330" cy="216" r="9" fill="#8B5CF6" opacity="0.15" />
+  <text x="330" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">3</text>
+  <text x="344" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">沉淀个人复盘笔记 + 工具库</text>
+  <rect x="316" y="286" width="248" height="44" fill="#8B5CF6" stroke="none" rx="6" stroke-width="0" />
+  <text x="440" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="middle">拿到什么</text>
+  <text x="440" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">形成自己的方法论和工具箱</text>
+  <rect x="596" y="74" width="264" height="264" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="596" y="74" width="264" height="54" fill="#52B366" stroke="none" rx="10" stroke-width="0" />
+  <rect x="596" y="118" width="264" height="10" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="728" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">完整路径</text>
+  <text x="728" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">认知 + 驾驭 + 完整进阶</text>
+  <text x="610" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="start">需要做</text>
+  <circle cx="618" cy="160" r="9" fill="#52B366" opacity="0.15" />
+  <text x="618" y="163" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">1</text>
+  <text x="632" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">进阶路径全部完成</text>
+  <circle cx="618" cy="188" r="9" fill="#52B366" opacity="0.15" />
+  <text x="618" y="191" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">2</text>
+  <text x="632" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">认真完成 mq9 开源贡献段</text>
+  <circle cx="618" cy="216" r="9" fill="#52B366" opacity="0.15" />
+  <text x="618" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">3</text>
+  <text x="632" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="start">提交 PR，加入长期共建</text>
+  <rect x="604" y="286" width="248" height="44" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <text x="728" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="middle">拿到什么</text>
+  <text x="728" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">GitHub 贡献记录 · 3~5 年复利资产</text>
+  <text x="440" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">三条路径都成立 · 适合自己的就是最好的</text>
+</svg>

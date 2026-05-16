@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="460" viewBox="0 0 880 460">
+  <rect width="880" height="460" fill="#FAFBFF" />
+  <text x="440" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">三条标准筛出三个立身之本</text>
+  <text x="440" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">只满足一两条是不够的——三条同时满足，才是真正能站住的东西</text>
+  <rect x="180" y="74" width="190" height="28" fill="#E05252" stroke="none" rx="7" stroke-width="0" />
+  <text x="275" y="92" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">AI 难以复制</text>
+  <rect x="380" y="74" width="190" height="28" fill="#8B5CF6" stroke="none" rx="7" stroke-width="0" />
+  <text x="475" y="92" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">你独有</text>
+  <rect x="580" y="74" width="190" height="28" fill="#52B366" stroke="none" rx="7" stroke-width="0" />
+  <text x="675" y="92" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">能持续生长</text>
+  <rect x="30" y="106" width="140" height="90" fill="#4A90D9" stroke="none" rx="8" stroke-width="0" />
+  <text x="100" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">工作流</text>
+  <text x="100" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">设计能力</text>
+  <rect x="180" y="106" width="190" height="90" fill="#fff" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <circle cx="202" cy="151" r="14" fill="#E05252" />
+  <text x="202" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="224" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">AI不能设计自己的工作流</text>
+  <text x="224" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">AI不能替你拍板</text>
+  <rect x="380" y="106" width="190" height="90" fill="#fff" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <circle cx="402" cy="151" r="14" fill="#8B5CF6" />
+  <text x="402" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="424" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">工作流带你的判断风格</text>
+  <text x="424" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">反映你的工程口味</text>
+  <rect x="580" y="106" width="190" height="90" fill="#fff" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <circle cx="602" cy="151" r="14" fill="#52B366" />
+  <text x="602" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="624" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">项目越多工作流越精</text>
+  <text x="624" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">跨场景迁移性极强</text>
+  <rect x="30" y="206" width="140" height="90" fill="#8B5CF6" stroke="none" rx="8" stroke-width="0" />
+  <text x="100" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">深度工程</text>
+  <text x="100" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">判断力</text>
+  <rect x="180" y="206" width="190" height="90" fill="#fff" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <circle cx="202" cy="251" r="14" fill="#E05252" />
+  <text x="202" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="224" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">判断依赖具体语境踩坑</text>
+  <text x="224" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">AI能列方案不能拍板</text>
+  <rect x="380" y="206" width="190" height="90" fill="#fff" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <circle cx="402" cy="251" r="14" fill="#8B5CF6" />
+  <text x="402" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="424" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">判断带你的视角</text>
+  <text x="424" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">形成于你踩过的坑</text>
+  <rect x="580" y="206" width="190" height="90" fill="#fff" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <circle cx="602" cy="251" r="14" fill="#52B366" />
+  <text x="602" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="624" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">判断库随项目累积</text>
+  <text x="624" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">命中率随复盘提升</text>
+  <rect x="30" y="306" width="140" height="90" fill="#52B366" stroke="none" rx="8" stroke-width="0" />
+  <text x="100" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">复利资产</text>
+  <text x="100" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">积累能力</text>
+  <rect x="180" y="306" width="190" height="90" fill="#fff" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <circle cx="202" cy="351" r="14" fill="#E05252" />
+  <text x="202" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="224" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">你的开源PR是你做的</text>
+  <text x="224" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">AI不会替你建身份</text>
+  <rect x="380" y="306" width="190" height="90" fill="#fff" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <circle cx="402" cy="351" r="14" fill="#8B5CF6" />
+  <text x="402" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="424" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">基于你真实项目积累</text>
+  <text x="424" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">带你的踩坑和风格</text>
+  <rect x="580" y="306" width="190" height="90" fill="#fff" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <circle cx="602" cy="351" r="14" fill="#52B366" />
+  <text x="602" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">✓</text>
+  <text x="624" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">用得越多越值钱</text>
+  <text x="624" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">不依附公司持续增值</text>
+  <text x="440" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">旧标尺（工具/年限/技术栈/大厂）只满足一条，随时间贬值——新立身之本三条全满足</text>
+</svg>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470">
+  <rect width="880" height="470" fill="#FAFBFF" />
+  <text x="440" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 时代：开源红利正在放大</text>
+  <text x="440" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">门槛低了 · 含金量高了 · 复利更快了——三件事同时发生，过去几十年从未有过</text>
+  <rect x="20" y="72" width="269" height="280" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="20" y="72" width="269" height="8" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="20" y="76" width="269" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="154" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#4A90D9" text-anchor="middle">门槛大幅降低</text>
+  <rect x="30" y="110" width="249" height="76" fill="#F0F0F0" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="40" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">过去</text>
+  <text x="40" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 读懂项目需数周</text>
+  <text x="40" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 不会语言难以贡献</text>
+  <text x="40" y="178" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 提 PR 流程不熟悉</text>
+  <text x="154" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#4A90D9" text-anchor="middle">↓</text>
+  <rect x="30" y="214" width="249" height="76" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <text x="40" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="start">现在</text>
+  <text x="40" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· AI 并行读模块，1~2天掌握架构</text>
+  <text x="40" y="262" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· 跨语言 Vibe Coding，不精通也能贡献</text>
+  <text x="40" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· AI 起草 PR 描述、回应 review</text>
+  <text x="154" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="middle">从少数人的事</text>
+  <text x="154" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="middle">→ 愿意投入就能做</text>
+  <rect x="305" y="72" width="269" height="280" fill="#FFF0F0" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="305" y="72" width="269" height="8" fill="#E05252" stroke="none" rx="5" stroke-width="0" />
+  <rect x="305" y="76" width="269" height="4" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="439" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E05252" text-anchor="middle">含金量在提升</text>
+  <rect x="315" y="110" width="249" height="56" fill="#F0F0F0" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="325" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">过去</text>
+  <text x="325" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 简历写"会某框架"能证明能力</text>
+  <text x="325" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 代码量 = 努力程度</text>
+  <text x="439" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#E05252" text-anchor="middle">↓</text>
+  <rect x="315" y="194" width="249" height="76" fill="#E05252" stroke="none" rx="6" stroke-width="0" />
+  <text x="325" y="208" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="start">现在</text>
+  <text x="325" y="222" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· AI 写代码后简历失去区分度</text>
+  <text x="325" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· 开源 PR 是 maintainer 认证的真能力</text>
+  <text x="325" y="262" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· 公开可验证，AI 时代最稀缺的信用</text>
+  <text x="439" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="middle">会某技术越来越难证明</text>
+  <text x="439" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="middle">→ 开源贡献越来越值钱</text>
+  <rect x="590" y="72" width="269" height="280" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="590" y="72" width="269" height="8" fill="#52B366" stroke="none" rx="5" stroke-width="0" />
+  <rect x="590" y="76" width="269" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="724" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="middle">复利速度加快</text>
+  <rect x="600" y="110" width="249" height="76" fill="#F0F0F0" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="610" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">过去</text>
+  <text x="610" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 一个 PR 可能需要数周</text>
+  <text x="610" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 读代码两周、写实现一周</text>
+  <text x="610" y="178" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="start">· 起步晚差距难追</text>
+  <text x="724" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#52B366" text-anchor="middle">↓</text>
+  <rect x="600" y="214" width="249" height="76" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <text x="610" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="rgba(255,255,255,0.75)" text-anchor="start">现在</text>
+  <text x="610" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· AI 加速每个环节，压缩到数天</text>
+  <text x="610" y="262" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· 测试覆盖更全，PR 描述更清晰</text>
+  <text x="610" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#fff" text-anchor="start">· 2~3年可达以前5年的积累</text>
+  <text x="724" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="middle">以前5~10年建立可观贡献</text>
+  <text x="724" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="middle">→ 现在2~3年可追平</text>
+  <rect x="20" y="370" width="840" height="82" fill="#F0F8F0" stroke="#80C080" rx="8" stroke-width="1" />
+  <text x="440" y="398" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A5A1A" text-anchor="middle">精英会被更快识别：真做事的工程师在充满 AI 噪音的时代，反而比过去更容易被记住</text>
+  <text x="440" y="422" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#3A7A3A" text-anchor="middle">因为 maintainer 很快能判断哪些 PR 是真做事、哪些是 AI 包装的水货</text>
+</svg>

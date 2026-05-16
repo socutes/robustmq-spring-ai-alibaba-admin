@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="440" viewBox="0 0 1060 440">
+  <rect width="1060" height="440" fill="#FAFBFF" />
+  <text x="530" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">反模式：这些做法不允许</text>
+  <text x="530" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">守住这些反模式，90% AI 完成是自然结果；守不住，数字凑出来也没有说服力</text>
+  <rect x="20" y="65" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="20" y="65" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="265" y="65" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="265" y="65" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="20" y="65" width="245" height="60" fill="#fff" rx="0" />
+  <text x="265" y="81" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ AI 当自动补全</text>
+  <line x1="28" y1="87" x2="502" y2="87" stroke="#EEE" stroke-width="1" />
+  <text x="142" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">敲两字让 AI 补几行，只改打字速度</text>
+  <line x1="265" y1="87" x2="265" y2="125" stroke="#DDD" stroke-width="1" />
+  <text x="387" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 把要做的事整理成任务卡片，让 AI 完整跑任务</text>
+  <rect x="530" y="65" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="530" y="65" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="775" y="65" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="775" y="65" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="530" y="65" width="245" height="60" fill="#fff" rx="0" />
+  <text x="775" y="81" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ AI 写完人重写</text>
+  <line x1="538" y1="87" x2="1012" y2="87" stroke="#EEE" stroke-width="1" />
+  <text x="652" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">代码不好直接自己改，AI 当草稿机</text>
+  <line x1="775" y1="87" x2="775" y2="125" stroke="#DDD" stroke-width="1" />
+  <text x="897" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 反馈给 AI 让它改；改 CLAUDE.md 让下次写好</text>
+  <rect x="20" y="137" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="20" y="137" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="265" y="137" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="265" y="137" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="20" y="137" width="245" height="60" fill="#fff" rx="0" />
+  <text x="265" y="153" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ 人 AI 混合写</text>
+  <line x1="28" y1="159" x2="502" y2="159" stroke="#EEE" stroke-width="1" />
+  <text x="142" y="175" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">一任务自己写一半 AI 写一半</text>
+  <line x1="265" y1="159" x2="265" y2="197" stroke="#DDD" stroke-width="1" />
+  <text x="387" y="175" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 一任务要么完全 AI 写，要么是 review 任务</text>
+  <rect x="530" y="137" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="530" y="137" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="775" y="137" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="775" y="137" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="530" y="137" width="245" height="60" fill="#fff" rx="0" />
+  <text x="775" y="153" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ 写完不 Review</text>
+  <line x1="538" y1="159" x2="1012" y2="159" stroke="#EEE" stroke-width="1" />
+  <text x="652" y="175" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">CI 绿了直接合，review 是走形式</text>
+  <line x1="775" y1="159" x2="775" y2="197" stroke="#DDD" stroke-width="1" />
+  <text x="897" y="175" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ review 是训练判断力，空 Approval 不算</text>
+  <rect x="20" y="209" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="20" y="209" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="265" y="209" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="265" y="209" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="20" y="209" width="245" height="60" fill="#fff" rx="0" />
+  <text x="265" y="225" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ 对话里反复加约束</text>
+  <line x1="28" y1="231" x2="502" y2="231" stroke="#EEE" stroke-width="1" />
+  <text x="142" y="247" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">每次新对话反复说"用 X 不用 Y"</text>
+  <line x1="265" y1="231" x2="265" y2="269" stroke="#DDD" stroke-width="1" />
+  <text x="387" y="247" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 约束写进 CLAUDE.md，自动加载，不重复</text>
+  <rect x="530" y="209" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="530" y="209" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="775" y="209" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="775" y="209" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="530" y="209" width="245" height="60" fill="#fff" rx="0" />
+  <text x="775" y="225" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ 任务中途变形</text>
+  <line x1="538" y1="231" x2="1012" y2="231" stroke="#EEE" stroke-width="1" />
+  <text x="652" y="247" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">做着做着改任务目标和验收</text>
+  <line x1="775" y1="231" x2="775" y2="269" stroke="#DDD" stroke-width="1" />
+  <text x="897" y="247" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 停下重拆，或追加新任务，契约不中途改</text>
+  <rect x="275" y="281" width="490" height="60" fill="#fff" rx="6" stroke="#CCC" stroke-width="1" />
+  <rect x="275" y="281" width="245" height="60" fill="#FFF5F5" rx="6" stroke="#E05252" stroke-width="1" />
+  <rect x="520" y="281" width="245" height="60" fill="#fff" rx="0" />
+  <rect x="520" y="281" width="245" height="60" fill="#F0FFF0" rx="6" stroke="#52B366" stroke-width="1" />
+  <rect x="275" y="281" width="245" height="60" fill="#fff" rx="0" />
+  <text x="520" y="297" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00" text-anchor="middle">✗ 工具堆砌掩盖思考</text>
+  <line x1="283" y1="303" x2="757" y2="303" stroke="#EEE" stroke-width="1" />
+  <text x="397" y="319" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#E05252" text-anchor="middle">装一堆工具但任务卡片没拆清楚</text>
+  <line x1="520" y1="303" x2="520" y2="341" stroke="#DDD" stroke-width="1" />
+  <text x="642" y="319" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#2D7D2D" text-anchor="middle">✓ 任务卡片没拆好，工具再多也白搭</text>
+  <rect x="20" y="353" width="1020" height="58" fill="#F3EEFF" rx="8" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="530" y="371" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#5B2DC0" text-anchor="middle">核心原则：出了问题往上游找根因</text>
+  <text x="530" y="389" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">AI 反复跑不对 → 改 CLAUDE.md 或任务卡片 · 不要逼 AI 在错误上下文里硬干</text>
+  <text x="530" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">修 Harness 成本很低，改一次以后所有类似任务都受益</text>
+</svg>

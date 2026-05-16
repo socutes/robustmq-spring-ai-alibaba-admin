@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="600" viewBox="0 0 1060 600">
+  <rect width="1060" height="600" fill="#FAFBFF" />
+  <text x="530" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">三周落地时间线</text>
+  <text x="530" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">第一周打地基 · 第二周跑核心 · 第三周做完整 · 每周末里程碑验收</text>
+  <rect x="20" y="65" width="333" height="430" fill="#fff" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <rect x="20" y="65" width="333" height="8" fill="#4A90D9" rx="4" />
+  <rect x="20" y="69" width="333" height="4" fill="#4A90D9" rx="0" />
+  <text x="186" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#4A90D9" text-anchor="middle">第一周</text>
+  <text x="186" y="107" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#888" text-anchor="middle">地基周</text>
+  <rect x="363" y="65" width="333" height="430" fill="#fff" rx="8" stroke="#52B366" stroke-width="2" />
+  <rect x="363" y="65" width="333" height="8" fill="#52B366" rx="4" />
+  <rect x="363" y="69" width="333" height="4" fill="#52B366" rx="0" />
+  <text x="529" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#52B366" text-anchor="middle">第二周</text>
+  <text x="529" y="107" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#888" text-anchor="middle">核心周</text>
+  <rect x="706" y="65" width="333" height="430" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <rect x="706" y="65" width="333" height="8" fill="#E05252" rx="4" />
+  <rect x="706" y="69" width="333" height="4" fill="#E05252" rx="0" />
+  <text x="872" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#E05252" text-anchor="middle">第三周</text>
+  <text x="872" y="107" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#888" text-anchor="middle">完整周</text>
+  <rect x="28" y="121" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="28" y="121" width="32" height="98" fill="#4A90D9" rx="4" />
+  <text x="44" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D1-D2</text>
+  <text x="68" y="137" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">Harness 配置</text>
+  <text x="68" y="151" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 项目根 CLAUDE.md</text>
+  <text x="68" y="169" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 7个模块 CLAUDE.md</text>
+  <text x="68" y="187" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Hooks 四件套</text>
+  <rect x="28" y="227" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#8B5CF6" stroke-width="1.5" />
+  <rect x="28" y="227" width="32" height="98" fill="#8B5CF6" rx="4" />
+  <text x="44" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D3</text>
+  <text x="68" y="243" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">初始 Skills</text>
+  <text x="68" y="257" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· add-sink</text>
+  <text x="68" y="275" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· add-api-endpoint</text>
+  <text x="68" y="293" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· add-metric</text>
+  <rect x="28" y="333" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#52B366" stroke-width="1.5" />
+  <rect x="28" y="333" width="32" height="98" fill="#52B366" rx="4" />
+  <text x="44" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D4-D5</text>
+  <text x="68" y="349" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">任务清单建好</text>
+  <text x="68" y="363" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 8个模块任务清单</text>
+  <text x="68" y="381" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· GitHub Issues 全建</text>
+  <text x="68" y="399" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 团队对齐任务分工</text>
+  <rect x="28" y="459" width="317" height="28" fill="#4A90D9" rx="5" />
+  <text x="186" y="477" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">✓ Harness 配好，任务清单就绪，第二周开工</text>
+  <rect x="371" y="121" width="317" height="116" fill="#FAFAFA" rx="5" stroke="#4A90D9" stroke-width="1.5" />
+  <rect x="371" y="121" width="32" height="116" fill="#4A90D9" rx="4" />
+  <text x="387" y="179" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D1-D3</text>
+  <text x="411" y="137" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">基础层</text>
+  <text x="411" y="151" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 接入层 HTTP API</text>
+  <text x="411" y="169" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Redis 客户端</text>
+  <text x="411" y="187" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· ETCD 客户端</text>
+  <text x="411" y="205" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 路由层</text>
+  <rect x="371" y="245" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#52B366" stroke-width="1.5" />
+  <rect x="371" y="245" width="32" height="98" fill="#52B366" rx="4" />
+  <text x="387" y="294" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D4-D5</text>
+  <text x="411" y="261" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">核心调度</text>
+  <text x="411" y="275" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 时间轮调度引擎</text>
+  <text x="411" y="293" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· HTTP Sink</text>
+  <text x="411" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 单节点端到端跑通</text>
+  <rect x="371" y="459" width="317" height="28" fill="#52B366" rx="5" />
+  <text x="529" y="477" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">✓ curl提交消息→30s后收到HTTP回调</text>
+  <rect x="714" y="121" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#8B5CF6" stroke-width="1.5" />
+  <rect x="714" y="121" width="32" height="98" fill="#8B5CF6" rx="4" />
+  <text x="730" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D1-D2</text>
+  <text x="754" y="137" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">集群 HA</text>
+  <text x="754" y="151" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Controller 选举</text>
+  <text x="754" y="169" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 主从副本同步</text>
+  <text x="754" y="187" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 故障切换 &lt;10s</text>
+  <rect x="714" y="227" width="317" height="98" fill="#FAFAFA" rx="5" stroke="#E09A52" stroke-width="1.5" />
+  <rect x="714" y="227" width="32" height="98" fill="#E09A52" rx="4" />
+  <text x="730" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D3</text>
+  <text x="754" y="243" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="start">补齐功能</text>
+  <text x="754" y="257" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Kafka Sink</text>
+  <text x="754" y="275" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 管理台 Web</text>
+  <text x="754" y="293" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Prometheus 指标</text>
+  <rect x="714" y="333" width="317" height="116" fill="#FAFAFA" rx="5" stroke="#E05252" stroke-width="1.5" />
+  <rect x="714" y="333" width="32" height="116" fill="#E05252" rx="4" />
+  <text x="730" y="391" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">D4-D5</text>
+  <text x="754" y="349" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">部署上线</text>
+  <text x="754" y="363" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Dockerfile/docker-compose</text>
+  <text x="754" y="381" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· K8s yaml / CI 流水线</text>
+  <text x="754" y="399" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· Grafana Dashboard</text>
+  <text x="754" y="417" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">· 云上部署+演示</text>
+  <rect x="714" y="459" width="317" height="28" fill="#E05252" rx="5" />
+  <text x="872" y="477" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">✓ When 1.0 云上跑起来，GitHub Release 发布</text>
+  <rect x="20" y="511" width="1020" height="56" fill="#FFFBF0" rx="8" stroke="#B07219" stroke-width="1.5" />
+  <text x="530" y="529" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="middle">每周末复盘指标</text>
+  <text x="530" y="545" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">AI 代码占比 · PR Review 质量（comment 数） · 测试覆盖率 · CI 稳定性 · 未完成任务数</text>
+  <text x="530" y="559" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">哪个指标不达标就针对性改进：占比低→任务卡片拆太细 / CI 不稳→修测试 / Review 走形式→加强要求</text>
+</svg>

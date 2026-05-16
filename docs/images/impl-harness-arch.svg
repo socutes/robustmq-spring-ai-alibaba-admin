@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#FAFBFF" />
+  <text x="500" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Harness 架构：AI 工作的护栏体系</text>
+  <text x="500" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">CLAUDE.md + Skills + Hooks + Plan Mode — 四件套让 AI 在边界内高效工作</text>
+  <circle cx="500" cy="290" r="55" fill="#4A90D9" stroke="#2C5282" stroke-width="3" />
+  <text x="500" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Claude Code</text>
+  <text x="500" y="300" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">（AI 执行者）</text>
+  <rect x="65" y="80" width="230" height="160" fill="#fff" rx="8" stroke="#8B5CF6" stroke-width="2" />
+  <rect x="65" y="80" width="230" height="8" fill="#8B5CF6" rx="4" />
+  <rect x="65" y="84" width="230" height="4" fill="#8B5CF6" rx="0" />
+  <text x="180" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">项目根 CLAUDE.md</text>
+  <text x="180" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">全局自动加载</text>
+  <line x1="75" y1="130" x2="285" y2="130" stroke="#EEE" stroke-width="1" />
+  <text x="77" y="144" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 项目身份 &amp; 技术栈</text>
+  <text x="77" y="166" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 代码规范约定</text>
+  <text x="77" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 禁区清单</text>
+  <text x="77" y="210" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Plan Mode 触发规则</text>
+  <line x1="286.0" y1="190.0" x2="446.26493852690606" y2="268.1701312765556" stroke="#8B5CF6" stroke-width="1.5" />
+  <polygon points="446.26493852690606,268.1701312765556 438.65827370176356,267.7977736018127 441.2886011016216,262.40505835162975" fill="#8B5CF6" />
+  <rect x="705" y="80" width="230" height="160" fill="#fff" rx="8" stroke="#52B366" stroke-width="2" />
+  <rect x="705" y="80" width="230" height="8" fill="#52B366" rx="4" />
+  <rect x="705" y="84" width="230" height="4" fill="#52B366" rx="0" />
+  <text x="820" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="middle">模块级 CLAUDE.md</text>
+  <text x="820" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">就近加载</text>
+  <line x1="715" y1="130" x2="925" y2="130" stroke="#EEE" stroke-width="1" />
+  <text x="717" y="144" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 模块特有约束</text>
+  <text x="717" y="166" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 线程安全要求</text>
+  <text x="717" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 禁止跨模块操作</text>
+  <text x="717" y="210" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 性能红线</text>
+  <line x1="713.0" y1="190.0" x2="553.7350614730939" y2="268.1701312765556" stroke="#52B366" stroke-width="1.5" />
+  <polygon points="553.7350614730939,268.1701312765556 558.6971383158753,262.3927795124398 561.3407829869581,267.7789788081451" fill="#52B366" />
+  <rect x="65" y="340" width="230" height="160" fill="#fff" rx="8" stroke="#E09A52" stroke-width="2" />
+  <rect x="65" y="340" width="230" height="8" fill="#E09A52" rx="4" />
+  <rect x="65" y="344" width="230" height="4" fill="#E09A52" rx="0" />
+  <text x="180" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="middle">Skills 库</text>
+  <text x="180" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">标准模式复用</text>
+  <line x1="75" y1="390" x2="285" y2="390" stroke="#EEE" stroke-width="1" />
+  <text x="77" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• add-sink</text>
+  <text x="77" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• add-api-endpoint</text>
+  <text x="77" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• add-metric</text>
+  <text x="77" y="470" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• integration-test</text>
+  <line x1="286.0" y1="389.0" x2="446.26493852690606" y2="311.8298687234444" stroke="#E09A52" stroke-width="1.5" />
+  <polygon points="446.26493852690606,311.8298687234444 441.25953450944553,317.56972330539935 438.65648933482794,312.1637862155971" fill="#E09A52" />
+  <rect x="705" y="340" width="230" height="160" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <rect x="705" y="340" width="230" height="8" fill="#E05252" rx="4" />
+  <rect x="705" y="344" width="230" height="4" fill="#E05252" rx="0" />
+  <text x="820" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E05252" text-anchor="middle">Hooks 自动化</text>
+  <text x="820" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">即时反馈</text>
+  <line x1="715" y1="390" x2="925" y2="390" stroke="#EEE" stroke-width="1" />
+  <text x="717" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Spotless 格式化</text>
+  <text x="717" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Checkstyle Lint</text>
+  <text x="717" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• JaCoCo 覆盖率</text>
+  <text x="717" y="470" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Maven 全量构建</text>
+  <line x1="713.0" y1="389.0" x2="553.7350614730939" y2="311.8298687234444" stroke="#E05252" stroke-width="1.5" />
+  <polygon points="553.7350614730939,311.8298687234444 561.3426692356816,312.1824366326684 558.7263797199232,317.58197635099003" fill="#E05252" />
+  <rect x="440" y="420" width="120" height="70" fill="#F3EEFF" rx="6" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="500" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Plan Mode</text>
+  <text x="500" y="456" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">重要操作先计划</text>
+  <text x="500" y="470" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">确认后再执行</text>
+  <text x="500" y="484" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">改错代码 → 改方向</text>
+  <line x1="500" y1="420" x2="500" y2="235" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4,3" />
+  <rect x="20" y="530" width="960" height="55" fill="#FAFAFA" rx="8" stroke="#CCC" stroke-width="1" />
+  <text x="500" y="548" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">Harness 准备时机：第一周前3天全部配好，后两周开发在护栏里跑</text>
+  <text x="500" y="564" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">CLAUDE.md 是动态文档：发现 AI 反复跑偏，立刻在 CLAUDE.md 补约束，下次自动生效</text>
+  <text x="500" y="578" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">Hooks 原则：早反馈 · 自动反馈 · 不让人做机器的事</text>
+</svg>

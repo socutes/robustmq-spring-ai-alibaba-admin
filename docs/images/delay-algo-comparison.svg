@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="680" viewBox="0 0 980 680">
+  <rect width="980" height="680" fill="#FAFBFF" />
+  <text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">6种延时方案核心指标对比</text>
+  <text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">从精度、扩展性、依赖复杂度、生产就绪度四个维度横向评测</text>
+  <rect x="20" y="70" width="200" height="36" fill="#1A3A6B" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="120" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">方案</text>
+  <rect x="220" y="70" width="110" height="36" fill="#2C5282" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="275" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">精度</text>
+  <rect x="330" y="70" width="110" height="36" fill="#2C5282" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="385" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">水平扩展</text>
+  <rect x="440" y="70" width="140" height="36" fill="#2C5282" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="510" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">最大延时跨度</text>
+  <rect x="580" y="70" width="140" height="36" fill="#2C5282" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="650" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">外部依赖</text>
+  <rect x="720" y="70" width="130" height="36" fill="#2C5282" stroke="none" rx="4" stroke-width="1.5" />
+  <text x="785" y="93" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">生产成熟度</text>
+  <rect x="20" y="110" width="940" height="70" fill="#F8FAFF" stroke="#DDE8F5" rx="4" stroke-width="1" />
+  <text x="120" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">DB 周期扫描</text>
+  <text x="120" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(通用兜底)</text>
+  <text x="275" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">秒级</text>
+  <text x="275" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(扫描间隔)</text>
+  <text x="385" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">中等</text>
+  <text x="385" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(分库分表)</text>
+  <text x="510" y="151" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">无上限</text>
+  <text x="650" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">MySQL/PG</text>
+  <text x="650" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">仅需数据库</text>
+  <text x="785" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐⭐⭐</text>
+  <text x="785" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">最成熟</text>
+  <line x1="220" y1="116" x2="220" y2="174" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="116" x2="330" y2="174" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="116" x2="440" y2="174" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="116" x2="580" y2="174" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="116" x2="720" y2="174" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="182" width="940" height="70" fill="#FAFBFF" stroke="#E8EDF5" rx="4" stroke-width="1" />
+  <text x="120" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">RocketMQ 档位延时</text>
+  <text x="120" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(MQ内置)</text>
+  <text x="275" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">固定18档</text>
+  <text x="275" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">非精确</text>
+  <text x="385" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">高</text>
+  <text x="385" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(分区线性)</text>
+  <text x="510" y="223" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">2小时上限</text>
+  <text x="650" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">RocketMQ</text>
+  <text x="650" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">单依赖</text>
+  <text x="785" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐⭐⭐</text>
+  <text x="785" y="232" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">阿里生产验证</text>
+  <line x1="220" y1="188" x2="220" y2="246" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="188" x2="330" y2="246" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="188" x2="440" y2="246" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="188" x2="580" y2="246" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="188" x2="720" y2="246" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="254" width="940" height="70" fill="#F8FAFF" stroke="#DDE8F5" rx="4" stroke-width="1" />
+  <text x="120" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Redis ZSet</text>
+  <text x="120" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(轻量方案)</text>
+  <text x="275" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">毫秒级</text>
+  <text x="275" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(Polling)</text>
+  <text x="385" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">受单节点</text>
+  <text x="385" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">内存限制</text>
+  <text x="510" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">理论无限</text>
+  <text x="510" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">实际受内存</text>
+  <text x="650" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">Redis</text>
+  <text x="650" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">单依赖</text>
+  <text x="785" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐⭐</text>
+  <text x="785" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">广泛使用</text>
+  <line x1="220" y1="260" x2="220" y2="318" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="260" x2="330" y2="318" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="260" x2="440" y2="318" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="260" x2="580" y2="318" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="260" x2="720" y2="318" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="326" width="940" height="70" fill="#FAFBFF" stroke="#E8EDF5" rx="4" stroke-width="1" />
+  <text x="120" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">RocksDB + 时间轮</text>
+  <text x="120" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(高性能存储)</text>
+  <text x="275" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">毫秒级</text>
+  <text x="275" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(时间轮)</text>
+  <text x="385" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">高</text>
+  <text x="385" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(LSM顺序写)</text>
+  <text x="510" y="367" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">年级跨度</text>
+  <text x="650" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">RocksDB</text>
+  <text x="650" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">+自研轮</text>
+  <text x="785" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐</text>
+  <text x="785" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">部分开源项目</text>
+  <line x1="220" y1="332" x2="220" y2="390" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="332" x2="330" y2="390" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="332" x2="440" y2="390" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="332" x2="580" y2="390" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="332" x2="720" y2="390" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="398" width="940" height="70" fill="#F8FAFF" stroke="#DDE8F5" rx="4" stroke-width="1" />
+  <text x="120" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">QMQ 多级时间轮</text>
+  <text x="120" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(精确延时)</text>
+  <text x="275" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">毫秒级</text>
+  <text x="275" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">精确</text>
+  <text x="385" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">高</text>
+  <text x="385" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(分区+副本)</text>
+  <text x="510" y="439" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">年级跨度</text>
+  <text x="650" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">Kafka/内嵌</text>
+  <text x="650" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">+时间轮</text>
+  <text x="785" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐⭐</text>
+  <text x="785" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">去哪儿生产</text>
+  <line x1="220" y1="404" x2="220" y2="462" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="404" x2="330" y2="462" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="404" x2="440" y2="462" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="404" x2="580" y2="462" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="404" x2="720" y2="462" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="470" width="940" height="70" fill="#FAFBFF" stroke="#E8EDF5" rx="4" stroke-width="1" />
+  <text x="120" y="502" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">LSM+时间轮综合</text>
+  <text x="120" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">(下一代)</text>
+  <text x="275" y="502" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">毫秒级</text>
+  <text x="275" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">高精度</text>
+  <text x="385" y="502" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">线性扩展</text>
+  <text x="385" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">云原生友好</text>
+  <text x="510" y="511" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">年级跨度</text>
+  <text x="650" y="502" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">自研引擎</text>
+  <text x="650" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">依赖最少</text>
+  <text x="785" y="502" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">⭐⭐⭐</text>
+  <text x="785" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="middle">新兴/探索中</text>
+  <line x1="220" y1="476" x2="220" y2="534" stroke="#DDD" stroke-width="1" />
+  <line x1="330" y1="476" x2="330" y2="534" stroke="#DDD" stroke-width="1" />
+  <line x1="440" y1="476" x2="440" y2="534" stroke="#DDD" stroke-width="1" />
+  <line x1="580" y1="476" x2="580" y2="534" stroke="#DDD" stroke-width="1" />
+  <line x1="720" y1="476" x2="720" y2="534" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="558" width="940" height="76" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <text x="490" y="580" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B4A00" text-anchor="middle">核心结论：没有一个方案同时做到「毫秒精度 + 年级跨度 + 低依赖 + 生产成熟」</text>
+  <text x="490" y="600" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">DB扫描够用但不精确；RocketMQ精确但档位受限；Redis受内存限制；RocksDB+时间轮是下一代方向</text>
+  <text x="490" y="618" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E05252" text-anchor="middle">结论：精确 · 可扩展 · 年级跨度 · 独立部署 · 社区活跃 —— 这五个同时满足的开源方案，至今是空白</text>
+</svg>

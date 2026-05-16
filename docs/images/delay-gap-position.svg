@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660">
+  <rect width="960" height="660" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">空缺位置：通用独立延时服务的机会地图</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">现有方案都在这个象限之外——「精确+可扩展+独立+社区」四维空间，当下是空的</text>
+  <rect x="20" y="72" width="210" height="185" fill="#FFF0F0" stroke="#E05252" rx="0" stroke-width="0" />
+  <rect x="230" y="72" width="210" height="185" fill="#FFFBF0" stroke="#E09A52" rx="0" stroke-width="0" />
+  <rect x="20" y="257" width="210" height="185" fill="#F8F8F8" stroke="#CCC" rx="0" stroke-width="0" />
+  <rect x="230" y="257" width="210" height="185" fill="#F5F5F5" stroke="#CCC" rx="0" stroke-width="0" />
+  <rect x="20" y="72" width="420" height="370" fill="none" stroke="#AAA" rx="0" stroke-width="1.5" />
+  <line x1="230" y1="72" x2="230" y2="442" stroke="#999" stroke-width="2" />
+  <line x1="20" y1="257" x2="440" y2="257" stroke="#999" stroke-width="2" />
+  <polygon points="230,64 225,72 235,72" fill="#666" />
+  <polygon points="448,257 440,252 440,262" fill="#666" />
+  <text x="230" y="60" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#666" text-anchor="middle">精度 ↑</text>
+  <text x="468" y="257" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#666" text-anchor="middle">依赖 →</text>
+  <rect x="26" y="78" width="80" height="18" fill="#E05252" stroke="none" rx="3" stroke-width="0" />
+  <text x="66" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">高精度·低依赖</text>
+  <rect x="26" y="99" width="56" height="16" fill="#FFD0D0" stroke="#C00000" rx="3" stroke-width="1" />
+  <text x="54" y="111" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00000" text-anchor="middle">【目标空缺】</text>
+  <rect x="236" y="78" width="80" height="18" fill="#E09A52" stroke="none" rx="3" stroke-width="0" />
+  <text x="276" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">高精度·高依赖</text>
+  <rect x="236" y="99" width="60" height="16" fill="#FFF3DC" stroke="#E09A52" rx="3" stroke-width="1" />
+  <text x="266" y="111" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#8B5A00" text-anchor="middle">现有MQ方案</text>
+  <rect x="26" y="263" width="80" height="18" fill="#AAA" stroke="none" rx="3" stroke-width="0" />
+  <text x="66" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">低精度·低依赖</text>
+  <rect x="26" y="284" width="48" height="16" fill="#EEE" stroke="#AAA" rx="3" stroke-width="1" />
+  <text x="50" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">DB扫描等</text>
+  <rect x="236" y="263" width="80" height="18" fill="#BBB" stroke="none" rx="3" stroke-width="0" />
+  <text x="276" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">低精度·高依赖</text>
+  <rect x="236" y="284" width="56" height="16" fill="#EEE" stroke="#BBB" rx="3" stroke-width="1" />
+  <text x="264" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">过度设计区</text>
+  <circle cx="310" cy="172" r="22" fill="#D4873A" stroke="#FFF" stroke-width="2" />
+  <text x="310" y="177" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">RMQ</text>
+  <circle cx="380" cy="202" r="22" fill="#C87C30" stroke="#FFF" stroke-width="2" />
+  <text x="380" y="207" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">QMQ</text>
+  <circle cx="140" cy="377" r="22" fill="#888" stroke="#FFF" stroke-width="2" />
+  <text x="140" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">DB扫</text>
+  <circle cx="260" cy="217" r="22" fill="#4A90D9" stroke="#FFF" stroke-width="2" />
+  <text x="260" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">Redis</text>
+  <text x="260" y="224" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">ZSet</text>
+  <circle cx="390" cy="377" r="22" fill="#AAA" stroke="#FFF" stroke-width="2" />
+  <text x="390" y="375" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">企业</text>
+  <text x="390" y="387" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">内部</text>
+  <rect x="67" y="158" width="116" height="52" fill="#FFD0D0" stroke="#C00000" rx="10" stroke-width="2.5" />
+  <text x="125" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#C00000" text-anchor="middle">🎯 空缺位置</text>
+  <text x="125" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#E05252" text-anchor="middle">当下是空的</text>
+  <text x="442" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">高</text>
+  <text x="442" y="436" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">低</text>
+  <text x="34" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">低依赖</text>
+  <text x="392" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">高依赖</text>
+  <rect x="20" y="468" width="420" height="42" fill="#FFF8E8" stroke="#E09A52" rx="6" stroke-width="1" />
+  <text x="230" y="484" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#8B6914" text-anchor="middle">现有方案均在右侧（强依赖）或左下（低精度）象限</text>
+  <text x="230" y="500" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00000" text-anchor="middle">左上「高精度·低依赖」是真正的无人区</text>
+  <rect x="470" y="72" width="470" height="388" fill="#F3EEFF" stroke="#8B5CF6" rx="10" stroke-width="1.5" />
+  <text x="705" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#5B2DC0" text-anchor="middle">填补空缺的六个条件</text>
+  <rect x="480" y="108" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="108" width="5" height="50" fill="#E05252" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="133" r="10" fill="#E05252" opacity="1" />
+  <text x="498" y="137" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">1</text>
+  <text x="514" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">毫秒级精度</text>
+  <text x="514" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">时间轮精确触发，误差 &lt; 1ms</text>
+  <rect x="480" y="166" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="166" width="5" height="50" fill="#E09A52" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="191" r="10" fill="#E09A52" opacity="1" />
+  <text x="498" y="195" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  <text x="514" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">独立部署</text>
+  <text x="514" y="200" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">不绑定任何 MQ 或数据库栈</text>
+  <rect x="480" y="224" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="224" width="5" height="50" fill="#4A90D9" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="249" r="10" fill="#4A90D9" opacity="1" />
+  <text x="498" y="253" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">3</text>
+  <text x="514" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">水平扩展</text>
+  <text x="514" y="258" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">Raft 一致性 + 分区副本</text>
+  <rect x="480" y="282" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="282" width="5" height="50" fill="#52B366" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="307" r="10" fill="#52B366" opacity="1" />
+  <text x="498" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">4</text>
+  <text x="514" y="300" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">年级跨度</text>
+  <text x="514" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">LSM 冷热分层，支持多年延时</text>
+  <rect x="480" y="340" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="340" width="5" height="50" fill="#8B5CF6" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="365" r="10" fill="#8B5CF6" opacity="1" />
+  <text x="498" y="369" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">5</text>
+  <text x="514" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">多语言 SDK</text>
+  <text x="514" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">gRPC/HTTP 协议，语言无关</text>
+  <rect x="480" y="398" width="450" height="50" fill="#FFFFFF" stroke="#D0B8FF" rx="6" stroke-width="1" />
+  <rect x="480" y="398" width="5" height="50" fill="#1A7AA8" stroke="none" rx="3" stroke-width="0" />
+  <circle cx="498" cy="423" r="10" fill="#1A7AA8" opacity="1" />
+  <text x="498" y="427" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">6</text>
+  <text x="514" y="416" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="start">开源活跃</text>
+  <text x="514" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">MIT/Apache，社区驱动</text>
+  <rect x="20" y="530" width="920" height="76" fill="#E8F8E8" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <text x="480" y="552" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="middle">当这个空缺被填上，延时服务将成为继缓存、消息之后独立的第三类基础设施品类</text>
+  <text x="480" y="574" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#3A7A3A" text-anchor="middle">正如 Redis 之于缓存、Kafka 之于流——延时服务可以有自己的事实标准</text>
+  <text x="480" y="592" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#52B366" text-anchor="middle">现在没有一个开源项目同时满足这六条，RobustMQ 有机会是第一个</text>
+</svg>

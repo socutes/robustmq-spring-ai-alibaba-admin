@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <rect width="960" height="520" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">认知篇 7 份材料：结构与路径</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">不是平铺的——从训练营本身，到本质，到个人，到外部，到边界，到落地，再到收束</text>
+  <rect x="20" y="80" width="109" height="200" fill="#F0F0F0" stroke="#888" rx="8" stroke-width="2" />
+  <rect x="20" y="80" width="109" height="7" fill="#888" stroke="none" rx="4" stroke-width="0" />
+  <rect x="20" y="83" width="109" height="4" fill="#888" stroke="none" rx="0" stroke-width="0" />
+  <rect x="58" y="94" width="32" height="22" fill="#888" stroke="none" rx="11" stroke-width="0" />
+  <text x="74" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">开篇</text>
+  <text x="74" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">课程设计</text>
+  <text x="74" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">思路</text>
+  <line x1="30" y1="178" x2="119" y2="178" stroke="#888" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="74" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">训练营</text>
+  <text x="74" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">怎么用</text>
+  <line x1="130" y1="180" x2="129" y2="180" stroke="#888" stroke-width="2" />
+  <polygon points="137,180 128,176 128,184" fill="#888" />
+  <rect x="135" y="80" width="109" height="200" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="135" y="80" width="109" height="7" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="135" y="83" width="109" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <rect x="173" y="94" width="32" height="22" fill="#4A90D9" stroke="none" rx="11" stroke-width="0" />
+  <text x="189" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">01</text>
+  <text x="189" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="middle">AI 编程</text>
+  <text x="189" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="middle">本质与方法论</text>
+  <line x1="145" y1="178" x2="234" y2="178" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="189" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">核心</text>
+  <text x="189" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">地图</text>
+  <line x1="245" y1="180" x2="244" y2="180" stroke="#4A90D9" stroke-width="2" />
+  <polygon points="252,180 243,176 243,184" fill="#4A90D9" />
+  <rect x="250" y="80" width="109" height="200" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="250" y="80" width="109" height="7" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="250" y="83" width="109" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <rect x="288" y="94" width="32" height="22" fill="#8B5CF6" stroke="none" rx="11" stroke-width="0" />
+  <text x="304" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">02</text>
+  <text x="304" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="middle">程序员</text>
+  <text x="304" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="middle">个人价值</text>
+  <line x1="260" y1="178" x2="349" y2="178" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="304" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">看清</text>
+  <text x="304" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">自己位置</text>
+  <line x1="360" y1="180" x2="359" y2="180" stroke="#8B5CF6" stroke-width="2" />
+  <polygon points="367,180 358,176 358,184" fill="#8B5CF6" />
+  <rect x="365" y="80" width="109" height="200" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="2" />
+  <rect x="365" y="80" width="109" height="7" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <rect x="365" y="83" width="109" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <rect x="403" y="94" width="32" height="22" fill="#E09A52" stroke="none" rx="11" stroke-width="0" />
+  <text x="419" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">03</text>
+  <text x="419" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E09A52" text-anchor="middle">GitHub 榜单</text>
+  <text x="419" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E09A52" text-anchor="middle">趋势分析</text>
+  <line x1="375" y1="178" x2="464" y2="178" stroke="#E09A52" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="419" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">数据</text>
+  <text x="419" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">校准</text>
+  <line x1="475" y1="180" x2="474" y2="180" stroke="#E09A52" stroke-width="2" />
+  <polygon points="482,180 473,176 473,184" fill="#E09A52" />
+  <rect x="480" y="80" width="109" height="200" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="480" y="80" width="109" height="7" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <rect x="480" y="83" width="109" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <rect x="518" y="94" width="32" height="22" fill="#52B366" stroke="none" rx="11" stroke-width="0" />
+  <text x="534" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">04</text>
+  <text x="534" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#52B366" text-anchor="middle">AI 编程市场</text>
+  <text x="534" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#52B366" text-anchor="middle">工具全景</text>
+  <line x1="490" y1="178" x2="579" y2="178" stroke="#52B366" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="534" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">外部</text>
+  <text x="534" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">世界</text>
+  <line x1="590" y1="180" x2="589" y2="180" stroke="#52B366" stroke-width="2" />
+  <polygon points="597,180 588,176 588,184" fill="#52B366" />
+  <rect x="595" y="80" width="109" height="200" fill="#FFF0F0" stroke="#E05252" rx="8" stroke-width="2" />
+  <rect x="595" y="80" width="109" height="7" fill="#E05252" stroke="none" rx="4" stroke-width="0" />
+  <rect x="595" y="83" width="109" height="4" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <rect x="633" y="94" width="32" height="22" fill="#E05252" stroke="none" rx="11" stroke-width="0" />
+  <text x="649" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">05</text>
+  <text x="649" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E05252" text-anchor="middle">自动化边界</text>
+  <text x="649" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E05252" text-anchor="middle">新工作流</text>
+  <line x1="605" y1="178" x2="694" y2="178" stroke="#E05252" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="649" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">能力</text>
+  <text x="649" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">边界</text>
+  <line x1="705" y1="180" x2="704" y2="180" stroke="#E05252" stroke-width="2" />
+  <polygon points="712,180 703,176 703,184" fill="#E05252" />
+  <rect x="710" y="80" width="109" height="200" fill="#E8F0FF" stroke="#1A3A6B" rx="8" stroke-width="2" />
+  <rect x="710" y="80" width="109" height="7" fill="#1A3A6B" stroke="none" rx="4" stroke-width="0" />
+  <rect x="710" y="83" width="109" height="4" fill="#1A3A6B" stroke="none" rx="0" stroke-width="0" />
+  <rect x="748" y="94" width="32" height="22" fill="#1A3A6B" stroke="none" rx="11" stroke-width="0" />
+  <text x="764" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">06</text>
+  <text x="764" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">SDD 和 Harness</text>
+  <text x="764" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">两大支柱</text>
+  <line x1="720" y1="178" x2="809" y2="178" stroke="#1A3A6B" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="764" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">方法论</text>
+  <text x="764" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">落地</text>
+  <line x1="820" y1="180" x2="819" y2="180" stroke="#1A3A6B" stroke-width="2" />
+  <polygon points="827,180 818,176 818,184" fill="#1A3A6B" />
+  <rect x="825" y="80" width="109" height="200" fill="#F5F5F5" stroke="#888" rx="8" stroke-width="2" />
+  <rect x="825" y="80" width="109" height="7" fill="#888" stroke="none" rx="4" stroke-width="0" />
+  <rect x="825" y="83" width="109" height="4" fill="#888" stroke="none" rx="0" stroke-width="0" />
+  <rect x="863" y="94" width="32" height="22" fill="#888" stroke="none" rx="11" stroke-width="0" />
+  <text x="879" y="109" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">07</text>
+  <text x="879" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">认知篇</text>
+  <text x="879" y="155" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="middle">收尾</text>
+  <line x1="835" y1="178" x2="924" y2="178" stroke="#888" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="879" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">认知</text>
+  <text x="879" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">收束</text>
+  <rect x="20" y="294" width="920" height="32" fill="#F0F4FF" stroke="#C0CCE0" rx="8" stroke-width="1" />
+  <text x="74" y="315" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="middle">基础</text>
+  <line x1="24" y1="320" x2="125" y2="320" stroke="#888" stroke-width="2" />
+  <text x="247" y="315" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">核心认知三层</text>
+  <line x1="139" y1="320" x2="355" y2="320" stroke="#4A90D9" stroke-width="2" />
+  <text x="477" y="315" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">外部校准</text>
+  <line x1="369" y1="320" x2="585" y2="320" stroke="#E09A52" stroke-width="2" />
+  <text x="707" y="315" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">能力与方法</text>
+  <line x1="599" y1="320" x2="815" y2="320" stroke="#E05252" stroke-width="2" />
+  <text x="879" y="315" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="middle">收束</text>
+  <line x1="829" y1="320" x2="930" y2="320" stroke="#888" stroke-width="2" />
+  <rect x="20" y="344" width="920" height="42" fill="#fff" stroke="#B0C0E0" rx="8" stroke-width="1" />
+  <text x="480" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">训练营怎么用 → 看清本质 → 看清个人位置 → 数据校准 → 外部世界 → 能力边界 → 方法论落地 → 认知收束</text>
+  <text x="480" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">读完 7 份，认知地图完整——进项目，不需要再花时间消化这些</text>
+  <rect x="20" y="396" width="920" height="38" fill="#F5F5F5" stroke="#CCC" rx="8" stroke-width="1" />
+  <text x="480" y="410" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">预习吃认知，训练营吃实战——分工清楚</text>
+  <text x="480" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">认知没建好就进训练营，会在做项目过程里反复被基础问题拉回来</text>
+</svg>

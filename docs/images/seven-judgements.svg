@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+  <rect width="960" height="560" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">读完认知篇，应该长出来的 7 个判断</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">不是要背的——是站在地图上，看清自己位置之后自然形成的判断</text>
+  <rect x="33" y="74" width="216" height="158" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="33" y="74" width="216" height="7" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="33" y="77" width="216" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <rect x="43" y="88" width="26" height="20" fill="#4A90D9" stroke="none" rx="10" stroke-width="0" />
+  <text x="56" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">01</text>
+  <text x="149" y="101" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">AI 编程是旧角色升级</text>
+  <text x="141" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">AI 编程不是新职业，是程序员旧角色的升级版</text>
+  <line x1="47" y1="136" x2="235" y2="136" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="141" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">过去积累的判断、品味、踩坑经验</text>
+  <text x="141" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">在新路径里依然是核心资产</text>
+  <rect x="259" y="74" width="216" height="158" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="259" y="74" width="216" height="7" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="259" y="77" width="216" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <rect x="269" y="88" width="26" height="20" fill="#8B5CF6" stroke="none" rx="10" stroke-width="0" />
+  <text x="282" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">02</text>
+  <text x="375" y="101" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">工具会过时，判断会留下</text>
+  <text x="367" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">学工具建短期生产力，学方法论建长期判断力</text>
+  <line x1="273" y1="136" x2="461" y2="136" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="367" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">精力分配：工具 &lt; 方法论 &lt; 驾驭能力</text>
+  <text x="367" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">远期回报完全不一样</text>
+  <rect x="485" y="74" width="216" height="158" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="2" />
+  <rect x="485" y="74" width="216" height="7" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <rect x="485" y="77" width="216" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <rect x="495" y="88" width="26" height="20" fill="#E09A52" stroke="none" rx="10" stroke-width="0" />
+  <text x="508" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">03</text>
+  <text x="601" y="101" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">AI 自动化有清晰边界</text>
+  <text x="593" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">不被 10x 忽悠，也不错过 30% 提速</text>
+  <line x1="499" y1="136" x2="687" y2="136" stroke="#E09A52" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="593" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">看清边界，在边界内深耕</text>
+  <text x="593" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">真实数据：IBM/AWS 最多 30% 提速</text>
+  <rect x="711" y="74" width="216" height="158" fill="#FFF0F0" stroke="#E05252" rx="8" stroke-width="2" />
+  <rect x="711" y="74" width="216" height="7" fill="#E05252" stroke="none" rx="4" stroke-width="0" />
+  <rect x="711" y="77" width="216" height="4" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <rect x="721" y="88" width="26" height="20" fill="#E05252" stroke="none" rx="10" stroke-width="0" />
+  <text x="734" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">04</text>
+  <text x="827" y="101" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">工作流变了，但不是全自动</text>
+  <text x="819" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">人 + AI 协作，不是 AI 全自动接管</text>
+  <line x1="725" y1="136" x2="913" y2="136" stroke="#E05252" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="819" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">真正的能力是设计协作工作流</text>
+  <text x="819" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">在不同项目里反复跑出来</text>
+  <rect x="146" y="256" width="216" height="158" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="146" y="256" width="216" height="7" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <rect x="146" y="259" width="216" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <rect x="156" y="270" width="26" height="20" fill="#52B366" stroke="none" rx="10" stroke-width="0" />
+  <text x="169" y="284" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">05</text>
+  <text x="262" y="283" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">开源是被低估的复利资产</text>
+  <text x="254" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">门槛降低 · 含金量提升 · 复利加快</text>
+  <line x1="160" y1="318" x2="348" y2="318" stroke="#52B366" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="254" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">三件事同时发生，过去从未有过</text>
+  <text x="254" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">愿意走的人，5 年后会感谢自己</text>
+  <rect x="372" y="256" width="216" height="158" fill="#E8F0FF" stroke="#1A3A6B" rx="8" stroke-width="2" />
+  <rect x="372" y="256" width="216" height="7" fill="#1A3A6B" stroke="none" rx="4" stroke-width="0" />
+  <rect x="372" y="259" width="216" height="4" fill="#1A3A6B" stroke="none" rx="0" stroke-width="0" />
+  <rect x="382" y="270" width="26" height="20" fill="#1A3A6B" stroke="none" rx="10" stroke-width="0" />
+  <text x="395" y="284" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">06</text>
+  <text x="488" y="283" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">SDD + Harness 是两根支柱</text>
+  <text x="480" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">当下真正成熟可教的两个方法论</text>
+  <line x1="386" y1="318" x2="574" y2="318" stroke="#1A3A6B" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="480" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">学方法论不在多，在精</text>
+  <text x="480" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">在真实项目里反复跑，练到肌肉记忆</text>
+  <rect x="598" y="256" width="216" height="158" fill="#FFF8E8" stroke="#C07A20" rx="8" stroke-width="2" />
+  <rect x="598" y="256" width="216" height="7" fill="#C07A20" stroke="none" rx="4" stroke-width="0" />
+  <rect x="598" y="259" width="216" height="4" fill="#C07A20" stroke="none" rx="0" stroke-width="0" />
+  <rect x="608" y="270" width="26" height="20" fill="#C07A20" stroke="none" rx="10" stroke-width="0" />
+  <text x="621" y="284" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">07</text>
+  <text x="714" y="283" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C07A20" text-anchor="middle">获得真实经验，最终做出产品</text>
+  <text x="706" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">训练营对你的真实希望</text>
+  <line x1="612" y1="318" x2="800" y2="318" stroke="#C07A20" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="706" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">四个项目把经验沉淀下来</text>
+  <text x="706" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">剩下用经验做产品，看你自己</text>
+  <rect x="20" y="430" width="920" height="52" fill="#F0F4FF" stroke="#B0C0E0" rx="8" stroke-width="1" />
+  <text x="480" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">某条不同意？你应该有自己版本的判断。某条没想清楚？带着问题去项目里跑</text>
+  <text x="480" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">很多事在动手之后会突然想通——这是认知和实操互相滋养的真实样子</text>
+</svg>

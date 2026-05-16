@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="980" height="750" viewBox="0 0 980 750">
+  <ns0:rect width="980" height="720" fill="#FAFBFF" />
+  <ns0:text x="490" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 辅助实现指南：模块划分 × 工具配置</ns0:text>
+  <ns0:text x="490" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">90% AI 编写代码约束 — 让 Claude Code 理解项目边界，按模块驱动实现</ns0:text>
+  <ns0:rect x="20" y="65" width="224" height="200" fill="#fff" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <ns0:rect x="20" y="65" width="224" height="7" fill="#4A90D9" rx="4" />
+  <ns0:rect x="20" y="69" width="224" height="4" fill="#4A90D9" rx="0" />
+  <ns0:text x="132" y="87" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#4A90D9" text-anchor="middle">when-api</ns0:text>
+  <ns0:text x="132" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">DTO / 接口定义</ns0:text>
+  <ns0:line x1="30" y1="108" x2="234" y2="108" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="30" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Message, CreateReq, QueryResp</ns0:text>
+  <ns0:text x="30" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• ApiResult&lt;T&gt; 统一响应</ns0:text>
+  <ns0:text x="30" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 枚举：MessageStatus, TriggerType</ns0:text>
+  <ns0:text x="30" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 无业务逻辑，可独立发布</ns0:text>
+  <ns0:rect x="94" y="241" width="76" height="18" fill="#4A90D9" rx="9" />
+  <ns0:text x="132" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">第1周优先</ns0:text>
+  <ns0:rect x="253" y="65" width="224" height="200" fill="#fff" rx="8" stroke="#52B366" stroke-width="2" />
+  <ns0:rect x="253" y="65" width="224" height="7" fill="#52B366" rx="4" />
+  <ns0:rect x="253" y="69" width="224" height="4" fill="#52B366" rx="0" />
+  <ns0:text x="365" y="87" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#52B366" text-anchor="middle">when-core</ns0:text>
+  <ns0:text x="365" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">核心调度引擎</ns0:text>
+  <ns0:line x1="263" y1="108" x2="467" y2="108" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="263" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 4层时间轮实现</ns0:text>
+  <ns0:text x="263" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Master/Slave 选主</ns0:text>
+  <ns0:text x="263" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• ETCD 集成 &amp; 心跳</ns0:text>
+  <ns0:text x="263" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 消息生命周期管理</ns0:text>
+  <ns0:rect x="327" y="241" width="76" height="18" fill="#52B366" rx="9" />
+  <ns0:text x="365" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">第1-2周</ns0:text>
+  <ns0:rect x="486" y="65" width="224" height="200" fill="#fff" rx="8" stroke="#E09A52" stroke-width="2" />
+  <ns0:rect x="486" y="65" width="224" height="7" fill="#E09A52" rx="4" />
+  <ns0:rect x="486" y="69" width="224" height="4" fill="#E09A52" rx="0" />
+  <ns0:text x="598" y="87" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E09A52" text-anchor="middle">when-sink</ns0:text>
+  <ns0:text x="598" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">Sink 投递层</ns0:text>
+  <ns0:line x1="496" y1="108" x2="700" y2="108" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="496" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Sink SPI 接口</ns0:text>
+  <ns0:text x="496" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• HTTP Sink 实现</ns0:text>
+  <ns0:text x="496" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Kafka Sink 实现</ns0:text>
+  <ns0:text x="496" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• SinkRegistry 注册表</ns0:text>
+  <ns0:rect x="560" y="241" width="76" height="18" fill="#E09A52" rx="9" />
+  <ns0:text x="598" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">第2周</ns0:text>
+  <ns0:rect x="719" y="65" width="224" height="200" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <ns0:rect x="719" y="65" width="224" height="7" fill="#E05252" rx="4" />
+  <ns0:rect x="719" y="69" width="224" height="4" fill="#E05252" rx="0" />
+  <ns0:text x="831" y="87" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E05252" text-anchor="middle">when-server</ns0:text>
+  <ns0:text x="831" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">启动 &amp; API 层</ns0:text>
+  <ns0:line x1="729" y1="108" x2="933" y2="108" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="729" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• Spring Boot 启动类</ns0:text>
+  <ns0:text x="729" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• REST / gRPC 接口</ns0:text>
+  <ns0:text x="729" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 配置 &amp; 健康检查</ns0:text>
+  <ns0:text x="729" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• docker-compose 集成</ns0:text>
+  <ns0:rect x="793" y="241" width="76" height="18" fill="#E05252" rx="9" />
+  <ns0:text x="831" y="254" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">第3周</ns0:text>
+  <ns0:line x1="244" y1="165" x2="253" y2="165" stroke="#888" stroke-width="1.5" />
+  <ns0:polygon points="253,165 246.0,168.0 246.0,162.0" fill="#888" />
+  <ns0:line x1="477" y1="165" x2="486" y2="165" stroke="#888" stroke-width="1.5" />
+  <ns0:polygon points="486,165 479.0,168.0 479.0,162.0" fill="#888" />
+  <ns0:line x1="710" y1="165" x2="719" y2="165" stroke="#888" stroke-width="1.5" />
+  <ns0:polygon points="719,165 712.0,168.0 712.0,162.0" fill="#888" />
+  <ns0:rect x="20" y="280" width="460" height="260" fill="#EAF3FC" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <ns0:rect x="20" y="280" width="460" height="8" fill="#4A90D9" rx="4" />
+  <ns0:rect x="20" y="284" width="460" height="4" fill="#4A90D9" rx="0" />
+  <ns0:text x="250" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#4A90D9" text-anchor="middle">CLAUDE.md 关键章节</ns0:text>
+  <ns0:rect x="30" y="320" width="440" height="35" fill="#fff" rx="5" stroke="#C0D8F0" stroke-width="1" />
+  <ns0:text x="44" y="335" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">项目概述</ns0:text>
+  <ns0:text x="44" y="348" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">延时消息服务 · Java 17 · Spring Boot · 4层时间轮</ns0:text>
+  <ns0:rect x="30" y="362" width="440" height="35" fill="#fff" rx="5" stroke="#C0D8F0" stroke-width="1" />
+  <ns0:text x="44" y="377" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">模块边界</ns0:text>
+  <ns0:text x="44" y="390" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">when-api / when-core / when-sink / when-server 职责分工</ns0:text>
+  <ns0:rect x="30" y="404" width="440" height="35" fill="#fff" rx="5" stroke="#C0D8F0" stroke-width="1" />
+  <ns0:text x="44" y="419" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">禁区</ns0:text>
+  <ns0:text x="44" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">不改 ETCD 选主逻辑 · 不拆时间轮层数 · 不改 Sink SPI 接口</ns0:text>
+  <ns0:rect x="30" y="446" width="440" height="35" fill="#fff" rx="5" stroke="#C0D8F0" stroke-width="1" />
+  <ns0:text x="44" y="461" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">历史包袱</ns0:text>
+  <ns0:text x="44" y="474" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">TTL=5s 是 SLA 上限推导出来的，不能随意调整</ns0:text>
+  <ns0:rect x="30" y="488" width="440" height="35" fill="#fff" rx="5" stroke="#C0D8F0" stroke-width="1" />
+  <ns0:text x="44" y="503" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">AI 约束</ns0:text>
+  <ns0:text x="44" y="516" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">90% AI 编写；每任务 &lt; 300 行；Task 执行前写 Spec</ns0:text>
+  <ns0:rect x="500" y="280" width="460" height="260" fill="#EDF9EE" rx="8" stroke="#52B366" stroke-width="2" />
+  <ns0:rect x="500" y="280" width="460" height="8" fill="#52B366" rx="4" />
+  <ns0:rect x="500" y="284" width="460" height="4" fill="#52B366" rx="0" />
+  <ns0:text x="730" y="304" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#52B366" text-anchor="middle">Skills / Hooks 配置</ns0:text>
+  <ns0:rect x="510" y="320" width="440" height="35" fill="#fff" rx="5" stroke="#B0E0B0" stroke-width="1" />
+  <ns0:rect x="510" y="320" width="56" height="35" fill="#E8F8E8" rx="5" />
+  <ns0:text x="538" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2D7D2D" text-anchor="middle">/spec</ns0:text>
+  <ns0:text x="580" y="333" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="start">gen-spec</ns0:text>
+  <ns0:text x="580" y="347" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">生成任务 Spec 草稿 → 交人审核后再执行</ns0:text>
+  <ns0:rect x="510" y="362" width="440" height="35" fill="#fff" rx="5" stroke="#B0E0B0" stroke-width="1" />
+  <ns0:rect x="510" y="362" width="56" height="35" fill="#E8F8E8" rx="5" />
+  <ns0:text x="538" y="384" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2D7D2D" text-anchor="middle">/impl</ns0:text>
+  <ns0:text x="580" y="375" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="start">task-impl</ns0:text>
+  <ns0:text x="580" y="389" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">按 Spec 实现代码，完成后更新 TODO</ns0:text>
+  <ns0:rect x="510" y="404" width="440" height="35" fill="#fff" rx="5" stroke="#B0E0B0" stroke-width="1" />
+  <ns0:rect x="510" y="404" width="56" height="35" fill="#E8F8E8" rx="5" />
+  <ns0:text x="538" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2D7D2D" text-anchor="middle">/review</ns0:text>
+  <ns0:text x="580" y="417" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="start">pr-review</ns0:text>
+  <ns0:text x="580" y="431" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">检查本次变更是否符合架构约定和禁区</ns0:text>
+  <ns0:rect x="510" y="446" width="440" height="35" fill="#fff" rx="5" stroke="#B0E0B0" stroke-width="1" />
+  <ns0:rect x="510" y="446" width="56" height="35" fill="#E8F8E8" rx="5" />
+  <ns0:text x="538" y="468" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2D7D2D" text-anchor="middle">/test</ns0:text>
+  <ns0:text x="580" y="459" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="start">unit-test</ns0:text>
+  <ns0:text x="580" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">为当前模块生成 JUnit 5 测试套件</ns0:text>
+  <ns0:rect x="500" y="550" width="460" height="38" fill="#FFF8E8" rx="6" stroke="#E09A52" stroke-width="1" />
+  <ns0:text x="730" y="566" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">Hooks：PostToolUse → 自动运行 mvn test；PreCommit → Spec 存在性检查</ns0:text>
+  <ns0:text x="730" y="580" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">每次工具调用后验证单测通过 → 防止 AI 遗漏测试</ns0:text>
+  <ns0:rect x="20" y="600" width="940" height="72" fill="#F3EEFF" rx="8" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:text x="490" y="618" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#5B2DC0" text-anchor="middle">AI 驱动工作流：/spec → 人审 → /impl → 自动测试 → /review → PR</ns0:text>
+  <ns0:text x="490" y="636" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">CLAUDE.md 定义边界 · Skills 标准化动作 · Hooks 自动守门 · 三周交付目标</ns0:text>
+  <ns0:text x="490" y="651" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">每个任务粒度控制在 100-300 行，AI 完成率目标 90%+</ns0:text>
+</ns0:svg>

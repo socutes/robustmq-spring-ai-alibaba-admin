@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+  <rect width="980" height="620" fill="#FAFBFF" />
+  <text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">When 整体架构</text>
+  <text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">业务方 → When集群（无差别多节点）→ 外部依赖 → 下游Sink</text>
+  <rect x="20" y="70" width="120" height="140" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="80" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#5B2DC0" text-anchor="middle">调用方</text>
+  <rect x="30" y="100" width="100" height="20" fill="#FFF" stroke="#C0A0FF" rx="4" stroke-width="0.8" />
+  <text x="80" y="114" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#5B2DC0" text-anchor="middle">订单服务</text>
+  <rect x="30" y="126" width="100" height="20" fill="#FFF" stroke="#C0A0FF" rx="4" stroke-width="0.8" />
+  <text x="80" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#5B2DC0" text-anchor="middle">推送服务</text>
+  <rect x="30" y="152" width="100" height="20" fill="#FFF" stroke="#C0A0FF" rx="4" stroke-width="0.8" />
+  <text x="80" y="166" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#5B2DC0" text-anchor="middle">任务系统</text>
+  <rect x="30" y="178" width="100" height="20" fill="#FFF" stroke="#C0A0FF" rx="4" stroke-width="0.8" />
+  <text x="80" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#5B2DC0" text-anchor="middle">任意业务</text>
+  <line x1="140" y1="140" x2="175" y2="140" stroke="#8B5CF6" stroke-width="2" />
+  <polygon points="175,140 168.0,143.0 168.0,137.0" fill="#8B5CF6" />
+  <text x="157" y="130" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B5CF6" text-anchor="middle">HTTP API</text>
+  <rect x="160" y="70" width="580" height="380" fill="#F0F6FF" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <text x="450" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2C5282" text-anchor="middle">When 集群（无差别多节点架构）</text>
+  <rect x="170" y="98" width="174" height="300" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <rect x="170" y="98" width="174" height="30" fill="#2C5282" stroke="none" rx="6" stroke-width="0" />
+  <rect x="170" y="104" width="174" height="24" fill="#2C5282" stroke="none" rx="0" stroke-width="0" />
+  <text x="257" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">节点 1</text>
+  <text x="257" y="125" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#FFF" text-anchor="middle">(Controller★)</text>
+  <rect x="176" y="134" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">接入层 HTTP API</text>
+  <rect x="176" y="166" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">路由层 (一致性Hash)</text>
+  <rect x="176" y="198" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">时间轮调度引擎</text>
+  <rect x="176" y="230" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">副本同步器</text>
+  <rect x="176" y="262" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="278" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">Sink 投递器</text>
+  <rect x="176" y="294" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="310" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">ETCD 客户端</text>
+  <rect x="176" y="326" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">Redis 客户端</text>
+  <rect x="176" y="358" width="162" height="26" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="0.8" />
+  <text x="257" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#2C5282" text-anchor="middle">可观测模块</text>
+  <rect x="350" y="98" width="174" height="300" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <rect x="350" y="98" width="174" height="30" fill="#1A5A1A" stroke="none" rx="6" stroke-width="0" />
+  <rect x="350" y="104" width="174" height="24" fill="#1A5A1A" stroke="none" rx="0" stroke-width="0" />
+  <text x="437" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">节点 2</text>
+  <rect x="356" y="134" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">接入层 HTTP API</text>
+  <rect x="356" y="166" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">路由层 (一致性Hash)</text>
+  <rect x="356" y="198" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">时间轮调度引擎</text>
+  <rect x="356" y="230" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">副本同步器</text>
+  <rect x="356" y="262" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="278" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">Sink 投递器</text>
+  <rect x="356" y="294" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="310" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">ETCD 客户端</text>
+  <rect x="356" y="326" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">Redis 客户端</text>
+  <rect x="356" y="358" width="162" height="26" fill="#FFF" stroke="#52B366" rx="4" stroke-width="0.8" />
+  <text x="437" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#1A5A1A" text-anchor="middle">可观测模块</text>
+  <rect x="530" y="98" width="174" height="300" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <rect x="530" y="98" width="174" height="30" fill="#8B4A00" stroke="none" rx="6" stroke-width="0" />
+  <rect x="530" y="104" width="174" height="24" fill="#8B4A00" stroke="none" rx="0" stroke-width="0" />
+  <text x="617" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">节点 3</text>
+  <rect x="536" y="134" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">接入层 HTTP API</text>
+  <rect x="536" y="166" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">路由层 (一致性Hash)</text>
+  <rect x="536" y="198" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">时间轮调度引擎</text>
+  <rect x="536" y="230" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">副本同步器</text>
+  <rect x="536" y="262" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="278" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">Sink 投递器</text>
+  <rect x="536" y="294" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="310" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">ETCD 客户端</text>
+  <rect x="536" y="326" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="342" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">Redis 客户端</text>
+  <rect x="536" y="358" width="162" height="26" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="0.8" />
+  <text x="617" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#8B4A00" text-anchor="middle">可观测模块</text>
+  <text x="450" y="436" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#4A90D9" text-anchor="middle">节点间通过 gRPC 互相路由（消息转发 + 副本同步）</text>
+  <rect x="760" y="70" width="200" height="100" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <text x="860" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2C5282" text-anchor="middle">ETCD 集群</text>
+  <text x="770" y="104" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 节点注册 + 心跳 Lease</text>
+  <text x="770" y="118" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· Controller 选举</text>
+  <text x="770" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· Watch 事件驱动</text>
+  <text x="770" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 配置动态下发</text>
+  <rect x="760" y="186" width="200" height="100" fill="#FFF0F0" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <text x="860" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#B00000" text-anchor="middle">Redis</text>
+  <text x="770" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 消息体持久化</text>
+  <text x="770" y="234" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 时间索引存储</text>
+  <text x="770" y="248" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· key按消息ID拆分</text>
+  <text x="770" y="262" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· TTL自动清理</text>
+  <line x1="740" y1="120" x2="758" y2="120" stroke="#4A90D9" stroke-width="1.5" />
+  <polygon points="758,120 751.0,123.0 751.0,117.0" fill="#4A90D9" />
+  <line x1="740" y1="236" x2="758" y2="236" stroke="#E05252" stroke-width="1.5" />
+  <polygon points="758,236 751.0,239.0 751.0,233.0" fill="#E05252" />
+  <rect x="760" y="300" width="200" height="150" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <text x="860" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="middle">下游 Sink</text>
+  <rect x="766" y="332" width="188" height="22" fill="#FFF" stroke="#4A90D9" rx="4" stroke-width="1" />
+  <text x="778" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">HTTP</text>
+  <text x="820" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="start">业务回调接口</text>
+  <rect x="766" y="360" width="188" height="22" fill="#FFF" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="778" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="start">Kafka</text>
+  <text x="820" y="374" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="start">消息总线Topic</text>
+  <rect x="766" y="388" width="188" height="22" fill="#FFF" stroke="#8B5CF6" rx="4" stroke-width="1" />
+  <text x="778" y="402" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">gRPC★</text>
+  <text x="820" y="402" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="start">内部RPC服务</text>
+  <rect x="766" y="416" width="188" height="22" fill="#FFF" stroke="#888" rx="4" stroke-width="1" />
+  <text x="778" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#888" text-anchor="start">更多...</text>
+  <text x="820" y="430" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="start">SPI扩展接入</text>
+  <line x1="740" y1="375" x2="758" y2="375" stroke="#52B366" stroke-width="1.5" />
+  <polygon points="758,375 751.0,378.0 751.0,372.0" fill="#52B366" />
+  <rect x="20" y="230" width="120" height="160" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1" />
+  <text x="80" y="248" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B4A00" text-anchor="middle">设计原则</text>
+  <text x="80" y="266" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">无差别节点</text>
+  <text x="80" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">HTTP外 gRPC内</text>
+  <text x="80" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">Redis=真理源</text>
+  <text x="80" y="326" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">ETCD不造轮</text>
+  <text x="80" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">Sink可插拔</text>
+  <text x="80" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">90%AI完成</text>
+  <rect x="20" y="462" width="940" height="44" fill="#F5F5F5" stroke="#CCC" rx="8" stroke-width="1" />
+  <text x="490" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">Controller 是"角色"不是"专用节点"——集群中一台普通节点同时承担 Controller 职责，节点同构，运维简单</text>
+  <text x="490" y="494" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">★ gRPC Sink 在3周MVP之后实现；When内部节点间通信已使用gRPC</text>
+</svg>

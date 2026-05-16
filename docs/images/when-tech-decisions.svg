@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600">
+  <rect width="980" height="600" fill="#FAFBFF" />
+  <text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">When 六个核心技术决策</text>
+  <text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">每个决策都有清晰的工程理由——理由本身是 When 架构取舍的核心思路</text>
+  <rect x="20" y="70" width="460" height="108" fill="#FAFBFF" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <rect x="20" y="70" width="6" height="108" fill="#4A90D9" stroke="none" rx="3" stroke-width="0" />
+  <rect x="23" y="70" width="3" height="108" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <rect x="34" y="80" width="64" height="20" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <text x="66" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">集群协调</text>
+  <rect x="106" y="80" width="364" height="20" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <text x="112" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：ETCD</text>
+  <text x="36" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">K8s事实标准，API极简（Put/Watch/Lease），</text>
+  <text x="36" y="133" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">云原生运维体系成熟，部署When无需额外引入协调组件</text>
+  <rect x="34" y="156" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="40" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：ZooKeeper（API偏底层）· Consul（偏服务发现）</text>
+  <rect x="500" y="70" width="460" height="108" fill="#FAFBFF" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <rect x="500" y="70" width="6" height="108" fill="#E05252" stroke="none" rx="3" stroke-width="0" />
+  <rect x="503" y="70" width="3" height="108" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <rect x="514" y="80" width="64" height="20" fill="#E05252" stroke="none" rx="4" stroke-width="0" />
+  <text x="546" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">持久化存储</text>
+  <rect x="586" y="80" width="364" height="20" fill="#E05252" stroke="none" rx="4" stroke-width="0" />
+  <text x="592" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：Redis</text>
+  <text x="516" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">企业普及率极高，写入快，按key读写快，</text>
+  <text x="516" y="133" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">有TTL机制，规避大Key只需按消息ID拆分</text>
+  <rect x="514" y="156" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="520" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：RocksDB（运维不熟）· MySQL（随机读写慢）</text>
+  <rect x="20" y="188" width="460" height="108" fill="#FAFBFF" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <rect x="20" y="188" width="6" height="108" fill="#52B366" stroke="none" rx="3" stroke-width="0" />
+  <rect x="23" y="188" width="3" height="108" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <rect x="34" y="198" width="64" height="20" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <text x="66" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">调度算法</text>
+  <rect x="106" y="198" width="364" height="20" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <text x="112" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：多层时间轮</text>
+  <text x="36" y="234" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">O(1)复杂度，内存调度精度高，</text>
+  <text x="36" y="251" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">覆盖1秒~30天极宽延时范围，Kafka/Netty验证可靠</text>
+  <rect x="34" y="274" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="40" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：DelayQueue（O(logN)）· Redis ZSet（大Key）</text>
+  <rect x="500" y="188" width="460" height="108" fill="#FAFBFF" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <rect x="500" y="188" width="6" height="108" fill="#E09A52" stroke="none" rx="3" stroke-width="0" />
+  <rect x="503" y="188" width="3" height="108" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <rect x="514" y="198" width="64" height="20" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <text x="546" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">副本机制</text>
+  <rect x="586" y="198" width="364" height="20" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <text x="592" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：Master/Slave</text>
+  <text x="516" y="234" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">延时消息可靠性靠Redis保证，副本目标是快速切换</text>
+  <text x="516" y="251" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">而非强一致，异步同步+Redis恢复足够，够用即可</text>
+  <rect x="514" y="274" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="520" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：Raft/Paxos（太重，增加投递延迟）</text>
+  <rect x="20" y="306" width="460" height="108" fill="#FAFBFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <rect x="20" y="306" width="6" height="108" fill="#8B5CF6" stroke="none" rx="3" stroke-width="0" />
+  <rect x="23" y="306" width="3" height="108" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <rect x="34" y="316" width="64" height="20" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <text x="66" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">外部协议</text>
+  <rect x="106" y="316" width="364" height="20" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <text x="112" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：HTTP</text>
+  <text x="36" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">最低接入门槛，所有语言支持，</text>
+  <text x="36" y="369" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">curl即可测试，不依赖SDK和proto stub</text>
+  <rect x="34" y="392" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="40" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：gRPC（需要stub）· SDK（语言绑定）</text>
+  <rect x="500" y="306" width="460" height="108" fill="#FAFBFF" stroke="#2C5282" rx="8" stroke-width="1.5" />
+  <rect x="500" y="306" width="6" height="108" fill="#2C5282" stroke="none" rx="3" stroke-width="0" />
+  <rect x="503" y="306" width="3" height="108" fill="#2C5282" stroke="none" rx="0" stroke-width="0" />
+  <rect x="514" y="316" width="64" height="20" fill="#2C5282" stroke="none" rx="4" stroke-width="0" />
+  <text x="546" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#FFF" text-anchor="middle">内部协议</text>
+  <rect x="586" y="316" width="364" height="20" fill="#2C5282" stroke="none" rx="4" stroke-width="0" />
+  <text x="592" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="start">✓ 选择：gRPC</text>
+  <text x="516" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">节点间高频互调（消息路由/副本同步），</text>
+  <text x="516" y="369" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">二进制协议性能好，强类型契约减少错误</text>
+  <rect x="514" y="392" width="436" height="16" fill="#F5F5F5" stroke="#DDD" rx="3" stroke-width="0.8" />
+  <text x="520" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#999" text-anchor="start">× 未选：HTTP（性能差）· 私有协议（实现成本高）</text>
+  <rect x="20" y="438" width="940" height="44" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <text x="490" y="456" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2C5282" text-anchor="middle">外部 HTTP + 内部 gRPC = 最低接入门槛 + 最高内部性能，两件事不冲突</text>
+  <text x="490" y="472" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">所有决策的共同原则：够用 &gt; 理论完美，让用户接入和运维心智尽可能轻</text>
+</svg>

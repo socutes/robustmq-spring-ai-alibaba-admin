@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Redis 持久化层设计</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">每条消息一个key · 索引按时间轮拆分 · TTL自动兜底 · 从根本上规避大Key</text>
+  <rect x="20" y="70" width="440" height="340" fill="#1E1E2E" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <text x="30" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E05252" text-anchor="start">Redis key 结构</text>
+  <text x="30" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#A6E3A1" text-anchor="start"># 消息体</text>
+  <text x="30" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">/when/messages/{message_id}</text>
+  <text x="30" y="130" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  type: STRING (JSON序列化消息对象)</text>
+  <text x="30" y="144" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  TTL: deliver_at + 7天（投递完即删，7天兜底）</text>
+  <text x="30" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  体积: ≤ 64KB + 元数据</text>
+  <text x="30" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start"># 时间索引</text>
+  <text x="30" y="200" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">/when/timewheels/{tw_id}/index/{message_id}</text>
+  <text x="30" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  type: STRING (存到期时间戳)</text>
+  <text x="30" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  TTL: 同消息体</text>
+  <text x="30" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  作用: 节点重启时重建时间轮</text>
+  <text x="30" y="270" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#F9E2AF" text-anchor="start"># 槽位索引(可选)</text>
+  <text x="30" y="284" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">/when/timewheels/{tw_id}/slot/{slot_key}</text>
+  <text x="30" y="298" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  type: SET (该槽位所有message_id)</text>
+  <text x="30" y="312" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="start">  仅重启恢复时使用，日常调度不读</text>
+  <rect x="480" y="70" width="220" height="160" fill="#FFF0F0" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <rect x="480" y="70" width="220" height="28" fill="#E05252" stroke="none" rx="6" stroke-width="0" />
+  <rect x="480" y="76" width="220" height="22" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="590" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">× 错误：ZSet大集合</text>
+  <text x="490" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">ZADD delay_queue score1 msg1</text>
+  <text x="490" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">ZADD delay_queue score2 msg2</text>
+  <text x="490" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#F9E2AF" text-anchor="start">... 100万条消息都在一个key ...</text>
+  <text x="490" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start" />
+  <text x="490" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">问题：key体积随消息数增长</text>
+  <text x="490" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#E05252" text-anchor="start">→ 几十MB大Key</text>
+  <text x="490" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#E05252" text-anchor="start">→ Redis单线程模型崩溃</text>
+  <text x="490" y="210" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#E05252" text-anchor="start">→ Redisson/Curator都踩坑</text>
+  <rect x="710" y="70" width="220" height="160" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <rect x="710" y="70" width="220" height="28" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <rect x="710" y="76" width="220" height="22" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="820" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">✓ When：按ID拆分</text>
+  <text x="720" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">SET /when/messages/msg1 {...}</text>
+  <text x="720" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">SET /when/messages/msg2 {...}</text>
+  <text x="720" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#A6E3A1" text-anchor="start">... 每条消息独立的小key ...</text>
+  <text x="720" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start" />
+  <text x="720" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">优势：每个key体积可控</text>
+  <text x="720" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#52B366" text-anchor="start">→ 最大64KB + 元数据</text>
+  <text x="720" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#52B366" text-anchor="start">→ Redis对小key数量容忍强</text>
+  <text x="720" y="210" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#52B366" text-anchor="start">→ 百万key没有性能问题</text>
+  <rect x="480" y="246" width="450" height="150" fill="#F8FAFF" stroke="#4A90D9" rx="8" stroke-width="1" />
+  <text x="705" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2C5282" text-anchor="middle">写入时序（顺序不可颠倒）</text>
+  <circle cx="494" cy="276" r="5" fill="#4A90D9" />
+  <line x1="494" y1="281" x2="494" y2="289" stroke="#DDD" stroke-width="1" />
+  <text x="506" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">① 生成message_id</text>
+  <circle cx="494" cy="295" r="5" fill="#4A90D9" />
+  <line x1="494" y1="300" x2="494" y2="308" stroke="#DDD" stroke-width="1" />
+  <text x="506" y="299" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">② Redis Pipeline: SET消息体 + SET索引</text>
+  <circle cx="494" cy="314" r="5" fill="#52B366" />
+  <line x1="494" y1="319" x2="494" y2="327" stroke="#DDD" stroke-width="1" />
+  <text x="506" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">③ 确认Redis写入成功</text>
+  <circle cx="494" cy="333" r="5" fill="#52B366" />
+  <line x1="494" y1="338" x2="494" y2="346" stroke="#DDD" stroke-width="1" />
+  <text x="506" y="337" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">④ 写入内存时间轮</text>
+  <circle cx="494" cy="352" r="5" fill="#E09A52" />
+  <line x1="494" y1="357" x2="494" y2="365" stroke="#DDD" stroke-width="1" />
+  <text x="506" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">⑤ 异步同步Slave（不等应答）</text>
+  <circle cx="494" cy="371" r="5" fill="#888" />
+  <text x="506" y="375" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">⑥ 返回message_id给业务方</text>
+  <rect x="480" y="394" width="450" height="28" fill="#FFD0D0" stroke="#E05252" rx="5" stroke-width="1" />
+  <text x="705" y="408" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#C00000" text-anchor="middle">必须②③完成后才能进行④和⑥——Redis是唯一真理之源，写入失败必须返回错误</text>
+  <rect x="20" y="440" width="920" height="44" fill="#F5F5F5" stroke="#CCC" rx="8" stroke-width="1" />
+  <text x="480" y="456" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#555" text-anchor="middle">Redis高可用由部署方保证（主从/Sentinel/Cluster），When不重复造轮子</text>
+  <text x="480" y="472" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">支持Redis 5.0及以上 · 敏感配置（密码）加密存储，不明文写配置文件</text>
+</svg>

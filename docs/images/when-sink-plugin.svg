@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="980" height="730" viewBox="0 0 980 730">
+  <ns0:rect width="980" height="700" fill="#FAFBFF" />
+  <ns0:text x="490" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Sink 插件架构：SPI 扩展机制</ns0:text>
+  <ns0:text x="490" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">一个 SPI 接口 → N 种投递实现 → 用户零成本扩展</ns0:text>
+  <ns0:rect x="250" y="65" width="480" height="100" fill="#F3EEFF" rx="8" stroke="#8B5CF6" stroke-width="2" />
+  <ns0:rect x="250" y="65" width="480" height="8" fill="#8B5CF6" rx="4" />
+  <ns0:rect x="250" y="69" width="480" height="4" fill="#8B5CF6" rx="0" />
+  <ns0:text x="490" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Sink 接口（SPI 契约）</ns0:text>
+  <ns0:text x="490" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="middle">public interface Sink {</ns0:text>
+  <ns0:text x="490" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">  String type();          // 唯一标识符</ns0:text>
+  <ns0:text x="490" y="136" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">  void deliver(Message m) throws Exception;  // 投递</ns0:text>
+  <ns0:text x="490" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="middle">}</ns0:text>
+  <ns0:rect x="250" y="172" width="480" height="28" fill="#F0FFF0" rx="5" stroke="#52B366" stroke-width="1" />
+  <ns0:text x="490" y="186" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#2D7D2D" text-anchor="middle">META-INF/services/com.when.sink.Sink  →  ServiceLoader 自动发现</ns0:text>
+  <ns0:rect x="20" y="230" width="290" height="60" fill="#fff" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <ns0:rect x="20" y="230" width="290" height="7" fill="#4A90D9" rx="4" />
+  <ns0:rect x="20" y="234" width="290" height="4" fill="#4A90D9" rx="0" />
+  <ns0:text x="165" y="253" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#4A90D9" text-anchor="middle">HTTP Sink（内置）</ns0:text>
+  <ns0:text x="165" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">实现类 → ServiceLoader 注册</ns0:text>
+  <ns0:line x1="490" y1="202" x2="165" y2="230" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:polygon points="165,230 171.71665740090765,226.41022098746558 172.23167266487502,232.3880767299439" fill="#8B5CF6" />
+  <ns0:rect x="20" y="300" width="290" height="150" fill="#FAFAFA" rx="6" stroke="#DDD" stroke-width="1" />
+  <ns0:text x="165" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">配置参数</ns0:text>
+  <ns0:line x1="30" y1="324" x2="300" y2="324" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="32" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">trigger_type:</ns0:text>
+  <ns0:text x="302" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">http</ns0:text>
+  <ns0:text x="32" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">endpoint_url:</ns0:text>
+  <ns0:text x="302" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">https://your-api.com/callback</ns0:text>
+  <ns0:text x="32" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">method:</ns0:text>
+  <ns0:text x="302" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">POST / GET</ns0:text>
+  <ns0:text x="32" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">headers:</ns0:text>
+  <ns0:text x="302" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">Content-Type / Auth</ns0:text>
+  <ns0:text x="32" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">retry:</ns0:text>
+  <ns0:text x="302" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">最多 3 次，指数退避</ns0:text>
+  <ns0:rect x="20" y="458" width="290" height="130" fill="#F8F8FF" rx="6" stroke="#CCD" stroke-width="1" />
+  <ns0:text x="165" y="474" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">执行步骤</ns0:text>
+  <ns0:line x1="30" y1="482" x2="300" y2="482" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="32" y="496" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">① 到期 → 取出消息配置</ns0:text>
+  <ns0:text x="32" y="518" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">② 构造 HTTP 请求体</ns0:text>
+  <ns0:text x="32" y="540" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">③ 发起调用，等待 200</ns0:text>
+  <ns0:text x="32" y="562" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">④ 非 200 → 放回重试队列</ns0:text>
+  <ns0:rect x="345" y="230" width="290" height="60" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <ns0:rect x="345" y="230" width="290" height="7" fill="#E05252" rx="4" />
+  <ns0:rect x="345" y="234" width="290" height="4" fill="#E05252" rx="0" />
+  <ns0:text x="490" y="253" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E05252" text-anchor="middle">Kafka Sink（内置）</ns0:text>
+  <ns0:text x="490" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">实现类 → ServiceLoader 注册</ns0:text>
+  <ns0:line x1="490" y1="202" x2="490" y2="230" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:polygon points="490,230 487.0,223.0 493.0,223.0" fill="#8B5CF6" />
+  <ns0:rect x="345" y="300" width="290" height="150" fill="#FAFAFA" rx="6" stroke="#DDD" stroke-width="1" />
+  <ns0:text x="490" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">配置参数</ns0:text>
+  <ns0:line x1="355" y1="324" x2="625" y2="324" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="357" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">trigger_type:</ns0:text>
+  <ns0:text x="627" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">kafka</ns0:text>
+  <ns0:text x="357" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">bootstrap:</ns0:text>
+  <ns0:text x="627" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">broker1:9092,broker2</ns0:text>
+  <ns0:text x="357" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">topic:</ns0:text>
+  <ns0:text x="627" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">delay-callback</ns0:text>
+  <ns0:text x="357" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">key:</ns0:text>
+  <ns0:text x="627" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">消息 ID（幂等去重）</ns0:text>
+  <ns0:text x="357" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">acks:</ns0:text>
+  <ns0:text x="627" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">acks=all 保证写入</ns0:text>
+  <ns0:rect x="345" y="458" width="290" height="130" fill="#F8F8FF" rx="6" stroke="#CCD" stroke-width="1" />
+  <ns0:text x="490" y="474" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">执行步骤</ns0:text>
+  <ns0:line x1="355" y1="482" x2="625" y2="482" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="357" y="496" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">① 到期 → 取出消息</ns0:text>
+  <ns0:text x="357" y="518" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">② 序列化 payload</ns0:text>
+  <ns0:text x="357" y="540" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">③ KafkaProducer.send()</ns0:text>
+  <ns0:text x="357" y="562" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">④ 等待 RecordMetadata</ns0:text>
+  <ns0:rect x="670" y="230" width="290" height="60" fill="#fff" rx="8" stroke="#52B366" stroke-width="2" />
+  <ns0:rect x="670" y="230" width="290" height="7" fill="#52B366" rx="4" />
+  <ns0:rect x="670" y="234" width="290" height="4" fill="#52B366" rx="0" />
+  <ns0:text x="815" y="253" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="middle">自定义 Sink（扩展）</ns0:text>
+  <ns0:text x="815" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">实现类 → ServiceLoader 注册</ns0:text>
+  <ns0:line x1="490" y1="202" x2="815" y2="230" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:polygon points="815,230 807.768327335125,232.3880767299439 808.2833425990924,226.41022098746558" fill="#8B5CF6" />
+  <ns0:rect x="670" y="300" width="290" height="150" fill="#FAFAFA" rx="6" stroke="#DDD" stroke-width="1" />
+  <ns0:text x="815" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">配置参数</ns0:text>
+  <ns0:line x1="680" y1="324" x2="950" y2="324" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="682" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">trigger_type:</ns0:text>
+  <ns0:text x="952" y="338" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">my-mq</ns0:text>
+  <ns0:text x="682" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">step1:</ns0:text>
+  <ns0:text x="952" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">implement Sink interface</ns0:text>
+  <ns0:text x="682" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">step2:</ns0:text>
+  <ns0:text x="952" y="382" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">register in META-INF/services</ns0:text>
+  <ns0:text x="682" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">step3:</ns0:text>
+  <ns0:text x="952" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">jar 放入 plugins/ 目录</ns0:text>
+  <ns0:text x="682" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#444" text-anchor="start">step4:</ns0:text>
+  <ns0:text x="952" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="end">重启服务自动加载</ns0:text>
+  <ns0:rect x="670" y="458" width="290" height="130" fill="#F8F8FF" rx="6" stroke="#CCD" stroke-width="1" />
+  <ns0:text x="815" y="474" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">执行步骤</ns0:text>
+  <ns0:line x1="680" y1="482" x2="950" y2="482" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="682" y="496" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">① 实现 type() 返回唯一标识</ns0:text>
+  <ns0:text x="682" y="518" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">② 实现 deliver() 业务逻辑</ns0:text>
+  <ns0:text x="682" y="540" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">③ SPI 文件声明实现类</ns0:text>
+  <ns0:text x="682" y="562" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">④ 热插拔，无需修改核心</ns0:text>
+  <ns0:rect x="20" y="620" width="940" height="72" fill="#FFFBF0" rx="8" stroke="#B07219" stroke-width="1.5" />
+  <ns0:text x="490" y="636" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="middle">插件目录 &amp; 热加载</ns0:text>
+  <ns0:text x="490" y="652" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">when-server/plugins/  →  my-sink-1.0.jar   |  SPI loader 扫描 → 注入 SinkRegistry  |  type 唯一性校验</ns0:text>
+  <ns0:text x="490" y="668" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">内置插件打包进主 jar；第三方插件放 plugins/ 目录；重启后自动合并到 type→Sink 注册表</ns0:text>
+</ns0:svg>

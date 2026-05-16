@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="680" viewBox="0 0 980 680">
+  <rect width="980" height="680" fill="#FAFBFF" />
+  <text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">延时消息写入与投递流程</text>
+  <text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">写入：Redis先于返回业务方 · 投递：调度循环只触发，Sink异步执行</text>
+  <rect x="20" y="68" width="440" height="448" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <rect x="20" y="68" width="440" height="36" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <rect x="20" y="74" width="440" height="30" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="240" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">写入流程</text>
+  <rect x="28" y="112" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="132" r="10" fill="#4A90D9" />
+  <text x="42" y="136" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">1</text>
+  <text x="58" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">业务方 POST /api/v1/messages</text>
+  <text x="58" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">携带延时时长、Sink配置、消息内容</text>
+  <line x1="42" y1="152" x2="42" y2="158" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,158 39.0,151.0 45.0,151.0" fill="#4A90D9" />
+  <rect x="28" y="156" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="176" r="10" fill="#4A90D9" />
+  <text x="42" y="180" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  <text x="58" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">参数校验</text>
+  <text x="58" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">延时范围/Sink类型/消息体大小 ≤64KB</text>
+  <line x1="42" y1="196" x2="42" y2="202" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,202 39.0,195.0 45.0,195.0" fill="#4A90D9" />
+  <rect x="28" y="200" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="220" r="10" fill="#4A90D9" />
+  <text x="42" y="224" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">3</text>
+  <text x="58" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">生成 message_id</text>
+  <text x="58" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Snowflake算法，全局唯一，含节点ID</text>
+  <line x1="42" y1="240" x2="42" y2="246" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,246 39.0,239.0 45.0,239.0" fill="#4A90D9" />
+  <rect x="28" y="244" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="264" r="10" fill="#4A90D9" />
+  <text x="42" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">4</text>
+  <text x="58" y="258" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">路由决策</text>
+  <text x="58" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">一致性Hash(message_id) → 选定 tw-N</text>
+  <line x1="42" y1="284" x2="42" y2="290" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,290 39.0,283.0 45.0,283.0" fill="#4A90D9" />
+  <rect x="28" y="288" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="308" r="10" fill="#4A90D9" />
+  <text x="42" y="312" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">5</text>
+  <text x="58" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">gRPC转发（如需）</text>
+  <text x="58" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">如果tw-N的Master不在本节点，转发过去</text>
+  <line x1="42" y1="328" x2="42" y2="334" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,334 39.0,327.0 45.0,327.0" fill="#4A90D9" />
+  <rect x="28" y="332" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="352" r="10" fill="#4A90D9" />
+  <text x="42" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">6</text>
+  <text x="58" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">Redis持久化</text>
+  <text x="58" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Pipeline: SET消息体 + SET时间索引（必须先于返回）</text>
+  <line x1="42" y1="372" x2="42" y2="378" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,378 39.0,371.0 45.0,371.0" fill="#4A90D9" />
+  <rect x="28" y="376" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="396" r="10" fill="#4A90D9" />
+  <text x="42" y="400" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">7</text>
+  <text x="58" y="390" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">写入内存时间轮</text>
+  <text x="58" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">插入到对应层和槽位，O(1)复杂度</text>
+  <line x1="42" y1="416" x2="42" y2="422" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,422 39.0,415.0 45.0,415.0" fill="#4A90D9" />
+  <rect x="28" y="420" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="440" r="10" fill="#4A90D9" />
+  <text x="42" y="444" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">8</text>
+  <text x="58" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">异步同步Slave</text>
+  <text x="58" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">gRPC发给Slave，不阻塞业务方返回</text>
+  <line x1="42" y1="460" x2="42" y2="466" stroke="#4A90D9" stroke-width="1" />
+  <polygon points="42,466 39.0,459.0 45.0,459.0" fill="#4A90D9" />
+  <rect x="28" y="464" width="424" height="40" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="0.8" />
+  <circle cx="42" cy="484" r="10" fill="#4A90D9" />
+  <text x="42" y="488" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">9</text>
+  <text x="58" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">返回 message_id</text>
+  <text x="58" y="492" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">status=pending，此时消息已安全落盘</text>
+  <rect x="480" y="68" width="440" height="448" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <rect x="480" y="68" width="440" height="36" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <rect x="480" y="74" width="440" height="30" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="700" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">投递与重试流程</text>
+  <rect x="488" y="112" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="132" r="10" fill="#52B366" />
+  <text x="502" y="136" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">1</text>
+  <text x="518" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">时间轮tick推进</text>
+  <text x="518" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">每秒推进一槽，取出槽内全部消息</text>
+  <line x1="502" y1="152" x2="502" y2="158" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,158 499.0,151.0 505.0,151.0" fill="#52B366" />
+  <rect x="488" y="156" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="176" r="10" fill="#52B366" />
+  <text x="502" y="180" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">2</text>
+  <text x="518" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">消息降级判断</text>
+  <text x="518" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">若在上层时间轮 → 插入下一层重新等待</text>
+  <line x1="502" y1="196" x2="502" y2="202" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,202 499.0,195.0 505.0,195.0" fill="#52B366" />
+  <rect x="488" y="200" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="220" r="10" fill="#52B366" />
+  <text x="502" y="224" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">3</text>
+  <text x="518" y="214" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">到达第一层</text>
+  <text x="518" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">进入投递流程，提交到Sink投递器线程池</text>
+  <line x1="502" y1="240" x2="502" y2="246" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,246 499.0,239.0 505.0,239.0" fill="#52B366" />
+  <rect x="488" y="244" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="264" r="10" fill="#52B366" />
+  <text x="502" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">4</text>
+  <text x="518" y="258" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">异步执行Sink</text>
+  <text x="518" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">HTTP POST / Kafka Send，不阻塞调度循环</text>
+  <line x1="502" y1="284" x2="502" y2="290" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,290 499.0,283.0 505.0,283.0" fill="#52B366" />
+  <rect x="488" y="288" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="308" r="10" fill="#52B366" />
+  <text x="502" y="312" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">5</text>
+  <text x="518" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">投递成功</text>
+  <text x="518" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">异步删除Redis消息体和索引，同步Slave删除</text>
+  <line x1="502" y1="328" x2="502" y2="334" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,334 499.0,327.0 505.0,327.0" fill="#52B366" />
+  <rect x="488" y="332" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="352" r="10" fill="#52B366" />
+  <text x="502" y="356" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">6</text>
+  <text x="518" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">投递失败·可重试</text>
+  <text x="518" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">指数退避(30s→1m→2m→4m→8m)，重入时间轮</text>
+  <line x1="502" y1="372" x2="502" y2="378" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,378 499.0,371.0 505.0,371.0" fill="#52B366" />
+  <rect x="488" y="376" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="396" r="10" fill="#52B366" />
+  <text x="502" y="400" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">7</text>
+  <text x="518" y="390" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">投递失败·不可重试</text>
+  <text x="518" y="404" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">HTTP 4xx等，直接标记 failed，保留Redis备查</text>
+  <line x1="502" y1="416" x2="502" y2="422" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,422 499.0,415.0 505.0,415.0" fill="#52B366" />
+  <rect x="488" y="420" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="440" r="10" fill="#52B366" />
+  <text x="502" y="444" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">8</text>
+  <text x="518" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">超过5次重试</text>
+  <text x="518" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">状态→failed，消息留Redis供运维排查</text>
+  <line x1="502" y1="460" x2="502" y2="466" stroke="#52B366" stroke-width="1" />
+  <polygon points="502,466 499.0,459.0 505.0,459.0" fill="#52B366" />
+  <rect x="488" y="464" width="424" height="40" fill="#FFF" stroke="#52B366" rx="5" stroke-width="0.8" />
+  <circle cx="502" cy="484" r="10" fill="#52B366" />
+  <text x="502" y="488" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">9</text>
+  <text x="518" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="start">取消流程</text>
+  <text x="518" y="492" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">DELETE API → 定位Master → 内存+Redis删除，O(1)</text>
+  <rect x="20" y="530" width="940" height="68" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <text x="490" y="548" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B4A00" text-anchor="middle">两个关键顺序约束（违反则丢消息或重复投递）</text>
+  <rect x="30" y="558" width="60" height="18" fill="#4A90D9" stroke="none" rx="3" stroke-width="0" />
+  <text x="60" y="571" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">写入约束</text>
+  <text x="126" y="571" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">Redis持久化 → 写内存时间轮 → 返回业务方（顺序不可颠倒）</text>
+  <rect x="500" y="558" width="60" height="18" fill="#52B366" stroke="none" rx="3" stroke-width="0" />
+  <text x="530" y="571" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">投递约束</text>
+  <text x="596" y="571" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#333" text-anchor="start">Sink投递成功 → 删Redis → 认为完成（中间故障 = 至少一次语义）</text>
+</svg>

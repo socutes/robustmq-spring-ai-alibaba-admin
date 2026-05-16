@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="980" height="610" viewBox="0 0 980 610">
+  <ns0:rect width="980" height="670" fill="#FAFBFF" />
+  <ns0:text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">When 集群协调机制</ns0:text>
+  <ns0:text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">全部基于 ETCD · 事件驱动而非主动探测 · 声明式集群状态管理</ns0:text>
+  <ns0:rect x="20" y="70" width="260" height="330" fill="#1E1E2E" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <ns0:text x="30" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="start">ETCD key 空间</ns0:text>
+  <ns0:text x="30" y="104" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#CDD6F4" text-anchor="start">/when/</ns0:text>
+  <ns0:text x="30" y="123" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#A6E3A1" text-anchor="start">  nodes/</ns0:text>
+  <ns0:text x="30" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">    node-1  {ip,port}  ←Lease</ns0:text>
+  <ns0:text x="30" y="161" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">    node-2  {ip,port}  ←Lease</ns0:text>
+  <ns0:text x="30" y="180" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">    node-3  {ip,port}  ←Lease</ns0:text>
+  <ns0:text x="30" y="199" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#FAB387" text-anchor="start">  controller  node-1  ←Lease</ns0:text>
+  <ns0:text x="30" y="218" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#A6E3A1" text-anchor="start">  timewheels/</ns0:text>
+  <ns0:text x="30" y="237" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">    tw-001  {master:node-1,</ns0:text>
+  <ns0:text x="30" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">             slave:node-2}</ns0:text>
+  <ns0:text x="30" y="275" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">    tw-002  {master:node-2,</ns0:text>
+  <ns0:text x="30" y="294" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#89DCEB" text-anchor="start">             slave:node-3}</ns0:text>
+  <ns0:text x="30" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#A6E3A1" text-anchor="start">  config/</ns0:text>
+  <ns0:text x="30" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#F9E2AF" text-anchor="start">    cluster_size  3</ns0:text>
+  <ns0:text x="30" y="351" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#F9E2AF" text-anchor="start">    timewheel_count  12</ns0:text>
+  <ns0:rect x="300" y="70" width="380" height="100" fill="#FAFBFF" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <ns0:rect x="300" y="70" width="380" height="26" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <ns0:rect x="300" y="76" width="380" height="20" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <ns0:text x="490" y="87" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">① 节点注册与保活</ns0:text>
+  <ns0:circle cx="314" cy="104" r="4" fill="#4A90D9" />
+  <ns0:text x="324" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">启动 → PUT /when/nodes/node-N + Lease(TTL=10s)</ns0:text>
+  <ns0:circle cx="314" cy="126" r="4" fill="#4A90D9" />
+  <ns0:text x="324" y="130" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">后台线程每3s续约 KeepAlive（独立线程）</ns0:text>
+  <ns0:circle cx="314" cy="148" r="4" fill="#4A90D9" />
+  <ns0:text x="324" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">续约停止 → ETCD自动删key → 其他节点感知</ns0:text>
+  <ns0:rect x="300" y="182" width="380" height="100" fill="#FAFBFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <ns0:rect x="300" y="182" width="380" height="26" fill="#8B5CF6" stroke="none" rx="6" stroke-width="0" />
+  <ns0:rect x="300" y="188" width="380" height="20" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <ns0:text x="490" y="199" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">② Controller 选举</ns0:text>
+  <ns0:circle cx="314" cy="216" r="4" fill="#8B5CF6" />
+  <ns0:text x="324" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">所有节点同时尝试 Txn: IF NOT EXISTS PUT /when/controller</ns0:text>
+  <ns0:circle cx="314" cy="238" r="4" fill="#8B5CF6" />
+  <ns0:text x="324" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">首个成功的节点成为 Controller（原子保证）</ns0:text>
+  <ns0:circle cx="314" cy="260" r="4" fill="#8B5CF6" />
+  <ns0:text x="324" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">Controller故障 → Lease过期 → Watch触发 → 重新选举</ns0:text>
+  <ns0:rect x="300" y="294" width="380" height="100" fill="#FAFBFF" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <ns0:rect x="300" y="294" width="380" height="26" fill="#E05252" stroke="none" rx="6" stroke-width="0" />
+  <ns0:rect x="300" y="300" width="380" height="20" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <ns0:text x="490" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">③ 节点故障检测与切换</ns0:text>
+  <ns0:circle cx="314" cy="328" r="4" fill="#E05252" />
+  <ns0:text x="324" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">Controller Watch /when/nodes/ 前缀</ns0:text>
+  <ns0:circle cx="314" cy="350" r="4" fill="#E05252" />
+  <ns0:text x="324" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">DELETE事件 → 检查故障节点的Master时间轮</ns0:text>
+  <ns0:circle cx="314" cy="372" r="4" fill="#E05252" />
+  <ns0:text x="324" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">更新 ETCD tw-N: Slave→Master → 新Master感知并接管</ns0:text>
+  <ns0:rect x="300" y="406" width="380" height="100" fill="#FAFBFF" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <ns0:rect x="300" y="406" width="380" height="26" fill="#52B366" stroke="none" rx="6" stroke-width="0" />
+  <ns0:rect x="300" y="412" width="380" height="20" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <ns0:text x="490" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">④ 节点加入与Rebalance</ns0:text>
+  <ns0:circle cx="314" cy="440" r="4" fill="#52B366" />
+  <ns0:text x="324" y="444" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">新节点 PUT /when/nodes/node-new</ns0:text>
+  <ns0:circle cx="314" cy="462" r="4" fill="#52B366" />
+  <ns0:text x="324" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">Controller感知 → 计算负载均衡 → 迁移Slave副本到新节点</ns0:text>
+  <ns0:circle cx="314" cy="484" r="4" fill="#52B366" />
+  <ns0:text x="324" y="488" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">优先迁Slave（不影响写入路径）→ 同步完成后正式承担Slave</ns0:text>
+  <ns0:rect x="700" y="70" width="260" height="440" fill="#FFF5F5" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <ns0:text x="830" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#B00000" text-anchor="middle">故障切换时间线</ns0:text>
+  <ns0:circle cx="722" cy="106" r="6" fill="#E05252" />
+  <ns0:line x1="722" y1="112" x2="722" y2="156" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="110" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="start">T+0s</ns0:text>
+  <ns0:text x="778" y="110" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">Master节点故障（进程崩溃/网络断）</ns0:text>
+  <ns0:circle cx="722" cy="166" r="6" fill="#E09A52" />
+  <ns0:line x1="722" y1="172" x2="722" y2="216" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E09A52" text-anchor="start">T+3s</ns0:text>
+  <ns0:text x="778" y="170" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">ETCD Lease续约停止</ns0:text>
+  <ns0:circle cx="722" cy="216" r="6" fill="#E09A52" />
+  <ns0:line x1="722" y1="222" x2="722" y2="266" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E09A52" text-anchor="start">T+10s</ns0:text>
+  <ns0:text x="778" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">Lease TTL到期 → key自动删除</ns0:text>
+  <ns0:circle cx="722" cy="266" r="6" fill="#4A90D9" />
+  <ns0:line x1="722" y1="272" x2="722" y2="316" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="270" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="start">T+10s</ns0:text>
+  <ns0:text x="778" y="270" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">Controller Watch触发DELETE事件</ns0:text>
+  <ns0:circle cx="722" cy="316" r="6" fill="#4A90D9" />
+  <ns0:line x1="722" y1="322" x2="722" y2="366" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="start">T+11s</ns0:text>
+  <ns0:text x="778" y="320" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">Controller更新ETCD: Slave→Master</ns0:text>
+  <ns0:circle cx="722" cy="366" r="6" fill="#52B366" />
+  <ns0:line x1="722" y1="372" x2="722" y2="416" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="370" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">T+11s</ns0:text>
+  <ns0:text x="778" y="370" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">新Master Watch到tw-N变化</ns0:text>
+  <ns0:circle cx="722" cy="416" r="6" fill="#52B366" />
+  <ns0:line x1="722" y1="422" x2="722" y2="466" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="420" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">T+12s</ns0:text>
+  <ns0:text x="778" y="420" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">新Master从Redis加载未投递消息</ns0:text>
+  <ns0:circle cx="722" cy="466" r="6" fill="#52B366" />
+  <ns0:line x1="722" y1="472" x2="722" y2="516" stroke="#EEE" stroke-width="1.5" />
+  <ns0:text x="732" y="470" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">T+13s</ns0:text>
+  <ns0:text x="778" y="470" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">新Master开始调度，业务恢复</ns0:text>
+  <ns0:circle cx="722" cy="516" r="6" fill="#888" />
+  <ns0:text x="732" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#888" text-anchor="start">T+15s</ns0:text>
+  <ns0:text x="778" y="520" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">Controller为tw-N分配新Slave</ns0:text>
+  <ns0:rect x="710" y="455" width="240" height="44" fill="#FFD0D0" stroke="#E05252" rx="6" stroke-width="1.5" />
+  <ns0:text x="830" y="472" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#C00000" text-anchor="middle">SLA: Master故障后 Slave 在 10秒内接管</ns0:text>
+  <ns0:text x="830" y="490" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">已写入 Redis 的消息: 绝对不丢 · 正在投递的消息: 至少一次</ns0:text>
+  <ns0:rect x="20" y="550" width="940" height="44" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <ns0:text x="490" y="566" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2C5282" text-anchor="middle">核心设计：Controller 不主动 ping 节点，而是被动响应 ETCD Watch 事件流——「主动探测」变「事件驱动」</ns0:text>
+  <ns0:text x="490" y="582" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">Lease由独立线程续约，GC停顿和业务线程繁忙不影响心跳——只有真正"节点失能"才触发切换</ns0:text>
+</ns0:svg>

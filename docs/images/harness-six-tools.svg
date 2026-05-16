@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect x="0" y="0" width="960" height="580" fill="#FAFBFF" stroke="none" rx="6" stroke-width="1.5" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Harness：六个工具组成三道防线</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">AI 不是被信任的，是被工程化使用的——前中后全覆盖</text>
+  <rect x="20" y="130" width="110" height="106" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="75" y="175" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">上下文层</text>
+  <text x="75" y="193" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">隔离与保护</text>
+  <rect x="20" y="252" width="110" height="124" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <text x="75" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="middle">防线层</text>
+  <text x="75" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">前·中·后三道保障</text>
+  <rect x="20" y="392" width="110" height="106" fill="#E8F0FF" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <text x="75" y="437" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="middle">基础层</text>
+  <text x="75" y="455" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">让 AI 懂规则、用能力</text>
+  <rect x="144" y="137" width="386" height="92" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="144" y="137" width="386" height="7" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="144" y="140" width="386" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="337" y="159" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Subagents</text>
+  <text x="337" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">上下文隔离</text>
+  <text x="337" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">读大量代码 / 并行任务，隔离在子上下文里，主对话保持干净</text>
+  <text x="337" y="209" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">上下文压力大时用 · 轻量手工模式下非必需</text>
+  <rect x="216" y="258" width="44" height="18" fill="#E09A52" stroke="none" rx="9" stroke-width="0" />
+  <text x="238" y="271" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">前置</text>
+  <rect x="414" y="258" width="44" height="18" fill="#E09A52" stroke="none" rx="9" stroke-width="0" />
+  <text x="436" y="271" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">中置</text>
+  <rect x="612" y="258" width="44" height="18" fill="#E09A52" stroke="none" rx="9" stroke-width="0" />
+  <text x="634" y="271" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">后置</text>
+  <rect x="144" y="280" width="188" height="92" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="2" />
+  <rect x="144" y="280" width="188" height="7" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <rect x="144" y="283" width="188" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="238" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E09A52" text-anchor="middle">Plan Mode</text>
+  <text x="238" y="317" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">前置规划</text>
+  <text x="238" y="335" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">AI 先 plan 后执行</text>
+  <text x="238" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">重要操作必开</text>
+  <rect x="342" y="280" width="188" height="92" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="2" />
+  <rect x="342" y="280" width="188" height="7" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <rect x="342" y="283" width="188" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="436" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E09A52" text-anchor="middle">Permission</text>
+  <text x="436" y="317" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">事前权限</text>
+  <text x="436" y="335" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">allow / ask / deny</text>
+  <text x="436" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">划定 AI 自主边界</text>
+  <rect x="540" y="280" width="188" height="92" fill="#FEF3E8" stroke="#E09A52" rx="8" stroke-width="2" />
+  <rect x="540" y="280" width="188" height="7" fill="#E09A52" stroke="none" rx="4" stroke-width="0" />
+  <rect x="540" y="283" width="188" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="634" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E09A52" text-anchor="middle">Hooks</text>
+  <text x="634" y="317" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">事后验证</text>
+  <text x="634" y="335" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">lint / 跑测试 / 自动 format</text>
+  <text x="634" y="352" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">错误在 AI 手里拦住</text>
+  <rect x="144" y="399" width="188" height="92" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="144" y="399" width="188" height="7" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="144" y="402" width="188" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="238" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#4A90D9" text-anchor="middle">CLAUDE.md</text>
+  <text x="238" y="436" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">项目说明书</text>
+  <text x="238" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">让 AI 懂项目规则</text>
+  <text x="238" y="471" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">一次写，持续生效</text>
+  <rect x="342" y="399" width="188" height="92" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="342" y="399" width="188" height="7" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="342" y="402" width="188" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="436" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#4A90D9" text-anchor="middle">Skills / Slash Commands</text>
+  <text x="436" y="436" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">能力封装</text>
+  <text x="436" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">沉淀可复用工作流</text>
+  <text x="436" y="471" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">反复调用不重复讲</text>
+  <rect x="746" y="130" width="198" height="312" fill="#F8F8FF" stroke="#C0C8E0" rx="8" stroke-width="1" />
+  <text x="845" y="150" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#1A3A6B" text-anchor="middle">六工具分工</text>
+  <rect x="754" y="166" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="180" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">CLAUDE.md</text>
+  <text x="768" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">项目上下文</text>
+  <rect x="754" y="212" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="226" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">Skills</text>
+  <text x="768" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">能力杠杆</text>
+  <rect x="754" y="258" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">Subagents</text>
+  <text x="768" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">上下文保护</text>
+  <rect x="754" y="304" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">Plan Mode</text>
+  <text x="768" y="334" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">前置安全网</text>
+  <rect x="754" y="350" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">Permission</text>
+  <text x="768" y="380" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">中置安全网</text>
+  <rect x="754" y="396" width="182" height="38" fill="#fff" stroke="#DDE4F0" rx="6" stroke-width="1" />
+  <text x="768" y="410" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="start">Hooks</text>
+  <text x="768" y="426" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">后置安全网</text>
+</svg>

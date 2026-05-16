@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="510" viewBox="0 0 880 510">
+  <rect width="880" height="510" fill="#FAFBFF" />
+  <text x="440" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">SDD + Harness = 完整闭环</text>
+  <text x="440" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">SDD 告诉 AI 做什么，Harness 保证 AI 做对——少一个，另一个价值严重稀释</text>
+  <rect x="40" y="80" width="380" height="300" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="40" y="80" width="380" height="8" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="40" y="84" width="380" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="230" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#4A90D9" text-anchor="middle">SDD</text>
+  <text x="230" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#4A90D9" text-anchor="middle">解决"想"的问题</text>
+  <rect x="56" y="150" width="348" height="44" fill="#fff" stroke="#B0CCE8" rx="6" stroke-width="1" />
+  <text x="78" y="166" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="start">spec.md</text>
+  <text x="78" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">结构化需求，有验收标准</text>
+  <rect x="56" y="204" width="348" height="44" fill="#fff" stroke="#B0CCE8" rx="6" stroke-width="1" />
+  <text x="78" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="start">plan.md</text>
+  <text x="78" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">架构决策，模块划分</text>
+  <rect x="56" y="258" width="348" height="44" fill="#fff" stroke="#B0CCE8" rx="6" stroke-width="1" />
+  <text x="78" y="274" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="start">tasks.md</text>
+  <text x="78" y="290" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">可执行清单，边界清晰</text>
+  <rect x="56" y="312" width="348" height="44" fill="#fff" stroke="#B0CCE8" rx="6" stroke-width="1" />
+  <text x="78" y="328" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="start">delta spec</text>
+  <text x="78" y="344" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">改造/增量场景专用</text>
+  <rect x="460" y="80" width="380" height="300" fill="#FEF3E8" stroke="#E09A52" rx="10" stroke-width="2" />
+  <rect x="460" y="80" width="380" height="8" fill="#E09A52" stroke="none" rx="5" stroke-width="0" />
+  <rect x="460" y="84" width="380" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="650" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#E09A52" text-anchor="middle">Harness</text>
+  <text x="650" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#E09A52" text-anchor="middle">解决"做"的问题</text>
+  <rect x="476" y="150" width="348" height="44" fill="#fff" stroke="#E0C090" rx="6" stroke-width="1" />
+  <text x="498" y="166" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#C07020" text-anchor="start">CLAUDE.md + Skills</text>
+  <text x="498" y="182" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">项目规则 + 能力杠杆</text>
+  <rect x="476" y="204" width="348" height="44" fill="#fff" stroke="#E0C090" rx="6" stroke-width="1" />
+  <text x="498" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#C07020" text-anchor="start">Plan Mode + Permission</text>
+  <text x="498" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">前置规划 + 事前权限</text>
+  <rect x="476" y="258" width="348" height="44" fill="#fff" stroke="#E0C090" rx="6" stroke-width="1" />
+  <text x="498" y="274" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#C07020" text-anchor="start">Hooks</text>
+  <text x="498" y="290" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">事后自动验证</text>
+  <rect x="476" y="312" width="348" height="44" fill="#fff" stroke="#E0C090" rx="6" stroke-width="1" />
+  <text x="498" y="328" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#C07020" text-anchor="start">Subagents</text>
+  <text x="498" y="344" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">上下文隔离保护</text>
+  <rect x="430" y="160" width="20" height="200" fill="#F5F5FF" stroke="#9090D0" rx="8" stroke-width="1.5" />
+  <text x="440" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#6060C0" text-anchor="middle">AI</text>
+  <text x="440" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#6060C0" text-anchor="middle">执行</text>
+  <polygon points="430,260 416,253 416,267" fill="#4A90D9" />
+  <line x1="420" y1="260" x2="430" y2="260" stroke="#4A90D9" stroke-width="2" />
+  <text x="380" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">目标</text>
+  <polygon points="460,260 446,253 446,267" fill="#E09A52" />
+  <line x1="450" y1="260" x2="460" y2="260" stroke="#E09A52" stroke-width="2" />
+  <text x="456" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">约束</text>
+  <rect x="40" y="394" width="800" height="80" fill="#F0F4FF" stroke="#B0C0E0" rx="8" stroke-width="1" />
+  <text x="440" y="414" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A3A6B" text-anchor="middle">底层假设：AI 不是被信任的，是被工程化使用的</text>
+  <text x="440" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">能力极强但缺判断边界 → 需要被精确指挥、严格约束、持续校验</text>
+  <text x="440" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">只学 SDD：目标清晰但执行失控 ｜ 只学 Harness：约束严格但目标模糊</text>
+</svg>

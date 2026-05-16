@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">SDD 三种落地模式对比</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">没有优劣——场景不同，选最合适的</text>
+  <rect x="160" y="74" width="258" height="52" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="160" y="74" width="258" height="8" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="160" y="78" width="258" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="289" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#4A90D9" text-anchor="middle">自动化模式</text>
+  <text x="289" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#4A90D9" text-anchor="middle">Spec-Kit</text>
+  <rect x="424" y="74" width="258" height="52" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="424" y="74" width="258" height="8" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="424" y="78" width="258" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="553" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#8B5CF6" text-anchor="middle">手动控制模式</text>
+  <text x="553" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#8B5CF6" text-anchor="middle">OpenSpec</text>
+  <rect x="688" y="74" width="258" height="52" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="688" y="74" width="258" height="8" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <rect x="688" y="78" width="258" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="817" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#52B366" text-anchor="middle">轻量手工模式</text>
+  <text x="817" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#52B366" text-anchor="middle">无专用工具</text>
+  <rect x="20" y="132" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">任务拆分</text>
+  <rect x="160" y="132" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">AI 自动拆</text>
+  <rect x="424" y="132" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">人拆任务</text>
+  <rect x="688" y="132" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">人脑拆任务</text>
+  <rect x="20" y="196" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="231" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 推断轮数</text>
+  <rect x="160" y="196" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="231" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">两轮叠加（拆+执行）</text>
+  <rect x="424" y="196" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="231" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">一轮（只执行）</text>
+  <rect x="688" y="196" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="231" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">一轮（只执行）</text>
+  <rect x="20" y="260" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="295" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">任务粒度</text>
+  <rect x="160" y="260" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="295" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">偏大（功能级）</text>
+  <rect x="424" y="260" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="295" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">中等（子功能级）</text>
+  <rect x="688" y="260" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="295" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">最小（函数/类级）</text>
+  <rect x="20" y="324" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="359" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">发现错误时机</text>
+  <rect x="160" y="324" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="359" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">最后 review 代码时</text>
+  <rect x="424" y="324" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="359" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">每个任务完成后</text>
+  <rect x="688" y="324" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="359" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">每段代码完成后</text>
+  <rect x="20" y="388" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">适合场景</text>
+  <rect x="160" y="388" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">新手·中等复杂度·快速试错</text>
+  <rect x="424" y="388" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">系统级·0到1新项目·关键路径</text>
+  <rect x="688" y="388" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">熟悉项目·增量开发·关键路径</text>
+  <rect x="20" y="452" width="130" height="60" fill="#F0F4FF" stroke="#B0C4E8" rx="6" stroke-width="1" />
+  <text x="85" y="487" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A3A6B" text-anchor="middle">工程师角色</text>
+  <rect x="160" y="452" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="289" y="487" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">产品经理视角</text>
+  <rect x="424" y="452" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="553" y="487" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">团队 Leader 视角</text>
+  <rect x="688" y="452" width="258" height="60" fill="#fff" stroke="#E0E8F0" rx="6" stroke-width="1" />
+  <text x="817" y="487" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">工程师本色</text>
+  <rect x="20" y="522" width="920" height="44" fill="#F5F5F5" stroke="#CCC" rx="8" stroke-width="1" />
+  <text x="480" y="538" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">delta spec（OpenSpec 独有）：写"这次要改什么"，不写完整 spec，专为改造/开源贡献/增量 feature 设计</text>
+  <text x="480" y="554" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">三种模式不是替代关系，成熟工程师三种都会，按场景切换</text>
+</svg>

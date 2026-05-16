@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="580" viewBox="0 0 880 580">
+  <rect width="880" height="580" fill="#FAFBFF" />
+  <text x="440" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">选哪种 SDD 模式？</text>
+  <text x="440" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">按项目类型和工程师能力选，不按"好坏"选</text>
+  <polygon points="440,77 570,115 440,153 310,115" fill="#FFF8E8" stroke="#E09A52" stroke-width="2" />
+  <text x="440" y="120" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">改造 / 增量开发？</text>
+  <line x1="570" y1="115" x2="670" y2="115" stroke="#999" stroke-width="1.5" />
+  <polygon points="670,115 662.0,119.0 662.0,111.0" fill="#999" />
+  <text x="615" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">YES</text>
+  <rect x="670" y="84" width="185" height="76" fill="#FEF3E8" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="670" y="84" width="185" height="7" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="670" y="87" width="185" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="762" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="middle">OpenSpec</text>
+  <text x="762" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">delta spec 模式</text>
+  <text x="762" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">改造/开源 PR 场景</text>
+  <line x1="440" y1="153" x2="440" y2="210" stroke="#999" stroke-width="1.5" />
+  <polygon points="440,210 436.0,202.0 444.0,202.0" fill="#999" />
+  <text x="450" y="185" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">NO</text>
+  <polygon points="440,197 595,235 440,273 285,235" fill="#FFF8E8" stroke="#E09A52" stroke-width="2" />
+  <text x="440" y="240" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">对项目和技术栈熟悉吗？</text>
+  <line x1="285" y1="235" x2="170" y2="235" stroke="#999" stroke-width="1.5" />
+  <polygon points="170,235 178.0,231.0 178.0,239.0" fill="#999" />
+  <text x="218" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">NO</text>
+  <rect x="20" y="204" width="150" height="76" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="2" />
+  <rect x="20" y="204" width="150" height="7" fill="#4A90D9" stroke="none" rx="4" stroke-width="0" />
+  <rect x="20" y="207" width="150" height="4" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="95" y="226" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#4A90D9" text-anchor="middle">Spec-Kit 自动化</text>
+  <text x="95" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">AI 拆任务执行</text>
+  <text x="95" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">新手/中等复杂度</text>
+  <line x1="440" y1="273" x2="440" y2="330" stroke="#999" stroke-width="1.5" />
+  <polygon points="440,330 436.0,322.0 444.0,322.0" fill="#999" />
+  <text x="450" y="305" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">YES</text>
+  <polygon points="440,317 595,355 440,393 285,355" fill="#FFF8E8" stroke="#E09A52" stroke-width="2" />
+  <text x="440" y="360" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">方案能在脑子里跑通吗？</text>
+  <line x1="595" y1="355" x2="690" y2="355" stroke="#999" stroke-width="1.5" />
+  <polygon points="690,355 682.0,359.0 682.0,351.0" fill="#999" />
+  <text x="635" y="348" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">YES</text>
+  <rect x="690" y="324" width="168" height="76" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="690" y="324" width="168" height="7" fill="#52B366" stroke="none" rx="4" stroke-width="0" />
+  <rect x="690" y="327" width="168" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="774" y="346" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="middle">轻量手工模式</text>
+  <text x="774" y="364" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">CLAUDE.md + Skill</text>
+  <text x="774" y="380" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">最高产出可控性</text>
+  <line x1="440" y1="393" x2="440" y2="450" stroke="#999" stroke-width="1.5" />
+  <polygon points="440,450 436.0,442.0 444.0,442.0" fill="#999" />
+  <text x="450" y="425" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">NO</text>
+  <rect x="322" y="450" width="236" height="76" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="322" y="450" width="236" height="7" fill="#8B5CF6" stroke="none" rx="4" stroke-width="0" />
+  <rect x="322" y="453" width="236" height="4" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="440" y="472" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="middle">OpenSpec 手动模式</text>
+  <text x="440" y="490" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">人拆任务 AI 执行</text>
+  <text x="440" y="506" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">系统级/0到1新项目</text>
+</svg>

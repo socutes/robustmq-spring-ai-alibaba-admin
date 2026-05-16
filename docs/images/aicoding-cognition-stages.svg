@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#FAFBFF" />
+  <rect width="900" height="360" fill="#FAFBFF" />
+  <text x="450" y="36" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 编程的认知三阶段</text>
+  <text x="450" y="58" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">绝大多数人卡在第二阶段，卡在这里的根源是把"学工具"等同于"用好工具"</text>
+  <rect x="48" y="74" width="248" height="220" fill="#E8F4FD" stroke="#4A90D9" rx="10" stroke-width="2" />
+  <rect x="48" y="74" width="248" height="10" fill="#4A90D9" stroke="none" rx="5" stroke-width="0" />
+  <rect x="48" y="79" width="248" height="5" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="172" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">第一阶段</text>
+  <text x="172" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#4A90D9" text-anchor="middle">把 AI 当写代码工具</text>
+  <text x="172" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">生成代码 / 补函数 / 改 bug</text>
+  <text x="172" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">比 Stack Overflow 更快</text>
+  <text x="172" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">天花板：约 1.5x 提速</text>
+  <rect x="117" y="260" width="110" height="24" fill="#4A90D9" stroke="none" rx="12" stroke-width="0" />
+  <text x="172" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Copilot 时代</text>
+  <rect x="326" y="74" width="248" height="220" fill="#FEF3E8" stroke="#E09A52" rx="10" stroke-width="2" />
+  <rect x="326" y="74" width="248" height="10" fill="#E09A52" stroke="none" rx="5" stroke-width="0" />
+  <rect x="326" y="79" width="248" height="5" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="450" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">第二阶段</text>
+  <text x="450" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E09A52" text-anchor="middle">追逐奇技淫巧</text>
+  <text x="450" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">prompt 技巧 / agent 模式</text>
+  <text x="450" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">hook / MCP / Skills / Subagents</text>
+  <text x="450" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">越学越多，越多越焦虑</text>
+  <rect x="395" y="260" width="110" height="24" fill="#E09A52" stroke="none" rx="12" stroke-width="0" />
+  <text x="450" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">当下最大人群</text>
+  <text x="450" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E03030" text-anchor="middle">▲ 大多数人卡在这里</text>
+  <rect x="328" y="76" width="244" height="6" fill="#E03030" rx="3" opacity="0.35" />
+  <rect x="604" y="74" width="248" height="220" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="604" y="74" width="248" height="10" fill="#52B366" stroke="none" rx="5" stroke-width="0" />
+  <rect x="604" y="79" width="248" height="5" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="728" y="102" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#999" text-anchor="middle">第三阶段</text>
+  <text x="728" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#52B366" text-anchor="middle">工作流思维</text>
+  <text x="728" y="154" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">AI 进入整条工程链路</text>
+  <text x="728" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">从需求到上线全覆盖</text>
+  <text x="728" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">人的角色变为设计者</text>
+  <rect x="673" y="260" width="110" height="24" fill="#52B366" stroke="none" rx="12" stroke-width="0" />
+  <text x="728" y="276" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">少数人已达到</text>
+  <line x1="300" y1="184" x2="318" y2="184" stroke="#BBB" stroke-width="2.5" marker-end="url(#arrowhead)" stroke-dasharray="0" />
+  <line x1="578" y1="184" x2="596" y2="184" stroke="#BBB" stroke-width="2.5" marker-end="url(#arrowhead)" stroke-dasharray="5,3" />
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#BBB" />
+    </marker>
+  </defs>
+  <text x="589" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#BBB" text-anchor="middle">不平滑</text>
+</svg>

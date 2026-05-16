@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500">
+  <rect width="960" height="500" fill="#FAFBFF" />
+  <rect width="960" height="500" fill="#F8FAFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="bold" fill="#1A3A6B" text-anchor="middle">三个场景下的七层工具协作</text>
+  <text x="480" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">颜色越深 = 该层在此场景中越核心</text>
+  <rect x="98" y="66" width="283" height="46" fill="#EBF4FF" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="239" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#1A3A6B" text-anchor="middle">写新模块</text>
+  <rect x="384" y="66" width="283" height="46" fill="#FFF4EB" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="525" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#1A3A6B" text-anchor="middle">大型项目改造</text>
+  <rect x="670" y="66" width="283" height="46" fill="#EBFFEB" stroke="#CCC" rx="6" stroke-width="1" />
+  <text x="811" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#1A3A6B" text-anchor="middle">接入 CI/CD</text>
+  <text x="47" y="135" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">方法论</text>
+  <text x="47" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">层</text>
+  <rect x="98" y="115" width="283" height="52" fill="#E05252" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">SDD 先行 / Spec-Kit</text>
+  <rect x="384" y="115" width="283" height="52" fill="#F1B1B1" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">OpenSpec delta</text>
+  <rect x="670" y="115" width="283" height="52" fill="#F2F2F2" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">—</text>
+  <text x="47" y="190" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">工作流</text>
+  <text x="47" y="203" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">层</text>
+  <rect x="98" y="170" width="283" height="52" fill="#F2F2F2" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="201" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">—</text>
+  <rect x="384" y="170" width="283" height="52" fill="#F2F2F2" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="201" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">—</text>
+  <rect x="670" y="170" width="283" height="52" fill="#E09A52" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="193.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">GitHub Actions</text>
+  <text x="811" y="209.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">事件触发</text>
+  <text x="47" y="245" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E07070" text-anchor="middle">协议生</text>
+  <text x="47" y="258" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E07070" text-anchor="middle">态层</text>
+  <rect x="98" y="225" width="283" height="52" fill="#F2F2F2" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">—</text>
+  <rect x="384" y="225" width="283" height="52" fill="#F1BEBE" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">MCP 集成外部系统</text>
+  <rect x="670" y="225" width="283" height="52" fill="#E07070" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="256" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">gh CLI / MCP</text>
+  <text x="47" y="300" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">协作机</text>
+  <text x="47" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">制层</text>
+  <rect x="98" y="280" width="283" height="52" fill="#CAB5FA" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">Plan Mode 确认</text>
+  <rect x="384" y="280" width="283" height="52" fill="#8B5CF6" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Subagents 并行读</text>
+  <rect x="670" y="280" width="283" height="52" fill="#F2F2F2" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="311" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AAA" text-anchor="middle">—</text>
+  <text x="47" y="355" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#D4A843" text-anchor="middle">配置约</text>
+  <text x="47" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#D4A843" text-anchor="middle">束层</text>
+  <rect x="98" y="335" width="283" height="52" fill="#D4A843" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="358.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">CLAUDE.md</text>
+  <text x="239" y="374.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Hooks 验收</text>
+  <rect x="384" y="335" width="283" height="52" fill="#D4A843" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="358.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Permissions</text>
+  <text x="525" y="374.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Hooks 防改核心</text>
+  <rect x="670" y="335" width="283" height="52" fill="#EBD7AA" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="358.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">CLAUDE.md</text>
+  <text x="811" y="374.0" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">review 标准</text>
+  <text x="47" y="410" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">工具层</text>
+  <text x="47" y="423" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle" />
+  <rect x="98" y="390" width="283" height="52" fill="#52B366" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">Claude Code</text>
+  <rect x="384" y="390" width="283" height="52" fill="#B1DCBA" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">Claude Code 执行</text>
+  <rect x="670" y="390" width="283" height="52" fill="#52B366" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">claude -p Headless</text>
+  <text x="47" y="465" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">模型层</text>
+  <text x="47" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle" />
+  <rect x="98" y="445" width="283" height="52" fill="#ADCDED" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="239" y="476" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">Claude</text>
+  <rect x="384" y="445" width="283" height="52" fill="#ADCDED" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="525" y="476" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">Claude</text>
+  <rect x="670" y="445" width="283" height="52" fill="#ADCDED" stroke="#E0E0E0" rx="5" stroke-width="1" />
+  <text x="811" y="476" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">Claude</text>
+  <rect x="98" y="508" width="14" height="14" fill="#4A90D9" stroke="#CCC" rx="3" stroke-width="1" />
+  <text x="118" y="519" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="start">核心层</text>
+  <rect x="198" y="508" width="14" height="14" fill="#A8C8F0" stroke="#CCC" rx="3" stroke-width="1" />
+  <text x="218" y="519" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="start">辅助层</text>
+  <rect x="298" y="508" width="14" height="14" fill="#F2F2F2" stroke="#CCC" rx="3" stroke-width="1" />
+  <text x="318" y="519" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="start">不涉及</text>
+</svg>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 编程工具核心能力：高度趋同</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">工具名字不同，能力越来越像——差距从"选工具"转移到"用得熟不熟"</text>
+  <rect x="168" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="231" y="99" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">MCP 支持</text>
+  <rect x="299" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="362" y="99" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Subagents</text>
+  <rect x="430" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="493" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Permission</text>
+  <text x="493" y="105" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">/Hooks</text>
+  <rect x="561" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="624" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Spec-Driven</text>
+  <text x="624" y="105" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">工作流</text>
+  <rect x="692" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="755" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">多模型</text>
+  <text x="755" y="105" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">支持</text>
+  <rect x="823" y="72" width="127" height="46" fill="#F0F4FF" stroke="#B0C0E0" rx="6" stroke-width="1" />
+  <text x="886" y="89" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">IDE</text>
+  <text x="886" y="105" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">集成</text>
+  <rect x="20" y="124" width="140" height="58" fill="#F8F8FF" stroke="#E05252" rx="6" stroke-width="1.5" />
+  <text x="90" y="147" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E05252" text-anchor="middle">Claude Code</text>
+  <text x="90" y="163" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">Anthropic</text>
+  <rect x="168" y="130" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="231" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="299" y="130" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="362" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="430" y="130" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="493" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="561" y="130" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="624" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="692" y="130" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="755" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="823" y="130" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="886" y="157" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="20" y="186" width="140" height="58" fill="#F8F8FF" stroke="#4A90D9" rx="6" stroke-width="1.5" />
+  <text x="90" y="209" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="middle">Cursor</text>
+  <text x="90" y="225" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">Cursor Inc</text>
+  <rect x="168" y="192" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="231" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="299" y="192" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="362" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="430" y="192" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="493" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="561" y="192" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="624" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="692" y="192" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="755" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="823" y="192" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="886" y="219" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="20" y="248" width="140" height="58" fill="#F8F8FF" stroke="#52B366" rx="6" stroke-width="1.5" />
+  <text x="90" y="271" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="middle">Codex CLI</text>
+  <text x="90" y="287" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">OpenAI</text>
+  <rect x="168" y="254" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="231" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="299" y="254" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="362" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="430" y="254" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="493" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="561" y="254" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="624" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="692" y="254" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="755" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="823" y="254" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="886" y="281" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="20" y="310" width="140" height="58" fill="#F8F8FF" stroke="#8B5CF6" rx="6" stroke-width="1.5" />
+  <text x="90" y="333" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Cline</text>
+  <text x="90" y="349" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">开源社区</text>
+  <rect x="168" y="316" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="231" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="299" y="316" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="362" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="430" y="316" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="493" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="561" y="316" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="624" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="692" y="316" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="755" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="823" y="316" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="886" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="20" y="372" width="140" height="58" fill="#F8F8FF" stroke="#E09A52" rx="6" stroke-width="1.5" />
+  <text x="90" y="395" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="middle">Gemini CLI</text>
+  <text x="90" y="411" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">Google</text>
+  <rect x="168" y="378" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="231" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="299" y="378" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="362" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="430" y="378" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="493" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="561" y="378" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="624" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="692" y="378" width="127" height="46" fill="#FFF3CC" stroke="#8B6000" rx="6" stroke-width="1" />
+  <text x="755" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <rect x="823" y="378" width="127" height="46" fill="#C8F0C8" stroke="#1A5A1A" rx="6" stroke-width="1" />
+  <text x="886" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <rect x="20" y="444" width="920" height="54" fill="#F5F5F5" stroke="#CCC" rx="8" stroke-width="1" />
+  <rect x="40" y="458" width="24" height="22" fill="#C8F0C8" stroke="#1A5A1A" rx="4" stroke-width="1" />
+  <text x="52" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A5A1A" text-anchor="middle">✓</text>
+  <text x="74" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">完整支持</text>
+  <rect x="260" y="458" width="24" height="22" fill="#FFF3CC" stroke="#8B6000" rx="4" stroke-width="1" />
+  <text x="272" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B6000" text-anchor="middle">△</text>
+  <text x="294" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">部分/间接支持</text>
+  <text x="560" y="474" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#1A3A6B" text-anchor="middle">工具在收敛，真正的差距在于：你用得多熟、判断准不准</text>
+</svg>

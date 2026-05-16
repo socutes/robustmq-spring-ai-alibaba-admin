@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <rect width="960" height="520" fill="#FAFBFF" />
+  <text x="480" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">AI 行业演化：三阶段时间轴</text>
+  <text x="480" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">2026 年还在第一阶段——基础设施大爆发期，应用层尚未起来</text>
+  <line x1="60" y1="200" x2="900" y2="200" stroke="#C0C8E0" stroke-width="3" />
+  <polygon points="900,200 890,195 890,205" fill="#C0C8E0" />
+  <circle cx="180" cy="200" r="8" fill="#E05252" stroke="#fff" stroke-width="3" />
+  <rect x="60" y="224" width="240" height="190" fill="#FFF0F0" stroke="#E05252" rx="10" stroke-width="2" />
+  <rect x="60" y="224" width="240" height="7" fill="#E05252" stroke="none" rx="5" stroke-width="0" />
+  <rect x="60" y="227" width="240" height="4" fill="#E05252" stroke="none" rx="0" stroke-width="0" />
+  <text x="180" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">2024–2026</text>
+  <text x="180" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E05252" text-anchor="middle">第一阶段</text>
+  <text x="180" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E05252" text-anchor="middle">基础设施大爆发</text>
+  <rect x="74" y="293" width="212" height="20" fill="#fff" stroke="#E05252" rx="4" stroke-width="1" />
+  <text x="180" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">MCP 协议确立</text>
+  <rect x="74" y="317" width="212" height="20" fill="#fff" stroke="#E05252" rx="4" stroke-width="1" />
+  <text x="180" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">Agent 运行时涌现</text>
+  <rect x="74" y="341" width="212" height="20" fill="#fff" stroke="#E05252" rx="4" stroke-width="1" />
+  <text x="180" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">AI 编程工具趋同</text>
+  <rect x="74" y="365" width="212" height="20" fill="#fff" stroke="#E05252" rx="4" stroke-width="1" />
+  <text x="180" y="378" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">SDD/Harness 成熟</text>
+  <rect x="150" y="162" width="60" height="22" fill="#E05252" stroke="none" rx="11" stroke-width="0" />
+  <text x="180" y="177" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">← 当前</text>
+  <text x="180" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">2024–2026</text>
+  <circle cx="480" cy="200" r="8" fill="#C0C8E0" stroke="#fff" stroke-width="3" />
+  <rect x="360" y="224" width="240" height="190" fill="#FEF3E8" stroke="#E09A52" rx="10" stroke-width="1.5" />
+  <rect x="360" y="224" width="240" height="7" fill="#E09A52" stroke="none" rx="5" stroke-width="0" />
+  <rect x="360" y="227" width="240" height="4" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="480" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">2027–2028</text>
+  <text x="480" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E09A52" text-anchor="middle">第二阶段</text>
+  <text x="480" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="middle">应用层起来</text>
+  <rect x="374" y="293" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="480" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">垂直场景 AI 应用爆发</text>
+  <rect x="374" y="317" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="480" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">企业 AI 落地普及</text>
+  <rect x="374" y="341" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="480" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">Agent OS 成熟</text>
+  <rect x="374" y="365" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="480" y="378" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">30%→50% 提速</text>
+  <text x="480" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#AAA" text-anchor="middle">2027–2028</text>
+  <circle cx="780" cy="200" r="8" fill="#C0C8E0" stroke="#fff" stroke-width="3" />
+  <rect x="660" y="224" width="240" height="190" fill="#EDF9EE" stroke="#52B366" rx="10" stroke-width="1.5" />
+  <rect x="660" y="224" width="240" height="7" fill="#52B366" stroke="none" rx="5" stroke-width="0" />
+  <rect x="660" y="227" width="240" height="4" fill="#52B366" stroke="none" rx="0" stroke-width="0" />
+  <text x="780" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">2029+</text>
+  <text x="780" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#52B366" text-anchor="middle">第三阶段</text>
+  <text x="780" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="middle">大规模商业化</text>
+  <rect x="674" y="293" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="780" y="306" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">AI 应用产生大规模商业价值</text>
+  <rect x="674" y="317" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="780" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">全流程 AI 协作常态化</text>
+  <rect x="674" y="341" width="212" height="20" fill="#F8F8F8" stroke="#DDD" rx="4" stroke-width="1" />
+  <text x="780" y="354" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">AI 编程进入大众市场</text>
+  <text x="780" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#AAA" text-anchor="middle">2029+</text>
+  <rect x="40" y="430" width="880" height="52" fill="#F0F4FF" stroke="#B0C0E0" rx="8" stroke-width="1" />
+  <text x="480" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">推断依据：基础设施稳定 → 应用层才能大规模建设；模型可靠性提升 → 自主编程才能上生产</text>
+  <text x="480" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">这是初步推断，不是预测。每 6–12 个月用新数据校准</text>
+</svg>

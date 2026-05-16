@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <rect width="980" height="560" fill="#FAFBFF" />
+  <text x="490" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">When：从一句话需求到上线部署的 AI 全流程</text>
+  <text x="490" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">每个阶段 AI 真实参与 · 每个阶段有真实产出 · 每个阶段有 review 记录</text>
+  <rect x="18" y="70" width="184" height="258" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <rect x="18" y="70" width="184" height="48" fill="#8B5CF6" stroke="none" rx="6" stroke-width="0" />
+  <rect x="18" y="76" width="184" height="42" fill="#8B5CF6" stroke="none" rx="0" stroke-width="0" />
+  <text x="110" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">1</text>
+  <text x="110" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">需求澄清</text>
+  <text x="26" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#8B5CF6" text-anchor="start">AI 做</text>
+  <text x="28" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· AI 拆解需求维度</text>
+  <text x="28" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 补全遗漏场景</text>
+  <text x="28" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 起草需求文档</text>
+  <line x1="26" y1="188" x2="194" y2="188" stroke="#8B5CF6" stroke-width="0.8" />
+  <text x="26" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#8B5CF6" text-anchor="start">人 做</text>
+  <text x="28" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 判断做什么/不做什么</text>
+  <text x="28" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 优先级和边界决策</text>
+  <rect x="26" y="250" width="168" height="68" fill="#FFF" stroke="#8B5CF6" rx="5" stroke-width="1" />
+  <text x="110" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#8B5CF6" text-anchor="middle">产出物</text>
+  <text x="110" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">需求文档（本文档）</text>
+  <line x1="204" y1="199" x2="206" y2="199" stroke="#BBB" stroke-width="1.5" />
+  <polygon points="206,199 199.0,202.0 199.0,196.0" fill="#BBB" />
+  <rect x="208" y="70" width="184" height="258" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <rect x="208" y="70" width="184" height="48" fill="#4A90D9" stroke="none" rx="6" stroke-width="0" />
+  <rect x="208" y="76" width="184" height="42" fill="#4A90D9" stroke="none" rx="0" stroke-width="0" />
+  <text x="300" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">2</text>
+  <text x="300" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">架构设计</text>
+  <text x="216" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="start">AI 做</text>
+  <text x="218" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· AI 画架构图</text>
+  <text x="218" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 对比方案优劣</text>
+  <text x="218" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 起草技术决策</text>
+  <line x1="216" y1="188" x2="384" y2="188" stroke="#4A90D9" stroke-width="0.8" />
+  <text x="216" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="start">人 做</text>
+  <text x="218" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 架构权衡选型</text>
+  <text x="218" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· Redis vs RocksDB</text>
+  <text x="218" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 时间轮分层设计</text>
+  <rect x="216" y="250" width="168" height="68" fill="#FFF" stroke="#4A90D9" rx="5" stroke-width="1" />
+  <text x="300" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#4A90D9" text-anchor="middle">产出物</text>
+  <text x="300" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">技术方案文档</text>
+  <line x1="394" y1="199" x2="396" y2="199" stroke="#BBB" stroke-width="1.5" />
+  <polygon points="396,199 389.0,202.0 389.0,196.0" fill="#BBB" />
+  <rect x="398" y="70" width="184" height="258" fill="#E8F0FF" stroke="#2C5282" rx="8" stroke-width="1.5" />
+  <rect x="398" y="70" width="184" height="48" fill="#2C5282" stroke="none" rx="6" stroke-width="0" />
+  <rect x="398" y="76" width="184" height="42" fill="#2C5282" stroke="none" rx="0" stroke-width="0" />
+  <text x="490" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">3</text>
+  <text x="490" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">Spec 编写</text>
+  <text x="406" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#2C5282" text-anchor="start">AI 做</text>
+  <text x="408" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· AI 按方案写 Spec</text>
+  <text x="408" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 覆盖接口约束</text>
+  <text x="408" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· 边界条件验收标准</text>
+  <line x1="406" y1="188" x2="574" y2="188" stroke="#2C5282" stroke-width="0.8" />
+  <text x="406" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#2C5282" text-anchor="start">人 做</text>
+  <text x="408" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· Review 和定稿</text>
+  <text x="408" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· Spec 是 AI 写代码的输入</text>
+  <rect x="406" y="250" width="168" height="68" fill="#FFF" stroke="#2C5282" rx="5" stroke-width="1" />
+  <text x="490" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#2C5282" text-anchor="middle">产出物</text>
+  <text x="490" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">Spec + CLAUDE.md</text>
+  <text x="490" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">+ Skills</text>
+  <line x1="584" y1="199" x2="586" y2="199" stroke="#BBB" stroke-width="1.5" />
+  <polygon points="586,199 579.0,202.0 579.0,196.0" fill="#BBB" />
+  <rect x="588" y="70" width="184" height="258" fill="#EDF9EE" stroke="#1A5A1A" rx="8" stroke-width="1.5" />
+  <rect x="588" y="70" width="184" height="48" fill="#1A5A1A" stroke="none" rx="6" stroke-width="0" />
+  <rect x="588" y="76" width="184" height="42" fill="#1A5A1A" stroke="none" rx="0" stroke-width="0" />
+  <text x="680" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">4</text>
+  <text x="680" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">代码实现</text>
+  <text x="596" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#1A5A1A" text-anchor="start">AI 做</text>
+  <text x="598" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· AI 按 Spec 写代码</text>
+  <text x="598" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· ≥ 90% 代码量</text>
+  <text x="598" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· Hooks 自动 lint/test</text>
+  <line x1="596" y1="188" x2="764" y2="188" stroke="#1A5A1A" stroke-width="0.8" />
+  <text x="596" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#1A5A1A" text-anchor="start">人 做</text>
+  <text x="598" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· Review 每个 PR</text>
+  <text x="598" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 判断是否符合 Spec</text>
+  <text x="598" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 识别风险</text>
+  <rect x="596" y="250" width="168" height="68" fill="#FFF" stroke="#1A5A1A" rx="5" stroke-width="1" />
+  <text x="680" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#1A5A1A" text-anchor="middle">产出物</text>
+  <text x="680" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">核心业务代码</text>
+  <text x="680" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">单元/集成测试</text>
+  <line x1="774" y1="199" x2="776" y2="199" stroke="#BBB" stroke-width="1.5" />
+  <polygon points="776,199 769.0,202.0 769.0,196.0" fill="#BBB" />
+  <rect x="778" y="70" width="184" height="258" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <rect x="778" y="70" width="184" height="48" fill="#E09A52" stroke="none" rx="6" stroke-width="0" />
+  <rect x="778" y="76" width="184" height="42" fill="#E09A52" stroke="none" rx="0" stroke-width="0" />
+  <text x="870" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">5</text>
+  <text x="870" y="108" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#FFF" text-anchor="middle">部署运维</text>
+  <text x="786" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E09A52" text-anchor="start">AI 做</text>
+  <text x="788" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· AI 写 Dockerfile</text>
+  <text x="788" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· docker-compose</text>
+  <text x="788" y="174" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="start">· K8s yaml + 文档</text>
+  <line x1="786" y1="188" x2="954" y2="188" stroke="#E09A52" stroke-width="0.8" />
+  <text x="786" y="198" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E09A52" text-anchor="start">人 做</text>
+  <text x="788" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 真实环境验证</text>
+  <text x="788" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#333" text-anchor="start">· 文档准确性确认</text>
+  <rect x="786" y="250" width="168" height="68" fill="#FFF" stroke="#E09A52" rx="5" stroke-width="1" />
+  <text x="870" y="264" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E09A52" text-anchor="middle">产出物</text>
+  <text x="870" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">部署文档</text>
+  <text x="870" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">Grafana Dashboard</text>
+  <text x="870" y="312" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">健康检查接口</text>
+  <rect x="20" y="348" width="940" height="66" fill="#FFE8E8" stroke="#E05252" rx="8" stroke-width="1.5" />
+  <text x="490" y="370" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#B00000" text-anchor="middle">贯穿全流程的硬性约束：核心代码 ≥ 90% 由 AI 完成（目标 95%）· 所有 AI 产出必须经人 review 后合并</text>
+  <text x="490" y="390" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">每阶段留痕：commit message 说明 AI/人各写了什么 · PR review 记录不允许空 approval · 每周统计 AI 占比</text>
+  <text x="490" y="405" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">AI 写 + 人 review 的协作姿态本身就是训练营要训练的核心能力</text>
+</svg>

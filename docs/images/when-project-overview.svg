@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="600" viewBox="0 0 1020 600">
+  <rect width="1020" height="600" fill="#FAFBFF" />
+  <text x="510" y="34" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">When 项目全局定位</text>
+  <text x="510" y="54" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">一个产品 · 两条主线 · 三档阶段</text>
+  <rect x="20" y="68" width="980" height="110" fill="#EAF3FC" stroke="#4A90D9" rx="10" stroke-width="1.5" />
+  <text x="510" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2C5282" text-anchor="middle">双重定位</text>
+  <rect x="36" y="100" width="460" height="66" fill="#FFF" stroke="#4A90D9" rx="8" stroke-width="1" />
+  <rect x="36" y="100" width="6" height="66" fill="#4A90D9" stroke="none" rx="3" stroke-width="0" />
+  <text x="56" y="120" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#2C5282" text-anchor="start">延时投递组件</text>
+  <text x="56" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">通用 · 独立 · 分布式 · Java 实现</text>
+  <text x="56" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="start">解决「在指定时间精确投递到任意下游」这一件事</text>
+  <rect x="524" y="100" width="476" height="66" fill="#FFF" stroke="#8B5CF6" rx="8" stroke-width="1" />
+  <rect x="524" y="100" width="6" height="66" fill="#8B5CF6" stroke="none" rx="3" stroke-width="0" />
+  <text x="544" y="120" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#5B2DC0" text-anchor="start">AI 编程全流程样本</text>
+  <text x="544" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">核心代码 ≥90% 由 AI 完成 · 全部经人 review</text>
+  <text x="544" y="156" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#777" text-anchor="start">演示从一句话需求→上线部署的完整 AI 工程链路</text>
+  <text x="510" y="204" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#333" text-anchor="middle">三档阶段</text>
+  <line x1="20" y1="210" x2="1000" y2="210" stroke="#DDD" stroke-width="1" />
+  <rect x="20" y="218" width="310" height="231" fill="#EAF3FC" stroke="#4A90D9" rx="8" stroke-width="1.5" />
+  <rect x="20" y="218" width="310" height="44" fill="#2C5282" stroke="none" rx="6" stroke-width="0" />
+  <rect x="20" y="224" width="310" height="38" fill="#2C5282" stroke="none" rx="0" stroke-width="0" />
+  <text x="175" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">训练营版本（MVP）</text>
+  <text x="175" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">3 周内完成</text>
+  <circle cx="36" cy="278" r="3" fill="#2C5282" />
+  <text x="48" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">提交/查询/取消 三个核心 API</text>
+  <circle cx="36" cy="299" r="3" fill="#2C5282" />
+  <text x="48" y="303" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">HTTP + Kafka 两种 Sink</text>
+  <circle cx="36" cy="320" r="3" fill="#2C5282" />
+  <text x="48" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">单节点多层时间轮调度</text>
+  <circle cx="36" cy="341" r="3" fill="#2C5282" />
+  <text x="48" y="345" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Redis 单实例持久化</text>
+  <circle cx="36" cy="362" r="3" fill="#2C5282" />
+  <text x="48" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">任务列表 + 投递日志管理台</text>
+  <circle cx="36" cy="383" r="3" fill="#2C5282" />
+  <text x="48" y="387" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Prometheus 指标 + 结构化日志</text>
+  <circle cx="36" cy="404" r="3" fill="#2C5282" />
+  <text x="48" y="408" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Docker / K8s 部署文档</text>
+  <rect x="28" y="423" width="294" height="22" fill="#2C5282" stroke="none" rx="4" stroke-width="0" />
+  <text x="175" y="438" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">能演示 · 能部署 · 能用的最小完整版本</text>
+  <rect x="348" y="218" width="310" height="231" fill="#EDF9EE" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <rect x="348" y="218" width="310" height="44" fill="#1A5A1A" stroke="none" rx="6" stroke-width="0" />
+  <rect x="348" y="224" width="310" height="38" fill="#1A5A1A" stroke="none" rx="0" stroke-width="0" />
+  <text x="503" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">后续维护阶段</text>
+  <text x="503" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">训练营后，学员 + 社区接力</text>
+  <circle cx="364" cy="278" r="3" fill="#1A5A1A" />
+  <text x="376" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">集群协调 + Controller 选举</text>
+  <circle cx="364" cy="299" r="3" fill="#1A5A1A" />
+  <text x="376" y="303" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Master/Slave 多副本 + 故障切换</text>
+  <circle cx="364" cy="320" r="3" fill="#1A5A1A" />
+  <text x="376" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">gRPC / RocketMQ / NATS Sink</text>
+  <circle cx="364" cy="341" r="3" fill="#1A5A1A" />
+  <text x="376" y="345" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">鉴权 + 限流 + 调用方配额</text>
+  <circle cx="364" cy="362" r="3" fill="#1A5A1A" />
+  <text x="376" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">死信队列 + 自定义重试策略</text>
+  <circle cx="364" cy="383" r="3" fill="#1A5A1A" />
+  <text x="376" y="387" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">管理台增强：搜索/统计/报警</text>
+  <circle cx="364" cy="404" r="3" fill="#1A5A1A" />
+  <text x="376" y="408" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">优先级队列</text>
+  <rect x="356" y="423" width="294" height="22" fill="#1A5A1A" stroke="none" rx="4" stroke-width="0" />
+  <text x="503" y="438" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">生产可用的 When 1.0</text>
+  <rect x="676" y="218" width="310" height="210" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <rect x="676" y="218" width="310" height="44" fill="#5B2DC0" stroke="none" rx="6" stroke-width="0" />
+  <rect x="676" y="224" width="310" height="38" fill="#5B2DC0" stroke="none" rx="0" stroke-width="0" />
+  <text x="831" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">社区共建方向</text>
+  <text x="831" y="252" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="rgba(255,255,255,0.85)" text-anchor="middle">长期开放，有人贡献就推进</text>
+  <circle cx="692" cy="278" r="3" fill="#5B2DC0" />
+  <text x="704" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">多语言 SDK（Java/Go/Python/Node.js）</text>
+  <circle cx="692" cy="299" r="3" fill="#5B2DC0" />
+  <text x="704" y="303" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">多租户隔离</text>
+  <circle cx="692" cy="320" r="3" fill="#5B2DC0" />
+  <text x="704" y="324" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">自定义存储后端（RocksDB/MySQL）</text>
+  <circle cx="692" cy="341" r="3" fill="#5B2DC0" />
+  <text x="704" y="345" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">跨地域部署</text>
+  <circle cx="692" cy="362" r="3" fill="#5B2DC0" />
+  <text x="704" y="366" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Kubernetes Operator</text>
+  <circle cx="692" cy="383" r="3" fill="#5B2DC0" />
+  <text x="704" y="387" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">MCP Server（AI Agent 接入）</text>
+  <rect x="684" y="402" width="294" height="22" fill="#5B2DC0" stroke="none" rx="4" stroke-width="0" />
+  <text x="831" y="417" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#FFF" text-anchor="middle">When 成为社区优秀开源项目</text>
+  <rect x="20" y="463" width="980" height="52" fill="#FFF8E8" stroke="#E09A52" rx="8" stroke-width="1.5" />
+  <text x="510" y="483" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B4A00" text-anchor="middle">硬性约束：核心代码 ≥ 90% 由 AI 完成（目标 95%）· 所有 AI 产出必须经人 review · 全流程每阶段留痕</text>
+  <text x="510" y="501" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">这一条不是开发纪律，是项目本身的需求——When 作为 AI 编程项目样本的价值建立在这条约束上</text>
+</svg>

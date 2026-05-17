@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="480" viewBox="0 0 980 480">
+  <rect width="980" height="480" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">他们有什么共同点</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">做法各不相同，但这五件事他们都在做</text>
+  <rect x="20" y="68" width="176" height="300" fill="#EFF5FF" stroke="#3572A5" rx="10" stroke-width="2" />
+  <rect x="20" y="68" width="176" height="10" fill="#3572A5" stroke="none" rx="5" />
+  <rect x="20" y="74" width="176" height="4" fill="#3572A5" stroke="none" rx="0" />
+  <circle cx="108" cy="114" r="22" fill="#3572A5" />
+  <text x="108" y="121" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="108" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#3572A5" text-anchor="middle">亲手用</text>
+  <line x1="32" y1="172" x2="184" y2="172" stroke="#3572A5" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="108" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">没有一个人是隔着新闻看的</text>
+  <text x="108" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">所有判断都来自每天的实践</text>
+  <rect x="202" y="68" width="176" height="300" fill="#F0FFF0" stroke="#52B366" rx="10" stroke-width="2" />
+  <rect x="202" y="68" width="176" height="10" fill="#52B366" stroke="none" rx="5" />
+  <rect x="202" y="74" width="176" height="4" fill="#52B366" stroke="none" rx="0" />
+  <circle cx="290" cy="114" r="22" fill="#52B366" />
+  <text x="290" y="121" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="290" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#52B366" text-anchor="middle">持续调整</text>
+  <line x1="214" y1="172" x2="366" y2="172" stroke="#52B366" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="290" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">没有人2024年和2026年姿态一样</text>
+  <text x="290" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">DHH半年内公开反转是最典型例子</text>
+  <rect x="384" y="68" width="176" height="300" fill="#FFF8E8" stroke="#CC6600" rx="10" stroke-width="2" />
+  <rect x="384" y="68" width="176" height="10" fill="#CC6600" stroke="none" rx="5" />
+  <rect x="384" y="74" width="176" height="4" fill="#CC6600" stroke="none" rx="0" />
+  <circle cx="472" cy="114" r="22" fill="#CC6600" />
+  <text x="472" y="121" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="472" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#CC6600" text-anchor="middle">不卖答案</text>
+  <line x1="396" y1="172" x2="548" y2="172" stroke="#CC6600" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="472" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">每个人都说「我也在学」「我也跟不上」</text>
+  <text x="472" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">Karpathy那条推文核心就是「我跟不上」</text>
+  <rect x="566" y="68" width="176" height="300" fill="#FFF5F5" stroke="#CC342D" rx="10" stroke-width="2" />
+  <rect x="566" y="68" width="176" height="10" fill="#CC342D" stroke="none" rx="5" />
+  <rect x="566" y="74" width="176" height="4" fill="#CC342D" stroke="none" rx="0" />
+  <circle cx="654" cy="114" r="22" fill="#CC342D" />
+  <text x="654" y="121" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="654" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#CC342D" text-anchor="middle">守住工程理解</text>
+  <line x1="578" y1="172" x2="730" y2="172" stroke="#CC342D" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="654" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">无论用AI多深，理解不让渡给AI</text>
+  <text x="654" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">系统在做什么、会怎么坏，自己要懂</text>
+  <rect x="748" y="68" width="176" height="300" fill="#F3EEFF" stroke="#8B5CF6" rx="10" stroke-width="2" />
+  <rect x="748" y="68" width="176" height="10" fill="#8B5CF6" stroke="none" rx="5" />
+  <rect x="748" y="74" width="176" height="4" fill="#8B5CF6" stroke="none" rx="0" />
+  <circle cx="836" cy="114" r="22" fill="#8B5CF6" />
+  <text x="836" y="121" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="836" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6" text-anchor="middle">警惕宣传</text>
+  <line x1="760" y1="172" x2="912" y2="172" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="836" y="194" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">所有人都说「销售话术不要信」</text>
+  <text x="836" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">「90%由AI写」那种说法不切实际</text>
+  <rect x="20" y="386" width="940" height="78" fill="#F8F0FF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="490" y="410" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#5B2DC0" text-anchor="middle">这五条加起来，是个画像</text>
+  <text x="490" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">在前线、在学、在变、守住核心、反hype</text>
+  <text x="490" y="454" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">和我们刷到的两类极端文章都不一样——不是「AI万能」，也不是「AI只是工具不用慌」</text>
+</svg>

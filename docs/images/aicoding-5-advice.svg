@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <rect width="980" height="560" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">5 条建议</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">这是我们的看法，不是答案——你最了解你自己</text>
+  <rect x="20" y="68" width="60" height="84" fill="#3572A5" stroke="none" rx="8" />
+  <circle cx="50" cy="110" r="20" fill="#FFFFFF" />
+  <text x="50" y="117" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#3572A5" text-anchor="middle">1</text>
+  <rect x="90" y="68" width="870" height="84" fill="#EFF5FF" stroke="#3572A5" rx="8" stroke-width="1.5" />
+  <text x="104" y="88" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#3572A5" text-anchor="start">每天半小时，在不重要的项目里真正用</text>
+  <text x="104" y="106" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">「不重要」是关键词——副项目、学的语言、想做的idea</text>
+  <text x="104" y="122" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">光看文章没用。所有读过的内容，都不如你亲手用一次</text>
+  <text x="104" y="138" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">连续比长度更重要：一周断三次，一年什么都没学到</text>
+  <rect x="20" y="158" width="60" height="84" fill="#52B366" stroke="none" rx="8" />
+  <circle cx="50" cy="200" r="20" fill="#FFFFFF" />
+  <text x="50" y="207" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#52B366" text-anchor="middle">2</text>
+  <rect x="90" y="158" width="870" height="84" fill="#F0FFF0" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <text x="104" y="178" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="start">找一个比你早一步的人，问他怎么做</text>
+  <text x="104" y="196" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">不要找最远的（大佬），找比你早走半步的同事或朋友</text>
+  <text x="104" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">他们最近踩过的坑、用的工具，跟你的处境最相关</text>
+  <text x="104" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">没有这种人？Simon Willison的博客，每天更新，朴素实在</text>
+  <rect x="20" y="248" width="60" height="84" fill="#CC6600" stroke="none" rx="8" />
+  <circle cx="50" cy="290" r="20" fill="#FFFFFF" />
+  <text x="50" y="297" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#CC6600" text-anchor="middle">3</text>
+  <rect x="90" y="248" width="870" height="84" fill="#FFF8E8" stroke="#CC6600" rx="8" stroke-width="1.5" />
+  <text x="104" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#CC6600" text-anchor="start">不要等「看清楚再动手」</text>
+  <text x="104" y="286" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">工具每三个月翻一遍，模型每六个月跳一档</text>
+  <text x="104" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">等「行业稳定再投入」，你永远在等</text>
+  <text x="104" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">大佬的做法：先动手，边动手边校准</text>
+  <rect x="20" y="338" width="60" height="84" fill="#CC342D" stroke="none" rx="8" />
+  <circle cx="50" cy="380" r="20" fill="#FFFFFF" />
+  <text x="50" y="387" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#CC342D" text-anchor="middle">4</text>
+  <rect x="90" y="338" width="870" height="84" fill="#FFF5F5" stroke="#CC342D" rx="8" stroke-width="1.5" />
+  <text x="104" y="358" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#CC342D" text-anchor="start">守住你对工程的理解，不要让渡给AI</text>
+  <text x="104" y="376" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">系统在做什么、为什么、会怎么坏——这些AI替不了你</text>
+  <text x="104" y="392" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">每个PR你都真的看过、想过、能讲出来为什么</text>
+  <text x="104" y="408" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">发现自己开始失去这个理解，就停下来调整</text>
+  <rect x="20" y="428" width="60" height="84" fill="#8B5CF6" stroke="none" rx="8" />
+  <circle cx="50" cy="470" r="20" fill="#FFFFFF" />
+  <text x="50" y="477" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#8B5CF6" text-anchor="middle">5</text>
+  <rect x="90" y="428" width="870" height="84" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="104" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="start">接受你会有一段焦虑期，这是正常的</text>
+  <text x="104" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="start">Karpathy说「我从未感到这么落后」——他也焦虑</text>
+  <text x="104" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="start">焦虑不会让你学到东西，只会让你买课</text>
+  <text x="104" y="498" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="start">动手是焦虑唯一的解药——然后回到第一条</text>
+  <rect x="20" y="530" width="940" height="20" fill="#1A3A6B" stroke="none" rx="4" />
+  <text x="490" y="545" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">动手 · 找人 · 不等 · 守工程 · 接受焦虑</text>
+</svg>

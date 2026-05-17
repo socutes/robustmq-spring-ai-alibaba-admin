@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <rect width="980" height="560" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">大佬们具体在做什么</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">不是听他们说什么——是看他们做什么</text>
+  <rect x="20" y="68" width="150" height="310" fill="#EFF5FF" stroke="#3572A5" rx="8" stroke-width="2" />
+  <rect x="20" y="68" width="150" height="8" fill="#3572A5" stroke="none" rx="4" />
+  <rect x="20" y="72" width="150" height="4" fill="#3572A5" stroke="none" rx="0" />
+  <text x="95" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#3572A5" text-anchor="middle">Karpathy</text>
+  <text x="95" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">OpenAI联合创始人</text>
+  <line x1="28" y1="124" x2="162" y2="124" stroke="#3572A5" stroke-width="1" />
+  <rect x="26" y="128" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="95" y="152" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">「我从未感到作为程序员如此落后」</text>
+  <rect x="26" y="188" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="95" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">坚持亲手做 nanochat，</text>
+  <text x="95" y="220" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">不让AI代替理解</text>
+  <rect x="26" y="248" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="95" y="266" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">vibe coding → </text>
+  <text x="95" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">agentic engineering</text>
+  <rect x="178" y="68" width="150" height="310" fill="#FFF5F5" stroke="#CC342D" rx="8" stroke-width="2" />
+  <rect x="178" y="68" width="150" height="8" fill="#CC342D" stroke="none" rx="4" />
+  <rect x="178" y="72" width="150" height="4" fill="#CC342D" stroke="none" rx="0" />
+  <text x="253" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#CC342D" text-anchor="middle">DHH</text>
+  <text x="253" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">Ruby on Rails创造者</text>
+  <line x1="186" y1="124" x2="320" y2="124" stroke="#CC342D" stroke-width="1" />
+  <rect x="184" y="128" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="253" y="146" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">2025夏反对，</text>
+  <text x="253" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">2026年初公开转向</text>
+  <rect x="184" y="188" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="253" y="212" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">承认错了，换工具，再试，再调整</text>
+  <rect x="184" y="248" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="253" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">但依然警惕"90%由AI写"的说法</text>
+  <rect x="336" y="68" width="150" height="310" fill="#F0FFF0" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="336" y="68" width="150" height="8" fill="#52B366" stroke="none" rx="4" />
+  <rect x="336" y="72" width="150" height="4" fill="#52B366" stroke="none" rx="0" />
+  <text x="411" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="middle">Simon</text>
+  <text x="411" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#52B366" text-anchor="middle">Willison</text>
+  <text x="411" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">Django联合创始人</text>
+  <line x1="344" y1="140" x2="478" y2="140" stroke="#52B366" stroke-width="1" />
+  <rect x="342" y="144" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="411" y="162" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">95%代码从手机上写，</text>
+  <text x="411" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">每天记录实践</text>
+  <rect x="342" y="204" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="411" y="222" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">vibe engineering = </text>
+  <text x="411" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">AI加速 + 工程规范</text>
+  <rect x="342" y="264" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="411" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">Red/Green TDD · </text>
+  <text x="411" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">Templates · Hoarding</text>
+  <rect x="494" y="68" width="150" height="310" fill="#FFFBF0" stroke="#B07219" rx="8" stroke-width="2" />
+  <rect x="494" y="68" width="150" height="8" fill="#B07219" stroke="none" rx="4" />
+  <rect x="494" y="72" width="150" height="4" fill="#B07219" stroke="none" rx="0" />
+  <text x="569" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#B07219" text-anchor="middle">Linus</text>
+  <text x="569" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#B07219" text-anchor="middle">Torvalds</text>
+  <text x="569" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">Linux创造者</text>
+  <line x1="502" y1="140" x2="636" y2="140" stroke="#B07219" stroke-width="1" />
+  <rect x="500" y="144" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="569" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">无声地把AI加入工作流</text>
+  <rect x="500" y="204" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="569" y="222" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">但每个kernel </text>
+  <text x="569" y="236" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">patch仍亲自审</text>
+  <rect x="500" y="264" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="569" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">用AI做繁琐处理，不做核心决策</text>
+  <rect x="652" y="68" width="150" height="310" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="652" y="68" width="150" height="8" fill="#8B5CF6" stroke="none" rx="4" />
+  <rect x="652" y="72" width="150" height="4" fill="#8B5CF6" stroke="none" rx="0" />
+  <text x="727" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Boris</text>
+  <text x="727" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Cherny</text>
+  <text x="727" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">Claude Code创造者</text>
+  <line x1="660" y1="140" x2="794" y2="140" stroke="#8B5CF6" stroke-width="1" />
+  <rect x="658" y="144" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="727" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">团队上月每行代码都是AI写的</text>
+  <rect x="658" y="204" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="727" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">「AI就像专家程序员坐在你旁边」</text>
+  <rect x="658" y="264" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="727" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">最终，是人在做这件事</text>
+  <rect x="810" y="68" width="150" height="310" fill="#F5F5F5" stroke="#666666" rx="8" stroke-width="2" />
+  <rect x="810" y="68" width="150" height="8" fill="#666666" stroke="none" rx="4" />
+  <rect x="810" y="72" width="150" height="4" fill="#666666" stroke="none" rx="0" />
+  <text x="885" y="96" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#666666" text-anchor="middle">Thorsten</text>
+  <text x="885" y="112" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#666666" text-anchor="middle">Ball</text>
+  <text x="885" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#777" text-anchor="middle">资深工程师 @ Amp</text>
+  <line x1="818" y1="140" x2="952" y2="140" stroke="#666666" stroke-width="1" />
+  <rect x="816" y="144" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="885" y="168" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">「手敲代码现在让我感到frustrate」</text>
+  <rect x="816" y="204" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="885" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">深度重新审视自己和编程的关系</text>
+  <rect x="816" y="264" width="138" height="52" fill="#FFFFFF" stroke="#EEE" rx="4" stroke-width="1" />
+  <text x="885" y="288" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#444" text-anchor="middle">真实变化，不是被市场胁迫</text>
+  <rect x="20" y="392" width="940" height="60" fill="#F0F4FF" stroke="#3572A5" rx="8" stroke-width="1.5" />
+  <text x="490" y="414" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A3A6B" text-anchor="middle">他们做法各不相同，但有一件事相同：</text>
+  <text x="490" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#333" text-anchor="middle">判断都来自每天的实践，不来自二手报道</text>
+  <text x="490" y="452" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">他们不隔着新闻看——他们每天在做</text>
+  <rect x="20" y="468" width="940" height="76" fill="#1A3A6B" stroke="none" rx="8" />
+  <text x="490" y="492" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">你身边可能就有这样的人</text>
+  <text x="490" y="514" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AABBDD" text-anchor="middle">不出名，坐在你工位旁边，用了半年 AI，PR 速度快了不少，质量不差</text>
+  <text x="490" y="532" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#AABBDD" text-anchor="middle">他们是这个时代真正在前进的人，比 Karpathy 更近，比新闻更真实</text>
+</svg>

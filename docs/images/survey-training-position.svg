@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="580" viewBox="0 0 980 580">
+  <rect width="980" height="580" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">调研后的 8 个核心判断</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">既不鸵鸟，也不盲从——这是读完所有数据之后的立场</text>
+  <rect x="20" y="68" width="230" height="196" fill="#E8F0FF" stroke="#3572A5" rx="8" stroke-width="2" />
+  <rect x="20" y="68" width="230" height="8" fill="#3572A5" stroke="none" rx="4" />
+  <rect x="20" y="72" width="230" height="4" fill="#3572A5" stroke="none" rx="0" />
+  <circle cx="44" cy="98" r="14" fill="#3572A5" />
+  <text x="44" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="145" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#3572A5" text-anchor="middle">AI 是力量倍增器，不是替代品</text>
+  <line x1="30" y1="120" x2="240" y2="120" stroke="#3572A5" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="135" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">会用AI的程序员 ≠ 程序员被AI替代</text>
+  <text x="135" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">基础工程能力仍然是核心竞争力</text>
+  <rect x="260" y="68" width="230" height="196" fill="#F0FFF0" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="260" y="68" width="230" height="8" fill="#52B366" stroke="none" rx="4" />
+  <rect x="260" y="72" width="230" height="4" fill="#52B366" stroke="none" rx="0" />
+  <circle cx="284" cy="98" r="14" fill="#52B366" />
+  <text x="284" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="385" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="middle">会用 ≠ 会用好</text>
+  <line x1="270" y1="120" x2="480" y2="120" stroke="#52B366" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="375" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">浅层使用 vs 深度整合，差距巨大</text>
+  <text x="375" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">前者浪费时间，后者才真正提效</text>
+  <rect x="500" y="68" width="230" height="196" fill="#FFF8E8" stroke="#CC6600" rx="8" stroke-width="2" />
+  <rect x="500" y="68" width="230" height="8" fill="#CC6600" stroke="none" rx="4" />
+  <rect x="500" y="72" width="230" height="4" fill="#CC6600" stroke="none" rx="0" />
+  <circle cx="524" cy="98" r="14" fill="#CC6600" />
+  <text x="524" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="625" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC6600" text-anchor="middle">学基础不是为了对抗AI</text>
+  <line x1="510" y1="120" x2="720" y2="120" stroke="#CC6600" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="615" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">而是为了审查、修正、驾驭AI</text>
+  <text x="615" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">不懂原理就无法判断AI输出的对错</text>
+  <rect x="740" y="68" width="230" height="196" fill="#FFF0F0" stroke="#CC342D" rx="8" stroke-width="2" />
+  <rect x="740" y="68" width="230" height="8" fill="#CC342D" stroke="none" rx="4" />
+  <rect x="740" y="72" width="230" height="4" fill="#CC342D" stroke="none" rx="0" />
+  <circle cx="764" cy="98" r="14" fill="#CC342D" />
+  <text x="764" y="103" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="865" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC342D" text-anchor="middle">初级岗位减少是事实，但路径仍在</text>
+  <line x1="750" y1="120" x2="960" y2="120" stroke="#CC342D" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="855" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">差异化能力：系统思维、需求理解、AI协作</text>
+  <text x="855" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">这些恰好是AI还做不好的事</text>
+  <rect x="20" y="278" width="230" height="196" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="2" />
+  <rect x="20" y="278" width="230" height="8" fill="#8B5CF6" stroke="none" rx="4" />
+  <rect x="20" y="282" width="230" height="4" fill="#8B5CF6" stroke="none" rx="0" />
+  <circle cx="44" cy="308" r="14" fill="#8B5CF6" />
+  <text x="44" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="145" y="308" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">拒绝两个极端</text>
+  <line x1="30" y1="330" x2="240" y2="330" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="135" y="350" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">「完全拥抱」= 失去判断力</text>
+  <text x="135" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">「完全拒绝」= 脱离现实</text>
+  <rect x="260" y="278" width="230" height="196" fill="#FFFBF0" stroke="#B07219" rx="8" stroke-width="2" />
+  <rect x="260" y="278" width="230" height="8" fill="#B07219" stroke="none" rx="4" />
+  <rect x="260" y="282" width="230" height="4" fill="#B07219" stroke="none" rx="0" />
+  <circle cx="284" cy="308" r="14" fill="#B07219" />
+  <text x="284" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+  <text x="385" y="308" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#B07219" text-anchor="middle">工程文化比工具使用更重要</text>
+  <line x1="270" y1="330" x2="480" y2="330" stroke="#B07219" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="375" y="350" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">个人效率可以用AI堆，团队协作不行</text>
+  <text x="375" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">工程直觉和责任感无法外包给AI</text>
+  <rect x="500" y="278" width="230" height="196" fill="#E8FFFF" stroke="#008080" rx="8" stroke-width="2" />
+  <rect x="500" y="278" width="230" height="8" fill="#008080" stroke="none" rx="4" />
+  <rect x="500" y="282" width="230" height="4" fill="#008080" stroke="none" rx="0" />
+  <circle cx="524" cy="308" r="14" fill="#008080" />
+  <text x="524" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">7</text>
+  <text x="625" y="308" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#008080" text-anchor="middle">用AI学习，而不是用AI逃避学习</text>
+  <line x1="510" y1="330" x2="720" y2="330" stroke="#008080" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="615" y="350" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">追问、对话、理解——不是复制粘贴</text>
+  <text x="615" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">验证通过不等于真正懂了</text>
+  <rect x="740" y="278" width="230" height="196" fill="#FFF5F0" stroke="#CC4400" rx="8" stroke-width="2" />
+  <rect x="740" y="278" width="230" height="8" fill="#CC4400" stroke="none" rx="4" />
+  <rect x="740" y="282" width="230" height="4" fill="#CC4400" stroke="none" rx="0" />
+  <circle cx="764" cy="308" r="14" fill="#CC4400" />
+  <text x="764" y="313" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8</text>
+  <text x="865" y="308" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC4400" text-anchor="middle">目标是让AI为你服务</text>
+  <line x1="750" y1="330" x2="960" y2="330" stroke="#CC4400" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="855" y="350" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">不是「不被AI替代」，而是「驾驭AI」</text>
+  <text x="855" y="368" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">这是差距所在，也是机会所在</text>
+  <rect x="20" y="500" width="940" height="64" fill="#1A3A6B" stroke="none" rx="8" />
+  <text x="490" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">数据可以讲故事，但判断需要自己做</text>
+  <text x="490" y="548" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#AABBDD" text-anchor="middle">以上 8 点，是我在读完所有调研之后，愿意公开说出来的立场</text>
+</svg>

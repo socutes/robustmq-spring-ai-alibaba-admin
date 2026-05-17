@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Stack Overflow 2025：84% 在用，29% 信任</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">177个国家·4.9万开发者·最大规模行业调研</text>
+  <rect x="20" y="70" width="170" height="130" rx="8" fill="#fff" stroke="#52B366" stroke-width="2" />
+  <rect x="20" y="70" width="170" height="8" rx="4" fill="#52B366" stroke="none" />
+  <rect x="20" y="74" width="170" height="4" rx="0" fill="#52B366" stroke="none" />
+  <text x="105" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="bold" fill="#52B366" text-anchor="middle">84%</text>
+  <text x="105" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">AI工具使用率</text>
+  <text x="105" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">比2024年76%继续上升</text>
+  <rect x="200" y="70" width="170" height="130" rx="8" fill="#fff" stroke="#E05252" stroke-width="2" />
+  <rect x="200" y="70" width="170" height="8" rx="4" fill="#E05252" stroke="none" />
+  <rect x="200" y="74" width="170" height="4" rx="0" fill="#E05252" stroke="none" />
+  <text x="285" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="bold" fill="#E05252" text-anchor="middle">29%</text>
+  <text x="285" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">对AI准确性信任度</text>
+  <text x="285" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">2024年40%，大幅下跌</text>
+  <rect x="380" y="70" width="170" height="130" rx="8" fill="#fff" stroke="#E09A52" stroke-width="2" />
+  <rect x="380" y="70" width="170" height="8" rx="4" fill="#E09A52" stroke="none" />
+  <rect x="380" y="74" width="170" height="4" rx="0" fill="#E09A52" stroke="none" />
+  <text x="465" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="bold" fill="#E09A52" text-anchor="middle">46%</text>
+  <text x="465" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">主动不信任AI</text>
+  <text x="465" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">2024年31%，显著上升</text>
+  <rect x="560" y="70" width="170" height="130" rx="8" fill="#fff" stroke="#4A90D9" stroke-width="2" />
+  <rect x="560" y="70" width="170" height="8" rx="4" fill="#4A90D9" stroke="none" />
+  <rect x="560" y="74" width="170" height="4" rx="0" fill="#4A90D9" stroke="none" />
+  <text x="645" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="bold" fill="#4A90D9" text-anchor="middle">3%</text>
+  <text x="645" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">高度信任AI输出</text>
+  <text x="645" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">经验越深信任越低</text>
+  <rect x="740" y="70" width="170" height="130" rx="8" fill="#fff" stroke="#8B5CF6" stroke-width="2" />
+  <rect x="740" y="70" width="170" height="8" rx="4" fill="#8B5CF6" stroke="none" />
+  <rect x="740" y="74" width="170" height="4" rx="0" fill="#8B5CF6" stroke="none" />
+  <text x="825" y="116" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="bold" fill="#8B5CF6" text-anchor="middle">66%</text>
+  <text x="825" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#333" text-anchor="middle">花更多时间修AI代码</text>
+  <text x="825" y="158" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">"差不多对但不全对"</text>
+  <rect x="20" y="220" width="460" height="180" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1" />
+  <text x="250" y="240" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#333" text-anchor="middle">使用率上升 vs 信任度下跌</text>
+  <text x="80" y="392" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">2023</text>
+  <text x="240" y="392" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">2024</text>
+  <text x="400" y="392" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">2025</text>
+  <line x1="80" y1="286" x2="240" y2="279" stroke="#52B366" stroke-width="2.5" />
+  <line x1="240" y1="279" x2="400" y2="270" stroke="#52B366" stroke-width="2.5" />
+  <circle cx="80" cy="286" r="5" fill="#52B366" />
+  <text x="82" y="278" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">70%</text>
+  <circle cx="240" cy="279" r="5" fill="#52B366" />
+  <text x="242" y="271" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">76%</text>
+  <circle cx="400" cy="270" r="5" fill="#52B366" />
+  <text x="402" y="262" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">84%</text>
+  <line x1="80" y1="280" x2="240" y2="322" stroke="#E05252" stroke-width="2.5" stroke-dasharray="5,3" />
+  <line x1="240" y1="322" x2="400" y2="336" stroke="#E05252" stroke-width="2.5" stroke-dasharray="5,3" />
+  <circle cx="80" cy="280" r="5" fill="#E05252" />
+  <text x="82" y="272" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="start">75%</text>
+  <circle cx="240" cy="322" r="5" fill="#E05252" />
+  <text x="242" y="314" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="start">40%</text>
+  <circle cx="400" cy="336" r="5" fill="#E05252" />
+  <text x="402" y="328" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="start">29%</text>
+  <text x="50" y="270" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#52B366" text-anchor="start">── 使用率</text>
+  <text x="50" y="285" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#E05252" text-anchor="start">- - 信任度</text>
+  <rect x="500" y="220" width="460" height="180" rx="8" fill="#FFF5F5" stroke="#E05252" stroke-width="1.5" />
+  <rect x="500" y="220" width="460" height="8" rx="4" fill="#E05252" stroke="none" />
+  <rect x="500" y="224" width="460" height="4" rx="0" fill="#E05252" stroke="none" />
+  <text x="730" y="242" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#E05252" text-anchor="middle">Adoption-Trust Gap</text>
+  <text x="730" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">Stack Overflow CEO 的命名</text>
+  <line x1="510" y1="265" x2="950" y2="265" stroke="#FFD0D0" stroke-width="1" />
+  <text x="514" y="283" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 用得多 → 见过更多失败案例</text>
+  <text x="514" y="303" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 经验越深 → 信任越低（20年+仅2.6%高度信任）</text>
+  <text x="514" y="323" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 45% 调试AI代码比自己写还慢</text>
+  <text x="514" y="343" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">• 这是工程现实，不是心理偏见</text>
+  <rect x="20" y="420" width="940" height="82" rx="8" fill="#F3EEFF" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="490" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#5B2DC0" text-anchor="middle">真实信号：使用率和信任度反向运动，揭示了AI工具距离"可靠工程工具"仍有距离</text>
+  <text x="490" y="460" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">越用越多同时越来越不信任——这是业界诚实的集体判断，不是保守派的偏见</text>
+  <text x="490" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#888" text-anchor="middle">Stack Overflow CEO 称之为 "Adoption-Trust Gap"：这个鸿沟不是技术问题能直接解决的</text>
+  <text x="490" y="496" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#8B5CF6" text-anchor="middle">真正可信的工程师能讲清楚 AI 擅长什么、不擅长什么——两者都能说清才算真的用过</text>
+</svg>

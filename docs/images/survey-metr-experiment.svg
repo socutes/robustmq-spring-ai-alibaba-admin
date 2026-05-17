@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500">
+  <rect width="980" height="500" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">METR 实验：感知 vs 现实的鸿沟</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">「AI 让我快了」——但数据说：实际慢了 19%</text>
+  <rect x="13" y="72" width="300" height="180" fill="#FFE8E8" stroke="#CC0000" rx="10" stroke-width="2" />
+  <text x="163" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="52" font-weight="bold" fill="#CC0000" text-anchor="middle">−19%</text>
+  <text x="163" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#333" text-anchor="middle">实际完成速度</text>
+  <text x="163" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">AI辅助组 vs 对照组</text>
+  <text x="163" y="208" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">实际任务用时更长</text>
+  <rect x="340" y="72" width="300" height="180" fill="#E8F8E8" stroke="#1A7A1A" rx="10" stroke-width="2" />
+  <text x="490" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="52" font-weight="bold" fill="#1A7A1A" text-anchor="middle">+20%</text>
+  <text x="490" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#333" text-anchor="middle">开发者自我感知</text>
+  <text x="490" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">「感觉AI让我</text>
+  <text x="490" y="208" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">快了20%」</text>
+  <rect x="667" y="72" width="300" height="180" fill="#FFF3E8" stroke="#CC6600" rx="10" stroke-width="2" />
+  <text x="817" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="52" font-weight="bold" fill="#CC6600" text-anchor="middle">38–39%</text>
+  <text x="817" y="172" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#333" text-anchor="middle">专家原始预测</text>
+  <text x="817" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">实验前专家预测</text>
+  <text x="817" y="208" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#666" text-anchor="middle">AI提速幅度</text>
+  <text x="326" y="162" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#8B5CF6" text-anchor="middle">←  预期 vs 现实差距  →</text>
+  <rect x="20" y="272" width="940" height="100" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="490" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#5B2DC0" text-anchor="middle">为什么感知与现实相反？</text>
+  <rect x="30" y="310" width="220" height="44" fill="#FFFFFF" stroke="#C4B5FD" rx="6" stroke-width="1" />
+  <text x="140" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">自动完成的流畅感→误判速度提升</text>
+  <rect x="330" y="310" width="220" height="44" fill="#FFFFFF" stroke="#C4B5FD" rx="6" stroke-width="1" />
+  <text x="440" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">AI补全后的调试修复时间被低估</text>
+  <rect x="630" y="310" width="220" height="44" fill="#FFFFFF" stroke="#C4B5FD" rx="6" stroke-width="1" />
+  <text x="740" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">注意力转移导致认知偏差</text>
+  <rect x="20" y="388" width="940" height="96" fill="#FFEAEA" stroke="#CC0000" rx="8" stroke-width="1.5" />
+  <text x="490" y="410" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#900000" text-anchor="middle">关键结论</text>
+  <text x="490" y="432" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#444" text-anchor="middle">即便结果令人沮丧，实验仍具价值——它打破了「AI必然加速」的默认假设</text>
+  <text x="490" y="452" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#444" text-anchor="middle">数据显示：当前AI编程辅助对有经验开发者在真实复杂任务中并无稳定加速效果</text>
+  <text x="490" y="472" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#444" text-anchor="middle">这不代表AI无用，而是说明我们需要更精细的任务分类与工具匹配</text>
+</svg>

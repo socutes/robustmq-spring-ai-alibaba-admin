@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">就业数据：AI 时代初级岗位正在消失</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">22–25 岁程序员岗位 2025 年下降 20%，但这只是冰山一角</text>
+  <rect x="20" y="68" width="420" height="270" fill="#FFF5F5" stroke="#CC342D" rx="8" stroke-width="2" />
+  <rect x="20" y="68" width="420" height="8" fill="#CC342D" stroke="none" rx="4" />
+  <rect x="20" y="72" width="420" height="4" fill="#CC342D" stroke="none" rx="0" />
+  <text x="230" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#CC342D" text-anchor="middle">22–25岁岗位变化趋势</text>
+  <rect x="60" y="170" width="60" height="130" fill="#52B366" stroke="none" rx="4" />
+  <text x="90" y="162" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#52B366" text-anchor="middle">+0%</text>
+  <text x="90" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">2022</text>
+  <rect x="150" y="177" width="60" height="123" fill="#8BC995" stroke="none" rx="4" />
+  <text x="180" y="169" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8BC995" text-anchor="middle">−5%</text>
+  <text x="180" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">2023</text>
+  <rect x="240" y="187" width="60" height="113" fill="#E09A52" stroke="none" rx="4" />
+  <text x="270" y="179" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E09A52" text-anchor="middle">−13%</text>
+  <text x="270" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">2024</text>
+  <rect x="330" y="196" width="60" height="104" fill="#CC342D" stroke="none" rx="4" />
+  <text x="360" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#CC342D" text-anchor="middle">−20%</text>
+  <text x="360" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">2025</text>
+  <line x1="45" y1="300" x2="395" y2="300" stroke="#CCC" stroke-width="1" />
+  <text x="230" y="336" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="middle">基准线：2022年岗位量=100</text>
+  <rect x="460" y="68" width="500" height="270" fill="#FFFBF0" stroke="#B07219" rx="8" stroke-width="2" />
+  <rect x="460" y="68" width="500" height="8" fill="#B07219" stroke="none" rx="4" />
+  <rect x="460" y="72" width="500" height="4" fill="#B07219" stroke="none" rx="0" />
+  <text x="710" y="94" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#B07219" text-anchor="middle">初级岗位消失的三重原因</text>
+  <rect x="476" y="112" width="468" height="66" fill="#FFE8E8" stroke="#CC0000" rx="6" stroke-width="1" />
+  <text x="710" y="130" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC0000" text-anchor="middle">AI代替初级任务</text>
+  <text x="710" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">CRUD/脚手架/样板代码被AI完成</text>
+  <text x="710" y="164" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">初级开发者的核心价值被替代</text>
+  <rect x="476" y="188" width="468" height="66" fill="#FFF3E8" stroke="#CC6600" rx="6" stroke-width="1" />
+  <text x="710" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC6600" text-anchor="middle">企业收缩招聘</text>
+  <text x="710" y="224" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">用更少高级工程师+AI工具</text>
+  <text x="710" y="240" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">替代原本需要4-5人的团队</text>
+  <rect x="476" y="264" width="468" height="66" fill="#E8F8E8" stroke="#1A7A1A" rx="6" stroke-width="1" />
+  <text x="710" y="282" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#1A7A1A" text-anchor="middle">技能要求门槛提升</text>
+  <text x="710" y="300" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">「会用AI」成为基本要求</text>
+  <text x="710" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#666" text-anchor="middle">新人需要更长时间才能达到雇用标准</text>
+  <rect x="20" y="356" width="460" height="148" fill="#E8F0FF" stroke="#3572A5" rx="8" stroke-width="1.5" />
+  <text x="250" y="378" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#3572A5" text-anchor="middle">警示：「培养期」已不存在</text>
+  <text x="250" y="400" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">传统路径：初级→中级→高级（3-5年）</text>
+  <text x="250" y="422" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">当前趋势：企业更愿意直接雇高级+AI</text>
+  <text x="250" y="444" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">初级开发者缺少积累经验的工作机会</text>
+  <text x="250" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">行业正在失去自我再生能力</text>
+  <rect x="500" y="356" width="460" height="148" fill="#F0FFF0" stroke="#52B366" rx="8" stroke-width="1.5" />
+  <text x="730" y="378" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#1A7A1A" text-anchor="middle">应对策略：初级开发者如何突围</text>
+  <text x="730" y="400" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">主动学习AI工具使用（不只是会，而是精通）</text>
+  <text x="730" y="422" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">聚焦AI不擅长的：系统设计、需求理解</text>
+  <text x="730" y="444" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">建立可见作品集，展示独立解决问题能力</text>
+  <text x="730" y="466" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#333" text-anchor="middle">考虑加入仍愿意培养人才的中小团队</text>
+  <rect x="20" y="516" width="940" height="4" fill="#3572A5" stroke="none" rx="2" />
+</svg>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#FAFBFF" />
+  <text x="490" y="32" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Workslop 现象：AI 代码质量危机</text>
+  <text x="490" y="52" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">PR审查时间上升91%——工程师花更多时间审查AI写的「可运行垃圾」</text>
+  <rect x="20" y="68" width="310" height="280" fill="#FFF5F5" stroke="#CC342D" rx="8" stroke-width="2" />
+  <rect x="20" y="68" width="310" height="8" fill="#CC342D" stroke="none" rx="4" />
+  <rect x="20" y="72" width="310" height="4" fill="#CC342D" stroke="none" rx="0" />
+  <text x="175" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#CC342D" text-anchor="middle">PR 审查时间变化</text>
+  <text x="175" y="160" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="64" font-weight="bold" fill="#CC342D" text-anchor="middle">+91%</text>
+  <text x="175" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#555" text-anchor="middle">启用AI工具后 PR Review 耗时</text>
+  <text x="175" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="middle">来源：GitHub 2025 Developer Survey</text>
+  <line x1="40" y1="220" x2="310" y2="220" stroke="#DDD" stroke-width="1" />
+  <text x="175" y="240" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#CC342D" text-anchor="middle">workslop = work + slop</text>
+  <text x="175" y="258" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">「可以运行、看似合理，</text>
+  <text x="175" y="274" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">但充满隐患的AI生成代码」</text>
+  <text x="175" y="292" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#999" text-anchor="middle">—— Ted Ptacek 命名</text>
+  <rect x="350" y="68" width="300" height="280" fill="#FFFBF0" stroke="#B07219" rx="8" stroke-width="2" />
+  <rect x="350" y="68" width="300" height="8" fill="#B07219" stroke="none" rx="4" />
+  <rect x="350" y="72" width="300" height="4" fill="#B07219" stroke="none" rx="0" />
+  <text x="500" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#B07219" text-anchor="middle">Workslop 的五大特征</text>
+  <rect x="368" y="122" width="264" height="32" fill="#FFF8E8" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="380" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="start">1.</text>
+  <text x="500" y="142" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">通过所有测试，但边界条件有缺陷</text>
+  <rect x="368" y="164" width="264" height="32" fill="#FFF8E8" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="380" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="start">2.</text>
+  <text x="500" y="184" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">代码量膨胀，无用抽象层叠加</text>
+  <rect x="368" y="206" width="264" height="32" fill="#FFF8E8" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="380" y="226" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="start">3.</text>
+  <text x="500" y="226" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">命名混乱，自文档化程度下降</text>
+  <rect x="368" y="248" width="264" height="32" fill="#FFF8E8" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="380" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="start">4.</text>
+  <text x="500" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">复制的模式不适合当前上下文</text>
+  <rect x="368" y="290" width="264" height="32" fill="#FFF8E8" stroke="#E09A52" rx="4" stroke-width="1" />
+  <text x="380" y="310" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#B07219" text-anchor="start">5.</text>
+  <text x="500" y="310" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#444" text-anchor="middle">难以追溯的错误修复链条</text>
+  <rect x="670" y="68" width="290" height="280" fill="#E8F8E8" stroke="#52B366" rx="8" stroke-width="2" />
+  <rect x="670" y="68" width="290" height="8" fill="#52B366" stroke="none" rx="4" />
+  <rect x="670" y="72" width="290" height="4" fill="#52B366" stroke="none" rx="0" />
+  <text x="815" y="98" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#1A7A1A" text-anchor="middle">如何避免 Workslop</text>
+  <rect x="688" y="118" width="254" height="46" fill="#FFFFFF" stroke="#52B366" rx="4" stroke-width="1" />
+  <text x="815" y="134" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A7A1A" text-anchor="middle">审查一切</text>
+  <text x="815" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">不理解不merge</text>
+  <text x="815" y="161" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">承担工程责任</text>
+  <rect x="688" y="174" width="254" height="46" fill="#FFFFFF" stroke="#52B366" rx="4" stroke-width="1" />
+  <text x="815" y="190" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A7A1A" text-anchor="middle">小批量提交</text>
+  <text x="815" y="204" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">AI生成后立即提交</text>
+  <text x="815" y="217" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">减少审查负担</text>
+  <rect x="688" y="230" width="254" height="46" fill="#FFFFFF" stroke="#52B366" rx="4" stroke-width="1" />
+  <text x="815" y="246" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A7A1A" text-anchor="middle">测试驱动</text>
+  <text x="815" y="260" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">先写测试，让AI填实现</text>
+  <text x="815" y="273" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">而非反过来</text>
+  <rect x="688" y="286" width="254" height="46" fill="#FFFFFF" stroke="#52B366" rx="4" stroke-width="1" />
+  <text x="815" y="302" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#1A7A1A" text-anchor="middle">领域隔离</text>
+  <text x="815" y="316" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">AI负责模板/脚手架</text>
+  <text x="815" y="329" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">核心逻辑人工编写</text>
+  <rect x="20" y="366" width="940" height="138" fill="#F3EEFF" stroke="#8B5CF6" rx="8" stroke-width="1.5" />
+  <text x="490" y="388" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#5B2DC0" text-anchor="middle">workslop 的深层影响：技术债务正在加速积累</text>
+  <text x="490" y="412" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">短期：PR review成本上升，团队沟通成本上升，代码库可维护性下降</text>
+  <text x="490" y="434" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">中期：工程师对AI生成代码逐渐失去信任，开始"二次验证"每一行</text>
+  <text x="490" y="456" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">长期：如果不建立AI代码质量标准，技术债务将以指数级增长</text>
+  <text x="490" y="478" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="normal" fill="#444" text-anchor="middle">解法不是"不用AI"，而是"建立AI代码的工程规范"——像对待实习生代码一样对待AI输出</text>
+</svg>

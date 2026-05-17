@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="620" viewBox="0 0 1060 620">
+  <rect width="1060" height="620" fill="#FAFBFF" />
+  <text x="530" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">业界 Skills 全景地图</text>
+  <text x="530" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">官方 · 社区高star库 · 明星单体 Skill · 按场景分类实用清单</text>
+  <rect x="20" y="65" width="320" height="320" fill="#fff" rx="8" stroke="#8B5CF6" stroke-width="2" />
+  <rect x="20" y="65" width="320" height="8" fill="#8B5CF6" rx="4" />
+  <rect x="20" y="69" width="320" height="4" fill="#8B5CF6" rx="0" />
+  <text x="180" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Anthropic 官方</text>
+  <rect x="30" y="108" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="36" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">文档处理</text>
+  <text x="36" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">docx / pdf / pptx / xlsx</text>
+  <rect x="30" y="160" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="36" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">开发工具</text>
+  <text x="36" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">mcp-builder / webapp-testing</text>
+  <rect x="30" y="212" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="36" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">Skill工具</text>
+  <text x="36" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">skill-creator（必装）</text>
+  <rect x="30" y="264" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="36" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">前端设计</text>
+  <text x="36" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">frontend-design / brand-guidelines</text>
+  <rect x="30" y="316" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="36" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="start">创意生成</text>
+  <text x="36" y="348" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">algorithmic-art / canvas-design</text>
+  <rect x="356" y="65" width="320" height="320" fill="#fff" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <rect x="356" y="65" width="320" height="8" fill="#4A90D9" rx="4" />
+  <rect x="356" y="69" width="320" height="4" fill="#4A90D9" rx="0" />
+  <text x="516" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#4A90D9" text-anchor="middle">社区高 star 库</text>
+  <rect x="366" y="108" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="372" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">obra/superpowers</text>
+  <text x="372" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">TDD·调试·规划，实战验证</text>
+  <rect x="366" y="160" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="372" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">alirezarezvani</text>
+  <text x="372" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">268个Skill · 5200+ star</text>
+  <rect x="366" y="212" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="372" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">ComposioHQ</text>
+  <text x="372" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">1000+ Skill资源·精选</text>
+  <rect x="366" y="264" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="372" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">Garry Tan GStack</text>
+  <text x="372" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">YC总裁 · startup视角</text>
+  <rect x="366" y="316" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="372" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="start">travisvn</text>
+  <text x="372" y="348" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">轻量精选·快速浏览</text>
+  <rect x="692" y="65" width="320" height="320" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <rect x="692" y="65" width="320" height="8" fill="#E05252" rx="4" />
+  <rect x="692" y="69" width="320" height="4" fill="#E05252" rx="0" />
+  <text x="852" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#E05252" text-anchor="middle">明星单体 Skill</text>
+  <rect x="702" y="108" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="708" y="124" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">frontend-design</text>
+  <text x="708" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">277000+ installs · 避免AI slop</text>
+  <rect x="702" y="160" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="708" y="176" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">agent-browser</text>
+  <text x="708" y="192" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">14000 star · 浏览器自动化</text>
+  <rect x="702" y="212" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="708" y="228" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">Composio</text>
+  <text x="708" y="244" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">850+ SaaS集成</text>
+  <rect x="702" y="264" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="708" y="280" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">skill-creator</text>
+  <text x="708" y="296" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Anthropic官方 · 元Skill</text>
+  <rect x="702" y="316" width="300" height="44" fill="#FAFAFA" rx="5" stroke="#EEE" stroke-width="1" />
+  <text x="708" y="332" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="start">Superpowers</text>
+  <text x="708" y="348" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">TDD+调试+规划套件</text>
+  <rect x="20" y="398" width="1020" height="20" fill="#F3EEFF" rx="4" stroke="#8B5CF6" stroke-width="1" />
+  <text x="530" y="412" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#5B2DC0" text-anchor="middle">按开发场景分类（12类）</text>
+  <rect x="20" y="426" width="250" height="36" fill="#fff" rx="5" stroke="#52B366" stroke-width="1.5" />
+  <text x="70" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">代码生成</text>
+  <text x="134" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Clean Arch · DHH风格</text>
+  <line x1="120" y1="430" x2="120" y2="458" stroke="#EEE" stroke-width="1" />
+  <rect x="276" y="426" width="250" height="36" fill="#fff" rx="5" stroke="#4A90D9" stroke-width="1.5" />
+  <text x="326" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">测试</text>
+  <text x="390" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">TDD · Playwright · JUnit</text>
+  <line x1="376" y1="430" x2="376" y2="458" stroke="#EEE" stroke-width="1" />
+  <rect x="532" y="426" width="250" height="36" fill="#fff" rx="5" stroke="#E05252" stroke-width="1.5" />
+  <text x="582" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">Review</text>
+  <text x="646" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">质量审查 · 安全扫描</text>
+  <line x1="632" y1="430" x2="632" y2="458" stroke="#EEE" stroke-width="1" />
+  <rect x="788" y="426" width="250" height="36" fill="#fff" rx="5" stroke="#B07219" stroke-width="1.5" />
+  <text x="838" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B07219" text-anchor="middle">文档</text>
+  <text x="902" y="440" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">API Docs · Javadoc · Changelog</text>
+  <line x1="888" y1="430" x2="888" y2="458" stroke="#EEE" stroke-width="1" />
+  <rect x="20" y="468" width="250" height="36" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="70" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Git</text>
+  <text x="134" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Commit规范 · 分支管理</text>
+  <line x1="120" y1="472" x2="120" y2="500" stroke="#EEE" stroke-width="1" />
+  <rect x="276" y="468" width="250" height="36" fill="#fff" rx="5" stroke="#E09A52" stroke-width="1.5" />
+  <text x="326" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E09A52" text-anchor="middle">调试</text>
+  <text x="390" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">套路调试 · 日志分析</text>
+  <line x1="376" y1="472" x2="376" y2="500" stroke="#EEE" stroke-width="1" />
+  <rect x="532" y="468" width="250" height="36" fill="#fff" rx="5" stroke="#4A90D9" stroke-width="1.5" />
+  <text x="582" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#4A90D9" text-anchor="middle">部署CI</text>
+  <text x="646" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Docker · K8s · GH Actions</text>
+  <line x1="632" y1="472" x2="632" y2="500" stroke="#EEE" stroke-width="1" />
+  <rect x="788" y="468" width="250" height="36" fill="#fff" rx="5" stroke="#52B366" stroke-width="1.5" />
+  <text x="838" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#52B366" text-anchor="middle">数据库</text>
+  <text x="902" y="482" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">可逆迁移 · Schema设计</text>
+  <line x1="888" y1="472" x2="888" y2="500" stroke="#EEE" stroke-width="1" />
+  <rect x="20" y="510" width="250" height="36" fill="#fff" rx="5" stroke="#E05252" stroke-width="1.5" />
+  <text x="70" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">前端</text>
+  <text x="134" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">frontend-design · React</text>
+  <line x1="120" y1="514" x2="120" y2="542" stroke="#EEE" stroke-width="1" />
+  <rect x="276" y="510" width="250" height="36" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="326" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">API集成</text>
+  <text x="390" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">mcp-builder · Composio</text>
+  <line x1="376" y1="514" x2="376" y2="542" stroke="#EEE" stroke-width="1" />
+  <rect x="532" y="510" width="250" height="36" fill="#fff" rx="5" stroke="#B07219" stroke-width="1.5" />
+  <text x="582" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#B07219" text-anchor="middle">项目规划</text>
+  <text x="646" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">SDD · 分层规划 · 头脑风暴</text>
+  <line x1="632" y1="514" x2="632" y2="542" stroke="#EEE" stroke-width="1" />
+  <rect x="788" y="510" width="250" height="36" fill="#fff" rx="5" stroke="#E05252" stroke-width="1.5" />
+  <text x="838" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#E05252" text-anchor="middle">安全</text>
+  <text x="902" y="524" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">OWASP · 密钥扫描 · 渗透</text>
+  <line x1="888" y1="514" x2="888" y2="542" stroke="#EEE" stroke-width="1" />
+  <rect x="20" y="568" width="1020" height="42" fill="#EDF9EE" rx="8" stroke="#52B366" stroke-width="1.5" />
+  <text x="530" y="586" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#2D7D2D" text-anchor="middle">选 Skill 心法：匹配当前场景 · 解决真实痛点 · 官方/高star优先 · 试用一周再决定</text>
+  <text x="530" y="602" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#E05252" text-anchor="middle">避开反模式：跟风装明星Skill · 装多个同类互相干扰 · 不读 SKILL.md 就用</text>
+</svg>

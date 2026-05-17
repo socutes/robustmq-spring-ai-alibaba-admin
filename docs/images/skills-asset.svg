@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1060" height="620" viewBox="0 0 1060 620">
+  <ns0:rect width="1060" height="620" fill="#FAFBFF" />
+  <ns0:text x="530" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">Skills 作为程序员个人工程资产</ns0:text>
+  <ns0:text x="530" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">可文本化 · 可移植 · 跨工具 · 长期复利 — 前 AI 时代不存在的资产形式</ns0:text>
+  <ns0:rect x="20" y="65" width="320" height="320" fill="#FAFAFA" rx="8" stroke="#CCC" stroke-width="2" />
+  <ns0:rect x="20" y="65" width="320" height="8" fill="#888" rx="4" />
+  <ns0:rect x="20" y="69" width="320" height="4" fill="#888" rx="0" />
+  <ns0:text x="180" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#888" text-anchor="middle">传统程序员资产</ns0:text>
+  <ns0:rect x="30" y="108" width="300" height="54" fill="#fff" rx="5" stroke="#888" stroke-width="1" />
+  <ns0:text x="36" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="start">代码</ns0:text>
+  <ns0:text x="36" y="144" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">项目产物 · 跟着项目走 · 换公司用不上</ns0:text>
+  <ns0:rect x="30" y="170" width="300" height="54" fill="#fff" rx="5" stroke="#888" stroke-width="1" />
+  <ns0:text x="36" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="start">文档</ns0:text>
+  <ns0:text x="36" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">公司资产 · 留在内网 · 出公司带不走</ns0:text>
+  <ns0:rect x="30" y="232" width="300" height="54" fill="#fff" rx="5" stroke="#888" stroke-width="1" />
+  <ns0:text x="36" y="250" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#888" text-anchor="start">经验</ns0:text>
+  <ns0:text x="36" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">个人资产 · 在脑子里 · 转移成本高</ns0:text>
+  <ns0:rect x="356" y="65" width="320" height="320" fill="#F3EEFF" rx="8" stroke="#8B5CF6" stroke-width="2" />
+  <ns0:rect x="356" y="65" width="320" height="8" fill="#8B5CF6" rx="4" />
+  <ns0:rect x="356" y="69" width="320" height="4" fill="#8B5CF6" rx="0" />
+  <ns0:text x="516" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Skills 资产</ns0:text>
+  <ns0:rect x="366" y="108" width="300" height="54" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1" />
+  <ns0:text x="372" y="126" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="start">可文本化</ns0:text>
+  <ns0:text x="372" y="144" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">工程模式写成文件 · 可编辑可版本化</ns0:text>
+  <ns0:rect x="366" y="170" width="300" height="54" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1" />
+  <ns0:text x="372" y="188" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="start">可移植</ns0:text>
+  <ns0:text x="372" y="206" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">换公司换项目继续用 · 不绑定平台</ns0:text>
+  <ns0:rect x="366" y="232" width="300" height="54" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1" />
+  <ns0:text x="372" y="250" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="start">跨工具</ns0:text>
+  <ns0:text x="372" y="268" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">Claude→Cursor→Codex → 通用标准</ns0:text>
+  <ns0:rect x="366" y="294" width="300" height="54" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1" />
+  <ns0:text x="372" y="312" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="start">长期复利</ns0:text>
+  <ns0:text x="372" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">迭代越成熟 · 为你持续工作的资产</ns0:text>
+  <ns0:line x1="340" y1="230" x2="356" y2="230" stroke="#8B5CF6" stroke-width="2" />
+  <ns0:polygon points="356,230 349.0,233.0 349.0,227.0" fill="#8B5CF6" />
+  <ns0:text x="348" y="222" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="bold" fill="#8B5CF6" text-anchor="middle">AI时代</ns0:text>
+  <ns0:rect x="696" y="65" width="344" height="350" fill="#EDF9EE" rx="8" stroke="#52B366" stroke-width="2" />
+  <ns0:rect x="696" y="65" width="344" height="8" fill="#52B366" rx="4" />
+  <ns0:rect x="696" y="69" width="344" height="4" fill="#52B366" rx="0" />
+  <ns0:text x="868" y="90" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#2D7D2D" text-anchor="middle">复利积累示意</ns0:text>
+  <ns0:line x1="716" y1="340" x2="776" y2="320" stroke="#52B366" stroke-width="2.5" />
+  <ns0:line x1="776" y1="320" x2="836" y2="290" stroke="#52B366" stroke-width="2.5" />
+  <ns0:line x1="836" y1="290" x2="896" y2="240" stroke="#52B366" stroke-width="2.5" />
+  <ns0:line x1="896" y1="240" x2="956" y2="175" stroke="#52B366" stroke-width="2.5" />
+  <ns0:line x1="956" y1="175" x2="996" y2="130" stroke="#52B366" stroke-width="2.5" />
+  <ns0:circle cx="716" cy="340" r="4" fill="#52B366" />
+  <ns0:circle cx="776" cy="320" r="4" fill="#52B366" />
+  <ns0:circle cx="836" cy="290" r="4" fill="#52B366" />
+  <ns0:circle cx="896" cy="240" r="4" fill="#52B366" />
+  <ns0:circle cx="956" cy="175" r="4" fill="#52B366" />
+  <ns0:circle cx="996" cy="130" r="4" fill="#52B366" />
+  <ns0:text x="716" y="355" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">起步</ns0:text>
+  <ns0:text x="996" y="355" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">3年</ns0:text>
+  <ns0:text x="712" y="135" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#555" text-anchor="middle">Skill
+资产
+价值</ns0:text>
+  <ns0:circle cx="776" cy="322" r="6" fill="#52B366" stroke="#fff" stroke-width="2" />
+  <ns0:text x="788" y="318" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">5个</ns0:text>
+  <ns0:text x="788" y="330" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">Skill</ns0:text>
+  <ns0:circle cx="896" cy="242" r="6" fill="#52B366" stroke="#fff" stroke-width="2" />
+  <ns0:text x="908" y="238" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">20个</ns0:text>
+  <ns0:text x="908" y="250" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">Skill</ns0:text>
+  <ns0:circle cx="996" cy="132" r="6" fill="#52B366" stroke="#fff" stroke-width="2" />
+  <ns0:text x="1008" y="128" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">50+个</ns0:text>
+  <ns0:text x="1008" y="140" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7" font-weight="normal" fill="#2D7D2D" text-anchor="start">Skill</ns0:text>
+  <ns0:text x="868" y="378" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">第1年 5~10个 · 第3年 50+个</ns0:text>
+  <ns0:text x="868" y="394" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#2D7D2D" text-anchor="middle">每个 Skill 都在持续为你工作</ns0:text>
+  <ns0:rect x="20" y="430" width="1020" height="175" fill="#FAFAFA" rx="8" stroke="#CCC" stroke-width="1" />
+  <ns0:text x="530" y="448" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#333" text-anchor="middle">Skills 在组织层面的影响</ns0:text>
+  <ns0:rect x="30" y="458" width="245" height="90" fill="#fff" rx="5" stroke="#4A90D9" stroke-width="1.5" />
+  <ns0:rect x="30" y="458" width="245" height="8" fill="#4A90D9" rx="4" />
+  <ns0:rect x="30" y="462" width="245" height="4" fill="#4A90D9" rx="0" />
+  <ns0:text x="152" y="480" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#4A90D9" text-anchor="middle">初级工程师</ns0:text>
+  <ns0:text x="40" y="500" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="start">从"会做这些事"→"沉淀成Skill"，定位提升</ns0:text>
+  <ns0:text x="40" y="514" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#888" text-anchor="start" />
+  <ns0:rect x="280" y="458" width="245" height="90" fill="#fff" rx="5" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:rect x="280" y="458" width="245" height="8" fill="#8B5CF6" rx="4" />
+  <ns0:rect x="280" y="462" width="245" height="4" fill="#8B5CF6" rx="0" />
+  <ns0:text x="402" y="480" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#8B5CF6" text-anchor="middle">资深工程师</ns0:text>
+  <ns0:text x="290" y="500" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="start">经验→Skill→团队全员受益，影响力放大N倍</ns0:text>
+  <ns0:text x="290" y="514" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#888" text-anchor="start" />
+  <ns0:rect x="530" y="458" width="245" height="90" fill="#fff" rx="5" stroke="#52B366" stroke-width="1.5" />
+  <ns0:rect x="530" y="458" width="245" height="8" fill="#52B366" rx="4" />
+  <ns0:rect x="530" y="462" width="245" height="4" fill="#52B366" rx="0" />
+  <ns0:text x="652" y="480" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#52B366" text-anchor="middle">工程团队</ns0:text>
+  <ns0:text x="540" y="500" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="start">工程文化"可执行"，新人clone即享受完整规范</ns0:text>
+  <ns0:text x="540" y="514" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#888" text-anchor="start" />
+  <ns0:rect x="780" y="458" width="245" height="90" fill="#fff" rx="5" stroke="#E09A52" stroke-width="1.5" />
+  <ns0:rect x="780" y="458" width="245" height="8" fill="#E09A52" rx="4" />
+  <ns0:rect x="780" y="462" width="245" height="4" fill="#E09A52" rx="0" />
+  <ns0:text x="902" y="480" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#E09A52" text-anchor="middle">外包行业</ns0:text>
+  <ns0:text x="790" y="500" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="start">少数精英+AI+Skills &gt; 大量初级+落后工具</ns0:text>
+  <ns0:text x="790" y="514" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#888" text-anchor="start" />
+  <ns0:text x="530" y="576" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#333" text-anchor="middle">Skills 的投入不是临时工具学习，是工程师对自己长期资产的投资</ns0:text>
+  <ns0:text x="530" y="592" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">训练营3周开始沉淀 → 回到工作继续积累 → 数年后是你最有价值的工具库</ns0:text>
+</ns0:svg>

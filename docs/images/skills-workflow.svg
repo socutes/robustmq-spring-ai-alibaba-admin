@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1060" height="600" viewBox="0 0 1060 600">
+  <ns0:rect width="1060" height="600" fill="#FAFBFF" />
+  <ns0:text x="530" y="30" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="bold" fill="#1A3A6B" text-anchor="middle">从日常问题到 Skill：完整沉淀流程</ns0:text>
+  <ns0:text x="530" y="50" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="normal" fill="#888" text-anchor="middle">以 spring-rest-controller Skill 为例 · 六步走从需求到可用资产</ns0:text>
+  <ns0:rect x="20" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#E05252" stroke-width="2" />
+  <ns0:rect x="20" y="65" width="154" height="8" fill="#E05252" rx="4" />
+  <ns0:rect x="20" y="69" width="154" height="4" fill="#E05252" rx="0" />
+  <ns0:circle cx="97" cy="95" r="16" fill="#E05252" />
+  <ns0:text x="97" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">①</ns0:text>
+  <ns0:text x="97" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E05252" text-anchor="middle">发现问题</ns0:text>
+  <ns0:text x="97" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">AI 反复出错的模式</ns0:text>
+  <ns0:line x1="30" y1="163" x2="164" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="30" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">参数校验无中文错误消息</ns0:text>
+  <ns0:text x="30" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">异常处理散落各 controller</ns0:text>
+  <ns0:text x="30" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">响应格式不统一</ns0:text>
+  <ns0:text x="30" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">→ 第3次出现，沉淀信号</ns0:text>
+  <ns0:line x1="175" y1="220" x2="184" y2="220" stroke="#AAA" stroke-width="2" />
+  <ns0:polygon points="184,220 177.0,223.0 177.0,217.0" fill="#AAA" />
+  <ns0:rect x="184" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#E09A52" stroke-width="2" />
+  <ns0:rect x="184" y="65" width="154" height="8" fill="#E09A52" rx="4" />
+  <ns0:rect x="184" y="69" width="154" height="4" fill="#E09A52" rx="0" />
+  <ns0:circle cx="261" cy="95" r="16" fill="#E09A52" />
+  <ns0:text x="261" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">②</ns0:text>
+  <ns0:text x="261" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#E09A52" text-anchor="middle">整理标准</ns0:text>
+  <ns0:text x="261" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">写下期望的做法</ns0:text>
+  <ns0:line x1="194" y1="163" x2="328" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="194" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">@Valid + 中文错误消息</ns0:text>
+  <ns0:text x="194" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">@ControllerAdvice 全局处理</ns0:text>
+  <ns0:text x="194" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">ApiResponse 统一包装</ns0:text>
+  <ns0:text x="194" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">ErrorCode 枚举维护错误码</ns0:text>
+  <ns0:line x1="339" y1="220" x2="348" y2="220" stroke="#AAA" stroke-width="2" />
+  <ns0:polygon points="348,220 341.0,223.0 341.0,217.0" fill="#AAA" />
+  <ns0:rect x="348" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#8B5CF6" stroke-width="2" />
+  <ns0:rect x="348" y="65" width="154" height="8" fill="#8B5CF6" rx="4" />
+  <ns0:rect x="348" y="69" width="154" height="4" fill="#8B5CF6" rx="0" />
+  <ns0:circle cx="425" cy="95" r="16" fill="#8B5CF6" />
+  <ns0:text x="425" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">③</ns0:text>
+  <ns0:text x="425" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#8B5CF6" text-anchor="middle">写 SKILL.md</ns0:text>
+  <ns0:text x="425" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">frontmatter + 指令</ns0:text>
+  <ns0:line x1="358" y1="163" x2="492" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="358" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">name: spring-rest-controller</ns0:text>
+  <ns0:text x="358" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">description: 精准触发条件</ns0:text>
+  <ns0:text x="358" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">工作流程 1~5步</ns0:text>
+  <ns0:text x="358" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="start">约束和禁区清单</ns0:text>
+  <ns0:line x1="503" y1="220" x2="512" y2="220" stroke="#AAA" stroke-width="2" />
+  <ns0:polygon points="512,220 505.0,223.0 505.0,217.0" fill="#AAA" />
+  <ns0:rect x="512" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#4A90D9" stroke-width="2" />
+  <ns0:rect x="512" y="65" width="154" height="8" fill="#4A90D9" rx="4" />
+  <ns0:rect x="512" y="69" width="154" height="4" fill="#4A90D9" rx="0" />
+  <ns0:circle cx="589" cy="95" r="16" fill="#4A90D9" />
+  <ns0:text x="589" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">④</ns0:text>
+  <ns0:text x="589" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9" text-anchor="middle">补充资源</ns0:text>
+  <ns0:text x="589" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">references + examples</ns0:text>
+  <ns0:line x1="522" y1="163" x2="656" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="589" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">references/api-response.md</ns0:text>
+  <ns0:text x="589" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">references/error-codes.md</ns0:text>
+  <ns0:text x="589" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">examples/sample-ctrl.java</ns0:text>
+  <ns0:text x="589" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">→ 详细内容按需加载</ns0:text>
+  <ns0:line x1="667" y1="220" x2="676" y2="220" stroke="#AAA" stroke-width="2" />
+  <ns0:polygon points="676,220 669.0,223.0 669.0,217.0" fill="#AAA" />
+  <ns0:rect x="676" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#52B366" stroke-width="2" />
+  <ns0:rect x="676" y="65" width="154" height="8" fill="#52B366" rx="4" />
+  <ns0:rect x="676" y="69" width="154" height="4" fill="#52B366" rx="0" />
+  <ns0:circle cx="753" cy="95" r="16" fill="#52B366" />
+  <ns0:text x="753" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">⑤</ns0:text>
+  <ns0:text x="753" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#52B366" text-anchor="middle">测试迭代</ns0:text>
+  <ns0:text x="753" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">装上观察 AI 行为</ns0:text>
+  <ns0:line x1="686" y1="163" x2="820" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="753" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">让 AI 写新 controller</ns0:text>
+  <ns0:text x="753" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">对比验收 4个规范点</ns0:text>
+  <ns0:text x="753" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">哪里不对 → 改SKILL.md</ns0:text>
+  <ns0:text x="753" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">迭代到行为符合期望</ns0:text>
+  <ns0:line x1="831" y1="220" x2="840" y2="220" stroke="#AAA" stroke-width="2" />
+  <ns0:polygon points="840,220 833.0,223.0 833.0,217.0" fill="#AAA" />
+  <ns0:rect x="840" y="65" width="154" height="300" fill="#fff" rx="8" stroke="#B07219" stroke-width="2" />
+  <ns0:rect x="840" y="65" width="154" height="8" fill="#B07219" rx="4" />
+  <ns0:rect x="840" y="69" width="154" height="4" fill="#B07219" rx="0" />
+  <ns0:circle cx="917" cy="95" r="16" fill="#B07219" />
+  <ns0:text x="917" y="91" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">⑥</ns0:text>
+  <ns0:text x="917" y="132" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#B07219" text-anchor="middle">沉淀分发</ns0:text>
+  <ns0:text x="917" y="148" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">进入工程资产库</ns0:text>
+  <ns0:line x1="850" y1="163" x2="984" y2="163" stroke="#EEE" stroke-width="1" />
+  <ns0:text x="917" y="167" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">放 .claude/skills/（项目级）</ns0:text>
+  <ns0:text x="917" y="189" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">或 ~/.claude/skills/</ns0:text>
+  <ns0:text x="917" y="211" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">团队 clone 后自动生效</ns0:text>
+  <ns0:text x="917" y="233" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#555" text-anchor="middle">可提到开源社区贡献</ns0:text>
+  <ns0:rect x="20" y="385" width="1020" height="58" fill="#F3EEFF" rx="8" stroke="#8B5CF6" stroke-width="1.5" />
+  <ns0:text x="530" y="403" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="bold" fill="#5B2DC0" text-anchor="middle">沉淀 Skill 的核心动作：从"日常问题"到"工程资产"的转换</ns0:text>
+  <ns0:text x="530" y="421" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="normal" fill="#555" text-anchor="middle">下次做类似项目，Skill 直接可用；下次 AI 犯同样错误，回头改 SKILL.md 而不是重新解释</ns0:text>
+  <ns0:text x="530" y="435" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="normal" fill="#888" text-anchor="middle">第一版不要求完美 → 装上用 → 发现哪里不对 → 改 SKILL.md → 迭代到好用</ns0:text>
+  <ns0:rect x="20" y="455" width="1020" height="88" fill="#FFF5F5" rx="8" stroke="#E05252" stroke-width="1.5" />
+  <ns0:text x="530" y="473" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="bold" fill="#C00" text-anchor="middle">五种团队 Skills 失败模式（避坑）</ns0:text>
+  <ns0:rect x="30" y="483" width="192" height="50" fill="#fff" rx="4" stroke="#E05252" stroke-width="1" />
+  <ns0:text x="126" y="499" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00" text-anchor="middle">Skill库膨胀</ns0:text>
+  <ns0:text x="126" y="515" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="middle">→ 删不被用的</ns0:text>
+  <ns0:rect x="230" y="483" width="192" height="50" fill="#fff" rx="4" stroke="#E05252" stroke-width="1" />
+  <ns0:text x="326" y="499" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00" text-anchor="middle">SKILL.md写成手册</ns0:text>
+  <ns0:text x="326" y="515" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="middle">→ 只写指令不写背景</ns0:text>
+  <ns0:rect x="430" y="483" width="192" height="50" fill="#fff" rx="4" stroke="#E05252" stroke-width="1" />
+  <ns0:text x="526" y="499" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00" text-anchor="middle">Skill与CLAUDE.md重复</ns0:text>
+  <ns0:text x="526" y="515" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="middle">→ 职责清晰不冲突</ns0:text>
+  <ns0:rect x="630" y="483" width="192" height="50" fill="#fff" rx="4" stroke="#E05252" stroke-width="1" />
+  <ns0:text x="726" y="499" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00" text-anchor="middle">Skill不维护</ns0:text>
+  <ns0:text x="726" y="515" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="middle">→ 指定owner跟进</ns0:text>
+  <ns0:rect x="830" y="483" width="192" height="50" fill="#fff" rx="4" stroke="#E05252" stroke-width="1" />
+  <ns0:text x="926" y="499" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="8" font-weight="bold" fill="#C00" text-anchor="middle">Skill取代思考</ns0:text>
+  <ns0:text x="926" y="515" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="7.5" font-weight="normal" fill="#555" text-anchor="middle">→ 新问题先思考</ns0:text>
+</ns0:svg>
